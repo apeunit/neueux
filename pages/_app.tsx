@@ -1,10 +1,14 @@
 import React from "react";
 import { AppProps } from "next/app";
+import { GlobalStyles } from "twin.macro";
 
 import "styles/global.scss";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const  App = ({ Component, pageProps }: AppProps) => (
+    <>
+      <GlobalStyles />
+      <Component {...pageProps} />
+    </>
+  );
 
-export default MyApp;
+export default App;
