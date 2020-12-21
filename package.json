@@ -21,7 +21,9 @@
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.1",
     "sass": "^1.30.0",
+    "styled-components": "^5.2.1",
     "tailwindcss": "^2.0.2",
+    "twin.macro": "^2.0.7",
     "typescript": "4.0"
   },
   "license": "MIT"
