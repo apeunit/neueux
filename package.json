@@ -1,0 +1,30 @@
+{
+  "name": "with-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^10.0.3",
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "sass": "^1.30.0",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "^2.0.2",
+    "twin.macro": "^2.0.7",
+    "typescript": "4.0"
+  },
+  "license": "MIT"
+}
