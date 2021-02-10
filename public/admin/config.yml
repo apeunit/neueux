@@ -33,9 +33,9 @@ collections:
         file: "meta/userflows.yml"
         description: "List of userflows"
         fields:
-          - name: authors
-            label: Authors
-            label_singular: "Author"
+          - name: userflows
+            label: "Userflows"
+            label_singular: "Userflow"
             widget: list
             fields:
               - label: "Slug"
@@ -98,7 +98,7 @@ collections:
             widget: "image"
             media_library:
               config:
-                multiple: true   
+                multiple: true
           - label: "Slug"
             name: "slug"
             widget: "string"
