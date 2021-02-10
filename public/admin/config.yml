@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: main
   repo: apeunit/neueux
 media_folder: public/img
 public_folder: img
