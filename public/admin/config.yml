@@ -125,4 +125,11 @@ collections:
               - "tags.*.name"
             valueField: "tags.*.slug"  
 
+      - label: "Published At"
+        name: "published_at"
+        widget: "datetime"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "LLL"
+
             
