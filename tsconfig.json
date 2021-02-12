@@ -15,10 +15,10 @@
     "noUnusedParameters": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "target": "esnext",
     "baseUrl": "."
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "pages/_app.tsx"]
+  "include": ["next-env.d.ts","**/*.ts", "**/*.tsx", "pages/_app.tsx"]
 }
