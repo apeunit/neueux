@@ -1,6 +1,3 @@
-authors:
-  - slug: main-dld
-    name: Main
 userflows:
   - slug: backup
     name: Backup
