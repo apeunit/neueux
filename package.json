@@ -1,5 +1,5 @@
 {
-  "name": "with-typescript",
+  "name": "neueux",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -9,8 +9,12 @@
   },
   "dependencies": {
     "next": "latest",
+    "@svgr/webpack": "^5.4.0",
+    "@types/js-yaml": "^3.12.5",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "js-yaml": "^3.14.0",
+    "gray-matter": "^4.0.2"
   },
   "devDependencies": {
     "@mdx-js/loader": "^1.6.22",
@@ -24,7 +28,8 @@
     "styled-components": "^5.2.1",
     "tailwindcss": "^2.0.2",
     "twin.macro": "^2.0.7",
-    "typescript": "4.0"
+    "typescript": "4.0",
+    "yaml-loader": "^0.6.0"
   },
   "license": "MIT"
 }
