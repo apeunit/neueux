@@ -74,7 +74,7 @@ collections:
     create: true
     slug: "{{slug}}"
     identifier_field: slug
-    summary: "{{name}}"
+    summary: "{{name | upper}} {{description | lower}}"
     fields:
       - label: "Slug"
         name: "slug"
@@ -82,6 +82,9 @@ collections:
       - label: "Name"
         name: "name"
         widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "string"  
       - label: "Icon"
         name: "icon"
         widget: "image"
