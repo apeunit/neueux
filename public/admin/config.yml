@@ -74,7 +74,7 @@ collections:
     create: true
     slug: "{{slug}}"
     identifier_field: slug
-    summary: "{{name | upper}} {{description | lower}}"
+    summary: "{{name | upper}}\n{{description | lower}}"
     fields:
       - label: "Slug"
         name: "slug"
