@@ -131,7 +131,7 @@ collections:
     extension: "mdx"
     format: "frontmatter"
     create: true
-    slug: "{{name}}-{{published_at}}"
+    slug: "{{name}}-{{year}}-{{month}}-{{day}}"
     identifier_field: slug
     summary: "{{name}}"
     fields:
