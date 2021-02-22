@@ -90,11 +90,9 @@ collections:
         name: app
         widget: relation
         collection: "apps"
-        searchFields:
-          - "app.*.name"
-        displayFields:
-          - "apps.*.name"
-        valueField: "apps.*.slug"
+        searchFields: ['name']
+        value_field: "{{slug}}"
+        display_fields: ["{{name}}"]
 
       - label: "Image"
         name: "image"
