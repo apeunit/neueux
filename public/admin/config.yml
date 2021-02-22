@@ -72,7 +72,7 @@ collections:
     extension: "mdx"
     format: "frontmatter"
     create: true
-    slug: "{{slug}}"
+    slug: "{{app}}-{{name}}"
     identifier_field: slug
     summary: "{{name}}"
     fields:
@@ -90,7 +90,6 @@ collections:
         name: app
         widget: relation
         collection: "apps"
-        folder: "apps"
         searchFields:
           - "app.*.name"
         displayFields:
@@ -132,7 +131,7 @@ collections:
     extension: "mdx"
     format: "frontmatter"
     create: true
-    slug: "{{slug}}"
+    slug: "{{name}}-{{published_at}}"
     identifier_field: slug
     summary: "{{name}}"
     fields:
