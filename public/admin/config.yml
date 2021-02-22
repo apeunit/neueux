@@ -74,18 +74,8 @@ collections:
     create: true
     slug: "{{app}}-{{name}}"
     identifier_field: slug
-    summary: "{{name}}"
+    summary: "{{app.name}} - {{userflow}} - {{tag}}"
     fields:
-      - label: "Name"
-        name: "name"
-        widget: "string"
-        required: true
-
-      - label: "Description"
-        name: "description"
-        widget: "string"  
-        required: false
-
       - label: App
         name: app
         widget: relation
