@@ -74,7 +74,7 @@ collections:
     create: true
     slug: "{{app}}-{{name}}"
     identifier_field: slug
-    summary: "{{app}} - {{userflow}} - {{tag}}"
+    summary: "{{userflow}}-{{tag}}-{{app}}"
     fields:
       - label: App
         name: app
@@ -121,7 +121,7 @@ collections:
     extension: "mdx"
     format: "frontmatter"
     create: true
-    slug: "{{name}}-{{year}}-{{month}}-{{day}}"
+    slug: "{{name}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}"
     identifier_field: slug
     summary: "{{name}}"
     fields:
