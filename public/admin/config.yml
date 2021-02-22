@@ -66,9 +66,69 @@ collections:
                 widget: "string"
                 hint: "Tag name for displaying on the site"         
 
-  - name: "app"
-    label: "App"
-    folder: "meta/apps"
+  - name: "screens"
+    label: "Screens"
+    folder: "screens"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    summary: "{{name}}"
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
+        required: true
+
+      - label: "Description"
+        name: "description"
+        widget: "string"  
+        required: false
+
+      - label: App
+        name: app
+        widget: relation
+        collection: "apps"
+        folder: "apps"
+        searchFields:
+          - "app.*.name"
+        displayFields:
+          - "apps.*.name"
+        valueField: "apps.*.slug"
+
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+
+      - label: Userflow
+        name: userflow
+        widget: relation
+        collection: "meta"
+        file: "userflows"
+        searchFields:
+          - "userflows.*.name"
+        displayFields:
+          - "userflows.*.name"
+        valueField: "userflows.*.slug"
+
+      - label: Tag
+        name: tag
+        widget: relation
+        collection: "meta"
+        file: "tags"
+        searchFields:
+          - "tags.*.name"
+        displayFields:
+          - "tags.*.name"
+        valueField: "tags.*.slug"
+
+  - name: "apps"
+    label: "Apps"
+    folder: "apps"
     extension: "mdx"
     format: "frontmatter"
     create: true
@@ -84,6 +144,7 @@ collections:
         name: "description"
         widget: "string"  
         required: true
+
       - label: "Device"
         name: device
         widget: "select"
@@ -92,45 +153,13 @@ collections:
             - { label: "Mobile", value: "mobile" }
             - { label: "Desktop", value: "desktop" }
         required: true
+
       - label: "Icon"
         name: "icon"
         widget: "image"
         media_library:
           config:
-            multiple: true    
-      - label: "Screens"
-        label_singular: "Featured image"
-        name: "screens"
-        widget: list
-        fields: 
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            media_library:
-              config:
-                multiple: true
-
-          - label: Userflow
-            name: userflow
-            widget: relation
-            collection: "meta"
-            file: "userflows"
-            searchFields:
-              - "userflows.*.name"
-            displayFields:
-              - "userflows.*.name"
-            valueField: "userflows.*.slug"
-
-          - label: Tag
-            name: tag
-            widget: relation
-            collection: "meta"
-            file: "tags"
-            searchFields:
-              - "tags.*.name"
-            displayFields:
-              - "tags.*.name"
-            valueField: "tags.*.slug"  
+            multiple: true  
 
       - label: "Published At"
         name: "published_at"
