@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Navbar from "components/Navbar";
-import MobileNavbar from "components/MobileNavbar";
 
 type Props = {
   children?: ReactNode;
