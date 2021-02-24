@@ -2,12 +2,9 @@ backend:
   name: git-gateway
   branch: main
   repo: apeunit/neueux
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: ape-unit
-    api_key: 223256445986669
-public_folder: img
+  use_large_media_transforms_in_media_library: false
+media_folder: public/media
+public_folder: media
 collections:
   - name: "pages"
     label: "Pages"
