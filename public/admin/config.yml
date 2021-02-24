@@ -73,7 +73,7 @@ collections:
     extension: "mdx"
     format: "frontmatter"
     create: true
-    slug: "{{app}}-{{name}}"
+    slug: "{{app}}"
     identifier_field: slug
     summary: "{{userflow}}-{{app}}"
     fields:
