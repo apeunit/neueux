@@ -110,6 +110,7 @@ collections:
         widget: relation
         collection: "meta"
         file: "tags"
+        multiple: true
         searchFields:
           - "tags.*.name"
         displayFields:
