@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import React from "react";
 import AppCard from "../components/card/App";
-import Filter from "../components/sections/Filter";
+import Header from "../components/sections/Header";
 
 
 
@@ -46,7 +46,7 @@ const IndexPage = () => {
   return (
     <Layout title="Home | Next.js + TypeScript Example">
       <main className="w-11/12 mx-auto">
-        <Filter title="Screen gallery"/>
+        <Header title="Screen gallery"/>
         {apps.map((app) => {
           return <AppCard app={app} />;
         })}
