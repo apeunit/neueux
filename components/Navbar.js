@@ -1,23 +1,29 @@
 import React from 'react'
-import Image from 'next/image'
 
 
 const Navbar = () => (
-<nav className="">
+<nav className="invisible xl:visible">
     <div className="w-11/12 mx-auto border-b-2 border-gray-200">
         <div className="flex my-8 text-sm">
             <ul className="w-2/6">
-                <li><a href=""><Image src="/public/img/logo.svg" width={10} height={10}/></a></li>
+                <li><a href=""><img src="/img/logo1.png"/> </a></li>
             </ul>
 
-            <ul className="w-2/6 text-center ">
-                <li className="inline-block mx-7 "><a href="">Screens</a></li>
-                <li className="inline-block mx-7"><a href="">Articles</a></li>
-                <li className="inline-block mx-7"><a href="">Glossary</a></li>
+            <ul className="w-2/6 text-center mt-2">
+                <div className="navi-item inline-block">
+                <li className=" mx-7 active"><a className="nav-item active" href="">Screens</a></li>
+                </div>
+                <div className="navi-item  inline-block">
+                <li className=" mx-7 font-normal"><a href="">Articles</a></li>
+                </div>
+                <div className="navi-item inline-block">
+                <li className=" mx-7 font-normal"><a href="">Glossary</a></li>
+                </div>
+                
             </ul>
 
             <ul className="w-2/6 text-right">
-                <li className=" font-bold text-red-600"><a href="">Contribute</a></li>
+                <li className=" font-bold text-red"><a href="">Contribute</a></li>
             </ul>
         </div>
         
