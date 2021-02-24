@@ -20,5 +20,5 @@
     "baseUrl": "."
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts","**/*.ts", "**/*.tsx", "pages/_app.tsx"]
+  "include": ["next-env.d.ts","**/*.ts", "**/*.tsx", "pages/_app.tsx", "components/sections/Home.js"]
 }

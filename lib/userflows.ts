@@ -1,4 +1,4 @@
-import content from "../content/meta/userflows.yml";
+import content from "../meta/userflows.yml";
 
 export type UserflowContent = {
   readonly slug: string;

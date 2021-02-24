@@ -1,7 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
 @import "~tailwindcss/base";
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
-.red {
-  color: red;
+body{
+  font-family: 'Public Sans', sans-serif;
+}
+.text-red {
+  color: #FF3A02;
+}
+
+.w-49 {
+  width: 49% !important;
+}
+@media only screen and (min-width: 768px) {
+.card {
+  width: 180px;
+  height: 380px;
+  border: 1px solid #F3F4F6;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 8px;
+
+}
+}
+
+.desktop-card {
+  width: 580px;
+  height: 380px;
+  left: 53px;
+  top: 1348px;
+  background-image: url("/img/3.png");
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 8px;
+}
+
+.navi-item .active {
+  /*background: linear-gradient(to top left, #fff calc(50% - 2px), var(--hoverColor), #fff calc(50% + 2px));*/
+  position: relative;
+  font-weight: bold;
+}
+
+.navi-item .active:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background:#FF3A02;
+  top: 53px;
+  right: -5px;
+  left: -5px;
+  height: 0.28vw;
+}
+
+.navi-item {
+
+  a {
+   
+    &:hover {
+      text-decoration: none;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: -5px;
+        left: -5px;
+        height: 0.28vw;
+        background: #FF3A02;
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+.app-logo{
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
 }
