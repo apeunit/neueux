@@ -75,7 +75,7 @@ collections:
     create: true
     slug: "{{app}}-{{name}}"
     identifier_field: slug
-    summary: "{{userflow}}-{{tag}}-{{app}}"
+    summary: "{{userflow}}-{{app}}"
     fields:
       - label: App
         name: app
