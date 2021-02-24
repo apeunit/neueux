@@ -10,6 +10,20 @@ body{
   color: #FF3A02;
 }
 
+.back-button{
+  background-color: #F3F4F6;
+	box-sizing: border-box;
+	border-radius: 24px;
+	font-style: normal;
+	color: black;
+	position: relative;
+	outline: none;
+	text-decoration: none;
+	white-space: nowrap;
+    appearance: button;
+
+}
+
 .w-49 {
   width: 49% !important;
 }
@@ -27,7 +41,7 @@ body{
 .desktop-card {
   width: 580px;
   height: 380px;
-  left: 50px;
+  left: 52px;
   top: 1348px;
   background-image: url("/img/3.png");
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.05));
@@ -45,7 +59,7 @@ body{
   display: inline-block;
   position: absolute;
   background:#FF3A02;
-  top: 50px;
+  top: 52px;
   right: -5px;
   left: -5px;
   height: 0.28vw;
