@@ -2,19 +2,16 @@ backend:
   name: git-gateway
   branch: main
   repo: apeunit/neueux
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: ape-unit
-    api_key: 223256445986669
-public_folder: img
+  use_large_media_transforms_in_media_library: false
+media_folder: public/media
+public_folder: media
 collections:
   - name: "pages"
     label: "Pages"
     files:
     - label: "Home"
       name: "home"
-      file: "meta/content/home.md"
+      file: "content/pages/home.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -34,7 +31,7 @@ collections:
     files:
       - name: "userflows"
         label: "Userflows"
-        file: "meta/userflows.yml"
+        file: "content/meta/userflows.yml"
         description: "List of userflows"
         fields:
           - name: userflows
@@ -53,7 +50,7 @@ collections:
 
       - name: "tags"
         label: "Tags"
-        file: "meta/tags.yml"
+        file: "content/meta/tags.yml"
         description: "List of tags"
         fields:
           - name: tags
@@ -72,7 +69,7 @@ collections:
 
   - name: "screens"
     label: "Screens"
-    folder: "screens"
+    folder: "content/screens"
     extension: "mdx"
     format: "frontmatter"
     create: true
@@ -121,7 +118,7 @@ collections:
 
   - name: "apps"
     label: "Apps"
-    folder: "apps"
+    folder: "content/apps"
     extension: "mdx"
     format: "frontmatter"
     create: true
