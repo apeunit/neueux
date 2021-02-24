@@ -5,3 +5,15 @@ userflows:
     name: Create additional wallet
   - slug: delete-wallet
     name: Delete wallet
+  - slug: onboarding
+    name: onboarding
+  - slug: onramp
+    name: onramp
+  - slug: receive
+    name: receive
+  - slug: backup
+    name: backup
+  - slug: recovery
+    name: recovery
+  - slug: send
+    name: send
