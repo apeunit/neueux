@@ -1,22 +1,22 @@
-import React, { ReactNode } from 'react'
-import Head from 'next/head'
+import React, { ReactNode } from "react";
+import Head from "next/head";
+import Navbar from "components/Navbar";
+import MobileNavbar from "components/MobileNavbar";
 
 type Props = {
-  children?: ReactNode
-  title?: string
-}
+  children?: ReactNode;
+  title?: string;
+};
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div className="m-5">
+const Layout = ({ children, title = "This is the default title" }: Props) => (
+  <div className="xl:m-5">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-      {/* <nav>
-        header
-      </nav> */}
+      <Navbar />
     </header>
     {children}
     {/* <footer>
@@ -24,6 +24,6 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <span>I'm here to stay (Footer)</span>
     </footer> */}
   </div>
-)
+);
 
-export default Layout
+export default Layout;
