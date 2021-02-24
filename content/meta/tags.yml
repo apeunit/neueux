@@ -1,3 +1,77 @@
 tags:
   - slug: about
     name: About
+  - slug: 3rd-party-service
+    name: 3rd-party-service
+  - slug: address
+    name: address
+  - slug: balance
+    name: balance
+  - slug: biometrics
+    name: biometrics
+  - slug: collectibles
+    name: collectibles
+  - slug: contacts
+    name: contacts
+  - slug: currency-overview
+    name: currency overview
+  - slug: dapp-store
+    name: dApp Store
+  - slug: education
+    name: education
+  - slug: email
+    name: email
+  - slug: ENS
+    name: ENS
+  - slug: exchange
+    name: exchange
+  - slug: explanation
+    name: explanation
+  - slug: fee
+    name: fee
+  - slug: history
+    name: history
+  - slug: language
+    name: language
+  - slug: menu
+    name: menu
+  - slug: network
+    name: network
+  - slug: notifications
+    name: notifications
+  - slug: overview
+    name: overview
+  - slug: password
+    name: password
+  - slug: phone-number
+    name: phone number
+  - slug: privacy
+    name: privacy
+  - slug: private-key
+    name: private-key
+  - slug: qr-code
+    name: qr-code
+  - slug: rates
+    name: rates
+  - slug: rating-request
+    name: rating request
+  - slug: refferal
+    name: refferal
+  - slug: search
+    name: search
+  - slug: security
+    name: security
+  - slug: settings
+    name: settings
+  - slug: shop
+    name: shop
+  - slug: stake
+    name: stake
+  - slug: support
+    name: support
+  - slug: token-visibility
+    name: token visibility
+  - slug: transfer-limit
+    name: transfer limit
+  - slug: username
+    name: username
