@@ -10,9 +10,19 @@ body{
   color: #FF3A02;
 }
 
+
+
 .w-49 {
   width: 49% !important;
 }
+
+@media only screen and (min-width: 768px) {
+  .card1 {
+    border: 1px solid #F3F4F6;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.05));
+    border-radius: 8px;
+  }
+  }
 @media only screen and (min-width: 768px) {
 .card {
   width: 180px;
