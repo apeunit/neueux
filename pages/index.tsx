@@ -45,12 +45,12 @@ const IndexPage = () => {
   ];
   return (
     <Layout title="Home | Next.js + TypeScript Example">
-      <main className="w-11/12 mx-auto">
+      {/* <main className="w-11/12 mx-auto">
         <Header title="Screen gallery"/>
         {apps.map((app) => {
           return <AppCard app={app} />;
         })}
-      </main>
+      </main> */}
     </Layout>
   );
 };
