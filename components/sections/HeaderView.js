@@ -1,8 +1,8 @@
 import React from "react";
 const HeaderView = () => (
   <div className="">
-    <div className="mt-5  rounded-full">
-      <a className="back-button px-5 py-3 font-bold text-xs"><img src="/img/arrow.png" className="inline-block mr-2"/>Back</a>
+    <div className="mt-5">
+      <a className="back-button rounded-full bg-gray-100 px-5 py-3 font-bold text-xs"><img src="/img/arrow.png" className="inline-block mr-2"/>Back</a>
     </div>
     <div className="text-center mt-7">
       <div className="flex justify-center">
