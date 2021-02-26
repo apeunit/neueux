@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 import React from 'react';
 import Link from 'next/link'
-
+=======
+import React from "react";
+import Link from "next/link";
+>>>>>>> page-overview
 
 const Navbar = () => {
   const items = [
