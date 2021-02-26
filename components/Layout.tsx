@@ -8,7 +8,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
-  <div className="xl:m-5">
+  <div>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
