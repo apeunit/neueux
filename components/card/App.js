@@ -8,7 +8,7 @@ const AppCard = ({ app }) => (
       <div>
         <Link href={`/apps/${app.slug}`}>
           <a>
-            <img className="app-logo" src={app.icon} width="60"/>
+            <img className="app-logo" src={app.icon} className="w-10" />
           </a>
         </Link>
       </div>
@@ -19,7 +19,12 @@ const AppCard = ({ app }) => (
       </div>
     </div>
 
-    <div className="mt-5 flex space-x-5">
+    <div
+      className={[
+        "mt-5 grid  gap-5",
+        app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
+      ].join(' ')}
+    >
       {app.screens.map((screen) => {
         return <Screen url={screen.image} style={app.type} />;
       })}

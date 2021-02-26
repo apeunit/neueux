@@ -22,7 +22,6 @@ function fetchAppContent(): AppContent[] {
   if (appCache && appCache.length) {
     return appCache;
   }
-  console.log(appCache);
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
@@ -87,7 +86,7 @@ export function listAllAppContent(
 }
 
 export function getAppContent(
-  slug,
+  slug: string | string[],
 ): AppContent {
   return fetchAppContent().find((app) => app.slug === slug);
 }

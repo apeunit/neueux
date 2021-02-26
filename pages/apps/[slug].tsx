@@ -12,7 +12,12 @@ const App = ({ app, screens }) => {
     <Layout title={app.name}>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
-        <div className="mt-5 flex space-x-5 flex-wrap">
+        <div
+          className={[
+            "mt-5 grid  gap-5",
+            app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
+          ].join(" ")}
+        >
           {screens.map((screen) => {
             return <Screen url={screen.image} style={app.type} />;
           })}
