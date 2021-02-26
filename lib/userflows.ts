@@ -5,9 +5,9 @@ export type UserflowContent = {
   readonly name: string;
 };
 
-const userflowMap: { [key: string]: UserflowContent } = generateAuthorMap();
+const userflowMap: { [key: string]: UserflowContent } = generateUserflowMap();
 
-function generateAuthorMap(): { [key: string]: UserflowContent } {
+function generateUserflowMap(): { [key: string]: UserflowContent } {
   let result: { [key: string]: UserflowContent } = {};
   for (const userflow of content.userflows) {
     result[userflow.slug] = userflow;
@@ -15,6 +15,6 @@ function generateAuthorMap(): { [key: string]: UserflowContent } {
   return result;
 }
 
-export function getAuthor(slug: string) {
+export function getUserflow(slug: string) {
   return userflowMap[slug];
 }

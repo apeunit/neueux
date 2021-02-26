@@ -8,7 +8,7 @@ const AppCard = ({ app }) => (
       <div>
         <Link href={`/apps/${app.slug}`}>
           <a>
-            <img className="app-logo" src={app.logo} />
+            <img className="app-logo" src={app.icon} width="60"/>
           </a>
         </Link>
       </div>
