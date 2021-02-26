@@ -1,7 +1,0 @@
-userflows:
-  - slug: backup
-    name: Backup
-  - slug: create-additional-wallet
-    name: Create additional wallet
-  - slug: delete-wallet
-    name: Delete wallet
