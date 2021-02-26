@@ -4,7 +4,7 @@ import React from "react";
 import AppCard from "../components/card/App";
 import Header from "../components/sections/Header";
 import { listAppContent } from "../lib/app";
-import { listTags } from "lib/tags";
+// import { listTags } from "lib/tags";
 
 const IndexPage = ({apps}) => {
   console.log(apps);

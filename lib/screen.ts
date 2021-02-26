@@ -55,15 +55,15 @@ export function listScreenContent(
 }
 
 export function listAppScreenContent(
-    appSlug: string,
+    appSlug: string | string[],
     page: number,
     limit: number,
 ): ScreenContent[] {
     return fetchScreenContent().filter((screen) => screen.app === appSlug).slice((page - 1) * limit, page * limit);
 }
 
-export function getAppContent(
-    slug,
+export function getScreenContent(
+    slug: string | string[],
 ): ScreenContent {
     return fetchScreenContent().find((app) => app.slug === slug);
 }
