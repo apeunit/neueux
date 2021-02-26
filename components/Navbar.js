@@ -8,11 +8,11 @@ const Navbar = () => {
       label: "Screens",
     },
     {
-      link: "",
+      link: "/",
       label: "Articles",
     },
     {
-      link: "",
+      link: "/",
       label: "Glossary",
     },
   ];
