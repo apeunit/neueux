@@ -13,7 +13,7 @@ const HeaderView = ({ app }) => (
     </div>
     <div className="text-center mt-7">
       <div className="flex justify-center">
-        <img src={app.logo} />
+        <img src={app.icon} />
       </div>
       <p className="text-sm mt-4 font-extrabold leading-6 tracking-tighter">
         {app.name}
