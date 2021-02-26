@@ -1,81 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap");
 @import "~tailwindcss/base";
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
-body{
-  font-family: 'Public Sans', sans-serif;
-}
-.text-red {
-  color: #FF3A02;
+body {
+  font-family: "Public Sans", sans-serif;
 }
 
-.w-49 {
-  width: 49% !important;
-}
-@media only screen and (min-width: 768px) {
-.card {
-  width: 180px;
-  height: 380px;
-  border: 1px solid #F3F4F6;
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.05));
-  border-radius: 8px;
-
-}
+.mobile-screen-card {
+  @apply w-1/6;
 }
 
-.desktop-card {
-  width: 580px;
-  height: 380px;
-  left: 50px;
-  top: 1348px;
-  background-image: url("/img/3.png");
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.05));
-  border-radius: 8px;
+.desktop-screen-card {
+  @apply w-1/2;
 }
 
-.navi-item .active {
+
+ul.nav {
+  @apply w-2/6 text-center mt-2;
+}
+
+.nav-item {
+  @apply inline-block cursor-pointer text-gray-500 border-b-4 border-transparent border-solid font-normal py-6;
+
+  @apply hover:border-accent;
+}
+
+.nav-item-active {
   /*background: linear-gradient(to top left, #fff calc(50% - 2px), var(--hoverColor), #fff calc(50% + 2px));*/
-  position: relative;
-  font-weight: bold;
+  @apply border-accent font-bold text-black;
 }
 
-.navi-item .active:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  background:#FF3A02;
-  top: 50px;
-  right: -5px;
-  left: -5px;
-  height: 0.28vw;
-}
-
-.navi-item {
-
-  a {
-   
-    &:hover {
-      text-decoration: none;
-      position: relative;
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50px;
-        right: -5px;
-        left: -5px;
-        height: 0.28vw;
-        background: #FF3A02;
-        transform: rotate(0deg);
-      }
-    }
-  }
-}
-
-.app-logo{
+.filter-drop-shadow {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
-    border-radius: 0.5rem;
-    height: 2.5rem;
-    width: 2.5rem;
 }
