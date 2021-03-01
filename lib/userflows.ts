@@ -18,3 +18,8 @@ function generateUserflowMap(): { [key: string]: UserflowContent } {
 export function getUserflow(slug: string) {
   return userflowMap[slug];
 }
+
+
+export function listUserflows() {
+  return userflowMap;
+}
