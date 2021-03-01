@@ -26,7 +26,11 @@ const AppCard = ({ app }) => (
       ].join(' ')}
     >
       {app.screens.map((screen) => {
-        return <Screen url={screen.image} style={app.type} />;
+        return (
+        <Link href={`/apps/${app.slug}`}>
+          <a><Screen url={screen.image} style={app.type} /></a>
+          </Link>
+          )
       })}
     </div>
   </div>
