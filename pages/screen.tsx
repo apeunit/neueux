@@ -1,7 +1,8 @@
 // import Layout from "../components/Layout";
+import Link from "next/link";
 import React from "react";
 // import AppCard from "../components/card/App";
-const ScreenPage = () => {
+const ScreenPage = ({app}) => {
   //   const apps = {
   //     screens: { image: "/img/2.png" },
   //   };
@@ -15,7 +16,7 @@ const ScreenPage = () => {
         <div className="h-screen w-96 bg-gray-50  mr-auto">
           <div className="absolute right-4 top-4">
             <div className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ml-2">
-              <a href="">
+            <a href="">
                 <img src="/img/close.png" className="m-3.5" />
               </a>
             </div>
