@@ -1,9 +1,9 @@
 import React from "react";
-const Filter = ({ title , c }) => (
+const Filter = () => (
     <div className="z-50 absolute hidden bg-gray-100 top-4 rounded-2xl w-96 right-4 ars overflow-y-auto">
         <div className="ml-8">
             <div className=" mb-10 font-extrabold mt-7 ">
-            <h1 className="text-xl">{title}</h1>
+            <h1 className="text-xl">Filters</h1>
             <div className="bg-gray-50 rounded-full border-2 absolute border-solid border-gray-200 right-4 top-6">
               <a href="">
                 <img src="/img/close.png" className="m-3" />

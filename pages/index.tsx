@@ -17,7 +17,7 @@ const IndexPage = ({apps}) => {
           return <AppCard app={app} />;
         })}
 
-        <Filter title="Filters" />
+        <Filter />
       </main>
     </Layout>
   );
