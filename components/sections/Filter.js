@@ -1,6 +1,6 @@
 import React from "react";
 const Filter = ({ title , c }) => (
-    <div className="z-50 absolute bg-gray-100 top-4 rounded-2xl w-96 right-4 ars overflow-y-auto">
+    <div className="z-50 absolute hidden bg-gray-100 top-4 rounded-2xl w-96 right-4 ars overflow-y-auto">
         <div className="ml-8">
             <div className=" mb-10 font-extrabold mt-7 ">
             <h1 className="text-xl">{title}</h1>
