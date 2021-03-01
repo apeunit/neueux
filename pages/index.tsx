@@ -4,6 +4,7 @@ import React from "react";
 import AppCard from "../components/card/App";
 import Header from "../components/sections/Header";
 import { listAppContent } from "../lib/app";
+import Filter from "../components/sections/Filter";
 // import { listTags } from "lib/tags";
 
 const IndexPage = ({apps}) => {
@@ -15,6 +16,8 @@ const IndexPage = ({apps}) => {
         {apps.map((app) => {
           return <AppCard app={app} />;
         })}
+
+        <Filter title="Filters" />
       </main>
     </Layout>
   );
