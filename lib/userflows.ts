@@ -21,5 +21,5 @@ export function getUserflow(slug: string) {
 
 
 export function listUserflows() {
-  return userflowMap;
+  return content.userflows;
 }

@@ -1,18 +1,11 @@
 // import Layout from "../components/Layout";
 import Link from "next/link";
-import { GetStaticProps, GetStaticPaths } from "next";
 import React from "react";
-import { getAppContent, listAllAppContent } from "../../lib/app";
-import { listAppScreenContent } from "../../lib/screen";
 import Screen from "../card/Screen.js";
-// import AppCard from "../components/card/App";
 const ScreenView = ({ screen, app, navigation }) => {
-  //   const apps = {
-  //     screens: { image: "/img/2.png" },
-  //   };
+
   return (
     <main>
-      {/* <AppCard app={apps} />; */}
       <div className="flex">
         <div className="mt-16 mb-16 w-full flex justify-center ">
           <div className="w-1/4">
