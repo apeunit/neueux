@@ -5,6 +5,7 @@ import Screen from "../../components/card/Screen.js";
 import HeaderView from "../../components/sections/HeaderView";
 import { getAppContent, listAllAppContent } from "../../lib/app";
 import { listAppScreenContent } from "../../lib/screen";
+import Link from "next/link";
 
 const App = ({ app, screens }) => {
   console.log(screens);
@@ -19,7 +20,13 @@ const App = ({ app, screens }) => {
           ].join(" ")}
         >
           {screens.map((screen) => {
-            return <Screen url={screen.image} style={app.type} />;
+            return (
+              <Link href="/screen">
+              <a>
+              <Screen url={screen.image} style={app.type} />
+              </a>
+              </Link>
+            )
           })}
         </div>
       </main>
