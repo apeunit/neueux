@@ -1,10 +1,13 @@
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
-});
-module.exports = withMDX({
-  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
-  webpack: (config, { isServer }) => {
-    // Fixes npm packages that depend on `fs` module
+const withMdxEnhanced = require("next-mdx-enhanced");
+const rehypePrism = require("@mapbox/rehype-prism");
+
+module.exports = withMdxEnhanced({
+  layoutPath: "pages",
+  defaultLayout: true,
+  rehypePlugins: [rehypePrism],
+})({
+  pageExtensions: ["mdx", "tsx"],
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push(
       ...[
         {
@@ -18,10 +21,10 @@ module.exports = withMDX({
         },
       ]
     );
-
-    if (!isServer) {
-      config.node = { fs: "empty", module: "empty" };
-    }
+    
+    config.node = {
+      fs: "empty",
+    };
 
     return config;
   },

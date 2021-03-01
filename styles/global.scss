@@ -7,14 +7,6 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
-.mobile-screen-card {
-  @apply w-1/6;
-}
-
-.desktop-screen-card {
-  @apply w-1/2;
-}
-
 
 ul.nav {
   @apply w-2/6 text-center mt-2;
