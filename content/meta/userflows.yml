@@ -8,12 +8,10 @@ userflows:
   - slug: onboarding
     name: onboarding
   - slug: onramp
-    name: onramp
+    name: Onramp
   - slug: receive
     name: receive
-  - slug: backup
-    name: backup
   - slug: recovery
-    name: recovery
+    name: Recovery
   - slug: send
-    name: send
+    name: Send

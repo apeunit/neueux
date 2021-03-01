@@ -8,7 +8,6 @@ import Filter from "../components/sections/Filter";
 // import { listTags } from "lib/tags";
 
 const IndexPage = ({apps}) => {
-  console.log(apps);
   return (
     <Layout title="Home | Next.js + TypeScript Example">
       <main className="w-11/12 mx-auto">
