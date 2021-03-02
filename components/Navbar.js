@@ -24,7 +24,7 @@ const Navbar = () => {
             <li className="cursor-pointer">
               <Link href="/">
                 <a>
-                  <img src="/img/logo1.png" />
+                  <img src="/img/logo.svg" />
                 </a>
               </Link>
             </li>
