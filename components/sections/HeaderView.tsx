@@ -25,7 +25,7 @@ const HeaderView = ({ app, onOpenFilter }) => (
     <div className="flex">
       <div className="w-3/6 text-5xl leading-loose font-extralight tracking-tighter"></div>
 
-      <div className="text-right w-3/6 text-xs mt-7 mb-5">
+      <div className="text-right w-3/6 text-xs mt-7 mb-0">
         <span
           onClick={onOpenFilter}
           className="bg-black text-white text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
