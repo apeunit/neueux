@@ -12,7 +12,6 @@ import { listTags } from "../../lib/tags";
 import { listUserflows } from "../../lib/userflows";
 
 const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
-  const [showFilter, setShowFilter] = useState(false);
 
   if (screen) {
     return (
@@ -22,14 +21,8 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
   return (
     <Layout title={app.name}>
       <main className="w-11/12 mx-auto">
-        {showFilter && (
-          <Filter
-            tags={tags}
-            userflows={userflows}
-            onClose={() => setShowFilter(false)}
-          />
-        )}
-        <HeaderView app={app} onOpenFilter={() => setShowFilter(true)} />
+        <HeaderView app={app} />
+        <Filter tags={tags} userflows={userflows} />
         <div
           className={[
             "mt-7 grid  gap-5",
@@ -38,7 +31,7 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
         >
           {screens.map((screen) => {
             return (
-              <Link href={`/apps/${app.slug}/screen/${screen.slug}`}>
+              <Link key={`screen-card-${screen.slug}`} href={`/apps/${app.slug}/screen/${screen.slug}`}>
                 <a>
                   <Screen url={screen.image} style={app.type} />
                 </a>
