@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import Layout from "../../components/Layout";
-import React, { useState } from "react";
+import React from "react";
 import Screen from "../../components/card/Screen.js";
 import HeaderView from "../../components/sections/HeaderView";
 import ScreenView from "../../components/sections/ScreenView";
