@@ -13,7 +13,7 @@ const HeaderView = ({ app, onOpenFilter }) => (
     </div>
     <div className="text-center mt-7">
       <div className="flex justify-center">
-        <img src={`/${app.icon}`} className="w-10" />
+        <img src={`/${app.icon}`} className="w-16 h-16" />
       </div>
       <p className="text-sm mt-4 font-extrabold leading-6 tracking-tighter">
         {app.name}
@@ -28,7 +28,7 @@ const HeaderView = ({ app, onOpenFilter }) => (
       <div className="text-right w-3/6 text-xs mt-7 mb-5">
         <span
           onClick={onOpenFilter}
-          className="bg-black text-white text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
+          className="bg-black text-white cursor-pointer text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
         >
           Filter by Categories
         </span>

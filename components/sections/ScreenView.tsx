@@ -12,7 +12,7 @@ const ScreenView = ({ screen, app, navigation }) => {
             <Screen url={screen.image} style={app.type} />
           </div>
         </div>
-        <div className="h-screen w-96 bg-gray-50  mr-auto">
+        <div className="h-100 w-96 bg-gray-50  mr-auto relative">
           <div className="absolute right-4 top-4">
             <Link href={`/apps/${app.slug}`}>
               <a className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ml-2 block">
@@ -20,9 +20,9 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-          <div className="text-center mt-56">
+          <div className="text-center mt-56 w-40 mx-auto">
             <div className="flex justify-center">
-              <img src={`/${app.icon}`} />
+              <img className="w-16 h-16" src={`/${app.icon}`} />
             </div>
             <p className="text-sm mt-4 font-extrabold leading-6 tracking-tighter">
               {app.name}
@@ -46,7 +46,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               <Link href={navigation.prev}>
                 <a>
                   <div className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ">
-                    <img src="/img/right-arrow.png" className="m-3.5" />
+                    <img src="/img/right.svg" className="m-3.5" />
                   </div>
                 </a>
               </Link>
@@ -56,7 +56,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               <Link href={navigation.next}>
                 <a>
                   <div className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ml-2">
-                    <img src="/img/left-arrow.png" className="m-3.5" />
+                    <img src="/img/left.svg" className="m-3.5" />
                   </div>
                 </a>
               </Link>
