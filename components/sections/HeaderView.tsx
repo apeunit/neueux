@@ -6,7 +6,7 @@ const HeaderView = ({ app, onOpenFilter }) => (
     <div className="mt-5">
       <Link href="/">
         <a className="back-button cursor-pointer rounded-full bg-gray-100 px-5 py-3 font-bold text-xs">
-          <img src="/img/arrow.png" className="inline-block mr-2" />
+          <img src="/img/arrow.svg" className="inline-block mr-2" />
           Back
         </a>
       </Link>
@@ -22,10 +22,18 @@ const HeaderView = ({ app, onOpenFilter }) => (
         {app.description}
       </span>
     </div>
-    <div className="flex">
-      <div className="w-3/6 text-5xl leading-loose font-extralight tracking-tighter"></div>
+    <div className="flex mt-7 mb-5">
+      <div className="w-2/4">
+      <Link href="/">
+        <a className="back-button cursor-pointer rounded-full bg-gray-100 px-5 py-3 font-bold text-xs">
+        Onboarding
+        <img src="/img/remove.svg" className="inline-block ml-3"/>
+        </a>
+      </Link>
+      </div>
+   
 
-      <div className="text-right w-3/6 text-xs mt-7 mb-5">
+      <div className="text-right w-2/4 text-xs ">
         <span
           onClick={onOpenFilter}
           className="bg-black text-white cursor-pointer text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
