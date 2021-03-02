@@ -1,6 +1,6 @@
 import React from "react";
 const Header = ({ title, onOpenFilter }) => (
-  <div className="mt-32">
+  <div className="mt-32 hidden xl:hidden">
     <div className="flex">
       <div className="w-3/6 text-5xl leading-loose font-extralight tracking-tighter">
         <h1>{title}</h1>
