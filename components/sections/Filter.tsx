@@ -7,7 +7,7 @@ const Filter = ({ tags, userflows, onClose }) => (
         <h1 className="text-xl">Filters</h1>
         </div>
         <div className="ml-auto mr-3">
-        <div className="rounded-full  border-2 border-solid border-gray-200 right-4 top-6">
+        <div className="rounded-full absolute -top-3  border-2 border-solid border-gray-200 right-4 ">
           <img onClick={onClose} src="/img/close.png" className="m-3" />
         </div>
         </div>
