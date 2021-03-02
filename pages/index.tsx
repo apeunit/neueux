@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import Layout from "../components/Layout";
-import React, { useState } from "react";
+import React from "react";
 import AppCard from "../components/card/App";
 import Header from "../components/sections/Header";
 import { listAppContent } from "../lib/app";
