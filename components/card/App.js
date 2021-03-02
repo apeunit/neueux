@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const AppCard = ({ app }) => (
   <div>
-    <div className="flex mt-10">
+    <div className="flex mt-3">
       <div>
         <Link href={`/apps/${app.slug}`}>
           <a>
