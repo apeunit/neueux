@@ -46,7 +46,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               <Link href={navigation.prev}>
                 <a>
                   <div className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ">
-                    <img src="/img/right.svg" className="m-3.5" />
+                    <img src="/img/left.svg" className="m-3.5" />
                   </div>
                 </a>
               </Link>
@@ -56,7 +56,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               <Link href={navigation.next}>
                 <a>
                   <div className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ml-2">
-                    <img src="/img/left.svg" className="m-3.5" />
+                    <img src="/img/right.svg" className="m-3.5" />
                   </div>
                 </a>
               </Link>
