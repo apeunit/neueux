@@ -32,7 +32,7 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
         <HeaderView app={app} onOpenFilter={() => setShowFilter(true)} />
         <div
           className={[
-            "mt-5 grid  gap-5",
+            "mt-7 grid  gap-5",
             app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
           ].join(" ")}
         >
