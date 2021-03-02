@@ -12,7 +12,7 @@ const ScreenView = ({ screen, app, navigation }) => {
             <Screen url={screen.image} style={app.type} />
           </div>
         </div>
-        <div className="h-100 w-96 bg-gray-50  mr-auto relative">
+        <div className="h-screen w-96 bg-gray-50 fixed right-0">
           <div className="absolute right-4 top-4">
             <Link href={`/apps/${app.slug}`}>
               <a className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ml-2 block">
