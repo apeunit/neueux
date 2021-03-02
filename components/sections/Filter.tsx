@@ -2,7 +2,7 @@ import React from "react";
 const Filter = ({ tags, userflows, onClose }) => (
   <div className="z-50 fixed h-screen top-0 py-4 pr-4 right-0">
     <div className="bg-white rounded-2xl w-96  ars overflow-y-auto h-full px-8">
-      <div className=" mb-10 font-extrabold mt-7 flex fixed w-1/4">
+      <div className=" mb-10 font-extrabold mt-7 flex fixed filter">
         <div className="w-1/2">
         <h1 className="text-xl">Filters</h1>
         </div>
