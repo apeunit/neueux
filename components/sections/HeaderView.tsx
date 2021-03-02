@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const HeaderView = ({ app, onOpenFilter }) => (
   <div className="">
-    <div className="mt-5">
+    <div className="mt-5 hidden xl:block">
       <Link href="/">
         <a className="back-button cursor-pointer rounded-full bg-gray-100 px-5 py-3 font-bold text-xs">
           <img src="/img/arrow.svg" className="inline-block mr-2" />
@@ -11,7 +11,7 @@ const HeaderView = ({ app, onOpenFilter }) => (
         </a>
       </Link>
     </div>
-    <div className="text-center mt-7">
+    <div className="text-center mt-7 hidden xl:block">
       <div className="flex justify-center">
         <img src={`/${app.icon}`} className="w-16 h-16" />
       </div>
@@ -33,7 +33,7 @@ const HeaderView = ({ app, onOpenFilter }) => (
       </div>
    
 
-      <div className="text-right w-2/4 text-xs ">
+      <div className="text-right w-2/4 text-xs hidden xl:block">
         <span
           onClick={onOpenFilter}
           className="bg-black text-white cursor-pointer text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
