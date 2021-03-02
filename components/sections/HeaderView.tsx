@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const HeaderView = ({ app, onOpenFilter }) => (
+const HeaderView = ({ app }) => (
   <div className="">
     <div className="mt-5">
       <Link href="/">
@@ -21,26 +21,6 @@ const HeaderView = ({ app, onOpenFilter }) => (
       <span className="text-sm text-gray-500 mt-1 tracking-tighter leading-6">
         {app.description}
       </span>
-    </div>
-    <div className="flex mt-7 mb-5">
-      <div className="w-2/4">
-      <Link href="/">
-        <a className="back-button cursor-pointer rounded-full bg-gray-100 px-5 py-3 font-bold text-xs">
-        Onboarding
-        <img src="/img/remove.svg" className="inline-block ml-3"/>
-        </a>
-      </Link>
-      </div>
-   
-
-      <div className="text-right w-2/4 text-xs ">
-        <span
-          onClick={onOpenFilter}
-          className="bg-black text-white cursor-pointer text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
-        >
-          Filter by Categories
-        </span>
-      </div>
     </div>
   </div>
 );
