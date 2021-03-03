@@ -6,7 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": ["dom", "es2017"],
+    "lib": ["es6", "dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -20,5 +20,5 @@
     "baseUrl": "."
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts","**/*.ts", "**/*.tsx", "pages/_app.tsx", "components/sections/Home.js"]
+  "include": ["next-env.d.ts","**/*.ts", "**/*.tsx", "pages/_app.tsx", "components/sections/Home.js", "components/sections/Filter.js"]
 }

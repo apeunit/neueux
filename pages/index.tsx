@@ -4,22 +4,60 @@ import React from "react";
 import AppCard from "../components/card/App";
 import Header from "../components/sections/Header";
 import { listAppContent } from "../lib/app";
+import { useRouter } from "next/router";
 
 import { listTags } from "../lib/tags";
 import { listUserflows } from "../lib/userflows";
 import Filter from "../components/sections/Filter";
 // import { listTags } from "lib/tags";
 
-const IndexPage = ({ apps, tags, userflows }) => {
-  console.log(userflows);
+const IndexPage = ({ apps, filter }) => {
+  const router = useRouter();
+
+  const filtered = () => {
+    let userflows: any = router.query.userflows;
+    let tags: any = router.query.tags;
+
+    if (userflows && !Array.isArray(userflows)) {
+      userflows = [userflows];
+    }
+
+    if (tags && !Array.isArray(tags)) {
+      tags = [tags];
+    }
+
+    return apps
+      .filter(
+        (it) =>
+          !userflows ||
+          userflows.every((u) =>
+            it.screens.some((screen) =>
+              screen.userflows.some((userflow) => userflow.slug == u)
+            )
+          )
+      )
+      .filter(
+        (it) =>
+          !tags ||
+          tags.every((u) =>
+            it.screens.some((screen) =>
+              screen.tags.some((tag) => tag.slug == u)
+            )
+          )
+      );
+  };
 
   return (
     <Layout title="Home | Next.js + TypeScript Example">
       <main className="w-11/12 mx-auto">
         <Header title="Screen gallery" />
-        <Filter tags={tags} userflows={userflows} />
-        {apps.map((app) => {
-          return <AppCard app={app} />;
+        <Filter
+          tags={filter.tags}
+          userflows={filter.userflows}
+          routeParams={null}
+        />
+        {filtered().map((app) => {
+          return <AppCard key={`app-list-${app.slug}`} app={app} />;
         })}
       </main>
     </Layout>
@@ -38,8 +76,10 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       apps,
       pagination,
-      userflows,
-      tags,
+      filter: {
+        tags,
+        userflows,
+      },
     },
   };
 };
