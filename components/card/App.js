@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const AppCard = ({ app }) => (
   <div>
-    <div className="flex mt-10">
+    <div className="flex mt-3">
       <div>
         <Link href={`/apps/${app.slug}`}>
           <a>
@@ -22,15 +22,22 @@ const AppCard = ({ app }) => (
     <div
       className={[
         "mt-5 grid  gap-5",
+<<<<<<< HEAD
         app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2" : "grid-cols-2",
       ].join(' ')}
+=======
+        app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
+      ].join(" ")}
+>>>>>>> main
     >
       {app.screens.map((screen) => {
         return (
-        <Link href={`/apps/${app.slug}`}>
-          <a><Screen url={screen.image} style={app.type} /></a>
+          <Link key={`screen-card-${screen.slug}`} href={`/apps/${app.slug}`}>
+            <a>
+              <Screen url={screen.image} style={app.type} />
+            </a>
           </Link>
-          )
+        );
       })}
     </div>
   </div>
