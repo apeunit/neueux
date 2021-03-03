@@ -11,27 +11,65 @@ import Filter from "../../components/sections/Filter";
 import { listTags } from "../../lib/tags";
 import { listUserflows } from "../../lib/userflows";
 
-const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
+import { useRouter } from "next/router";
 
+const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
   if (screen) {
     return (
       <ScreenView screen={screen} app={app} navigation={screenNavigation} />
     );
   }
+
+  const router = useRouter();
+
+  const filtered = () => {
+    let userflows: any = router.query.userflows;
+    let tags: any = router.query.tags;
+
+    if (userflows && !Array.isArray(userflows)) {
+      userflows = [userflows];
+    }
+
+    if (tags && !Array.isArray(tags)) {
+      tags = [tags];
+    }
+
+    return screens
+      .filter(
+        (it) =>
+          !userflows ||
+          userflows.every((u) =>
+            it.userflows.some((userflow) => userflow.slug == u)
+          )
+      )
+      .filter(
+        (it) => !tags || tags.every((t) => it.tags.some((tag) => tag.slug == t))
+      );
+  };
+
   return (
     <Layout title={app.name}>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
-        <Filter tags={tags} userflows={userflows} />
+        <Filter
+          tags={tags}
+          userflows={userflows}
+          routeParams={{
+            slug: app.slug,
+          }}
+        />
         <div
           className={[
             "mt-7 grid  gap-5",
             app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
           ].join(" ")}
         >
-          {screens.map((screen) => {
+          {filtered().map((screen) => {
             return (
-              <Link key={`screen-card-${screen.slug}`} href={`/apps/${app.slug}/screen/${screen.slug}`}>
+              <Link
+                key={`screen-card-${screen.slug}`}
+                href={`/apps/${app.slug}/screen/${screen.slug}`}
+              >
                 <a>
                   <Screen url={screen.image} style={app.type} />
                 </a>
@@ -53,7 +91,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const tags = listTags();
   const userflows = listUserflows();
 
-
   if (screen) {
     const screenIndex = screens.map((s) => s.slug).indexOf(screen.slug);
     screenNavigation.prev =
@@ -73,7 +110,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       screen,
       screenNavigation,
       tags,
-      userflows
+      userflows,
     },
   };
 };
