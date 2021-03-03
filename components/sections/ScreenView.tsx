@@ -7,24 +7,24 @@ const ScreenView = ({ screen, app, navigation }) => {
   return (
     <main>
       <div className="flex">
-        <div className="mt-16 mb-16 w-full flex justify-center ">
-          <div className="w-1/4">
+        <div className="mt-16 mb-16 flex justify-center ">
+          <div className="w-1/5">
             <Screen url={screen.image} style={app.type} />
           </div>
         </div>
         <div className="h-screen w-96 bg-gray-50 fixed right-0">
           <div className="absolute right-4 top-4">
             <Link href={`/apps/${app.slug}`}>
-              <a className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ml-2 block">
+              <a className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2 block">
                 <img src="/img/close.png" className="m-3.5" />
               </a>
             </Link>
           </div>
           <div className="text-center mt-56 w-40 mx-auto">
             <div className="flex justify-center">
-              <img className="w-16 h-16" src={`/${app.icon}`} />
+              <img className="w-16 h-16 filter-drop-shadow-view rounded-lg" src={`/${app.icon}`} />
             </div>
-            <p className="text-sm mt-4 font-extrabold leading-6 tracking-tighter">
+            <p className="text-xl mt-4 font-extrabold leading-6 tracking-tighter">
               {app.name}
             </p>
             <span className="text-sm text-gray-500 mt-1 tracking-tighter leading-6">
@@ -45,7 +45,7 @@ const ScreenView = ({ screen, app, navigation }) => {
             {navigation.prev && (
               <Link href={navigation.prev}>
                 <a>
-                  <div className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ">
+                  <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ">
                     <img src="/img/left.svg" className="m-3.5" />
                   </div>
                 </a>
@@ -55,7 +55,7 @@ const ScreenView = ({ screen, app, navigation }) => {
             {navigation.next && (
               <Link href={navigation.next}>
                 <a>
-                  <div className="bg-gray-50 rounded-full border-2 border-solid border-gray-200 ml-2">
+                  <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2">
                     <img src="/img/right.svg" className="m-3.5" />
                   </div>
                 </a>
