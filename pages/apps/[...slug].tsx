@@ -25,13 +25,8 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
         <Filter tags={tags} userflows={userflows} />
         <div
           className={[
-<<<<<<< HEAD
             "mt-5 grid  gap-5",
             app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2" : "grid-cols-2",
-=======
-            "mt-7 grid  gap-5",
-            app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
->>>>>>> main
           ].join(" ")}
         >
           {screens.map((screen) => {
