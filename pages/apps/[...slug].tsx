@@ -34,17 +34,15 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
       tags = [tags];
     }
 
-    return screens
-      .filter(
-        (it) =>
-          !userflows ||
-          userflows.every((u) =>
+    return screens.filter(
+      (it) =>
+        (!userflows && !tags) ||
+        (userflows &&
+          userflows.some((u) =>
             it.userflows.some((userflow) => userflow.slug == u)
-          )
-      )
-      .filter(
-        (it) => !tags || tags.every((t) => it.tags.some((tag) => tag.slug == t))
-      );
+          )) ||
+        (tags && tags.some((t) => it.tags.some((tag) => tag.slug == t)))
+    );
   };
 
   return (
