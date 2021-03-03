@@ -1,5 +1,7 @@
 import content from "../content/meta/userflows.yml";
 
+import { listAppContent, getAppContent } from './app';
+
 export type UserflowContent = {
   readonly slug: string;
   readonly name: string;
@@ -22,4 +24,21 @@ export function getUserflow(slug: string) {
 
 export function listUserflows() {
   return content.userflows;
+}
+
+export function filteredUserflowsAll(page: number,
+  limit: number) {
+
+  const apps = listAppContent(page, limit);
+
+
+  return content.userflows.filter((userflow) => apps.some((app) => app.userflows.includes(userflow.slug)))
+}
+
+export function filteredUserflowsByApp(slug: string) {
+
+  const app = getAppContent(slug);
+
+
+  return content.userflows.filter((userflow) => app.userflows.includes(userflow.slug))
 }
