@@ -55,7 +55,7 @@ const Filter = ({ tags, userflows }) => {
   };
 
   return (
-    <div className="w-full flex">
+    <div className="w-full  flex">
       <div key={`list-index-${listIndex}`} className="flex space-x-2">
         {selectedUserflows.map((userflow) => (
           <FilterBadge
@@ -76,7 +76,7 @@ const Filter = ({ tags, userflows }) => {
         <button
           type="button"
           onClick={() => setShowFilter(true)}
-          className="bg-black cursor-pointer text-white text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
+          className="bg-black cursor-pointer hover:bg-gray-600 text-white text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
         >
           Filter by Categories
         </button>
