@@ -26,25 +26,22 @@ const IndexPage = ({ apps, filter }) => {
       tags = [tags];
     }
 
-    return apps
-      .filter(
-        (it) =>
-          !userflows ||
-          userflows.every((u) =>
+    return apps.filter(
+      (it) =>
+        (!userflows && !tags) ||
+        (userflows &&
+          userflows.some((u) =>
             it.screens.some((screen) =>
               screen.userflows.some((userflow) => userflow.slug == u)
             )
-          )
-      )
-      .filter(
-        (it) =>
-          !tags ||
-          tags.every((u) =>
+          )) ||
+        (tags &&
+          tags.some((t) =>
             it.screens.some((screen) =>
-              screen.tags.some((tag) => tag.slug == u)
+              screen.tags.some((tag) => tag.slug == t)
             )
-          )
-      );
+          ))
+    );
   };
 
   return (
