@@ -6,8 +6,8 @@ import Header from "../components/sections/Header";
 import { listAppContent } from "../lib/app";
 import { useRouter } from "next/router";
 
-import { listTags } from "../lib/tags";
-import { listUserflows } from "../lib/userflows";
+import { filteredTagsAll } from "../lib/tags";
+import { filteredUserflowsAll } from "../lib/userflows";
 import Filter from "../components/sections/Filter";
 // import { listTags } from "lib/tags";
 
@@ -31,16 +31,9 @@ const IndexPage = ({ apps, filter }) => {
         (!userflows && !tags) ||
         (userflows &&
           userflows.some((u) =>
-            it.screens.some((screen) =>
-              screen.userflows.some((userflow) => userflow.slug == u)
-            )
+            it.userflows.some((userflow) => userflow == u)
           )) ||
-        (tags &&
-          tags.some((t) =>
-            it.screens.some((screen) =>
-              screen.tags.some((tag) => tag.slug == t)
-            )
-          ))
+        (tags && tags.some((t) => it.tags.some((tag) => tag == t)))
     );
   };
 
@@ -63,8 +56,8 @@ const IndexPage = ({ apps, filter }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const apps = listAppContent(1, 30);
-  const tags = listTags();
-  const userflows = listUserflows();
+  const tags = filteredTagsAll(1, 30);
+  const userflows =  filteredUserflowsAll(1, 30);
   const pagination = {
     current: 1,
     pages: 1,

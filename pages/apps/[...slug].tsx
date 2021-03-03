@@ -8,8 +8,8 @@ import { getAppContent, listAllAppContent } from "../../lib/app";
 import { getAllAppScreenContent, getScreenContent } from "../../lib/screen";
 import Link from "next/link";
 import Filter from "../../components/sections/Filter";
-import { listTags } from "../../lib/tags";
-import { listUserflows } from "../../lib/userflows";
+import { filteredTagsByApp } from "../../lib/tags";
+import { filteredUserflowsByApp } from "../../lib/userflows";
 
 import { useRouter } from "next/router";
 
@@ -86,8 +86,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const screen = params.slug[2] ? getScreenContent(params.slug[2]) : null;
   const screenNavigation = { prev: null, next: null };
 
-  const tags = listTags();
-  const userflows = listUserflows();
+  const tags = filteredTagsByApp(params.slug[0]);
+  const userflows = filteredUserflowsByApp(params.slug[0]);
 
   if (screen) {
     const screenIndex = screens.map((s) => s.slug).indexOf(screen.slug);
