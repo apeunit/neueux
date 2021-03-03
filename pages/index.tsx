@@ -1,33 +1,26 @@
 import { GetStaticProps } from "next";
 import Layout from "../components/Layout";
-import React, { useState } from "react";
+import React from "react";
 import AppCard from "../components/card/App";
 import Header from "../components/sections/Header";
 import { listAppContent } from "../lib/app";
-import Filter from "../components/sections/Filter";
+
 import { listTags } from "../lib/tags";
 import { listUserflows } from "../lib/userflows";
+import Filter from "../components/sections/Filter";
 // import { listTags } from "lib/tags";
 
 const IndexPage = ({ apps, tags, userflows }) => {
   console.log(userflows);
-  const [showFilter, setShowFilter] = useState(false);
 
   return (
     <Layout title="Home | Next.js + TypeScript Example">
       <main className="w-11/12 mx-auto">
-        <Header title="Screen gallery" onOpenFilter={() => setShowFilter(true)} />
+        <Header title="Screen gallery" />
+        <Filter tags={tags} userflows={userflows} />
         {apps.map((app) => {
           return <AppCard app={app} />;
         })}
-
-        {showFilter && (
-          <Filter
-            tags={tags}
-            userflows={userflows}
-            onClose={() => setShowFilter(false)}
-          />
-        )}
       </main>
     </Layout>
   );

@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import Layout from "../../components/Layout";
-import React, { useState } from "react";
+import React from "react";
 import Screen from "../../components/card/Screen.js";
 import HeaderView from "../../components/sections/HeaderView";
 import ScreenView from "../../components/sections/ScreenView";
@@ -12,7 +12,6 @@ import { listTags } from "../../lib/tags";
 import { listUserflows } from "../../lib/userflows";
 
 const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
-  const [showFilter, setShowFilter] = useState(false);
 
   if (screen) {
     return (
@@ -22,23 +21,22 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
   return (
     <Layout title={app.name}>
       <main className="w-11/12 mx-auto">
-        {showFilter && (
-          <Filter
-            tags={tags}
-            userflows={userflows}
-            onClose={() => setShowFilter(false)}
-          />
-        )}
-        <HeaderView app={app} onOpenFilter={() => setShowFilter(true)} />
+        <HeaderView app={app} />
+        <Filter tags={tags} userflows={userflows} />
         <div
           className={[
+<<<<<<< HEAD
             "mt-5 grid  gap-5",
             app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2" : "grid-cols-2",
+=======
+            "mt-7 grid  gap-5",
+            app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
+>>>>>>> main
           ].join(" ")}
         >
           {screens.map((screen) => {
             return (
-              <Link href={`/apps/${app.slug}/screen/${screen.slug}`}>
+              <Link key={`screen-card-${screen.slug}`} href={`/apps/${app.slug}/screen/${screen.slug}`}>
                 <a>
                   <Screen url={screen.image} style={app.type} />
                 </a>
