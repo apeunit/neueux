@@ -22,13 +22,8 @@ const AppCard = ({ app }) => (
     <div
       className={[
         "mt-5 grid  gap-5",
-<<<<<<< HEAD
         app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2" : "grid-cols-2",
       ].join(' ')}
-=======
-        app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
-      ].join(" ")}
->>>>>>> main
     >
       {app.screens.map((screen) => {
         return (
