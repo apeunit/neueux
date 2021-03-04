@@ -22,7 +22,8 @@ const FilterCard = ({
 }) => {
   return (
     <div className="z-50 fixed h-screen top-0 py-4 xl:w-auto w-full px-4 xl:px-0 right-0 xl:pr-4 text-left text-gray-700">
-      <div className="bg-white rounded-2xl xl:w-96 mx-auto xl:mx-0 ars h-full flex flex-col overflow-hidden">
+      <div className="w-full h-screen top-0 left-0 bg-black z-0 fixed opacity-5" />
+      <div className="bg-white rounded-2xl xl:w-96 mx-auto xl:mx-0 ars h-full flex flex-col overflow-hidden z-50 relative">
         <div className="font-extrabold flex bg-white w-full justify-between">
           <div className="pl-8 pt-7 pb-3">
             <h1 className="text-xl">Filters</h1>
@@ -45,7 +46,7 @@ const FilterCard = ({
               />
             ))}
           </div>
-          <div className="mb-9">
+          <div className="mb-5 text-gray-500">
             <div className="mb-3 font-bold text-base ">User flows</div>
             <ul className="text-base">
               {userflows.map((userflow, i) => {
@@ -59,7 +60,7 @@ const FilterCard = ({
               })}
             </ul>
           </div>
-          <div className="mb-9">
+          <div className="mb-5 text-gray-500">
             <div className="mb-3 font-bold text-base">Tags</div>
             <ul className="text-base">
               {tags.map((tag, i) => {
