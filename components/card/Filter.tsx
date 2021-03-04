@@ -14,7 +14,8 @@ const FilterCard = ({ tags, userflows, selectedList, onClose, onSelect, onRemove
   console.log(selectedList);
   return (
     <div className="z-50 fixed h-screen top-0 py-4 pr-4 right-0 text-left text-gray-700 ">
-      <div className="bg-white rounded-2xl w-96  ars h-full flex flex-col overflow-hidden">
+      <div className="w-full h-screen top-0 left-0 bg-black z-0 fixed opacity-5"></div>
+      <div className="bg-white rounded-2xl w-96 z-50 relative ars h-full flex flex-col overflow-hidden">
         <div className="pb-3 font-extrabold pt-7 flex bg-white w-full px-8 justify-between">
           <h1 className="text-xl">Filters</h1>
           <div
@@ -35,7 +36,7 @@ const FilterCard = ({ tags, userflows, selectedList, onClose, onSelect, onRemove
               />
             ))}
           </div>
-          <div className="mb-5">
+          <div className="mb-5 text-gray-500">
             <div className="mb-3 font-bold text-base ">User flows</div>
             <ul className="text-base">
               {userflows.map((userflow, i) => {
@@ -49,9 +50,9 @@ const FilterCard = ({ tags, userflows, selectedList, onClose, onSelect, onRemove
               })}
             </ul>
           </div>
-          <div className="mb-5">
+          <div className="mb-5 text-gray-500">
             <div className="mb-3 font-bold text-base">Tags</div>
-            <ul className="text-base">
+            <ul className="text-base text-gray-500">
               {tags.map((tag, i) => {
                 return (
                   <ListItem
