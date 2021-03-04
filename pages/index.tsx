@@ -39,7 +39,7 @@ const IndexPage = ({ apps, filter }) => {
 
   return (
     <Layout title="Home | Next.js + TypeScript Example">
-      <main className="w-11/12 mx-auto">
+      <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />
         <Filter
           tags={filter.tags}

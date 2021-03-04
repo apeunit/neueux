@@ -127,7 +127,7 @@ const Filter = ({ tags, userflows, routeParams }) => {
         <button
           type="button"
           onClick={() => setShowFilter(true)}
-          className="bg-black cursor-pointer text-white text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
+          className="bg-black focus:outline-none cursor-pointer hover:bg-gray-600 text-white text-xs px-4 leading-4 py-3 font-bold transition-250ms rounded-full"
         >
           Filter by Categories
         </button>
