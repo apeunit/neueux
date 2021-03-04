@@ -76,11 +76,8 @@ function fetchScreenContent(): ScreenContent[] {
 }
 
 export function listScreenContent(
-    page: number,
-    limit: number,
 ): ScreenContent[] {
-    return fetchScreenContent()
-        .slice((page - 1) * limit, page * limit);
+    return fetchScreenContent();
 }
 
 export function listAppScreenContent(

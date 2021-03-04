@@ -11,7 +11,6 @@ const ListItem = ({ text, onSelect }) => (
 );
 
 const FilterCard = ({ tags, userflows, selectedList, onClose, onSelect, onRemove, index}) => {
-  console.log(selectedList);
   return (
     <div className="z-50 fixed h-screen top-0 py-4 pr-4 right-0 text-left text-gray-700 ">
       <div className="bg-white rounded-2xl w-96  ars h-full flex flex-col overflow-hidden">
@@ -29,7 +28,7 @@ const FilterCard = ({ tags, userflows, selectedList, onClose, onSelect, onRemove
           <div key={`filter-badge-${index}`} className="flex flex-wrap mt-7">
             {selectedList.map((item) => (
               <FilterBadge
-                key={`list-${item.slug}`}
+                key={`filter-badge-${item.slug}`}
                 onSelect={() => onRemove(item)}
                 text={item.name}
               />
