@@ -2,7 +2,7 @@ import Screen from "components/card/Screen";
 import Link from "next/link";
 
 const AppCard = ({ app }) => (
-  <div>
+  <div className="mt-16 xl:mt-0">
     <div className="flex mt-3">
       <div>
         <Link href={`/apps/${app.slug}`}>
