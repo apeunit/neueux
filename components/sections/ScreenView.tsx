@@ -1,10 +1,9 @@
 // import Layout from "../components/Layout";
 import Link from "next/link";
 import React from "react";
-import Screen from "../card/Screen.js";
+import Screen from "components/card/Screen";
 import RightIcon from "public/img/right.svg";
 const ScreenView = ({ screen, app, navigation }) => {
-
   return (
     <main>
       <div className="flex">
@@ -21,16 +20,23 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-          <div className="text-center h-1/2 w-40 flex flex-col justify-end mx-auto">
-            <div className="flex justify-center">
-              <img className="w-16 h-16 filter-drop-shadow-view rounded-lg" src={`/${app.icon}`} />
-            </div>
-            <p className="text-xl mt-4 font-extrabold leading-6 tracking-tighter">
-              {app.name}
-            </p>
-            <span className="text-sm text-gray-500 mb-5 mt-1 tracking-tighter leading-6">
-              {app.description}
-            </span>
+          <div className="text-center h-1/2 w-40 flex flex-col justify-end mx-auto mb-5">
+            <Link href={`/apps/${app.slug}`}>
+              <a className="block">
+                <div className="flex justify-center">
+                  <img
+                    className="w-16 h-16 filter-drop-shadow-view rounded-lg"
+                    src={`/${app.icon}`}
+                  />
+                </div>
+                <p className="text-xl mt-4 font-extrabold leading-6 tracking-tighter">
+                  {app.name}
+                </p>
+                <span className="text-sm text-gray-500 mt-1 tracking-tighter leading-6">
+                  {app.description}
+                </span>
+              </a>
+            </Link>
           </div>
           <div className="flex justify-center h-1/2 pt-6 flex-wrap mx-6">
             {screen.userflows.map((userflow) => (
@@ -41,7 +47,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               </div>
             ))}
           </div>
-          <div className="flex absolute right-4 bottom-4">
+          <div className="flex absolute right-4 bottom-4 border-none">
             {navigation.prev && (
               <Link href={navigation.prev}>
                 <a>

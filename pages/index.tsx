@@ -1,15 +1,14 @@
 import { GetStaticProps } from "next";
-import Layout from "../components/Layout";
+import Layout from "components/Layout";
 import React from "react";
-import AppCard from "../components/card/App";
-import Header from "../components/sections/Header";
-import { listAppContent } from "../lib/app";
+import AppCard from "components/card/App";
+import Header from "components/sections/Header";
+import { listAppContent } from "lib/app";
 import { useRouter } from "next/router";
 
-import { filteredTagsAll } from "../lib/tags";
-import { filteredUserflowsAll } from "../lib/userflows";
-import Filter from "../components/sections/Filter";
-// import { listTags } from "lib/tags";
+import { filteredTagsAll } from "lib/tags";
+import { filteredUserflowsAll } from "lib/userflows";
+import Filter from "components/sections/Filter";
 
 const IndexPage = ({ apps, filter }) => {
   const router = useRouter();
