@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import FilterCard from "../card/Filter";
-import FilterBadge from "../FilterBadge";
+import FilterCard from "components/card/Filter";
+import FilterBadge from "components/FilterBadge";
 import { useRouter } from "next/router";
 
 const Filter = ({ tags, userflows, routeParams }) => {

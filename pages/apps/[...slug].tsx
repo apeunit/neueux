@@ -1,15 +1,15 @@
 import { GetStaticProps, GetStaticPaths } from "next";
-import Layout from "../../components/Layout";
+import Layout from "components/Layout";
 import React from "react";
-import Screen from "../../components/card/Screen.js";
-import HeaderView from "../../components/sections/HeaderView";
-import ScreenView from "../../components/sections/ScreenView";
-import { getAppContent, listAllAppContent } from "../../lib/app";
-import { getAllAppScreenContent, getScreenContent } from "../../lib/screen";
+import Screen from "components/card/Screen";
+import HeaderView from "components/sections/HeaderView";
+import ScreenView from "components/sections/ScreenView";
+import { getAppContent, listAllAppContent } from "lib/app";
+import { getAllAppScreenContent, getScreenContent } from "lib/screen";
 import Link from "next/link";
-import Filter from "../../components/sections/Filter";
-import { filteredTagsByApp } from "../../lib/tags";
-import { filteredUserflowsByApp } from "../../lib/userflows";
+import Filter from "components/sections/Filter";
+import { filteredTagsByApp } from "lib/tags";
+import { filteredUserflowsByApp } from "lib/userflows";
 
 import { useRouter } from "next/router";
 

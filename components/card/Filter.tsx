@@ -1,5 +1,5 @@
 import React from "react";
-import FilterBadge from "../FilterBadge";
+import FilterBadge from "components/FilterBadge";
 import CloseIcon from "assets/icons/close.svg";
 
 const ListItem = ({ text, onSelect }) => (

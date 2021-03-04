@@ -1,5 +1,3 @@
-import { type } from "os";
-import Link from "next/link";
 
 const ScreenCard = ({ url, style }) => (
   <div

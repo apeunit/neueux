@@ -1,5 +1,4 @@
-import Screen from "components/card/Screen.js";
-import { join } from "path";
+import Screen from "components/card/Screen";
 import Link from "next/link";
 
 const AppCard = ({ app }) => (
@@ -8,7 +7,10 @@ const AppCard = ({ app }) => (
       <div>
         <Link href={`/apps/${app.slug}`}>
           <a>
-            <img className="w-10 h-10 filter-drop-shadow rounded-lg" src={`/${app.icon}`} />
+            <img
+              className="w-10 h-10 filter-drop-shadow rounded-lg"
+              src={`/${app.icon}`}
+            />
           </a>
         </Link>
       </div>
@@ -23,11 +25,14 @@ const AppCard = ({ app }) => (
       className={[
         "mt-5 grid  gap-5",
         app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2" : "grid-cols-2",
-      ].join(' ')}
+      ].join(" ")}
     >
       {app.screens.map((screen) => {
         return (
-          <Link key={`screen-card-view-${screen.slug}`} href={`/apps/${app.slug}`}>
+          <Link
+            key={`screen-card-view-${screen.slug}`}
+            href={`/apps/${app.slug}/screen/${screen.slug}`}
+          >
             <a>
               <Screen url={screen.image} style={app.type} />
             </a>
