@@ -1,37 +1,73 @@
 import { GetStaticProps, GetStaticPaths } from "next";
-import Layout from "../../components/Layout";
+import Layout from "components/Layout";
 import React from "react";
-import Screen from "../../components/card/Screen.js";
-import HeaderView from "../../components/sections/HeaderView";
-import ScreenView from "../../components/sections/ScreenView";
-import { getAppContent, listAllAppContent } from "../../lib/app";
-import { getAllAppScreenContent, getScreenContent } from "../../lib/screen";
+import Screen from "components/card/Screen";
+import HeaderView from "components/sections/HeaderView";
+import ScreenView from "components/sections/ScreenView";
+import { getAppContent, listAllAppContent } from "lib/app";
+import { getAllAppScreenContent, getScreenContent } from "lib/screen";
 import Link from "next/link";
-import Filter from "../../components/sections/Filter";
-import { listTags } from "../../lib/tags";
-import { listUserflows } from "../../lib/userflows";
+import Filter from "components/sections/Filter";
+import { filteredTagsByApp } from "lib/tags";
+import { filteredUserflowsByApp } from "lib/userflows";
+
+import { useRouter } from "next/router";
 
 const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
-
   if (screen) {
     return (
       <ScreenView screen={screen} app={app} navigation={screenNavigation} />
     );
   }
+
+  const router = useRouter();
+
+  const filtered = () => {
+    let userflows: any = router.query.userflows;
+    let tags: any = router.query.tags;
+
+    if (userflows && !Array.isArray(userflows)) {
+      userflows = [userflows];
+    }
+
+    if (tags && !Array.isArray(tags)) {
+      tags = [tags];
+    }
+
+    return screens.filter(
+      (it) =>
+        (!userflows && !tags) ||
+        (userflows &&
+          userflows.some((u) =>
+            it.userflows.some((userflow) => userflow.slug == u)
+          )) ||
+        (tags && tags.some((t) => it.tags.some((tag) => tag.slug == t)))
+    );
+  };
+
   return (
     <Layout title={app.name}>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
-        <Filter tags={tags} userflows={userflows} />
+        <Filter
+          tags={tags}
+          userflows={userflows}
+          routeParams={{
+            slug: app.slug,
+          }}
+        />
         <div
           className={[
-            "mt-7 grid  gap-5",
-            app.device === "mobile" ? "grid-cols-6" : "grid-cols-2",
+            "mt-5 grid  gap-5",
+            app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2" : "grid-cols-2",
           ].join(" ")}
         >
-          {screens.map((screen) => {
+          {filtered().map((screen) => {
             return (
-              <Link key={`screen-card-${screen.slug}`} href={`/apps/${app.slug}/screen/${screen.slug}`}>
+              <Link
+                key={`screen-card-${screen.slug}`}
+                href={`/apps/${app.slug}/screen/${screen.slug}`}
+              >
                 <a>
                   <Screen url={screen.image} style={app.type} />
                 </a>
@@ -50,9 +86,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const screen = params.slug[2] ? getScreenContent(params.slug[2]) : null;
   const screenNavigation = { prev: null, next: null };
 
-  const tags = listTags();
-  const userflows = listUserflows();
-
+  const tags = filteredTagsByApp(params.slug[0]);
+  const userflows = filteredUserflowsByApp(params.slug[0]);
 
   if (screen) {
     const screenIndex = screens.map((s) => s.slug).indexOf(screen.slug);
@@ -73,7 +108,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       screen,
       screenNavigation,
       tags,
-      userflows
+      userflows,
     },
   };
 };

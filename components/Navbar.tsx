@@ -17,7 +17,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="invisible xl:visible">
+    <nav className="hidden xl:block">
       <div className="w-11/12 mx-auto border-b border-gray-200">
         <div className="flex text-base">
           <ul className="w-2/6 py-6">
