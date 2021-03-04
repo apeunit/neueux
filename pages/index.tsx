@@ -4,22 +4,50 @@ import React from "react";
 import AppCard from "../components/card/App";
 import Header from "../components/sections/Header";
 import { listAppContent } from "../lib/app";
+import { useRouter } from "next/router";
 
-import { listTags } from "../lib/tags";
-import { listUserflows } from "../lib/userflows";
+import { filteredTagsAll } from "../lib/tags";
+import { filteredUserflowsAll } from "../lib/userflows";
 import Filter from "../components/sections/Filter";
 // import { listTags } from "lib/tags";
 
-const IndexPage = ({ apps, tags, userflows }) => {
-  console.log(userflows);
+const IndexPage = ({ apps, filter }) => {
+  const router = useRouter();
+
+  const filtered = () => {
+    let userflows: any = router.query.userflows;
+    let tags: any = router.query.tags;
+
+    if (userflows && !Array.isArray(userflows)) {
+      userflows = [userflows];
+    }
+
+    if (tags && !Array.isArray(tags)) {
+      tags = [tags];
+    }
+
+    return apps.filter(
+      (it) =>
+        (!userflows && !tags) ||
+        (userflows &&
+          userflows.some((u) =>
+            it.userflows.some((userflow) => userflow == u)
+          )) ||
+        (tags && tags.some((t) => it.tags.some((tag) => tag == t)))
+    );
+  };
 
   return (
     <Layout title="Home | Next.js + TypeScript Example">
-      <main className="w-11/12 mx-auto">
+      <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />
-        <Filter tags={tags} userflows={userflows} />
-        {apps.map((app) => {
-          return <AppCard app={app} />;
+        <Filter
+          tags={filter.tags}
+          userflows={filter.userflows}
+          routeParams={null}
+        />
+        {filtered().map((app) => {
+          return <AppCard key={`app-list-${app.slug}`} app={app} />;
         })}
       </main>
     </Layout>
@@ -28,8 +56,8 @@ const IndexPage = ({ apps, tags, userflows }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const apps = listAppContent(1, 30);
-  const tags = listTags();
-  const userflows = listUserflows();
+  const tags = filteredTagsAll(1, 30);
+  const userflows =  filteredUserflowsAll(1, 30);
   const pagination = {
     current: 1,
     pages: 1,
@@ -38,8 +66,10 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       apps,
       pagination,
-      userflows,
-      tags,
+      filter: {
+        tags,
+        userflows,
+      },
     },
   };
 };
