@@ -13,6 +13,8 @@ export type AppContent = {
   readonly icon: string;
   readonly slug: string;
   readonly screens?: ScreenContent[];
+  readonly tags?: string[];
+  readonly userflows: string[];
   readonly published_at: string;
 };
 
@@ -45,13 +47,19 @@ function fetchAppContent(): AppContent[] {
         icon: string,
         published_at: string,
         slug: string,
-        screens?: ScreenContent[];
+        screens?: ScreenContent[],
+        tags?: string[],
+        userflows: string[],
       };
 
       const slug = fileName.replace(/\.mdx$/, "");
-      const screens = listScreenContent(1, 6);
+      const screens = listScreenContent();
+      const tags = screens.map((screen) => screen.tags.map((tag) => tag.slug));
+      const userflows = screens.map((screen) => screen.userflows.map((userflow) => userflow.slug));
       matterData.slug = slug;
-      matterData.screens = screens;
+      matterData.screens = screens.slice(0, 6);
+      matterData.tags = [...new Set(tags.flat())] as string[];
+      matterData.userflows = [...new Set(userflows.flat())] as string[];
 
       return matterData;
     });

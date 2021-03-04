@@ -27,7 +27,7 @@ const AppCard = ({ app }) => (
     >
       {app.screens.map((screen) => {
         return (
-          <Link key={`screen-card-${screen.slug}`} href={`/apps/${app.slug}`}>
+          <Link key={`screen-card-view-${screen.slug}`} href={`/apps/${app.slug}`}>
             <a>
               <Screen url={screen.image} style={app.type} />
             </a>

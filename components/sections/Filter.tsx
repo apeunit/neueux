@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FilterCard from "../card/Filter";
 import FilterBadge from "../FilterBadge";
+import { useRouter } from "next/router";
 
-const Filter = ({ tags, userflows }) => {
+const Filter = ({ tags, userflows, routeParams }) => {
+  const router = useRouter();
+
   const [showFilter, setShowFilter] = useState(false);
   const [listIndex, setListIndex] = useState(0);
 
@@ -12,25 +15,71 @@ const Filter = ({ tags, userflows }) => {
 
   const [selectedList, setSelectedList] = useState([]);
 
-  const onFilterSelect = (value, type) => {
-    if (type == "userflows") {
-      const all = selectedUserflows;
+  const updateRoute = (userflowList, tagsList) => {
+    const params  = routeParams ? routeParams : {}
+    router.replace({
+      pathname: router.pathname,
+      query: {
+        ...params,
+        userflows: userflowList.map((userflow) => userflow.slug),
+        tags: tagsList.map((tag) => tag.slug),
+      },
+    });
+  };
 
-      if (!all.includes(value)) {
-        all.push(value);
-        setSelectedUserflows(all);
+  useEffect(() => {
+    let queryUserflows = router.query.userflows;
+    let queryTags = router.query.tags;
+
+    if (showFilter) {
+      return;
+    }
+
+    let tagsList = [];
+    let userflowList = [];
+
+    if (queryUserflows) {
+      queryUserflows = !Array.isArray(queryUserflows)
+        ? [queryUserflows]
+        : queryUserflows;
+      userflowList = userflows.filter((userflow) =>
+        queryUserflows.includes(userflow.slug)
+      );
+    }
+
+    if (queryTags) {
+      queryTags = !Array.isArray(queryTags) ? [queryTags] : queryTags;
+      tagsList = tags.filter((tag) => queryTags.includes(tag.slug));
+    }
+
+    setSelectedUserflows(userflowList);
+    setSelectedTags(tagsList);
+
+    setSelectedList([...userflowList, ...tagsList]);
+    setListIndex(listIndex + 1);
+  }, [router]);
+
+  const onFilterSelect = (value, type) => {
+    let tagsList = selectedTags;
+    let userflowList = selectedUserflows;
+
+    if (type == "userflows") {
+      if (!userflowList.includes(value)) {
+        userflowList.push(value);
+        setSelectedUserflows(userflowList);
       }
     }
 
     if (type == "tags") {
-      const all = selectedTags;
-      if (!all.includes(value)) {
-        all.push(value);
-        setSelectedTags(all);
+      if (!tagsList.includes(value)) {
+        tagsList.push(value);
+        setSelectedTags(tagsList);
       }
     }
 
-    setSelectedList([...selectedUserflows, ...selectedTags]);
+    updateRoute(userflowList, tagsList);
+
+    setSelectedList([...userflowList, ...tagsList]);
     setListIndex(listIndex + 1);
     return value;
   };
@@ -49,14 +98,16 @@ const Filter = ({ tags, userflows }) => {
       setSelectedTags(tagsList);
     }
 
+    updateRoute(userflowList, tagsList);
+
     setSelectedList([...userflowList, ...tagsList]);
     setListIndex(listIndex + 1);
     return value;
   };
 
   return (
-    <div className="w-full  flex">
-      <div key={`list-index-${listIndex}`} className="flex space-x-2">
+    <div className="w-full flex">
+      <div key={`list-index-filter-${listIndex}`} className="flex space-x-2">
         {selectedUserflows.map((userflow) => (
           <FilterBadge
             key={`userflow-filter-${userflow.slug}`}
@@ -83,7 +134,7 @@ const Filter = ({ tags, userflows }) => {
       </div>
       {showFilter && (
         <FilterCard
-          key={`filter-${listIndex}`}
+          key={`filter-card-${listIndex}`}
           tags={tags}
           index={listIndex}
           userflows={userflows}
