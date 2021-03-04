@@ -107,7 +107,7 @@ const Filter = ({ tags, userflows, routeParams }) => {
 
   return (
     <div className="w-full flex xl:relative bottom-6 z-50 fixed">
-      <div key={`list-index-filter-${listIndex}`} className="flex space-x-2">
+      <div key={`list-index-filter-${listIndex}`} className="flex space-x-2 mt-10">
         {selectedUserflows.map((userflow) => (
           <FilterBadge
             key={`userflow-filter-${userflow.slug}`}
@@ -123,7 +123,7 @@ const Filter = ({ tags, userflows, routeParams }) => {
           />
         ))}
       </div>
-      <div className="xl:ml-auto mx-auto xl:mx-0">
+      <div className="xl:ml-auto mx-auto xl:mx-0 mt-10">
         <button
           type="button"
           onClick={() => setShowFilter(true)}
