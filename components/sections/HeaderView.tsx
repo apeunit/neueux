@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import ArrowIcon from "public/img/arrow.svg";
+import ArrowIcon from "assets/icons/arrow.svg";
 const HeaderView = ({ app }) => (
   <div className="">
     <div className="mt-5">
@@ -18,9 +18,9 @@ const HeaderView = ({ app }) => (
       <div className="flex justify-center">
         <img src={`/${app.icon}`} className="w-16 h-16 filter-drop-shadow-view rounded-lg" />
       </div>
-      <p className="text-xl mt-4 font-extrabold leading-6 tracking-tighter">
+      <h1 className="text-xl mt-4 font-extrabold leading-6 tracking-tighter">
         {app.name}
-      </p>
+      </h1>
       <span className="text-sm text-gray-500 mt-1 tracking-tighter leading-6">
         {app.description}
       </span>
