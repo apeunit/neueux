@@ -16,7 +16,7 @@ import { useRouter } from "next/router";
 const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
   if (screen) {
     return (
-      <ScreenView screen={screen} app={app} navigation={screenNavigation} />
+      <ScreenView key={screen.slug} screen={screen} app={app} navigation={screenNavigation} />
     );
   }
 
