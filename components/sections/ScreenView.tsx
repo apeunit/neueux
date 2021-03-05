@@ -41,7 +41,7 @@ const ScreenView = ({ screen, app, navigation }) => {
           </div>
           <div className="flex justify-center h-1/2 pt-6 flex-wrap mx-6">
             {screen.userflows.map((userflow) => (
-              <div className="mb-3">
+              <div key={userflow.slug} className="mb-3">
                 <a className="bg-gray-50 capitalize px-4 py-1.5 text-xs rounded-2xl border-2 border-solid border-gray-200 font-bold text-gray-500">
                   {userflow.name}
                 </a>
