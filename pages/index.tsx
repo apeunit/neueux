@@ -24,7 +24,7 @@ const IndexPage = ({ apps, filter }) => {
     if (tags && !Array.isArray(tags)) {
       tags = [tags];
     }
-
+    
     return apps.filter(
       (it) =>
         (!userflows && !tags) ||
@@ -43,7 +43,7 @@ const IndexPage = ({ apps, filter }) => {
         <Filter
           tags={filter.tags}
           userflows={filter.userflows}
-          routeParams={null}
+          routeParams={{}}
         />
         {filtered().map((app) => {
           return <AppCard key={`app-list-${app.slug}`} app={app} />;
