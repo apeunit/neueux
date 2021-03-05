@@ -1,7 +1,6 @@
 // import Layout from "../components/Layout";
 import Link from "next/link";
 import React from "react";
-import Screen from "components/card/Screen";
 import RightIcon from "assets/icons/right.svg";
 import CloseIcon from "assets/icons/close.svg";
 import LeftIcon from "assets/icons/left.svg";
