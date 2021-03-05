@@ -37,7 +37,7 @@ const FilterCard = ({
         </div>
 
         <div className="mb-9 overflow-y-auto px-8">
-          <div key={`filter-badge-${index}`} className="flex flex-wrap mt-7">
+          <div key={`filter-badge-${index}`} className="flex flex-wrap my-7">
             {selectedList.map((item) => (
               <FilterBadge
                 key={`filter-badge-${item.slug}`}
@@ -46,7 +46,7 @@ const FilterCard = ({
               />
             ))}
           </div>
-          <div className="mb-5 text-gray-500">
+          <div className="mb-9 text-gray-500">
             <div className="mb-3 font-bold text-base ">User flows</div>
             <ul className="text-base">
               {userflows.map((userflow, i) => {
@@ -60,7 +60,7 @@ const FilterCard = ({
               })}
             </ul>
           </div>
-          <div className="mb-5 text-gray-500">
+          <div className="mb-9 text-gray-500">
             <div className="mb-3 font-bold text-base">Tags</div>
             <ul className="text-base">
               {tags.map((tag, i) => {

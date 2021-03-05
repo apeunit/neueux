@@ -1,7 +1,9 @@
 // import Layout from "../components/Layout";
 import Link from "next/link";
 import React from "react";
-import RightIcon from "public/img/right.svg";
+import RightIcon from "assets/icons/right.svg";
+import CloseIcon from "assets/icons/close.svg";
+import LeftIcon from "assets/icons/left.svg";
 const ScreenView = ({ screen, app, navigation }) => {
   return (
     <main>
@@ -15,7 +17,7 @@ const ScreenView = ({ screen, app, navigation }) => {
           <div className="absolute right-4 top-4">
             <Link href={`/apps/${app.slug}`}>
               <a className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2 block">
-                <img src="/img/close.png" className="m-3.5" />
+                <CloseIcon className="m-3.5" />
               </a>
             </Link>
           </div>
@@ -51,7 +53,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               <Link href={navigation.prev}>
                 <a>
                   <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ">
-                    <img src="/img/left.svg" className="m-3.5" />
+                    <LeftIcon className="m-3.5" />
                   </div>
                 </a>
               </Link>
