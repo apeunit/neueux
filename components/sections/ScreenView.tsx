@@ -1,18 +1,17 @@
 // import Layout from "../components/Layout";
 import Link from "next/link";
 import React from "react";
-import Screen from "components/card/Screen";
 import RightIcon from "public/img/right.svg";
 const ScreenView = ({ screen, app, navigation }) => {
   return (
     <main>
       <div className="flex">
-        <div className="mt-16 mb-16 flex justify-center ">
-          <div className="w-1/5">
-            <Screen url={screen.image} style={app.type} />
+        <div className="flex flex-col w-9/12 h-screen justify-center ">
+          <div className="h-3/4 w-full text-center">
+          <img src={`/${screen.image}`} className="h-full inline-block" />
           </div>
         </div>
-        <div className="h-screen w-96 bg-gray-50 flex flex-col divide-y fixed right-0">
+        <div className="h-screen w-4/11 bg-gray-50 flex flex-col divide-y fixed right-0">
           <div className="absolute right-4 top-4">
             <Link href={`/apps/${app.slug}`}>
               <a className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2 block">
