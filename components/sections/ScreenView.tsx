@@ -21,7 +21,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-          <div className="text-center h-1/2 w-40 flex flex-col justify-end mx-auto mb-5">
+          <div className="text-center h-1/2 w-10/12 px-6 mx-auto flex flex-col justify-end mb-5">
             <Link href={`/apps/${app.slug}`}>
               <a className="block">
                 <div className="flex justify-center">
@@ -39,7 +39,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-          <div className="flex justify-center h-1/2 pt-6 flex-wrap mx-6">
+          <div className="flex justify-center w-10/12 mx-auto h-1/2 pt-6 flex-wrap">
             {screen.userflows.map((userflow) => (
               <div key={userflow.slug} className="mb-3">
                 <a className="bg-gray-50 capitalize px-4 py-1.5 text-xs rounded-2xl border-2 border-solid border-gray-200 font-bold text-gray-500">
