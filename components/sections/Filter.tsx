@@ -64,14 +64,14 @@ const Filter = ({ tags, userflows, routeParams }) => {
     let userflowList = selectedUserflows;
 
     if (type == "userflows") {
-      if (!userflowList.includes(value)) {
+      if (!userflowList.some((userflow)=> userflow.slug === value.slug)) {
         userflowList.push(value);
         setSelectedUserflows(userflowList);
       }
     }
 
     if (type == "tags") {
-      if (!tagsList.includes(value)) {
+      if (!tagsList.some((tag)=> tag.slug === value.slug)) {
         tagsList.push(value);
         setSelectedTags(tagsList);
       }
@@ -88,12 +88,12 @@ const Filter = ({ tags, userflows, routeParams }) => {
     let tagsList = selectedTags;
     let userflowList = selectedUserflows;
 
-    if (selectedUserflows.includes(value)) {
+    if (selectedUserflows.some((userflow)=> userflow.slug === value.slug)) {
       userflowList = selectedUserflows.filter(
         (item) => item.slug !== value.slug
       );
       setSelectedUserflows(userflowList);
-    } else if (selectedTags.includes(value)) {
+    } else if (selectedTags.some((tag)=> tag.slug === value.slug)) {
       tagsList = selectedTags.filter((item) => item.slug !== value.slug);
       setSelectedTags(tagsList);
     }
