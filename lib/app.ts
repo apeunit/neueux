@@ -2,7 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import yaml from "js-yaml";
-import { ScreenContent, listScreenContent } from './screen';
+import { ScreenContent, getAllAppScreenContent } from './screen';
 
 const postsDirectory = path.join(process.cwd(), "content/apps");
 
@@ -53,7 +53,7 @@ function fetchAppContent(): AppContent[] {
       };
 
       const slug = fileName.replace(/\.mdx$/, "");
-      const screens = listScreenContent();
+      const screens = getAllAppScreenContent(slug);
       const tags = screens.map((screen) => screen.tags.map((tag) => tag.slug));
       const userflows = screens.map((screen) => screen.userflows.map((userflow) => userflow.slug));
       matterData.slug = slug;
