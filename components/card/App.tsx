@@ -2,7 +2,7 @@ import Screen from "components/card/Screen";
 import Link from "next/link";
 
 const AppCard = ({ app }) => (
-  <div className="mt-16 xl:mt-0">
+  <div className="mt-16 mb-10 xl:mt-0">
     <div className="flex mt-3">
       <div>
         <Link href={`/apps/${app.slug}`}>
@@ -24,7 +24,7 @@ const AppCard = ({ app }) => (
     <div
       className={[
         "mt-5 grid  gap-5",
-        app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2" : "grid-cols-2",
+        app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2 md:grid-cols-3" : "grid-cols-2",
       ].join(" ")}
     >
       {app.screens.map((screen) => {
