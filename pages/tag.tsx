@@ -11,7 +11,7 @@ import Filter from "components/sections/Filter";
 import ScreenCard from "components/card/Screen";
 
 
-const TagPage = ({ apps, filter, style }) => {
+const TagPage = ({ apps, filter}) => {
     const router = useRouter();
 
     const filtered = () => {
