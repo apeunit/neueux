@@ -11,30 +11,6 @@ import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/sections/Filter";
 
 const IndexPage = ({ apps, filter }) => {
-  const router = useRouter();
-
-  const filtered = () => {
-    let userflows: any = router.query.userflows;
-    let tags: any = router.query.tags;
-
-    if (userflows && !Array.isArray(userflows)) {
-      userflows = [userflows];
-    }
-
-    if (tags && !Array.isArray(tags)) {
-      tags = [tags];
-    }
-    
-    return apps.filter(
-      (it) =>
-        (!userflows && !tags) ||
-        (userflows &&
-          userflows.some((u) =>
-            it.userflows.some((userflow) => userflow == u)
-          )) ||
-        (tags && tags.some((t) => it.tags.some((tag) => tag == t)))
-    );
-  };
 
   return (
     <Layout title="Home | Next.js + TypeScript Example">
@@ -43,9 +19,11 @@ const IndexPage = ({ apps, filter }) => {
         <Filter
           tags={filter.tags}
           userflows={filter.userflows}
-          routeParams={{}}
+          routeParams={null}
+          routePathname={'/filter'}
+          fallbackRoutePathname={'/'}
         />
-        {filtered().map((app) => {
+        {apps.map((app) => {
           return <AppCard key={`app-list-${app.slug}`} app={app} />;
         })}
       </main>
