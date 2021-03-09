@@ -3,7 +3,7 @@ import FilterCard from "components/card/Filter";
 import FilterBadge from "components/FilterBadge";
 import { useRouter } from "next/router";
 
-const Filter = ({ tags, userflows, routeParams }) => {
+const Filter = ({ tags, userflows, routeParams, routePathname, fallbackRoutePathname }) => {
   const router = useRouter();
 
   const [showFilter, setShowFilter] = useState(false);
@@ -17,8 +17,10 @@ const Filter = ({ tags, userflows, routeParams }) => {
 
   const updateRoute = (userflowList, tagsList) => {
     const params  = routeParams ? routeParams : {}
+    const pathname  = routePathname ? routePathname : router.pathname
+    const fallbackPathname  = fallbackRoutePathname ? fallbackRoutePathname : router.pathname
     router.replace({
-      pathname: router.pathname,
+      pathname: userflowList.length || tagsList.length ? pathname : fallbackPathname,
       query: {
         ...params,
         userflows: userflowList.map((userflow) => userflow.slug),

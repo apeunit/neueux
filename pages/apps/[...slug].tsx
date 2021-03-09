@@ -55,6 +55,8 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
           routeParams={{
             slug: app.slug,
           }}
+          routePathname={null}
+          fallbackRoutePathname={null}
         />
         <div
           className={[
