@@ -10,9 +10,9 @@ const ScreenView = ({ screen, app, navigation }) => {
 
       <div className=" xl:hidden border-b border-solid border-gray-200">
         <div className="px-4 mt-3 mb-3.5 flex">
-        <div className="flex">
-        <div className="flex-none w-1/5">
-        
+          <div className="flex">
+            <div className="flex-none w-1/5">
+
               <a className="block">
                 <div className="flex justify-center w-10 h-10">
                   <img
@@ -20,39 +20,41 @@ const ScreenView = ({ screen, app, navigation }) => {
                     src={`/${app.icon}`}
                   />
                 </div>
-                </a>
-          
-        </div>
-        
-        <div className="flex-grow ">
-        <p className="text-xl font-extrabold leading-6 tracking-tighter">
-                  {app.name}
-                </p>
-                <span className="text-sm text-gray-500 mt-1 tracking-tighter leading-6">
-                  {app.description}
-                </span>
-         
-        </div>
-
-        </div>
-
-        <div className="flex w-1/5 justify-end">
-        <a className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2 h-10 w-10 flex justify-center items-center">
-                <img src="/img/close.png" className="" />
               </a>
+
+            </div>
+
+            <div className="flex-grow ">
+              <p className="text-xl font-extrabold leading-6 tracking-tighter">
+                {app.name}
+              </p>
+              <span className="text-sm text-gray-500 mt-1 tracking-tighter leading-6">
+                {app.description}
+              </span>
+
+            </div>
+
+          </div>
+
+          <div className="flex w-1/5 justify-end">
+            <Link href={`/apps/${app.slug}`}>
+              <a className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2 h-10 w-10 flex justify-center items-center">
+                <CloseIcon className="" />
+              </a>
+            </Link>
+          </div>
+
         </div>
-      
       </div>
-        </div>
-        
+
       <div className="xl:flex">
         <div className="flex flex-col xl:w-9/12 w-full h-screen justify-center ">
           <div className="h-3/4 w-full text-center">
-          <img src={`/${screen.image}`} className="h-full inline-block" />
+            <img src={`/${screen.image}`} className="h-full inline-block" />
           </div>
         </div>
 
-        
+
 
         <div className="h-screen w-4/11 hidden xl:block bg-gray-50 flex flex-col divide-y fixed right-0">
           <div className="absolute right-4 top-4">
@@ -111,30 +113,30 @@ const ScreenView = ({ screen, app, navigation }) => {
             )}
           </div>
         </div>
-        
+
       </div>
 
       <div className="flex xl:hidden border-t border-solid border-gray-200 justify-end  py-2">
-            {navigation.prev && (
-              <Link href={navigation.prev}>
-                <a>
-                  <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ">
-                    <img src="/img/left.svg" className="m-3.5" />
-                  </div>
-                </a>
-              </Link>
-            )}
+        {navigation.prev && (
+          <Link href={navigation.prev}>
+            <a>
+              <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ">
+                <LeftIcon className="m-3.5" />
+              </div>
+            </a>
+          </Link>
+        )}
 
-            {navigation.next && (
-              <Link href={navigation.next}>
-                <a>
-                  <div className="bg-gray-50 mr-2 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2">
-                    <RightIcon className="m-3.5" />
-                  </div>
-                </a>
-              </Link>
-            )}
-          </div>
+        {navigation.next && (
+          <Link href={navigation.next}>
+            <a>
+              <div className="bg-gray-50 mr-2 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2">
+                <RightIcon className="m-3.5" />
+              </div>
+            </a>
+          </Link>
+        )}
+      </div>
     </main>
   );
 };
