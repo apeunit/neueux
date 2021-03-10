@@ -99,6 +99,7 @@ collections:
         widget: relation
         collection: "meta"
         file: "userflows"
+        options_length: 100
         searchFields:
           - "userflows.*.name"
         displayFields:
@@ -111,6 +112,7 @@ collections:
         collection: "meta"
         file: "tags"
         multiple: true
+        options_length: 100
         searchFields:
           - "tags.*.name"
         displayFields:
