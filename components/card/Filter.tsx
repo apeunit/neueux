@@ -76,30 +76,28 @@ const FilterCard = ({
           </div>
         </div>
 
-        <div className="text-xs xl:bottom-10 bottom-2 xl:fixed relative flex justify-center xl:px-8">
-          <span
-            onClick={onClose}
-            className="bg-gray-900 hover:bg-gray-600  text-white text-xs px-36 leading-4 py-3 font-bold transition-250ms rounded-full"
-          >
-            close
-          </span>
-        </div>
-
-        <div className="text-xs xl:bottom-10 bottom-2 xl:fixed relative flex justify-center xl:px-8">
-          <span
-            onClick={onClose}
-            className="bg-gray-100 hover:bg-gray-200  text-black text-xs px-16 leading-4 py-3 font-bold transition-250ms rounded-tl-full rounded-bl-full"
-          >
-            clear
-          </span>
-          <span
-            onClick={onClose}
-            className="bg-gray-900 hover:bg-gray-600  text-white text-xs px-16 leading-4 py-3 font-bold transition-250ms rounded-tr-full rounded-br-full"
-          >
-            close
-          </span>
-
-        </div>
+       
+       <div className="text-xs xl:bottom-10 bottom-2 xl:fixed relative flex justify-center xl:px-8">
+       {selectedList.length &&(
+         <span
+         onClick={onClose}
+         className="bg-gray-100 hover:bg-gray-200  text-black text-xs px-16 leading-4 py-3 font-bold transition-250ms rounded-tl-full rounded-bl-full"
+       >
+         Clear
+       </span>
+       )}
+       <span
+         onClick={onClose}
+         className={[
+          "bg-gray-900 hover:bg-gray-600 text-white text-xs leading-4  py-3 font-bold transition-250ms ",
+          selectedList.length ? "px-16 rounded-tr-full rounded-br-full" : "px-36 rounded-full",
+          ].join(" ")}
+       >
+         Close
+       </span>
+     </div>
+       
+        
       </div>
     </div>
   );
