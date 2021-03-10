@@ -75,12 +75,13 @@ collections:
     create: true
     slug: "{{app}}"
     identifier_field: slug
-    summary: "{{userflow}}-{{app}}"
+    summary: "{{slug}}"
     fields:
       - label: App
         name: app
         widget: relation
         collection: "apps"
+        required: true
         searchFields:
           - "name"
         valueField: "{{slug}}"
@@ -90,6 +91,7 @@ collections:
       - label: "Image"
         name: "image"
         widget: "image"
+        required: true
         media_library:
           config:
             multiple: true
@@ -100,6 +102,7 @@ collections:
         collection: "meta"
         file: "userflows"
         options_length: 100
+        required: false
         searchFields:
           - "userflows.*.name"
         displayFields:
@@ -113,6 +116,7 @@ collections:
         file: "tags"
         multiple: true
         options_length: 100
+        required: true
         searchFields:
           - "tags.*.name"
         displayFields:
@@ -133,6 +137,7 @@ collections:
         name: "name"
         widget: "string"
         required: true
+
       - label: "Description"
         name: "description"
         widget: "string"  
@@ -142,14 +147,15 @@ collections:
         name: device
         widget: "select"
         multiple: false
+        required: true
         options:
             - { label: "Mobile", value: "mobile" }
             - { label: "Desktop", value: "desktop" }
-        required: true
 
       - label: "Icon"
         name: "icon"
         widget: "image"
+        required: true
         media_library:
           config:
             multiple: true  
