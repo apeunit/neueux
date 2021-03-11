@@ -3,7 +3,13 @@ import FilterCard from "components/card/Filter";
 import FilterBadge from "components/FilterBadge";
 import { useRouter } from "next/router";
 
-const Filter = ({ tags, userflows, routeParams, routePathname, fallbackRoutePathname }) => {
+const Filter = ({
+  tags,
+  userflows,
+  routeParams,
+  routePathname,
+  fallbackRoutePathname,
+}) => {
   const router = useRouter();
 
   const [showFilter, setShowFilter] = useState(false);
@@ -16,11 +22,14 @@ const Filter = ({ tags, userflows, routeParams, routePathname, fallbackRoutePath
   const [selectedList, setSelectedList] = useState([]);
 
   const updateRoute = (userflowList, tagsList) => {
-    const params  = routeParams ? routeParams : {}
-    const pathname  = routePathname ? routePathname : router.pathname
-    const fallbackPathname  = fallbackRoutePathname ? fallbackRoutePathname : router.pathname
+    const params = routeParams ? routeParams : {};
+    const pathname = routePathname ? routePathname : router.pathname;
+    const fallbackPathname = fallbackRoutePathname
+      ? fallbackRoutePathname
+      : router.pathname;
     router.replace({
-      pathname: userflowList.length || tagsList.length ? pathname : fallbackPathname,
+      pathname:
+        userflowList.length || tagsList.length ? pathname : fallbackPathname,
       query: {
         ...params,
         userflows: userflowList.map((userflow) => userflow.slug),
@@ -66,14 +75,14 @@ const Filter = ({ tags, userflows, routeParams, routePathname, fallbackRoutePath
     let userflowList = selectedUserflows;
 
     if (type == "userflows") {
-      if (!userflowList.some((userflow)=> userflow.slug === value.slug)) {
+      if (!userflowList.some((userflow) => userflow.slug === value.slug)) {
         userflowList.push(value);
         setSelectedUserflows(userflowList);
       }
     }
 
     if (type == "tags") {
-      if (!tagsList.some((tag)=> tag.slug === value.slug)) {
+      if (!tagsList.some((tag) => tag.slug === value.slug)) {
         tagsList.push(value);
         setSelectedTags(tagsList);
       }
@@ -90,12 +99,12 @@ const Filter = ({ tags, userflows, routeParams, routePathname, fallbackRoutePath
     let tagsList = selectedTags;
     let userflowList = selectedUserflows;
 
-    if (selectedUserflows.some((userflow)=> userflow.slug === value.slug)) {
+    if (selectedUserflows.some((userflow) => userflow.slug === value.slug)) {
       userflowList = selectedUserflows.filter(
         (item) => item.slug !== value.slug
       );
       setSelectedUserflows(userflowList);
-    } else if (selectedTags.some((tag)=> tag.slug === value.slug)) {
+    } else if (selectedTags.some((tag) => tag.slug === value.slug)) {
       tagsList = selectedTags.filter((item) => item.slug !== value.slug);
       setSelectedTags(tagsList);
     }
@@ -107,9 +116,22 @@ const Filter = ({ tags, userflows, routeParams, routePathname, fallbackRoutePath
     return value;
   };
 
+  const onFilterClear = () => {
+    setSelectedUserflows([]);
+    setSelectedTags([]);
+
+    updateRoute([], []);
+
+    setSelectedList([]);
+    setListIndex(listIndex + 1);
+  };
+
   return (
     <div className="w-full flex xl:relative bottom-6 z-50 fixed">
-      <div key={`list-index-filter-${listIndex}`} className="flex space-x-2 mt-10">
+      <div
+        key={`list-index-filter-${listIndex}`}
+        className="flex space-x-2 mt-10"
+      >
         {selectedUserflows.map((userflow) => (
           <FilterBadge
             key={`userflow-filter-${userflow.slug}`}
@@ -142,6 +164,7 @@ const Filter = ({ tags, userflows, routeParams, routePathname, fallbackRoutePath
           userflows={userflows}
           selectedList={selectedList}
           onClose={() => setShowFilter(false)}
+          onClear={onFilterClear}
           onSelect={(value, type) => onFilterSelect(value, type)}
           onRemove={onFilterRemove}
         />
