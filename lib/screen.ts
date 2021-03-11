@@ -5,6 +5,7 @@ import yaml from "js-yaml";
 
 import { getUserflow, UserflowContent } from './userflows';
 import { getTag, TagContent } from './tags';
+import { listAllAppContent } from './app';
 
 const screensDirectory = path.join(process.cwd(), "content/screens");
 
@@ -12,6 +13,7 @@ export type ScreenContent = {
     readonly image: string;
     readonly slug: string;
     readonly app: string;
+    device?: string;
     readonly userflows?: UserflowContent[];
     readonly tags?: TagContent[];
 };
@@ -22,9 +24,10 @@ function fetchScreenContent(): ScreenContent[] {
     if (screenCache) {
         return screenCache;
     }
+
     // Get file names under /screens
     const fileNames = fs.readdirSync(screensDirectory);
-    const allScreensData = fileNames
+    screenCache = fileNames
         .filter((it) => it.endsWith(".mdx"))
         .map((fileName) => {
             // Read markdown file as string
@@ -42,10 +45,12 @@ function fetchScreenContent(): ScreenContent[] {
                 image: string;
                 slug: string,
                 app: string,
+                device?: string;
                 userflows?: UserflowContent[];
                 tags?: TagContent[];
             };
             let userflows = [];
+
             if (matterResult.data.userflows) {
                 userflows = matterResult.data.userflows.map((userflow) => getUserflow(userflow));
             }
@@ -72,12 +77,17 @@ function fetchScreenContent(): ScreenContent[] {
             return matterData;
         });
 
-    return allScreensData;
+    return screenCache;
 }
 
 export function listScreenContent(
 ): ScreenContent[] {
-    return fetchScreenContent();
+    const apps = listAllAppContent();
+    return fetchScreenContent().map((screen) => {
+        const app = apps.find((a) => a.slug === screen.app);
+        screen.device = app ? app.device : '';
+        return screen;
+    });
 }
 
 export function listAppScreenContent(
