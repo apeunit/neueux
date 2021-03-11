@@ -4,7 +4,20 @@ import React from "react";
 import RightIcon from "assets/icons/right.svg";
 import CloseIcon from "assets/icons/close.svg";
 import LeftIcon from "assets/icons/left.svg";
+import { useRouter } from "next/router";
 const ScreenView = ({ screen, app, navigation }) => {
+  const router = useRouter();
+  const backUrl = router.query.referer
+    ? router.query.referer
+    : `/apps/${app.slug}`;
+  console.log(backUrl);
+  let backQuery: any = {};
+
+  if (router.query.referer) {
+    backQuery = router.query;
+    delete backQuery.referer;
+  }
+
   return (
     <main>
       <div className=" xl:hidden border-b border-solid border-gray-200">
@@ -32,7 +45,12 @@ const ScreenView = ({ screen, app, navigation }) => {
           </div>
 
           <div className="flex w-1/5 justify-end">
-            <Link href={`/apps/${app.slug}`}>
+            <Link
+              href={{
+                pathname: String(backUrl),
+                query: backQuery,
+              }}
+            >
               <a className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2 h-10 w-10 flex justify-center items-center">
                 <CloseIcon className="" />
               </a>
@@ -50,7 +68,12 @@ const ScreenView = ({ screen, app, navigation }) => {
 
         <div className="h-screen w-4/11 hidden xl:block bg-gray-50 flex flex-col divide-y fixed right-0">
           <div className="absolute right-4 top-4">
-            <Link href={`/apps/${app.slug}`}>
+            <Link
+              href={{
+                pathname: String(backUrl),
+                query: backQuery,
+              }}
+            >
               <a className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2 block">
                 <CloseIcon className="m-3.5" />
               </a>
