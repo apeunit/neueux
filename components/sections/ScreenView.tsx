@@ -7,12 +7,10 @@ import LeftIcon from "assets/icons/left.svg";
 const ScreenView = ({ screen, app, navigation }) => {
   return (
     <main>
-
       <div className=" xl:hidden border-b border-solid border-gray-200">
         <div className="px-4 mt-3 mb-3.5 flex">
           <div className="flex">
             <div className="flex-none w-1/5">
-
               <a className="block">
                 <div className="flex justify-center w-10 h-10">
                   <img
@@ -21,7 +19,6 @@ const ScreenView = ({ screen, app, navigation }) => {
                   />
                 </div>
               </a>
-
             </div>
 
             <div className="flex-grow ">
@@ -31,9 +28,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               <span className="text-sm text-gray-500 mt-1 tracking-tighter leading-6">
                 {app.description}
               </span>
-
             </div>
-
           </div>
 
           <div className="flex w-1/5 justify-end">
@@ -43,7 +38,6 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-
         </div>
       </div>
 
@@ -53,8 +47,6 @@ const ScreenView = ({ screen, app, navigation }) => {
             <img src={`/${screen.image}`} className="h-full inline-block" />
           </div>
         </div>
-
-
 
         <div className="h-screen w-4/11 hidden xl:block bg-gray-50 flex flex-col divide-y fixed right-0">
           <div className="absolute right-4 top-4">
@@ -82,12 +74,37 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-          <div className="flex justify-center w-10/12 mx-auto h-1/2 pt-6 flex-wrap">
+          <div className="flex justify-center w-10/12 mx-auto h-1/2 pt-6 flex-wrap space-x-2">
             {screen.userflows.map((userflow) => (
               <div key={userflow.slug} className="mb-3">
-                <a className="bg-gray-50 capitalize px-4 py-1.5 text-xs rounded-2xl border-2 border-solid border-gray-200 font-bold text-gray-500">
-                  {userflow.name}
-                </a>
+                <Link
+                  href={{
+                    pathname: "/filter",
+                    query: {
+                      userflows: [userflow.slug],
+                    },
+                  }}
+                >
+                  <a className="bg-gray-50 capitalize px-4 py-1.5 text-xs rounded-2xl border-2 border-solid border-gray-200 font-bold text-gray-500">
+                    {userflow.name}
+                  </a>
+                </Link>
+              </div>
+            ))}
+            {screen.tags.map((tag) => (
+              <div key={tag.slug} className="mb-3">
+                <Link
+                  href={{
+                    pathname: "/filter",
+                    query: {
+                      tags: [tag.slug],
+                    },
+                  }}
+                >
+                  <a className="bg-gray-50 capitalize px-4 py-1.5 text-xs rounded-2xl border-2 border-solid border-gray-200 font-bold text-gray-500">
+                    {tag.name}
+                  </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -113,7 +130,6 @@ const ScreenView = ({ screen, app, navigation }) => {
             )}
           </div>
         </div>
-
       </div>
 
       <div className="flex xl:hidden border-t border-solid border-gray-200 justify-end  py-2">
