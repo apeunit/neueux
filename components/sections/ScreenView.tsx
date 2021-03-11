@@ -74,7 +74,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-          <div className="flex justify-center w-10/12 mx-auto h-1/2 pt-6 flex-wrap">
+          <div className="flex justify-center w-10/12 mx-auto h-1/2 pt-6 flex-wrap space-x-2">
             {screen.userflows.map((userflow) => (
               <div key={userflow.slug} className="mb-3">
                 <Link
@@ -87,6 +87,22 @@ const ScreenView = ({ screen, app, navigation }) => {
                 >
                   <a className="bg-gray-50 capitalize px-4 py-1.5 text-xs rounded-2xl border-2 border-solid border-gray-200 font-bold text-gray-500">
                     {userflow.name}
+                  </a>
+                </Link>
+              </div>
+            ))}
+            {screen.tags.map((tag) => (
+              <div key={tag.slug} className="mb-3">
+                <Link
+                  href={{
+                    pathname: "/filter",
+                    query: {
+                      tags: [tag.slug],
+                    },
+                  }}
+                >
+                  <a className="bg-gray-50 capitalize px-4 py-1.5 text-xs rounded-2xl border-2 border-solid border-gray-200 font-bold text-gray-500">
+                    {tag.name}
                   </a>
                 </Link>
               </div>
