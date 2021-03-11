@@ -10,7 +10,6 @@ const ScreenView = ({ screen, app, navigation }) => {
   const backUrl = router.query.referer
     ? router.query.referer
     : `/apps/${app.slug}`;
-  console.log(backUrl);
   let backQuery: any = {};
 
   if (router.query.referer) {
