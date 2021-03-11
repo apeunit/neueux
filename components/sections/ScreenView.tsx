@@ -11,10 +11,19 @@ const ScreenView = ({ screen, app, navigation }) => {
     ? router.query.referer
     : `/apps/${app.slug}`;
   let backQuery: any = {};
+  let navigationQuery: any = {};
 
   if (router.query.referer) {
-    backQuery = router.query;
-    delete backQuery.referer;
+    const { userflows, tags, referer } = router.query;
+    backQuery = {
+      userflows,
+      tags,
+    };
+    navigationQuery = {
+      referer,
+      userflows,
+      tags,
+    };
   }
 
   return (
@@ -132,7 +141,12 @@ const ScreenView = ({ screen, app, navigation }) => {
           </div>
           <div className="flex absolute right-4 bottom-4 border-none">
             {navigation.prev && (
-              <Link href={navigation.prev}>
+              <Link
+                href={{
+                  pathname: String(navigation.prev),
+                  query: navigationQuery,
+                }}
+              >
                 <a>
                   <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ">
                     <LeftIcon className="m-3.5" />
@@ -142,7 +156,12 @@ const ScreenView = ({ screen, app, navigation }) => {
             )}
 
             {navigation.next && (
-              <Link href={navigation.next}>
+              <Link
+                href={{
+                  pathname: String(navigation.next),
+                  query: navigationQuery,
+                }}
+              >
                 <a>
                   <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2">
                     <RightIcon className="m-3.5" />
