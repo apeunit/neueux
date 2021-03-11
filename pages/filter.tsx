@@ -2,7 +2,7 @@ import { GetStaticProps } from "next";
 import Layout from "components/Layout";
 import React from "react";
 import Header from "components/sections/Header";
-import { listAppContent } from "lib/app";
+import { listScreenContent } from "lib/screen";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { filteredTagsAll } from "lib/tags";
@@ -10,7 +10,7 @@ import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/sections/Filter";
 import ScreenCard from "components/card/Screen";
 
-const FilterPage = ({ apps, filter }) => {
+const FilterPage = ({ screens, filter }) => {
   const router = useRouter();
 
   const filtered = () => {
@@ -25,15 +25,19 @@ const FilterPage = ({ apps, filter }) => {
       tags = [tags];
     }
 
-    return apps.filter(
-      (it) =>
-        (!userflows && !tags) ||
-        (userflows &&
-          userflows.some((u) =>
-            it.userflows.some((userflow) => userflow == u)
-          )) ||
-        (tags && tags.some((t) => it.tags.some((tag) => tag == t)))
-    );
+    const filter = screens.filter((it) => {
+      if (userflows && userflows.length) {
+        return userflows.some((u) =>
+          it.userflows.some((userflow) => userflow.slug == u)
+        );
+      }
+
+      if (tags && tags.length) {
+        return tags.some((t) => it.tags.some((tag) => tag.slug == t));
+      }
+      return true;
+    });
+    return filter;
   };
 
   return (
@@ -45,21 +49,27 @@ const FilterPage = ({ apps, filter }) => {
           userflows={filter.userflows}
           routeParams={null}
           routePathname={null}
-          fallbackRoutePathname={'/'}
+          fallbackRoutePathname={"/"}
         />
-        <div className="mt-5 flex">
-          {filtered().map((app) => {
+        <div className="flex flex-wrap">
+          {filtered().map((screen) => {
             return (
               <div
-                key={`screen-card-view-${app.screens[0].slug}`}
+                key={`screen-card-view-${screen.slug}`}
                 className={[
-                  app.type === "desktop" ? "w-3/6" : "w-1/6",
-                  "ml-3",
+                  screen.device === "desktop" ? "w-3/6" : "w-1/6",
+                  "px-2 mt-5",
                 ].join(" ")}
               >
-                <Link href={`/apps/${app.slug}/screen/${app.screens[0].slug}`}>
+                <Link href={{
+                  pathname: `/apps/${screen.app}/screen/${screen.slug}`,
+                  query: {
+                    referer: router.pathname,
+                    ...router.query
+                  }
+                }}>
                   <a>
-                    <ScreenCard url={app.screens[0].image} style={app.type} />
+                    <ScreenCard url={screen.image} style={screen.device} />
                   </a>
                 </Link>
               </div>
@@ -72,7 +82,7 @@ const FilterPage = ({ apps, filter }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const apps = listAppContent(1, 30);
+  const screens = listScreenContent();
   const tags = filteredTagsAll(1, 30);
   const userflows = filteredUserflowsAll(1, 30);
   const pagination = {
@@ -81,7 +91,7 @@ export const getStaticProps: GetStaticProps = async () => {
   };
   return {
     props: {
-      apps,
+      screens,
       pagination,
       filter: {
         tags,
