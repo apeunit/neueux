@@ -31,10 +31,10 @@ const AppCard = ({ app }) => (
         return (
           <Link
             key={`screen-card-view-${screen.slug}`}
-            href={`/apps/${app.slug}/screen/${screen.slug}`}
+            href={`/apps/${app.slug}`}
           >
             <a>
-              <Screen url={screen.image} style={app.type} />
+              <Screen url={screen.image} style={app.device} />
             </a>
           </Link>
         );
