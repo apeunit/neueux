@@ -8,7 +8,7 @@ import { listAppContent } from "lib/app";
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/sections/Filter";
-import {Helmet} from "react-helmet";
+
 
 const IndexPage = ({ apps, filter }) => {
 
