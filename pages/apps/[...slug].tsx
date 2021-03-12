@@ -61,7 +61,7 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
         <div
           className={[
             "mt-5 grid  gap-5",
-            app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2" : "grid-cols-2",
+            app.device === "mobile" ? "lg:grid-cols-6 sm:grid-cols-3 md:grid-cols-1/4 grid-cols-2" : "lg:grid-cols-2 grid-cols-1 md:grid-cols-1 sm:grid-cols-1",
           ].join(" ")}
         >
           {filtered().map((screen) => {
