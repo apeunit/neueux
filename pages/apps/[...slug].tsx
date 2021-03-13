@@ -71,7 +71,7 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
                 href={`/apps/${app.slug}/screen/${screen.slug}`}
               >
                 <a>
-                  <Screen url={screen.image} style={app.type} />
+                  <Screen url={screen.image} style={app.device} />
                 </a>
               </Link>
             );
@@ -95,11 +95,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const screenIndex = screens.map((s) => s.slug).indexOf(screen.slug);
     screenNavigation.prev =
       screenIndex > 0
-        ? `${app.slug}/screen/${screens[screenIndex - 1].slug}`
+        ? `/apps/${app.slug}/screen/${screens[screenIndex - 1].slug}`
         : null;
     screenNavigation.next =
       screenIndex < screens.length - 1
-        ? `${app.slug}/screen/${screens[screenIndex + 1].slug}`
+        ? `/apps/${app.slug}/screen/${screens[screenIndex + 1].slug}`
         : null;
   }
 
