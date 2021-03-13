@@ -17,7 +17,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="hidden xl:block">
+    <nav className="hidden lg:block">
       <div className="w-11/12 mx-auto border-b border-gray-200">
         <div className="flex text-base">
           <ul className="w-2/6 py-6">
@@ -34,7 +34,7 @@ const Navbar = () => {
             {items.map((item, i) => (
               <li
                 key={i}
-                className={["nav-item", i == 0 ? "nav-item-active" : null].join(
+                className={["nav-item hover:text-gray-900", i == 0 ? "nav-item-active" : null].join(
                   " "
                 )}
               >
