@@ -9,10 +9,12 @@ import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/sections/Filter";
 
+
 const IndexPage = ({ apps, filter }) => {
 
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
+   <Layout title="Home | Next.js + TypeScript Example">
+    
       <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />
         <Filter

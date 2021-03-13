@@ -28,9 +28,9 @@ const ScreenView = ({ screen, app, navigation }) => {
 
   return (
     <main>
-      <div className=" xl:hidden border-b border-solid border-gray-200">
+<div className="lg:hidden border-b border-solid border-gray-200">
         <div className="px-4 mt-3 mb-3.5 flex">
-          <div className="flex">
+          <div className="flex w-4/5">
             <div className="flex-none w-1/5">
               <a className="block">
                 <div className="flex justify-center w-10 h-10">
@@ -67,14 +67,14 @@ const ScreenView = ({ screen, app, navigation }) => {
         </div>
       </div>
 
-      <div className="xl:flex">
-        <div className="flex flex-col xl:w-9/12 w-full h-screen justify-center ">
+      <div className="lg:flex">
+        <div className="flex flex-col lg:w-9/11 w-full h-screen justify-center ">
           <div className="h-3/4 w-full text-center">
             <img src={`/${screen.image}`} className="h-full inline-block" />
           </div>
         </div>
 
-        <div className="h-screen w-4/11 hidden xl:block bg-gray-50 flex flex-col divide-y fixed right-0">
+        <div className="h-screen w-4/11 hidden lg:block bg-gray-50 flex flex-col divide-y fixed right-0">
           <div className="absolute right-4 top-4">
             <Link
               href={{
@@ -173,7 +173,7 @@ const ScreenView = ({ screen, app, navigation }) => {
         </div>
       </div>
 
-      <div className="flex xl:hidden border-t border-solid border-gray-200 justify-end  py-2">
+      <div className="flex lg:hidden border-t border-solid border-gray-200 justify-end  py-2">
         {navigation.prev && (
           <Link href={navigation.prev}>
             <a>

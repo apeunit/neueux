@@ -5,7 +5,7 @@ import CloseIcon from "assets/icons/close.svg";
 const ListItem = ({ text, onSelect }) => (
   <li
     onClick={onSelect}
-    className="mb-3 capitalize text-base font-normal cursor-pointer"
+    className="mb-3 capitalize text-base font-normal cursor-pointer hover:text-gray-900"
   >
     {text}
   </li>
@@ -31,14 +31,13 @@ const FilterCard = ({
           </div>
           <div
             onClick={onClose}
-            className="rounded-full m-2 cursor-pointer h-12 w-12 flex items-center justify-center  border-2 border-solid border-gray-200 "
+            className="rounded-full m-2 cursor-pointer h-12 w-12 flex items-center justify-center  border-2 border-solid border-gray-200 hover:bg-gray-200"
           >
             <CloseIcon />
           </div>
         </div>
-
-        <div className="mb-16 overflow-y-auto px-8">
-          <div key={`filter-badge-${index}`} className="flex flex-wrap mt-7">
+        <div className="mb-9 overflow-y-auto px-8">
+          <div key={`filter-badge-${index}`} className="flex flex-wrap mt-7 mb-10">
             {selectedList.map((item) => (
               <FilterBadge
                 key={`filter-badge-${item.slug}`}

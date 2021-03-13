@@ -17,7 +17,7 @@ const MobileNavbar = () => {
     },
   ];
   return (
-    <nav className="xl:hidden">
+    <nav className="lg:hidden">
       <div className="w-11/12 mx-auto border-b border-gray-200">
         <div className="flex text-base">
           <div className="w-2/4 py-6 cursor-pointer">
