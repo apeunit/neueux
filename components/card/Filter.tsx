@@ -19,10 +19,11 @@ const FilterCard = ({
   onSelect,
   onRemove,
   index,
+  onClear
 }) => {
   return (
     <div className="z-50 fixed h-screen top-0 py-4 xl:w-auto w-full px-4 xl:px-0 right-0 xl:pr-4 text-left text-gray-700">
-      <div className="w-full h-screen top-0 left-0 bg-black z-0 fixed opacity-5" />
+      <div onClick={onClose} className="w-full h-screen top-0 left-0 bg-black z-0 fixed opacity-5" />
       <div className="bg-white rounded-2xl xl:w-96 mx-auto xl:mx-0 ars h-full flex flex-col overflow-hidden z-50 relative">
         <div className="font-extrabold flex bg-white w-full justify-between">
           <div className="pl-8 pt-7 pb-3">
@@ -35,7 +36,6 @@ const FilterCard = ({
             <CloseIcon />
           </div>
         </div>
-
         <div className="mb-9 overflow-y-auto px-8">
           <div key={`filter-badge-${index}`} className="flex flex-wrap mt-7 mb-10">
             {selectedList.map((item) => (
@@ -77,11 +77,24 @@ const FilterCard = ({
         </div>
 
         <div className="text-xs xl:bottom-10 bottom-2 xl:fixed relative flex justify-center xl:px-8">
+          {selectedList.length ? (
+            <span
+              onClick={onClear}
+              className="bg-gray-100 hover:bg-gray-200 cursor-pointer text-black text-xs px-16 leading-4 py-3 font-bold transition-250ms rounded-tl-full rounded-bl-full"
+            >
+              Clear
+            </span>
+          ) : null}
           <span
             onClick={onClose}
-            className="bg-gray-900 hover:bg-gray-600  text-white text-xs px-36 leading-4 py-3 font-bold transition-250ms rounded-full"
+            className={[
+              "bg-gray-900 hover:bg-gray-600 text-white text-xs leading-4 cursor-pointer py-3 font-bold transition-250ms ",
+              selectedList.length
+                ? "px-16 rounded-tr-full rounded-br-full"
+                : "px-36 rounded-full",
+            ].join(" ")}
           >
-            close
+            Close
           </span>
         </div>
       </div>
