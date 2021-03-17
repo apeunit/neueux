@@ -151,9 +151,17 @@ const Filter = ({
         <button
           type="button"
           onClick={() => setShowFilter(true)}
-          className="bg-black focus:outline-none cursor-pointer hover:bg-gray-600 text-white text-xs px-10 leading-4 py-4  font-bold transition-250ms rounded-full"
+          className="bg-black focus:outline-none cursor-pointer hover:bg-gray-600 text-white text-xs px-10 leading-4 py-4  font-bold transition-250ms rounded-full hidden lg:block"
         >
           Filter by Categories
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setShowFilter(true)}
+          className="bg-black focus:outline-none cursor-pointer hover:bg-gray-600 text-white text-xs px-13 leading-4 py-4 font-bold transition-250ms rounded-full lg:hidden"
+        >
+          Filter
         </button>
       </div>
       {showFilter && (
