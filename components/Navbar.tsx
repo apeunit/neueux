@@ -2,20 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 const Navbar = () => {
-  const items = [
-    {
-      link: "/",
-      label: "Screens",
-    },
-    {
-      link: "/",
-      label: "Articles",
-    },
-    {
-      link: "/",
-      label: "Glossary",
-    },
-  ];
   return (
     <nav className="hidden lg:block">
       <div className="w-11/12 mx-auto border-b border-gray-200">
