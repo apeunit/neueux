@@ -127,10 +127,10 @@ const Filter = ({
   };
 
   return (
-    <div className="w-full flex xl:relative bottom-6 z-50 fixed">
+    <div className="w-full flex xl:relative">
       <div
         key={`list-index-filter-${listIndex}`}
-        className="flex space-x-2 mt-10"
+        className="flex space-x-2 mt-10 w-full"
       >
         {selectedUserflows.map((userflow) => (
           <FilterBadge
@@ -147,7 +147,7 @@ const Filter = ({
           />
         ))}
       </div>
-      <div className="xl:ml-auto mx-auto xl:mx-0 mt-10">
+      <div className="lg:ml-auto mx-auto lg:mx-0 mt-10 bottom-6 z-50 fixed lg:relative w-full lg:justify-end justify-center flex">
         <button
           type="button"
           onClick={() => setShowFilter(true)}
