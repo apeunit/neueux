@@ -8,7 +8,7 @@ const HeaderView = ({ app }) => (
       <div className="pt-1">
       <Link href="/">
         <a className=" ">
-          <Button type="secondary" size="sm">
+          <Button type="secondary" size="lg">
           <ArrowIcon className="inline-block mr-2"/>
                   Back  
           </Button>
