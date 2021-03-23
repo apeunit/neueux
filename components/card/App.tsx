@@ -4,11 +4,11 @@ import Link from "next/link";
 const AppCard = ({ app }) => (
   <div className="mt-16 mb-10 xl:mt-0">
     <div className="flex mt-3">
-      <div>
+      <div className="filter-drop-shadow bg-white rounded-lg">
         <Link href={`/apps/${app.slug}`}>
           <a>
             <img
-              className="w-10 h-10 filter-drop-shadow rounded-lg"
+              className="w-10 h-10 rounded-lg"
               src={`/${app.icon}`}
             />
           </a>

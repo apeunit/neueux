@@ -1,14 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import ArrowIcon from "assets/icons/arrow.svg";
+import Button from "./Button"
 const HeaderView = ({ app }) => (
   <div className="">
     <div className="mt-5">
       <div className="pt-1">
       <Link href="/">
-        <a className="back-button hover:bg-gray-200 cursor-pointer rounded-full bg-gray-100 pr-5 pl-3 py-3 font-bold text-xs">
+        <a className=" ">
+          <Button type="secondary" size="lg">
           <ArrowIcon className="inline-block mr-2"/>
-          Back
+                  Back  
+          </Button>
         </a>
       </Link>
       </div>
