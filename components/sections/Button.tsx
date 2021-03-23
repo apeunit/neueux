@@ -24,11 +24,11 @@ const styles = ({type,size}) => {
 
   switch (size) {
     case 'sm':
-      sizeStyle = 'py-3 px-4 text-xs text-black leading-4 font-bold';
+      sizeStyle = 'py-4 px-13';
       break;
     case 'lg':
       sizeStyle =
-        'py-5 px-5';
+        'py-3 px-4 text-xs text-black leading-4 font-bold';
       break;
     default:
       sizeStyle = 'py-5 text-xs px-5';
