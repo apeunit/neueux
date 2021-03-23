@@ -80,7 +80,7 @@ const FilterCard = ({
           {selectedList.length ? (
             <span
               onClick={onClear}
-              className="bg-gray-100 hover:bg-gray-200 cursor-pointer text-black text-xs px-18 leading-4 py-3 font-bold transition-250ms rounded-tl-full rounded-bl-full"
+              className="bg-gray-100 hover:bg-gray-200 cursor-pointer text-black text-xs px-17 leading-4 py-3 font-bold transition-250ms rounded-tl-full rounded-bl-full"
             >
               Clear
             </span>
@@ -90,8 +90,8 @@ const FilterCard = ({
             className={[
               "bg-gray-900 hover:bg-gray-600 text-white text-xs leading-4 cursor-pointer py-3 font-bold transition-250ms ",
               selectedList.length
-                ? "px-18 rounded-tr-full rounded-br-full"
-                : "px-42 rounded-full",
+                ? "px-17 rounded-tr-full rounded-br-full"
+                : "lg:px-42 px-36 rounded-full",
             ].join(" ")}
           >
             Close
