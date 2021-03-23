@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import FilterCard from "components/card/Filter";
 import FilterBadge from "components/FilterBadge";
 import { useRouter } from "next/router";
+import Button from "./Button";
 
 const Filter = ({
   tags,
@@ -148,21 +149,16 @@ const Filter = ({
         ))}
       </div>
       <div className="xl:ml-auto mx-auto xl:mx-0 mt-10">
-        <button
-          type="button"
-          onClick={() => setShowFilter(true)}
-          className="bg-black focus:outline-none cursor-pointer hover:bg-gray-600 text-white text-xs px-10 leading-4 py-4  font-bold transition-250ms rounded-full hidden lg:block"
-        >
-          Filter by Categories
-        </button>
-
-        <button
-          type="button"
-          onClick={() => setShowFilter(true)}
-          className="bg-black focus:outline-none cursor-pointer hover:bg-gray-600 text-white text-xs px-13 leading-4 py-4 font-bold transition-250ms rounded-full lg:hidden"
-        >
-          Filter
-        </button>
+      <div className="hidden xl:block">
+        <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
+        Filter by Categories
+        </Button>
+        </div>
+        <div className="xl:hidden">
+        <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
+        Filter
+        </Button>
+        </div>
       </div>
       {showFilter && (
         <FilterCard

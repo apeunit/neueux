@@ -24,7 +24,7 @@ const FilterCard = ({
   return (
     <div className="z-50 fixed h-screen top-0 py-4 xl:w-auto w-full px-4 xl:px-0 right-0 xl:pr-4 text-left text-gray-700">
       <div onClick={onClose} className="w-full h-screen top-0 left-0 bg-black z-0 fixed opacity-5" />
-      <div className="bg-white rounded-2xl xl:w-96 mx-auto xl:mx-0 ars h-full flex flex-col overflow-hidden z-50 relative">
+      <div className="bg-white rounded-4xl xl:w-96 mx-auto xl:mx-0 ars h-full flex flex-col overflow-hidden z-50 relative">
         <div className="font-extrabold flex bg-white w-full justify-between">
           <div className="pl-8 pt-7 pb-3">
             <h1 className="text-xl">Filters</h1>
@@ -76,11 +76,11 @@ const FilterCard = ({
           </div>
         </div>
 
-        <div className="text-xs xl:bottom-10 bottom-2 xl:fixed relative flex justify-center xl:px-8">
+        <div className="text-xs bottom-2 xl:absolute relative flex justify-center w-full">
           {selectedList.length ? (
             <span
               onClick={onClear}
-              className="bg-gray-100 hover:bg-gray-200 cursor-pointer text-black text-xs px-16 leading-4 py-3 font-bold transition-250ms rounded-tl-full rounded-bl-full"
+              className="bg-gray-100 hover:bg-gray-200 cursor-pointer text-black text-xs px-18 leading-4 py-3 font-bold transition-250ms rounded-tl-full rounded-bl-full"
             >
               Clear
             </span>
@@ -90,8 +90,8 @@ const FilterCard = ({
             className={[
               "bg-gray-900 hover:bg-gray-600 text-white text-xs leading-4 cursor-pointer py-3 font-bold transition-250ms ",
               selectedList.length
-                ? "px-16 rounded-tr-full rounded-br-full"
-                : "px-36 rounded-full",
+                ? "px-18 rounded-tr-full rounded-br-full"
+                : "px-42 rounded-full",
             ].join(" ")}
           >
             Close
