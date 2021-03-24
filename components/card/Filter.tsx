@@ -76,11 +76,11 @@ const FilterCard = ({
           </div>
         </div>
 
-        <div className="text-xs bottom-2 xl:absolute relative flex justify-center w-full">
+        <div className="text-xs bottom-2 xl:absolute relative flex justify-center w-full px-1">
           {selectedList.length ? (
             <span
               onClick={onClear}
-              className="bg-gray-100 hover:bg-gray-200 cursor-pointer text-black text-xs px-17 leading-4 py-3 font-bold transition-250ms rounded-tl-full rounded-bl-full"
+              className="bg-gray-100 hover:bg-gray-200 text-center cursor-pointer text-black text-xs w-1/2 leading-4 py-4 font-bold transition-250ms rounded-tl-full rounded-bl-full"
             >
               Clear
             </span>
@@ -88,10 +88,10 @@ const FilterCard = ({
           <span
             onClick={onClose}
             className={[
-              "bg-gray-900 hover:bg-gray-600 text-white text-xs leading-4 cursor-pointer py-3 font-bold transition-250ms ",
+              "bg-gray-900 hover:bg-gray-600 text-white text-center text-xs leading-4 cursor-pointer py-4 font-bold transition-250ms ",
               selectedList.length
-                ? "px-17 rounded-tr-full rounded-br-full"
-                : "lg:px-42 px-36 rounded-full",
+                ? "w-1/2 rounded-tr-full rounded-br-full"
+                : "w-full rounded-full",
             ].join(" ")}
           >
             Close
