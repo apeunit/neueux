@@ -128,7 +128,7 @@ const Filter = ({
   };
 
   return (
-    <div className="w-full flex xl:relative mt-10">
+    <div className="w-full flex lg:relative md:relative sm:relative bottom-6 z-50 fixed">
       <div
         key={`list-index-filter-${listIndex}`}
         className="flex space-x-2 w-full"
@@ -148,14 +148,13 @@ const Filter = ({
           />
         ))}
       </div>
-      <div className="lg:ml-auto mx-auto lg:mx-0 lg:bottom-0 bottom-6 z-50 fixed lg:relative w-full lg:justify-end justify-center flex
-">
-      <div className="hidden xl:block">
+      <div className="lg:ml-auto md:ml-auto sm:ml-auto mx-auto lg:mx-0 md:mx-0 sm:mx-0 mt-10">
+      <div className="hidden lg:block md:block sm:block">
         <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
         Filter by Categories
         </Button>
         </div>
-        <div className="xl:hidden">
+        <div className="lg:hidden md:hidden sm:hidden">
         <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
         Filter
         </Button>
