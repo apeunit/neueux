@@ -22,9 +22,9 @@ const FilterCard = ({
   onClear
 }) => {
   return (
-    <div className="z-50 fixed h-screen top-0 py-4 xl:w-auto w-full px-4 xl:px-0 right-0 xl:pr-4 text-left text-gray-700">
+    <div className="z-50 fixed h-screen top-0 py-4 lg:w-auto md:w-auto sm:w-auto w-full px-4 lg:px-0 md:px-0 sm:px-0 right-0 lg:pr-4 md:pr-4 sm:pr-4 text-left text-gray-700">
       <div onClick={onClose} className="w-full h-screen top-0 left-0 bg-black z-0 fixed opacity-5" />
-      <div className="bg-white rounded-4xl xl:w-96 mx-auto xl:mx-0 ars h-full flex flex-col overflow-hidden z-50 relative">
+      <div className="bg-white rounded-4xl lg:w-96 md:w-96 sm:w-96 mx-auto lg:mx-0 sm:mx-0 ars h-full flex flex-col overflow-hidden z-50 relative">
         <div className="font-extrabold flex bg-white w-full justify-between">
           <div className="pl-8 pt-7 pb-3">
             <h1 className="text-xl">Filters</h1>
