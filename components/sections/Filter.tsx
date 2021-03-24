@@ -128,7 +128,7 @@ const Filter = ({
   };
 
   return (
-    <div className="w-full flex lg:relative md:relative sm:relative bottom-6 z-50 fixed">
+    <div className="w-full flex lg:relative md:relative sm:relative  mt-10">
       <div
         key={`list-index-filter-${listIndex}`}
         className="flex space-x-2 w-full"
@@ -148,7 +148,7 @@ const Filter = ({
           />
         ))}
       </div>
-      <div className="lg:ml-auto md:ml-auto sm:ml-auto mx-auto lg:mx-0 md:mx-0 sm:mx-0 mt-10">
+      <div className="llg:ml-auto md:ml-auto sm:ml-auto mx-auto lg:mx-0 md:mx-0 sm:mx-0 lg:bottom-0 md:bottom-0 sm:bottom-0 lg:relative md:relative sm:relative bottom-6 z-50 fixed aligns-center w-full justify-center flex lg:justify-end md:justify-end sm:justify-end">
       <div className="hidden lg:block md:block sm:block">
         <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
         Filter by Categories
