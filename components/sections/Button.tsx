@@ -9,7 +9,7 @@ const styles = ({type,size}) => {
       style = 'bg-black text-white';
       break;
     case 'secondary':
-      style = 'bg-gray-100 text-black hover:bg-gray-200';
+      style = 'bg-gray-100 text-black hover:bg-gray-200 mr-2 mb-3';
       break;
     case 'tertiary':
       style =
@@ -33,7 +33,7 @@ const styles = ({type,size}) => {
     default:
       sizeStyle = 'py-5 text-xs px-5';
   }
-  return `${style} ${sizeStyle} focus:outline-none cursor-pointer leading-4 transition-250ms inline-block`;
+  return `${style} ${sizeStyle} focus:outline-none cursor-pointer leading-4 transition-250ms`;
 };
 const Button = ({
   id,

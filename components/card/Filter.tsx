@@ -36,7 +36,7 @@ const FilterCard = ({
             <CloseIcon />
           </div>
         </div>
-        <div className="mb-9 overflow-y-auto px-8">
+        <div className="mb-9 overflow-y-auto px-8 h-full">
           <div key={`filter-badge-${index}`} className="flex flex-wrap mt-7 mb-10">
             {selectedList.map((item) => (
               <FilterBadge

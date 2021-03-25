@@ -131,7 +131,7 @@ const Filter = ({
     <div className="w-full flex lg:relative md:relative sm:relative  mt-10">
       <div
         key={`list-index-filter-${listIndex}`}
-        className="flex space-x-2 w-full"
+        className="space-x-2"
       >
         {selectedUserflows.map((userflow) => (
           <FilterBadge
@@ -148,15 +148,20 @@ const Filter = ({
           />
         ))}
       </div>
-      <div className="llg:ml-auto md:ml-auto sm:ml-auto mx-auto lg:mx-0 md:mx-0 sm:mx-0 lg:bottom-0 md:bottom-0 sm:bottom-0 lg:relative md:relative sm:relative bottom-6 z-50 fixed aligns-center w-full justify-center flex lg:justify-end md:justify-end sm:justify-end">
-      <div className="hidden lg:block md:block sm:block">
-        <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
-        Filter by Categories
+
+      <div className={["ml-auto text-right w-1/2 lg:w-1/6",
+    !selectedList.length 
+          ? "lg:absolute md:absolute sm:absolute lg:-top-26 md:-top-26 sm:-top-26 right-0" : "",
+      ].join(" ")}>
+
+        <div className="hidden lg:block md:block sm:block">
+          <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
+            Filter by Categories
         </Button>
         </div>
-        <div className="lg:hidden md:hidden sm:hidden">
-        <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
-        Filter
+        <div className="lg:hidden md:hidden sm:hidden bottom-6 z-50 fixed  left-0 w-full text-center">
+          <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
+            Filter
         </Button>
         </div>
       </div>
