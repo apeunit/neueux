@@ -4,9 +4,9 @@ import Button from "./sections/Button";
 
 
 const FilterBadge = ({ text, onSelect }) => (
-  <Button onClick={onSelect} type="secondary" size="lg">
+  <Button type="secondary" size="lg">
    {text}
-    <RemoveIcon className="inline-block ml-2" />
+    <RemoveIcon onClick={onSelect} className="inline-block ml-2 cursor-pointer" />
   </Button>
     
   
