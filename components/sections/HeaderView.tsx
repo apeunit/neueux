@@ -19,7 +19,7 @@ const HeaderView = ({ app }) => (
     </div>
     <div className="text-center mt-8">
       <div className="flex justify-center">
-        <img src={`/${app.icon}`} className="w-16 h-16 filter-drop-shadow-view rounded-lg" />
+        <img src={`/${app.icon}`} className="w-16 h-16 filter-drop-shadow-view rounded-lg bg-white" />
       </div>
       <h1 className="text-xl mt-4 font-extrabold leading-6 tracking-tighter">
         {app.name}
