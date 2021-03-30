@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next";
+
 import Layout from "components/Layout";
 import React from "react";
 import AppCard from "components/card/App";
