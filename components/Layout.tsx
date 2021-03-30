@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Navbar from "components/Navbar";
-import MobileNavbar from "components/MobileNav";
 
 type Props = {
   children?: ReactNode;
@@ -17,7 +16,6 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     </Head>
     <header>
       <Navbar />
-      <MobileNavbar/>
     </header>
     {children}
     {/* <footer>
