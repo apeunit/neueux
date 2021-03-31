@@ -18,7 +18,7 @@ const form  = (callback = (slug)=> {}) => {
       // Call functions that create the new blog post. For example:
       if (values.name) {
         const id = Math.random().toString(36).substr(2, 9);
-        const slug = `${Slugify(values.name, {
+        const slug = `app-${Date.now()}-${Slugify(values.name, {
           lower: true,
         })}-${id}`;
 

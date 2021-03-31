@@ -1,10 +1,7 @@
 import React from "react";
 import App from "next/app";
 import { TinaCMS, TinaProvider } from "tinacms";
-import {
-  GithubClient,
-  TinacmsGithubProvider,
-} from "react-tinacms-github";
+import { GithubClient, TinacmsGithubProvider } from "react-tinacms-github";
 import AppForm from "forms/app";
 
 import "styles/global.css";
@@ -15,7 +12,7 @@ import "styles/global.css";
 
 class Site extends App {
   cms: TinaCMS;
-  
+
   constructor(props) {
     super(props);
 
@@ -50,14 +47,7 @@ class Site extends App {
     });
 
     this.cms.plugins.add(
-      AppForm(
-        (slug) =>
-          // this.props.router.push({
-          //   pathname: "/editor/apps/[slug]",
-          //   query: { slug },
-          // })
-          (window.location.href = `/editor/apps/${slug}`)
-      )
+      AppForm((slug) => (window.location.href = `/editor/apps/${slug}`))
     );
   }
 

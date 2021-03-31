@@ -65,9 +65,10 @@ export default function Home({ file, attributes, preview }) {
         description: "Screen List",
         itemProps: (item) => ({
           key: item.id,
-          label: item.name,
+          label: `Screen list item ${item.id}`,
         }),
         defaultItem: () => ({
+          // name: Math.random().toString(36).substr(2, 9),
           id: Math.random().toString(36).substr(2, 9),
         }),
         fields: [
@@ -138,7 +139,7 @@ export const getStaticProps = async function ({
   if (preview) {
     const attributes = await getGithubFile({
       ...previewData,
-      fileRelativePath: "content/attributes.json",
+      fileRelativePath: "content/meta/attributes.json",
       parse: parseJson,
     });
     return {
@@ -163,7 +164,7 @@ export const getStaticProps = async function ({
         fileRelativePath: `content/apps/${slug}.json`,
         data: (await import(`content/apps/${slug}.json`)).default,
       },
-      attributes: (await import(`content/attributes.json`)).default,
+      attributes: (await import(`content/meta/attributes.json`)).default,
     },
   };
 };
