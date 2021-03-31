@@ -178,7 +178,6 @@ export const getStaticPaths = async () => {
         slug: app.slug,
       },
     }));
-  console.log(paths);
   return {
     paths,
     fallback: true,

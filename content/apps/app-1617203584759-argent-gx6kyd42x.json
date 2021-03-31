@@ -1,0 +1,82 @@
+{
+  "id": "gx6kyd42x",
+  "slug": "app-1617203584759-argent-gx6kyd42x",
+  "name": "Argent",
+  "device": "mobile",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1616957697/yfzljvpectx2onlklc8i.png",
+  "screens": [
+    {
+      "id": "cabsmac5d",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617203617/lavtn7t611ab9ojgcact.png",
+      "userflow": "q3zje2wu2",
+      "tags": [
+        "yfy10248i",
+        "7b5faxtz3",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "iejdv5t30",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617204508/aksatkbl4hxevh9xhnxj.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "k7gppyh76",
+        "yfy10248i",
+        "icwt2g5fx"
+      ]
+    },
+    {
+      "id": "xgcr4yrcz",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617204505/wjlkofb46eivwicgyl9c.png",
+      "userflow": "q3zje2wu2",
+      "tags": [
+        "k7gppyh76",
+        "7b5faxtz3"
+      ]
+    },
+    {
+      "id": "kox1v4xg0",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617204510/pcocqyo6ml8vl89qxtwl.png",
+      "userflow": "k0xhw85zn",
+      "tags": [
+        "Turkey & Swiss"
+      ]
+    },
+    {
+      "id": "hfe2yi1ps",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617204513/axqnbeozsung3le0pijv.png",
+      "userflow": "eiqs8j92u",
+      "tags": [
+        "x0f3obtkm",
+        "7b5faxtz3"
+      ]
+    },
+    {
+      "id": "tcsirky6t",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617204518/ylwrqrvmskinq9t0hfqw.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "icwt2g5fx",
+        "x0f3obtkm"
+      ]
+    },
+    {
+      "id": "eu5pytxjd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617204515/xrqpgisafbbaebruhymk.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "yfy10248i",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "ehqit71z1",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617204521/lvvyaycbvbeqmslq4bjr.png",
+      "userflow": "eiqs8j92u",
+      "tags": [
+        "omgp8idir"
+      ]
+    }
+  ],
+  "description": "The most simple and secure smart wallet for crypto."
+}

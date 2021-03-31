@@ -40,7 +40,7 @@ const FilterCard = ({
           <div key={`filter-badge-${index}`} className="flex flex-wrap mt-7 mb-10">
             {selectedList.map((item) => (
               <FilterBadge
-                key={`filter-badge-${item.slug}`}
+                key={`filter-badge-${item.id}`}
                 onSelect={() => onRemove(item)}
                 text={item.name}
               />
@@ -49,10 +49,10 @@ const FilterCard = ({
           <div className="mb-5 text-gray-500">
             <div className="mb-3 font-bold text-base ">User flows</div>
             <ul className="text-base">
-              {userflows.map((userflow, i) => {
+              {userflows.map(userflow => {
                 return (
                   <ListItem
-                    key={`userflow-list-${i}`}
+                    key={`userflow-list-${userflow.id}`}
                     onSelect={() => onSelect(userflow, "userflows")}
                     text={userflow.name}
                   />
@@ -63,10 +63,10 @@ const FilterCard = ({
           <div className="mb-5 text-gray-500">
             <div className="mb-3 font-bold text-base">Tags</div>
             <ul className="text-base">
-              {tags.map((tag, i) => {
+              {tags.map(tag => {
                 return (
                   <ListItem
-                    key={`tag-list-${i}`}
+                    key={`tag-list-${tag.id}`}
                     onSelect={() => onSelect(tag, "tags")}
                     text={tag.name}
                   />

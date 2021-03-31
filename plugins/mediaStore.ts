@@ -48,7 +48,6 @@ export class CloudinaryMediaStore implements MediaStore {
         offset: 0,
         totalCount: limit
       };
-      console.log(medias);
       return medias;
     })()
   }

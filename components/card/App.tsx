@@ -7,7 +7,7 @@ const AppCard = ({ app }) => (
       <div className="filter-drop-shadow bg-white rounded-lg">
         <Link href={`/apps/${app.slug}`}>
           <a>
-            <img className="w-10 h-10 rounded-lg" src={`/${app.icon}`} />
+            <img className="w-10 h-10 rounded-lg" src={`${app.icon}`} />
           </a>
         </Link>
       </div>
@@ -29,7 +29,7 @@ const AppCard = ({ app }) => (
       {app.screens.map((screen, i) => {
         return (
           <div
-            key={`screen-card-view-${screen.slug}`}
+            key={`screen-card-view-${screen.id}`}
             className={[
               (i > 1 && app.device === "mobile") ||
               (i > 0 && app.device === "desktop")

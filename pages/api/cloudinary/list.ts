@@ -7,7 +7,6 @@ export default (req, res) => {
     tag,
     { max_results, pages: true, context: true, moderations: true },
     function (error, result) {
-      console.log(result);
       res.status(200).json(result);
     }
   );

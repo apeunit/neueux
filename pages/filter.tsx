@@ -24,19 +24,17 @@ const FilterPage = ({ screens, filter }) => {
     if (tags && !Array.isArray(tags)) {
       tags = [tags];
     }
-
     const filter = screens.filter((it) => {
       if (userflows && userflows.length) {
-        return userflows.some((u) =>
-          it.userflows.some((userflow) => userflow.slug == u)
-        );
+        return userflows.some((u) => it.userflow?.id === u);
       }
 
       if (tags && tags.length) {
-        return tags.some((t) => it.tags.some((tag) => tag.slug == t));
+        return tags.some((t) => it.tags.some((tag) => tag.id == t));
       }
       return true;
     });
+
     return filter;
   };
 

@@ -1,8 +1,8 @@
 import fs from "fs";
-import matter from "gray-matter";
 import path from "path";
-import yaml from "js-yaml";
-import { ScreenContent, getAllAppScreenContent } from './screen';
+import { ScreenContent } from './screen';
+import { getUserflow } from './userflows';
+import { getTag } from './tags';
 
 const postsDirectory = path.join(process.cwd(), "content/apps");
 
@@ -14,7 +14,7 @@ export type AppContent = {
   readonly slug: string;
   readonly screens?: ScreenContent[];
   readonly tags?: string[];
-  readonly userflows: string[];
+  readonly userflows?: string[];
   readonly published_at: string;
 };
 
@@ -34,13 +34,24 @@ function fetchAppContent(): AppContent[] {
       const fileContents = fs.readFileSync(fullPath, "utf8");
 
       // Use gray-matter to parse the post metadata section
-      const matterResult = matter(fileContents, {
-        engines: {
-          yaml: (s) => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA }) as object,
-        },
+      const app = JSON.parse(fileContents);
+      const screens = app.screens.map((screen) => {
+        const userflow = getUserflow(screen.userflow);
+        const tags = screen.tags.map((tag) => getTag(tag)).filter((tag) => tag);
+        return {
+          ...screen,
+          app: app.slug,
+          userflow,
+          tags
+        }
       });
 
-      const matterData = matterResult.data as {
+      const matterResult = {
+        ...app,
+        screens,
+      }
+
+      const matterData = matterResult as {
         name: string,
         description: string,
         device: string,
@@ -49,28 +60,18 @@ function fetchAppContent(): AppContent[] {
         slug: string,
         screens?: ScreenContent[],
         tags?: string[],
-        userflows: string[],
+        userflows?: string[],
       };
 
-      const slug = fileName.replace(/\.mdx$/, "");
-      const screens = getAllAppScreenContent(slug);
-      const tags = screens.map((screen) => screen.tags.map((tag) => tag.slug));
-      const userflows = screens.map((screen) => screen.userflows.map((userflow) => userflow.slug));
-      matterData.slug = slug;
-      matterData.screens = screens.slice(0, 6);
+      const tags = matterData.screens.map((screen) => screen.tags.map((tag) => tag.id));
+      const userflows = matterData.screens.map((screen) => screen.userflow.id);
       matterData.tags = [...new Set(tags.flat())] as string[];
-      matterData.userflows = [...new Set(userflows.flat())] as string[];
+      matterData.userflows = [...userflows] as string[];
 
       return matterData;
     });
   // Sort posts by date
-  appCache = allPostsData.sort((a, b) => {
-    if (a.published_at < b.published_at) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  appCache = allPostsData;
   return appCache;
 }
 

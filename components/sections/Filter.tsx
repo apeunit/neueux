@@ -33,8 +33,8 @@ const Filter = ({
         userflowList.length || tagsList.length ? pathname : fallbackPathname,
       query: {
         ...params,
-        userflows: userflowList.map((userflow) => userflow.slug),
-        tags: tagsList.map((tag) => tag.slug),
+        userflows: userflowList.map((userflow) => userflow.id),
+        tags: tagsList.map((tag) => tag.id),
       },
     });
   };
@@ -55,13 +55,13 @@ const Filter = ({
         ? [queryUserflows]
         : queryUserflows;
       userflowList = userflows.filter((userflow) =>
-        queryUserflows.includes(userflow.slug)
+        queryUserflows.includes(userflow.id)
       );
     }
 
     if (queryTags) {
       queryTags = !Array.isArray(queryTags) ? [queryTags] : queryTags;
-      tagsList = tags.filter((tag) => queryTags.includes(tag.slug));
+      tagsList = tags.filter((tag) => queryTags.includes(tag.id));
     }
 
     setSelectedUserflows(userflowList);
@@ -76,14 +76,14 @@ const Filter = ({
     let userflowList = selectedUserflows;
 
     if (type == "userflows") {
-      if (!userflowList.some((userflow) => userflow.slug === value.slug)) {
+      if (!userflowList.some((userflow) => userflow.id === value.id)) {
         userflowList.push(value);
         setSelectedUserflows(userflowList);
       }
     }
 
     if (type == "tags") {
-      if (!tagsList.some((tag) => tag.slug === value.slug)) {
+      if (!tagsList.some((tag) => tag.id === value.id)) {
         tagsList.push(value);
         setSelectedTags(tagsList);
       }
@@ -100,13 +100,13 @@ const Filter = ({
     let tagsList = selectedTags;
     let userflowList = selectedUserflows;
 
-    if (selectedUserflows.some((userflow) => userflow.slug === value.slug)) {
+    if (selectedUserflows.some((userflow) => userflow.id === value.id)) {
       userflowList = selectedUserflows.filter(
-        (item) => item.slug !== value.slug
+        (item) => item.id !== value.id
       );
       setSelectedUserflows(userflowList);
-    } else if (selectedTags.some((tag) => tag.slug === value.slug)) {
-      tagsList = selectedTags.filter((item) => item.slug !== value.slug);
+    } else if (selectedTags.some((tag) => tag.id === value.id)) {
+      tagsList = selectedTags.filter((item) => item.id !== value.id);
       setSelectedTags(tagsList);
     }
 
@@ -135,14 +135,14 @@ const Filter = ({
       >
         {selectedUserflows.map((userflow) => (
           <FilterBadge
-            key={`userflow-filter-${userflow.slug}`}
+            key={`userflow-filter-${userflow.id}`}
             onSelect={() => onFilterRemove(userflow)}
             text={userflow.name}
           />
         ))}
         {selectedTags.map((tag) => (
           <FilterBadge
-            key={`tag-filter-${tag.slug}`}
+            key={`tag-filter-${tag.id}`}
             onSelect={() => onFilterRemove(tag)}
             text={tag.name}
           />

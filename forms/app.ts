@@ -27,6 +27,7 @@ const form  = (callback = (slug)=> {}) => {
             id,
             slug,
             ...values,
+            device: 'mobile'
           };
           await cms.api.github.commit(
             `content/apps/${slug}.json`,

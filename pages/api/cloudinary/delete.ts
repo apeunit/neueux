@@ -14,10 +14,8 @@ const apiRoute = nextConnect({
   },
 });
 
-apiRoute.delete(async (req, res) => {
+apiRoute.delete(async (req: any, res: any) => {
   const { id } = req.query;
-  console.log(`id`, req);
-
   Cloudinary.api.delete_resources(
     [id],
     function (error, result) {
