@@ -28,6 +28,10 @@ module.exports = withMdxEnhanced({
           test: /\.svg$/,
           use: "@svgr/webpack",
         },
+        {
+          test: /\.md$/,
+          use: 'raw-loader',
+        }
       ]
     );
     
