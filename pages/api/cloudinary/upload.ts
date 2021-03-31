@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import  Cloudinary from "../../../lib/cloudinary";
+import  Cloudinary from "plugins/cloudinary";
 import nextConnect from "next-connect";
 import multer from "multer";
 

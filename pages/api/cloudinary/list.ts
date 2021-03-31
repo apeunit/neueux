@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import Cloudinary from "../../../lib/cloudinary";
+import  Cloudinary from "plugins/cloudinary";
 
 export default (req, res) => {
   const { tag, type, max_results } = req.query;

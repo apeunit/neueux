@@ -1,9 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import Cloudinary from "../../../lib/cloudinary";
+import  Cloudinary from "plugins/cloudinary";
 import nextConnect from "next-connect";
 
 const apiRoute = nextConnect({
-  onError(error, req, res) {
+  onError(error, _req, res: any) {
     console.log(error);
     res
       .status(501)

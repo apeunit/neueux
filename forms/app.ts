@@ -1,4 +1,4 @@
-import LodashKebabCase from "lodash.kebabcase";
+import Slugify from "slugify";
 
 const form  = (callback = (slug)=> {}) => {
   return {
@@ -18,7 +18,9 @@ const form  = (callback = (slug)=> {}) => {
       // Call functions that create the new blog post. For example:
       if (values.name) {
         const id = Math.random().toString(36).substr(2, 9);
-        const slug = `${LodashKebabCase(values.name)}-${id}`;
+        const slug = `${Slugify(values.name, {
+          lower: true,
+        })}-${id}`;
 
         (async () => {
           const app = {
