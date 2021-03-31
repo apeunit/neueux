@@ -27,7 +27,7 @@ function fetchAppContent(): AppContent[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
-    .filter((it) => it.endsWith(".mdx"))
+    .filter((it) => it.endsWith(".json"))
     .map((fileName) => {
       // Read markdown file as string
       const fullPath = path.join(postsDirectory, fileName);
