@@ -24,7 +24,7 @@ const IndexPage = () => {
                     </Link>
                 </div>
 
-            <main className="lg:w-5/12 w-5/6 pt-24 mx-auto xl:relative">
+            <main className="lg:w-5/12 w-5/6  mx-auto xl:relative">
                 
 
                 <div className="text-center">
