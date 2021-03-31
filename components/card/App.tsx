@@ -2,7 +2,7 @@ import Screen from "components/card/Screen";
 import Link from "next/link";
 
 const AppCard = ({ app }) => (
-  <div className="mt-16 mb-10 xl:mt-0">
+  <div className="lg:mt-16 lg:mb-10 xl:mt-0">
     <div className="flex mt-3">
       <div className="filter-drop-shadow bg-white rounded-lg">
         <Link href={`/apps/${app.slug}`}>
@@ -27,16 +27,20 @@ const AppCard = ({ app }) => (
         app.device === "mobile" ? "xl:grid-cols-6 grid-cols-2 md:grid-cols-3" : "grid-cols-2",
       ].join(" ")}
     >
-      {app.screens.map((screen) => {
+      {app.screens.map((screen, i) => {
         return (
-          <Link
-            key={`screen-card-view-${screen.slug}`}
-            href={`/apps/${app.slug}`}
-          >
-            <a>
-              <Screen url={screen.image} style={app.device} />
-            </a>
-          </Link>
+          <div className={[
+            (i > 1 && app.device === "mobile" ) || (i > 0 && app.device === "desktop") ? "hidden lg:block md:block sm:block" : "",
+          ].join(" ")}>
+            <Link
+              key={`screen-card-view-${screen.slug}`}
+              href={`/apps/${app.slug}`}
+            >
+              <a>
+                <Screen url={screen.image} style={app.device} />
+              </a>
+            </Link>
+          </div>
         );
       })}
     </div>
