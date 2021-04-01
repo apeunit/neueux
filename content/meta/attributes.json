@@ -27,16 +27,16 @@
   ],
   "tags": [
     {
-      "name": "Test",
-      "id": "rx1w7vljm"
-    },
-    {
-      "name": "About",
-      "id": "mu0tsey2m"
+      "name": "Backup",
+      "id": "td3lccfuo"
     },
     {
       "name": "3rd-party-service",
       "id": "7b5faxtz3"
+    },
+    {
+      "name": "About",
+      "id": "mu0tsey2m"
     },
     {
       "name": "Address",
@@ -57,6 +57,10 @@
     {
       "name": "Contacts",
       "id": "x0f3obtkm"
+    },
+    {
+      "name": "Test",
+      "id": "rx1w7vljm"
     }
   ]
 }
