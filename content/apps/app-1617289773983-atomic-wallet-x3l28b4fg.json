@@ -7,12 +7,12 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617289842/qczmubjbxwdjhqhsiexv.png",
   "screens": [
     {
-      "id": "l6emv9hxo",
-      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617292724/hr68bpykqjnt2pyb0h3m.png",
+      "id": "qgxvuix4i",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617292774/vcnspt2ooamoqptauolo.png",
       "tags": [
         "8oc9ysbyw",
         "z7yu0eq11",
-        "td3lccfuo"
+        "6741cana8"
       ]
     },
     {
@@ -285,6 +285,15 @@
         "6741cana8",
         "td3lccfuo",
         "8oc9ysbyw"
+      ]
+    },
+    {
+      "id": "l6emv9hxo",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617292724/hr68bpykqjnt2pyb0h3m.png",
+      "tags": [
+        "8oc9ysbyw",
+        "z7yu0eq11",
+        "td3lccfuo"
       ]
     }
   ]
