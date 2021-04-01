@@ -4,7 +4,7 @@ import Axios from 'axios';
 export class CloudinaryMediaStore implements MediaStore {
   accept = '*';
   persist(files: MediaUploadOptions[]): Promise<Media[]> {
-
+   
     return (async () => {
       const medias = [];
       for (let i = 0; i < files.length; i++) {

@@ -28,15 +28,13 @@ apiRoute.post(async (req: any, res: any) => {
   const file = req.file;
   const path = Path.parse(file.originalname);
   let { directory } = req.body;
-
-  console.log(directory);
   
   Cloudinary.uploader.upload(
     `data:${file.mimetype};base64,${file.buffer.toString("base64")}`,
     {
-      tags: [directory],
+      tags: directory !== '/' ? [directory] : [],
       overwrite: true,
-      public_id: `neueux/media/app-1617296038340-scalelite-w5g1b9fwu/screens/${path.name}`,
+      public_id: `${directory}/${path.name}`,
     },
     function (error, result) {
       error && console.error(error)
