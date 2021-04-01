@@ -70,7 +70,7 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
                 key={`screen-card-${screen.slug}`}
                 href={`/apps/${app.slug}/screen/${screen.slug}`}
               >
-                <a>
+                <a className="lg:mb-5 mb-0">
                   <Screen url={screen.image} style={app.device} />
                 </a>
               </Link>
