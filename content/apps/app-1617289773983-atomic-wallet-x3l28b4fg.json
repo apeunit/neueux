@@ -7,6 +7,11 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617289842/qczmubjbxwdjhqhsiexv.png",
   "screens": [
     {
+      "id": "cbjhuq5u3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617291802/wgsvjqnfpj77losttomw.png",
+      "userflow": "kt2dfi02h"
+    },
+    {
       "id": "0yxo0estf",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617289869/oacr4gpyoopgazjlrucl.png",
       "userflow": "amuunrve2"
