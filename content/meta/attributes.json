@@ -27,110 +27,6 @@
   ],
   "tags": [
     {
-      "name": "Username",
-      "id": "qoi07zvgf"
-    },
-    {
-      "name": "Transfer Limit",
-      "id": "xejj4rm1z"
-    },
-    {
-      "name": "Token Visibility",
-      "id": "7q72o2sm9"
-    },
-    {
-      "name": "Support",
-      "id": "lwt9kim7n"
-    },
-    {
-      "name": "Stake",
-      "id": "r1a1xx3ln"
-    },
-    {
-      "name": "Shop",
-      "id": "zjj6ykba8"
-    },
-    {
-      "name": "Settings",
-      "id": "6741cana8"
-    },
-    {
-      "name": "Send",
-      "id": "7cb7qrcx7"
-    },
-    {
-      "name": "Security",
-      "id": "z7yu0eq11"
-    },
-    {
-      "name": "Search",
-      "id": "kzld30rz5"
-    },
-    {
-      "name": "Refferal",
-      "id": "9ttwtn4q8"
-    },
-    {
-      "name": "Receive",
-      "id": "85on6h9ya"
-    },
-    {
-      "name": "Rating Request",
-      "id": "i1da3r6e3"
-    },
-    {
-      "name": "Rates",
-      "id": "gzu2ar8r1"
-    },
-    {
-      "name": "QR Code",
-      "id": "r18bge4gm"
-    },
-    {
-      "name": "Private Key",
-      "id": "8oc9ysbyw"
-    },
-    {
-      "name": "Privacy",
-      "id": "pmjek5egb"
-    },
-    {
-      "name": "Phone Number",
-      "id": "8f87dstkk"
-    },
-    {
-      "name": "Password",
-      "id": "0nvueu7a8"
-    },
-    {
-      "name": "Overview",
-      "id": "cjdjocjto"
-    },
-    {
-      "name": "Onramp",
-      "id": "u4hm4k131"
-    },
-    {
-      "name": "Onboarding",
-      "id": "0x66zqh5h"
-    },
-    {
-      "name": "Notifications",
-      "id": "wtqe8nn8w"
-    },
-    {
-      "name": "Network",
-      "id": "pq9rgdt97"
-    },
-    {
-      "name": "Menu",
-      "id": "r84aimrt9"
-    },
-    {
-      "name": "Language",
-      "id": "u71gbhqcz"
-    },
-    {
       "name": "3rd-party-service",
       "id": "7b5faxtz3"
     },
@@ -201,6 +97,110 @@
     {
       "name": "History",
       "id": "d2aypoqmv"
+    },
+    {
+      "name": "Language",
+      "id": "u71gbhqcz"
+    },
+    {
+      "name": "Menu",
+      "id": "r84aimrt9"
+    },
+    {
+      "name": "Network",
+      "id": "pq9rgdt97"
+    },
+    {
+      "name": "Notifications",
+      "id": "wtqe8nn8w"
+    },
+    {
+      "name": "Onboarding",
+      "id": "0x66zqh5h"
+    },
+    {
+      "name": "Onramp",
+      "id": "u4hm4k131"
+    },
+    {
+      "name": "Overview",
+      "id": "cjdjocjto"
+    },
+    {
+      "name": "Password",
+      "id": "0nvueu7a8"
+    },
+    {
+      "name": "Phone Number",
+      "id": "8f87dstkk"
+    },
+    {
+      "name": "Privacy",
+      "id": "pmjek5egb"
+    },
+    {
+      "name": "Private Key",
+      "id": "8oc9ysbyw"
+    },
+    {
+      "name": "QR Code",
+      "id": "r18bge4gm"
+    },
+    {
+      "name": "Rates",
+      "id": "gzu2ar8r1"
+    },
+    {
+      "name": "Rating Request",
+      "id": "i1da3r6e3"
+    },
+    {
+      "name": "Receive",
+      "id": "85on6h9ya"
+    },
+    {
+      "name": "Refferal",
+      "id": "9ttwtn4q8"
+    },
+    {
+      "name": "Search",
+      "id": "kzld30rz5"
+    },
+    {
+      "name": "Security",
+      "id": "z7yu0eq11"
+    },
+    {
+      "name": "Send",
+      "id": "7cb7qrcx7"
+    },
+    {
+      "name": "Settings",
+      "id": "6741cana8"
+    },
+    {
+      "name": "Shop",
+      "id": "zjj6ykba8"
+    },
+    {
+      "name": "Stake",
+      "id": "r1a1xx3ln"
+    },
+    {
+      "name": "Support",
+      "id": "lwt9kim7n"
+    },
+    {
+      "name": "Token Visibility",
+      "id": "7q72o2sm9"
+    },
+    {
+      "name": "Transfer Limit",
+      "id": "xejj4rm1z"
+    },
+    {
+      "name": "Username",
+      "id": "qoi07zvgf"
     }
   ]
 }
