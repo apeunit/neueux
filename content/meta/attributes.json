@@ -23,6 +23,10 @@
     {
       "name": "Onboarding",
       "id": "urnsc8ap3"
+    },
+    {
+      "name": "Onramp",
+      "id": "kt2dfi02h"
     }
   ],
   "tags": [
@@ -115,14 +119,6 @@
       "id": "wtqe8nn8w"
     },
     {
-      "name": "Onboarding",
-      "id": "0x66zqh5h"
-    },
-    {
-      "name": "Onramp",
-      "id": "u4hm4k131"
-    },
-    {
       "name": "Overview",
       "id": "cjdjocjto"
     },
@@ -155,10 +151,6 @@
       "id": "i1da3r6e3"
     },
     {
-      "name": "Receive",
-      "id": "85on6h9ya"
-    },
-    {
       "name": "Refferal",
       "id": "9ttwtn4q8"
     },
@@ -169,10 +161,6 @@
     {
       "name": "Security",
       "id": "z7yu0eq11"
-    },
-    {
-      "name": "Send",
-      "id": "7cb7qrcx7"
     },
     {
       "name": "Settings",
