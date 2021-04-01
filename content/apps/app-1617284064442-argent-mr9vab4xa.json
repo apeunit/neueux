@@ -1,1 +1,15 @@
-{"id":"mr9vab4xa","slug":"app-1617284064442-argent-mr9vab4xa","name":"Argent","device":"mobile"}
+{
+  "id": "mr9vab4xa",
+  "slug": "app-1617284064442-argent-mr9vab4xa",
+  "name": "Argent",
+  "device": "mobile",
+  "description": "DeFi at a tap.",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617277191/w5rcue0keamvq6midljf.png",
+  "screens": [
+    {
+      "id": "pp5lg7izf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617284120/uiyhbw9dxoms1v9yto3n.png",
+      "userflow": "urnsc8ap3"
+    }
+  ]
+}
