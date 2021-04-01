@@ -1,6 +1,6 @@
 import Slugify from "slugify";
 
-const form  = (callback = (slug)=> {}) => {
+const form  = (callback = (slug)=> { return slug}) => {
   return {
     name: "Apps",
     __type: "content-creator",
