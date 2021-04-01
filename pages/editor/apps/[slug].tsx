@@ -13,7 +13,7 @@ import { useGithubJsonForm } from "react-tinacms-github";
 
 import { listAllAppContent } from "lib/app";
 
-export default function Home({ file, attributes, preview }) {
+export default function Home({ file, attributes }) {
   const userflowsOptions = attributes?.userflows?.map((userflow) => ({
     value: userflow.id,
     label: userflow.name,

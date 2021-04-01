@@ -35,6 +35,7 @@ apiRoute.post(async (req: any, res: any) => {
       use_original_filename: true,
     },
     function (error, result) {
+      error && console.error(error)
       res.status(200).json(result);
     }
   );

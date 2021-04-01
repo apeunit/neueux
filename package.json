@@ -2,8 +2,8 @@
   "name": "neueux",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "type-check": "tsc"
   },

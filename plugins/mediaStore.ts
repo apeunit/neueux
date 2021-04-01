@@ -1,4 +1,4 @@
-import MediaStore, { MediaUploadOptions, MediaList, MediaListOptions, Media } from '../types/MediaStore';
+import MediaStore, { MediaUploadOptions, MediaList, MediaListOptions, Media } from 'types/MediaStore';
 import Axios from 'axios';
 
 export class CloudinaryMediaStore implements MediaStore {
