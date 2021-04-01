@@ -21,15 +21,11 @@
       "id": "eiqs8j92u"
     },
     {
-      "name": "Create additional wallet",
+      "name": "Create wallet",
       "id": "gmc0zdfli"
     }
   ],
   "tags": [
-    {
-      "name": "Backup",
-      "id": "td3lccfuo"
-    },
     {
       "name": "3rd-party-service",
       "id": "7b5faxtz3"
@@ -41,6 +37,10 @@
     {
       "name": "Address",
       "id": "icwt2g5fx"
+    },
+    {
+      "name": "Backup",
+      "id": "td3lccfuo"
     },
     {
       "name": "Balance",
