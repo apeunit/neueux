@@ -22,7 +22,7 @@ const AboutPage = ({ content, data }) => {
         </Link>
       </div>
 
-      <main className="lg:w-5/12 w-5/6  mx-auto xl:relative">
+      <main className="max-w-xl mx-auto lg:max-w-3xl xl:relative px-5 md:px-10">
         <div className="text-center">
           <img src={frontmatter.cover} alt="" className="" />
         </div>
@@ -56,7 +56,10 @@ const AboutPage = ({ content, data }) => {
             </div>
           </div>
         </div>
-        <ReactMarkdown escapeHtml={true} source={content} />
+        <article className="prose lg:prose-xl md:prose-xl sm:prose-xl list">
+          <ReactMarkdown escapeHtml={true} source={content} />
+        </article>
+
       </main>
     </Layout>
   );
@@ -65,9 +68,9 @@ const AboutPage = ({ content, data }) => {
 export const getStaticProps: GetStaticProps = async () => {
   // Import our .md file using the `slug` from the URL
   const content = await import(`content/about.md`);
- 
+
   const output = matter(content.default);
-//   console.log(data);
+  //   console.log(data);
   return {
     props: {
       content: output.content,

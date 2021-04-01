@@ -38,6 +38,19 @@ ul.nav {
   width: 348px!important;
 }
 
-::-webkit-scrollbar {
-  width: 0;
+/* .prose ul > li::before{
+   position: relative;
+} */
+
+.list ul > li::before{
+  content: "—"!important; 
+  position: absolute;
+    background-color: transparent;
+    color: red;
+     border-radius: 0; 
+    width: 0.375em;
+    height: 0.375em;
+    top: 0px;
+    left: 0;
+  
 }
