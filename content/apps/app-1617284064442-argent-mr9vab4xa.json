@@ -7,13 +7,6 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617277191/w5rcue0keamvq6midljf.png",
   "screens": [
     {
-      "id": "01h1fb17a",
-      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617289028/a0pkxnznbhr6rxgaj3jg.png",
-      "tags": [
-        "d2aypoqmv"
-      ]
-    },
-    {
       "id": "pp5lg7izf",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617284120/uiyhbw9dxoms1v9yto3n.png",
       "userflow": "urnsc8ap3"
@@ -767,6 +760,13 @@
     {
       "id": "wf08omoyn",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617289002/g71c0hbrl0nk8p6x5jok.png",
+      "tags": [
+        "d2aypoqmv"
+      ]
+    },
+    {
+      "id": "01h1fb17a",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617289028/a0pkxnznbhr6rxgaj3jg.png",
       "tags": [
         "d2aypoqmv"
       ]
