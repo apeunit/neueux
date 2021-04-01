@@ -27,8 +27,28 @@
   ],
   "tags": [
     {
-      "name": "Education",
-      "id": "szojdpfpo"
+      "name": "New Tag",
+      "id": "d2aypoqmv"
+    },
+    {
+      "name": "New Tag",
+      "id": "jjlq2si5k"
+    },
+    {
+      "name": "New Tag",
+      "id": "qcwwc7hjw"
+    },
+    {
+      "name": "New Tag",
+      "id": "y4a8yvspt"
+    },
+    {
+      "name": "New Tag",
+      "id": "u93yuzxj8"
+    },
+    {
+      "name": "EMail",
+      "id": "mywth04j4"
     },
     {
       "name": "3rd-party-service",
@@ -73,6 +93,10 @@
     {
       "name": "DeFi",
       "id": "xvay0u80k"
+    },
+    {
+      "name": "Education",
+      "id": "szojdpfpo"
     }
   ]
 }
