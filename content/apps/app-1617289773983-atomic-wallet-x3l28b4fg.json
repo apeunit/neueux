@@ -4,5 +4,12 @@
   "name": "Atomic Wallet",
   "device": "mobile",
   "description": "Universal Crypto Wallet",
-  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617289842/qczmubjbxwdjhqhsiexv.png"
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617289842/qczmubjbxwdjhqhsiexv.png",
+  "screens": [
+    {
+      "id": "0yxo0estf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617289869/oacr4gpyoopgazjlrucl.png",
+      "userflow": "gmc0zdfli"
+    }
+  ]
 }
