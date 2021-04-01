@@ -26,7 +26,7 @@ const AppCard = ({ app }) => (
           : "grid-cols-2",
       ].join(" ")}
     >
-      {app.screens.map((screen, i) => {
+      {app.screens.slice(0, 6).map((screen, i) => {
         return (
           <div
             key={`screen-card-view-${screen.id}`}
