@@ -15,16 +15,12 @@ For projects outside the blockchain space, designers and developers have an endl
 To make blockchain more accessible to everyone, there needs to be an open innovation process that facilitates discussions between developers and designers. By including designers in the development process of decentralized apps and providing a better starting point for common UX challenges in blockchain, we will improve the overall user experience of blockchain applications.
 So, that's why we’re building NeueUX: to make blockchain for everyone.
 NeueUX is an open-source platform that provides design resources and discusses common design patterns in a decentralized industry.
-
-## Industry Problems & Our Proposition
-
+### Industry Problems & Our Proposition
 Generally, it’s not easy to start working in the blockchain space, especially from a non-technical direction.
 There are no dedicated platforms for discussions about the interface and user experience of blockchain apps. Unsurprisingly, there aren’t many user experience designers who have broken into this field. Also, there is no platform offering blockchain-specific design resources, like there are for other industries. This is exacerbated by the fact that most UX discussions in the blockchain space are held at a very high technical level that few designers will be able to follow. This creates a significant barrier to entry that most designers are not willing to surmount.
 Because of this barrier to entry, many blockchain startups have to start their design process from scratch, as with few available freely available design resources, and without people who possess the necessary design experience to avoid having to start from square one. Even if there are designers or design-savvy developers in a blockchain company, their daily work process is likely to be slower than what’s necessary, because of the lack of design resources and standardized design patterns to draw upon.
 These problems have caused the relatively poor UX that most blockchains have, despite the industry’s rapid maturation in recent years.
-
-## We believe many of these problems could be mitigated by a platform that offers the following resources:
-
+### We believe many of these problems could be mitigated by a platform that offers the following resources:
 - Blockchain UX case studies
 - Blockchain UX best practices
 - Collection of screenshots of popular blockchain applications
@@ -35,9 +31,7 @@ These problems have caused the relatively poor UX that most blockchains have, de
 - Blockchain UX/UI specific news
 
 These resources should make it easier for designers to work in the blockchain space. NeueUX provides a good starting point to learn about design issues in blockchain and offers resources that make the daily work of designing blockchain applications easier and faster. This won’t just simplify the design process for designers — developers will also benefit from this platform because they can discover the best (UX) practices and directly incorporate them into their applications. When NeueUX gets enough traction, it will spread awareness and enable discussion about common design patterns in a decentralized industry.
-
-## What’s Next?
-
+### What’s Next?
 We received a grant from Moloch DAO to build this platform and create its first content, which we will gradually release in the upcoming weeks. We will continue producing content for NeueUX, however, our goal for the future is that it will become a decentralized platform supported by community-created content. Therefore, we backed a content contribution system directly into the site, which you can already check out here. If you are more comfortable with GitHub, you can also contribute content through GitHub pull-requests.
 
 In the next couple of months, we hope to see this platform’s content library grow and together drive the inclusion of more people into the design and development process of blockchain apps forward!

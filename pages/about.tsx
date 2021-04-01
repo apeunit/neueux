@@ -22,7 +22,7 @@ const AboutPage = ({ content, data }) => {
         </Link>
       </div>
 
-      <main className="max-w-3xl mx-auto lg:max-w-2xl  xl:relative px-5">
+      <main className="max-w-xl mx-auto lg:max-w-3xl xl:relative px-5 md:px-10">
         <div className="text-center">
           <img src={frontmatter.cover} alt="" className="" />
         </div>
@@ -56,7 +56,7 @@ const AboutPage = ({ content, data }) => {
             </div>
           </div>
         </div>
-        <article className="prose prose-sm sm:prose lg:prose-base">
+        <article className="prose lg:prose-xl md:prose-xl sm:prose-xl list">
           <ReactMarkdown escapeHtml={true} source={content} />
         </article>
 
