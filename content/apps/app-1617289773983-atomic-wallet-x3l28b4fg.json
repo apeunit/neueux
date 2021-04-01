@@ -7,16 +7,6 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617289842/qczmubjbxwdjhqhsiexv.png",
   "screens": [
     {
-      "id": "8o3di7avr",
-      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617291169/tykgs7tfzhf5ydiv2i1k.png",
-      "userflow": "gmc0zdfli",
-      "tags": [
-        "td3lccfuo",
-        "r18bge4gm",
-        "8oc9ysbyw"
-      ]
-    },
-    {
       "id": "0yxo0estf",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617289869/oacr4gpyoopgazjlrucl.png",
       "userflow": "amuunrve2"
@@ -57,9 +47,19 @@
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617291067/lhtbd6mzlhpkvaqmxrvi.png",
       "userflow": "gmc0zdfli",
       "tags": [
-        "Turkey & Swiss",
+        "r18bge4gm",
         "8oc9ysbyw",
         "td3lccfuo"
+      ]
+    },
+    {
+      "id": "8o3di7avr",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617291169/tykgs7tfzhf5ydiv2i1k.png",
+      "userflow": "gmc0zdfli",
+      "tags": [
+        "td3lccfuo",
+        "r18bge4gm",
+        "8oc9ysbyw"
       ]
     }
   ]
