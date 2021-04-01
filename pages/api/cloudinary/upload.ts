@@ -2,6 +2,7 @@
 import  Cloudinary from "plugins/cloudinary";
 import nextConnect from "next-connect";
 import multer from "multer";
+import Path from 'path';
 
 const storage = multer.memoryStorage();
 
@@ -25,14 +26,17 @@ apiRoute.use(upload.single("image"));
 
 apiRoute.post(async (req: any, res: any) => {
   const file = req.file;
+  const path = Path.parse(file.originalname);
   let { directory } = req.body;
+
+  console.log(directory);
   
   Cloudinary.uploader.upload(
     `data:${file.mimetype};base64,${file.buffer.toString("base64")}`,
     {
       tags: [directory],
       overwrite: true,
-      use_original_filename: true,
+      public_id: `neueux/media/app-1617296038340-scalelite-w5g1b9fwu/screens/${path.name}`,
     },
     function (error, result) {
       error && console.error(error)

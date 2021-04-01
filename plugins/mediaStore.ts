@@ -39,7 +39,7 @@ export class CloudinaryMediaStore implements MediaStore {
         }
       });
       const items = result.data.resources.map((item) => {
-        return this.fileParser(item);
+        return this.fileParser(item, options.directory);
       });
 
       const medias: MediaList = {
@@ -58,8 +58,8 @@ export class CloudinaryMediaStore implements MediaStore {
       }
     });
   }
-  fileParser(data: any): Media {
-    const filename = `${data.public_id}.${data.format}`;
+  fileParser(data: any, dir= ''): Media {
+    const filename = (`${data.public_id}.${data.format}`).replace(`${dir}/`, '');
     const directory = data.secure_url.replace(filename, '');
     return {
       type: 'file',
