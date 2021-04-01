@@ -76,7 +76,7 @@ const FilterCard = ({
           </div>
         </div>
 
-        <div className="text-xs bottom-2 xl:absolute relative flex justify-center w-full px-1">
+        <div className="text-xs bottom-2 xl:absolute relative flex justify-center w-full px-2">
           {selectedList.length ? (
             <span
               onClick={onClear}
@@ -88,7 +88,7 @@ const FilterCard = ({
           <span
             onClick={onClose}
             className={[
-              "bg-gray-900 hover:bg-gray-600 text-white text-center text-xs leading-4 cursor-pointer py-4 font-bold transition-250ms ",
+              "bg-gray-900 hover:bg-gray-600 text-white text-center text-ssm leading-4 cursor-pointer py-4 font-bold transition-250ms ",
               selectedList.length
                 ? "w-1/2 rounded-tr-full rounded-br-full"
                 : "w-full rounded-full",
