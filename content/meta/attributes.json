@@ -1,6 +1,18 @@
 {
   "userflows": [
     {
+      "name": "Backup",
+      "id": "eiqs8j92u"
+    },
+    {
+      "name": "Create wallet",
+      "id": "gmc0zdfli"
+    },
+    {
+      "name": "Delete wallet",
+      "id": "k0xhw85zn"
+    },
+    {
       "name": "Send",
       "id": "xoz85l8dh"
     },
@@ -11,24 +23,12 @@
     {
       "name": "Onboarding",
       "id": "urnsc8ap3"
-    },
-    {
-      "name": "Delete wallet",
-      "id": "k0xhw85zn"
-    },
-    {
-      "name": "Backup",
-      "id": "eiqs8j92u"
-    },
-    {
-      "name": "Create wallet",
-      "id": "gmc0zdfli"
     }
   ],
   "tags": [
     {
-      "name": "DeFi",
-      "id": "xvay0u80k"
+      "name": "Education",
+      "id": "szojdpfpo"
     },
     {
       "name": "3rd-party-service",
@@ -69,6 +69,10 @@
     {
       "name": "dApp Store",
       "id": "rx1w7vljm"
+    },
+    {
+      "name": "DeFi",
+      "id": "xvay0u80k"
     }
   ]
 }
