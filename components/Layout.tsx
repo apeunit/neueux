@@ -8,7 +8,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
-  <div className="pb-10">
+  <div className="pb-10 overflow-hidden">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
