@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import FilterCard from "components/card/Filter";
-import FilterBadge from "components/FilterBadge";
+import FilterCard from "./Popup";
+import FilterBadge from "./Badge";
 import { useRouter } from "next/router";
-import Button from "./Button";
+import Button from "components/Button";
 
 const Filter = ({
   tags,
