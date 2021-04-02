@@ -54,3 +54,7 @@ ul.nav {
     left: 0;
   
 }
+
+::-webkit-scrollbar{
+  width: 0;
+}
