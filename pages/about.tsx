@@ -28,7 +28,7 @@ const AboutPage = ({ content, data }) => {
         </div>
 
         <div className="py-4">
-          <h1 className="lg:text-5xl md:text-5xl sm:text-5xl text-3xl">
+          <h1 className="lg:text-5xl md:text-5xl font-bold sm:text-5xl text-3xl">
             {frontmatter.title}
           </h1>
         </div>
