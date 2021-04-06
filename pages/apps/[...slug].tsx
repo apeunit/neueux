@@ -112,7 +112,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       app,
       screens,
-      screen,
+      screen: screen || null,
       screenNavigation,
       tags,
       userflows,
