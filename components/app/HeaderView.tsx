@@ -1,21 +1,6 @@
 import React from "react";
-import Link from "next/link";
-import ArrowIcon from "assets/icons/arrow.svg";
-import Button from "components/Button"
 const AppHeaderView = ({ app }) => (
-  <div className="">
-    <div className="mt-5">
-      <div className="pt-1">
-        <Link href="/">
-          <a className=" ">
-            <Button type="secondary" size="lg">
-              <ArrowIcon className="inline-block mr-2" />
-              Back
-            </Button>
-          </a>
-        </Link>
-      </div>
-    </div>
+  <div>
     <div className="text-center mt-8">
       <div className="flex justify-center">
         {app.icon && (

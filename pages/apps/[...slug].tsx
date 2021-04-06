@@ -48,7 +48,7 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
   };
 
   return (
-    <Layout title={`${app.name} - App`}>
+    <Layout title={`${app.name} - App`} backButton>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
         <Filter

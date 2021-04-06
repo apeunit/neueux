@@ -3,14 +3,16 @@ import Head from "next/head";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
 import Config from 'config.json';
+import BackButton from "components/BackButton";
 
 type Props = {
   children?: ReactNode;
   title?: string;
   description?: string;
+  backButton?: boolean;
 };
 
-const Layout = ({ children, title = null, description = Config.site_description }: Props) => (
+const Layout = ({ children, title = null, description = Config.site_description, backButton = false }: Props) => (
   <div className="pb-10 overflow-hidden">
     <Head>
       <title>{title ? `${title} | `: null}{Config.site_title}</title>
@@ -21,6 +23,7 @@ const Layout = ({ children, title = null, description = Config.site_description 
     <header>
       <Navbar />
     </header>
+    {backButton && <BackButton />}
     {children}
     <Footer />
   </div>
