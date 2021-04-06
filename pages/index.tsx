@@ -1,13 +1,13 @@
 import { GetStaticProps } from "next";
 import Layout from "components/Layout";
 import React from "react";
-import AppCard from "components/card/App";
-import Header from "components/sections/Header";
+import AppCard from "components/app/Card";
+import Header from "components/Header";
 import { listAppContent } from "lib/app";
 
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
-import Filter from "components/sections/Filter";
+import Filter from "components/filter/Index";
 
 
 const IndexPage = ({ apps, filter }) => {

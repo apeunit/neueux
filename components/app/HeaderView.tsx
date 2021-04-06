@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import ArrowIcon from "assets/icons/arrow.svg";
-import Button from "./Button"
-const HeaderView = ({ app }) => (
+import Button from "../Button"
+const AppHeaderView = ({ app }) => (
   <div className="">
     <div className="mt-5">
       <div className="pt-1">
@@ -34,4 +34,4 @@ const HeaderView = ({ app }) => (
   </div>
 );
 
-export default HeaderView;
+export default AppHeaderView;

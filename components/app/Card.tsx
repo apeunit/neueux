@@ -1,4 +1,4 @@
-import Screen from "components/card/Screen";
+import Screen from "components/screen/Card";
 import Link from "next/link";
 
 const AppCard = ({ app }) => (

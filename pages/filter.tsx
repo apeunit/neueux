@@ -1,14 +1,14 @@
 import { GetStaticProps } from "next";
 import Layout from "components/Layout";
 import React from "react";
-import Header from "components/sections/Header";
+import Header from "components/Header";
 import { listScreenContent } from "lib/screen";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
-import Filter from "components/sections/Filter";
-import ScreenCard from "components/card/Screen";
+import Filter from "components/filter/Index";
+import ScreenCard from "components/screen/Card";
 
 const FilterPage = ({ screens, filter }) => {
   const router = useRouter();
