@@ -3,7 +3,7 @@ import Layout from "components/Layout";
 import React from "react";
 import Link from "next/link";
 import ArrowIcon from "assets/icons/arrow.svg";
-import Button from "components/sections/Button";
+import Button from "components/Button";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
