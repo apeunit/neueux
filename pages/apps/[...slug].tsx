@@ -1,12 +1,12 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import Layout from "components/Layout";
 import React from "react";
-import Screen from "components/card/Screen";
-import HeaderView from "components/sections/HeaderView";
-import ScreenView from "components/sections/ScreenView";
+import Screen from "components/app/screen/Card";
+import HeaderView from "components/app/HeaderView";
+import ScreenView from "components/app/screen/View";
 import { getAppContent, listAllAppContent } from "lib/app";
 import Link from "next/link";
-import Filter from "components/sections/Filter";
+import Filter from "components/filter";
 import { filteredTagsByApp } from "lib/tags";
 import { filteredUserflowsByApp } from "lib/userflows";
 
@@ -47,7 +47,7 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
   };
 
   return (
-    <Layout title={app.name}>
+    <Layout title={`${app.name} - App`}>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
         <Filter
@@ -73,7 +73,7 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
                 key={`screen-card-${screen.id}`}
                 href={`/apps/${app.slug}/screen/${screen.id}`}
               >
-                <a>
+                <a className="lg:mb-5 mb-0">
                   <Screen url={screen.image} style={app.device} />
                 </a>
               </Link>

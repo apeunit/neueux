@@ -3,14 +3,14 @@ import Layout from "components/Layout";
 import React from "react";
 import Link from "next/link";
 import ArrowIcon from "assets/icons/arrow.svg";
-import Button from "components/sections/Button";
+import Button from "components/Button";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
 const AboutPage = ({ content, data }) => {
   const frontmatter = data;
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
+    <Layout title="About">
       <div className="w-11/12 mx-auto mt-5">
         <Link href="/">
           <a className=" ">
@@ -22,13 +22,13 @@ const AboutPage = ({ content, data }) => {
         </Link>
       </div>
 
-      <main className="lg:w-5/12 w-5/6  mx-auto xl:relative">
+      <main className="max-w-xl mx-auto lg:max-w-3xl xl:relative px-5 md:px-10">
         <div className="text-center">
           <img src={frontmatter.cover} alt="" className="" />
         </div>
 
         <div className="py-4">
-          <h1 className="lg:text-5xl md:text-5xl sm:text-5xl text-3xl">
+          <h1 className="lg:text-5xl md:text-5xl font-bold sm:text-5xl text-3xl">
             {frontmatter.title}
           </h1>
         </div>
@@ -56,7 +56,10 @@ const AboutPage = ({ content, data }) => {
             </div>
           </div>
         </div>
-        <ReactMarkdown escapeHtml={true} source={content} />
+        <article className="prose lg:prose-xl md:prose-xl sm:prose-xl list">
+          <ReactMarkdown escapeHtml={true} source={content} />
+        </article>
+
       </main>
     </Layout>
   );
@@ -65,9 +68,9 @@ const AboutPage = ({ content, data }) => {
 export const getStaticProps: GetStaticProps = async () => {
   // Import our .md file using the `slug` from the URL
   const content = await import(`content/about.md`);
- 
+
   const output = matter(content.default);
-//   console.log(data);
+  //   console.log(data);
   return {
     props: {
       content: output.content,

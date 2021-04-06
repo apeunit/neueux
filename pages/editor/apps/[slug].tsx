@@ -1,7 +1,7 @@
 import Layout from "components/Layout";
 import React from "react";
-import Screen from "components/card/Screen";
-import HeaderView from "components/sections/HeaderView";
+import Screen from "components/app/screen/Card";
+import HeaderView from "components/app/HeaderView";
 
 import {
   getGithubPreviewProps,
@@ -106,7 +106,7 @@ export default function Home({ file, attributes }) {
   const [app, form] = useGithubJsonForm(file || {}, formOptions);
   usePlugin(form);
   return (
-    <Layout title={app.name}>
+    <Layout title={`Edit - ${app.name} - App`}>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
         <div

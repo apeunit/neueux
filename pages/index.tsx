@@ -1,19 +1,19 @@
 import { GetStaticProps } from "next";
 import Layout from "components/Layout";
 import React from "react";
-import AppCard from "components/card/App";
-import Header from "components/sections/Header";
+import AppCard from "components/app/Card";
+import Header from "components/Header";
 import { listAppContent } from "lib/app";
 
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
-import Filter from "components/sections/Filter";
+import Filter from "components/filter";
 
 
 const IndexPage = ({ apps, filter }) => {
 
   return (
-   <Layout title="Home | Next.js + TypeScript Example">
+   <Layout title="Screen Gallery">
     
       <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />

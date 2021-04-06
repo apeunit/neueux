@@ -1,14 +1,14 @@
 import { GetStaticProps } from "next";
 import Layout from "components/Layout";
 import React from "react";
-import Header from "components/sections/Header";
+import Header from "components/Header";
 import { listScreenContent } from "lib/screen";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
-import Filter from "components/sections/Filter";
-import ScreenCard from "components/card/Screen";
+import Filter from "components/filter";
+import ScreenCard from "components/app/screen/Card";
 
 const FilterPage = ({ screens, filter }) => {
   const router = useRouter();
@@ -39,7 +39,7 @@ const FilterPage = ({ screens, filter }) => {
   };
 
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
+    <Layout title="Filter">
       <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />
         <Filter
