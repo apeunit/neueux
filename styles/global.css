@@ -54,6 +54,10 @@ ul.nav {
     left: 0;
   
 }
+.list p{
+  font-size: 1.18rem !important;
+  line-height: 1.75rem !important;
+}
 
 ::-webkit-scrollbar{
   width: 0;
