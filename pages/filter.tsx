@@ -55,17 +55,21 @@ const FilterPage = ({ screens, filter }) => {
               <div
                 key={`screen-card-view-${screen.slug}`}
                 className={[
-                  screen.device === "desktop" ? "w-3/6" : "lg:w-1/6 md:w-1/3 sm:w-1/6 w-1/2",
+                  screen.device === "desktop"
+                    ? "w-3/6"
+                    : "lg:w-1/6 md:w-1/3 sm:w-1/6 w-1/2",
                   "px-2 mt-5",
                 ].join(" ")}
               >
-                <Link href={{
-                  pathname: `/apps/${screen.app}/screen/${screen.slug}`,
-                  query: {
-                    referer: router.pathname,
-                    ...router.query
-                  }
-                }}>
+                <Link
+                  href={{
+                    pathname: `/apps/${screen.app}/screen/${screen.slug}`,
+                    query: {
+                      referer: router.pathname,
+                      ...router.query,
+                    },
+                  }}
+                >
                   <a>
                     <ScreenCard url={screen.image} style={screen.device} />
                   </a>
@@ -79,7 +83,7 @@ const FilterPage = ({ screens, filter }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ preview }) => {
   const screens = listScreenContent();
   const tags = filteredTagsAll(1, 30);
   const userflows = filteredUserflowsAll(1, 30);
@@ -95,6 +99,7 @@ export const getStaticProps: GetStaticProps = async () => {
         tags,
         userflows,
       },
+      preview: preview || false,
     },
   };
 };

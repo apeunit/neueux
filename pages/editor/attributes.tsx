@@ -64,7 +64,7 @@ export default function Home({ file }) {
   const [data, form] = useGithubJsonForm(file, formOptions);
   usePlugin(form);
   return (
-    <Layout title="Edit - Attributes">
+    <Layout title="Edit - Attributes" backButton>
       <div className="w-3/5 mx-auto">
         <h2 className="my-8 px-2 text-lg font-bold">Tags</h2>
         <div className="mt-8 border border-solid divide-y divide-solid">
@@ -94,17 +94,25 @@ export const getStaticProps: GetStaticProps = async function ({
   previewData,
 }) {
   if (preview) {
-    return getGithubPreviewProps({
-      ...previewData,
-      fileRelativePath: "content/meta/attributes.json",
-      parse: parseJson,
-    });
+    return {
+      props: {
+        ...(
+          await getGithubPreviewProps({
+            ...previewData,
+            fileRelativePath: "content/meta/attributes.json",
+            parse: parseJson,
+          })
+        ).props,
+        editable: true,
+      },
+    };
   }
   return {
     props: {
       sourceProvider: null,
       error: null,
       preview: false,
+      editable: true,
       file: {
         fileRelativePath: "content/meta/attributes.json",
         data: (await import("content/meta/attributes.json")).default,

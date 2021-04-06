@@ -10,10 +10,12 @@ import Link from "next/link";
 import Filter from "components/filter";
 import { filteredTagsByApp } from "lib/tags";
 import { filteredUserflowsByApp } from "lib/userflows";
+import Button from "components/Button";
 
 import { useRouter } from "next/router";
 
-const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
+const App = ({ app, screens, screen, screenNavigation, tags, userflows, preview }) => {
+
   if (screen) {
     return (
       <ScreenView
@@ -82,11 +84,22 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
           })}
         </div>
       </main>
+      {preview && (
+        <div className="fixed right-5 bottom-5 inline-block">
+          <Link href={`/editor/apps/${app.slug}`}>
+            <a>
+              <Button type="primary" size="lg">
+                Edit app
+              </Button>
+            </a>
+          </Link>
+        </div>
+      )}
     </Layout>
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
   const app = getAppContent(params.slug[0]);
   const screens = getAllAppScreenContent(app.slug);
   const screen = params.slug[2] ? getScreenContent(params.slug[2]) : null;
@@ -115,6 +128,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       screenNavigation,
       tags,
       userflows,
+      preview: preview || false,
     },
   };
 };

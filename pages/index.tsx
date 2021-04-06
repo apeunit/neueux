@@ -9,20 +9,17 @@ import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/filter";
 
-
 const IndexPage = ({ apps, filter }) => {
-
   return (
-   <Layout title="Screen Gallery">
-    
+    <Layout title="Screen Gallery">
       <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />
         <Filter
           tags={filter.tags}
           userflows={filter.userflows}
           routeParams={null}
-          routePathname={'/filter'}
-          fallbackRoutePathname={'/'}
+          routePathname={"/filter"}
+          fallbackRoutePathname={"/"}
         />
         {apps.map((app) => {
           return <AppCard key={`app-list-${app.slug}`} app={app} />;
@@ -32,10 +29,13 @@ const IndexPage = ({ apps, filter }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({
+  preview,
+  // previewData,
+}) => {
   const apps = listAppContent(1, 30);
   const tags = filteredTagsAll(1, 30);
-  const userflows =  filteredUserflowsAll(1, 30);
+  const userflows = filteredUserflowsAll(1, 30);
   const pagination = {
     current: 1,
     pages: 1,
@@ -48,6 +48,8 @@ export const getStaticProps: GetStaticProps = async () => {
         tags,
         userflows,
       },
+      preview: preview || false,
+      // previewData,
     },
   };
 };

@@ -106,7 +106,7 @@ export default function Home({ file, attributes }) {
   const [app, form] = useGithubJsonForm(file || {}, formOptions);
   usePlugin(form);
   return (
-    <Layout title={`Edit - ${app.name} - App`}>
+    <Layout title={`Edit - ${app.name} - App`} backButton>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
         <div
@@ -152,6 +152,7 @@ export const getStaticProps = async function ({
           })
         ).props,
         attributes: attributes.data,
+        editable: true,
       },
     };
   }
@@ -160,6 +161,7 @@ export const getStaticProps = async function ({
       sourceProvider: null,
       error: null,
       preview: false,
+      editable: true,
       file: {
         fileRelativePath: `content/apps/${slug}.json`,
         data: (await import(`content/apps/${slug}.json`)).default,

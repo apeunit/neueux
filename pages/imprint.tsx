@@ -14,7 +14,7 @@ const ImprintPage = ({ content }) => (
     </Layout>
 );
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({preview}) => {
   // Import our .md file using the `slug` from the URL
   const content = await import(`content/imprint.md`);
 
@@ -24,6 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       content: output.content,
       data: output.data,
+      preview: preview || false,
     },
   };
 };
