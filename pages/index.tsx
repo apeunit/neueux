@@ -7,7 +7,7 @@ import { listAppContent } from "lib/app";
 
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
-import Filter from "components/filter/Index";
+import Filter from "components/filter";
 
 
 const IndexPage = ({ apps, filter }) => {
