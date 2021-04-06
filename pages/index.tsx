@@ -13,7 +13,7 @@ import Filter from "components/filter";
 const IndexPage = ({ apps, filter }) => {
 
   return (
-   <Layout title="Home | Next.js + TypeScript Example">
+   <Layout title="Screen Gallery">
     
       <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />

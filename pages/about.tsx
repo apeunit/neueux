@@ -10,7 +10,7 @@ import ReactMarkdown from "react-markdown";
 const AboutPage = ({ content, data }) => {
   const frontmatter = data;
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
+    <Layout title="About">
       <div className="w-11/12 mx-auto mt-5">
         <Link href="/">
           <a className=" ">

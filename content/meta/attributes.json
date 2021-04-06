@@ -1,0 +1,58 @@
+{
+  "userflows": [
+    {
+      "name": "Send",
+      "id": "xoz85l8dh"
+    },
+    {
+      "name": "Receive",
+      "id": "q3zje2wu2"
+    },
+    {
+      "name": "Onboarding",
+      "id": "urnsc8ap3"
+    },
+    {
+      "name": "Delete wallet",
+      "id": "k0xhw85zn"
+    },
+    {
+      "name": "Backup",
+      "id": "eiqs8j92u"
+    },
+    {
+      "name": "Create additional wallet",
+      "id": "gmc0zdfli"
+    }
+  ],
+  "tags": [
+    {
+      "name": "About",
+      "id": "mu0tsey2m"
+    },
+    {
+      "name": "3rd-party-service",
+      "id": "7b5faxtz3"
+    },
+    {
+      "name": "Address",
+      "id": "icwt2g5fx"
+    },
+    {
+      "name": "Balance",
+      "id": "k7gppyh76"
+    },
+    {
+      "name": "Biometrics",
+      "id": "yfy10248i"
+    },
+    {
+      "name": "Collectibles",
+      "id": "omgp8idir"
+    },
+    {
+      "name": "Contacts",
+      "id": "x0f3obtkm"
+    }
+  ]
+}

@@ -36,7 +36,7 @@ const ScreenView = ({ screen, app, navigation }) => {
                 <div className="flex justify-center w-10 h-10">
                   <img
                     className="filter-drop-shadow-view rounded-lg bg-white"
-                    src={`/${app.icon}`}
+                    src={`${app.icon}`}
                   />
                 </div>
               </a>
@@ -73,7 +73,7 @@ const ScreenView = ({ screen, app, navigation }) => {
       <div className="lg:flex">
         <div className="flex flex-col h-screen lg:w-9/11 w-full justify-center ">
           <div className="h-3/4 py-10 lg:py-0 w-full filter-drop-shadow text-center">
-            <img src={`/${screen.image}`} className="h-full rounded-lg inline-block" />
+            <img src={`${screen.image}`} className="h-full rounded-lg inline-block" />
           </div>
           <div className="lg:hidden border-t border-solid border-gray-200 py-2 text-right bottom-0 fixed w-full">
         {navigation.prev && (
@@ -117,7 +117,7 @@ const ScreenView = ({ screen, app, navigation }) => {
                 <div className="flex justify-center">
                   <img
                     className="w-16 h-16 filter-drop-shadow-view bg-white rounded-lg"
-                    src={`/${app.icon}`}
+                    src={`${app.icon}`}
                   />
                 </div>
                 <p className="text-xl mt-4 font-extrabold leading-6 tracking-tighter">
@@ -130,29 +130,29 @@ const ScreenView = ({ screen, app, navigation }) => {
             </Link>
           </div>
           <div className="flex justify-center w-10/12 mx-auto h-1/2 pt-6 flex-wrap space-x-2">
-            {screen.userflows.map((userflow) => (
-              <div key={userflow.slug} className="mb-3">
+            {screen.userflow && (
+              <div key={screen.userflow.id} className="mb-3">
                 <Link
                   href={{
                     pathname: "/filter",
                     query: {
-                      userflows: [userflow.slug],
+                      userflows: [screen.userflow.id],
                     },
                   }}
                 >
                   <a className="bg-gray-50 hover:bg-gray-200 capitalize px-4 py-1.5 text-xs rounded-2xl border-2 border-solid border-gray-200 font-bold text-gray-500">
-                    {userflow.name}
+                    {screen.userflow.name}
                   </a>
                 </Link>
               </div>
-            ))}
+            )}
             {screen.tags.map((tag) => (
-              <div key={tag.slug} className="mb-3">
+              <div key={tag.id} className="mb-3">
                 <Link
                   href={{
                     pathname: "/filter",
                     query: {
-                      tags: [tag.slug],
+                      tags: [tag.id],
                     },
                   }}
                 >
