@@ -137,7 +137,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const apps = listAllAppContent();
   const paths = [];
   apps.forEach((app) => {
-    const screens = app.screens;
+    const screens = getAllAppScreenContent(app.slug);
     paths.push({
       params: {
         slug: [app.slug],
