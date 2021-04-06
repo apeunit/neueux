@@ -32,9 +32,13 @@ const AppCard = ({ app }) => (
             key={`screen-card-view-${screen.slug}`}
             className={[
               (i > 1 && app.device === "mobile") ||
-              (i > 0 && app.device === "desktop")
-                ? "hidden lg:block md:block sm:block"
-                : "",
+                (i > 0 && app.device === "desktop")
+                ? "hidden xl:block"
+                : "block",
+              (i > 2 && app.device === "mobile") ||
+                (i > 1 && app.device === "desktop")
+                ? "hidden xl:block"
+                : "md:block sm:block lg:block",
             ].join(" ")}
           >
             <Link href={`/apps/${app.slug}`}>
