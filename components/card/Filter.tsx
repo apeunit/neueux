@@ -76,7 +76,7 @@ const FilterCard = ({
           </div>
         </div>
 
-        <div className="text-xs bottom-2 xl:absolute relative flex justify-center w-3xl px-2">
+        <div className="text-xs bottom-2 xl:absolute relative flex justify-center w-full px-2">
           {selectedList.length ? (
             <span
               onClick={onClear}
