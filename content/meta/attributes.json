@@ -1,6 +1,22 @@
 {
   "userflows": [
     {
+      "name": "Blank",
+      "id": "amuunrve2"
+    },
+    {
+      "name": "Backup",
+      "id": "eiqs8j92u"
+    },
+    {
+      "name": "Create wallet",
+      "id": "gmc0zdfli"
+    },
+    {
+      "name": "Delete wallet",
+      "id": "k0xhw85zn"
+    },
+    {
       "name": "Send",
       "id": "xoz85l8dh"
     },
@@ -9,34 +25,34 @@
       "id": "q3zje2wu2"
     },
     {
+      "name": "Recovery",
+      "id": "c2rr1ycqt"
+    },
+    {
       "name": "Onboarding",
       "id": "urnsc8ap3"
     },
     {
-      "name": "Delete wallet",
-      "id": "k0xhw85zn"
-    },
-    {
-      "name": "Backup",
-      "id": "eiqs8j92u"
-    },
-    {
-      "name": "Create additional wallet",
-      "id": "gmc0zdfli"
+      "name": "Onramp",
+      "id": "kt2dfi02h"
     }
   ],
   "tags": [
-    {
-      "name": "About",
-      "id": "mu0tsey2m"
-    },
     {
       "name": "3rd-party-service",
       "id": "7b5faxtz3"
     },
     {
+      "name": "About",
+      "id": "mu0tsey2m"
+    },
+    {
       "name": "Address",
       "id": "icwt2g5fx"
+    },
+    {
+      "name": "Backup",
+      "id": "td3lccfuo"
     },
     {
       "name": "Balance",
@@ -53,6 +69,134 @@
     {
       "name": "Contacts",
       "id": "x0f3obtkm"
+    },
+    {
+      "name": "Currency Overview",
+      "id": "i0c7g6td6"
+    },
+    {
+      "name": "dApp Store",
+      "id": "rx1w7vljm"
+    },
+    {
+      "name": "DeFi",
+      "id": "xvay0u80k"
+    },
+    {
+      "name": "Education",
+      "id": "szojdpfpo"
+    },
+    {
+      "name": "Email",
+      "id": "mywth04j4"
+    },
+    {
+      "name": "ENS",
+      "id": "u93yuzxj8"
+    },
+    {
+      "name": "Exchange",
+      "id": "y4a8yvspt"
+    },
+    {
+      "name": "Explanation",
+      "id": "qcwwc7hjw"
+    },
+    {
+      "name": "Fee",
+      "id": "jjlq2si5k"
+    },
+    {
+      "name": "History",
+      "id": "d2aypoqmv"
+    },
+    {
+      "name": "Language",
+      "id": "u71gbhqcz"
+    },
+    {
+      "name": "Menu",
+      "id": "r84aimrt9"
+    },
+    {
+      "name": "Network",
+      "id": "pq9rgdt97"
+    },
+    {
+      "name": "Notifications",
+      "id": "wtqe8nn8w"
+    },
+    {
+      "name": "Overview",
+      "id": "cjdjocjto"
+    },
+    {
+      "name": "Password",
+      "id": "0nvueu7a8"
+    },
+    {
+      "name": "Phone Number",
+      "id": "8f87dstkk"
+    },
+    {
+      "name": "Privacy",
+      "id": "pmjek5egb"
+    },
+    {
+      "name": "Private Key",
+      "id": "8oc9ysbyw"
+    },
+    {
+      "name": "QR Code",
+      "id": "r18bge4gm"
+    },
+    {
+      "name": "Rates",
+      "id": "gzu2ar8r1"
+    },
+    {
+      "name": "Rating Request",
+      "id": "i1da3r6e3"
+    },
+    {
+      "name": "Refferal",
+      "id": "9ttwtn4q8"
+    },
+    {
+      "name": "Search",
+      "id": "kzld30rz5"
+    },
+    {
+      "name": "Security",
+      "id": "z7yu0eq11"
+    },
+    {
+      "name": "Settings",
+      "id": "6741cana8"
+    },
+    {
+      "name": "Shop",
+      "id": "zjj6ykba8"
+    },
+    {
+      "name": "Stake",
+      "id": "r1a1xx3ln"
+    },
+    {
+      "name": "Support",
+      "id": "lwt9kim7n"
+    },
+    {
+      "name": "Token Visibility",
+      "id": "7q72o2sm9"
+    },
+    {
+      "name": "Transfer Limit",
+      "id": "xejj4rm1z"
+    },
+    {
+      "name": "Username",
+      "id": "qoi07zvgf"
     }
   ]
 }

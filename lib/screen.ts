@@ -37,7 +37,7 @@ function fetchScreenContent(): ScreenContent[] {
             const app = JSON.parse(fileContents);
             const screens = app.screens.map((screen) => {
                 const userflow = getUserflow(screen.userflow);
-                const tags = screen.tags.map((tag) => getTag(tag)).filter((tag) => tag);
+                const tags = screen.tags ? screen.tags.map((tag) => getTag(tag)).filter((tag) => tag) : [];
                 const screenResult = {
                     ...screen,
                     app: app.slug,

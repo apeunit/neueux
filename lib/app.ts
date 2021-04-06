@@ -36,9 +36,9 @@ function fetchAppContent(): AppContent[] {
 
       // Use gray-matter to parse the post metadata section
       const app = JSON.parse(fileContents);
-      const screens = app.screens.splice(0, 6).map((screen) => {
+      const screens = app.screens ? app.screens.splice(0, 6).map((screen) => {
         const userflow = getUserflow(screen.userflow);
-        const tags = screen.tags.map((tag) => getTag(tag)).filter((tag) => tag);
+        const tags = screen.tags ? screen.tags.map((tag) => getTag(tag)).filter((tag) => tag) : [];
         return {
           ...screen,
           app: app.slug,
@@ -46,7 +46,7 @@ function fetchAppContent(): AppContent[] {
           userflow,
           tags
         }
-      });
+      }) : [];
 
       const matterResult = {
         ...app,
