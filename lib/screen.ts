@@ -36,7 +36,7 @@ function fetchScreenContent(): ScreenContent[] {
             // Use gray-matter to parse the post metadata section
             const app = JSON.parse(fileContents);
             const screens = app.screens.map((screen) => {
-                const userflow = getUserflow(screen.userflow);
+                const userflow = screen.userflow ? getUserflow(screen.userflow)  : null;
                 const tags = screen.tags ? screen.tags.map((tag) => getTag(tag)).filter((tag) => tag) : [];
                 const screenResult = {
                     ...screen,
