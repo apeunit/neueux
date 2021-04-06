@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 import Config from 'config.json';
 
 type Props = {
@@ -21,6 +22,7 @@ const Layout = ({ children, title = null, description = Config.site_description 
       <Navbar />
     </header>
     {children}
+    <Footer />
   </div>
 );
 

@@ -1,7 +1,7 @@
 {
   "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
   "site_title": "Neueux",
-  "site_description": "Next.js blog template for Netlify",
+  "site_description": "A collaborative resource platform for blockchain developers and designers. Provides design tools and resources to improve your blockchain application's UI & UX.",
   "site_keywords": [
     {
       "keyword": "Next.js"
