@@ -1,14 +1,17 @@
-
+import fs from "fs";
+import path from "path";
 import { UserflowContent } from './userflows';
 import { TagContent } from './tags';
-import { listAllAppContent } from './app';
+import { postsDirectory } from './app';
+import { getUserflow } from './userflows';
+import { getTag } from './tags';
 
 export type ScreenContent = {
     readonly image: string;
     readonly id: string;
     readonly slug: string;
     readonly app: string;
-    device?: string;
+    readonly device?: string;
     readonly userflow?: UserflowContent;
     readonly tags?: TagContent[];
 };
@@ -21,25 +24,53 @@ function fetchScreenContent(): ScreenContent[] {
     }
 
     // // Get file names under /screens
-    const apps = listAllAppContent();
+    // Get file names under /posts
+    const fileNames = fs.readdirSync(postsDirectory);
+    const allScreenData = fileNames
+        .filter((it) => it.endsWith(".json"))
+        .map((fileName) => {
+            // Read markdown file as string
+            const fullPath = path.join(postsDirectory, fileName);
+            const fileContents = fs.readFileSync(fullPath, "utf8");
 
-    const screens = apps.filter((app) => app.screens.length).map((app) => {
-        return app.screens
-    });
+            // Use gray-matter to parse the post metadata section
+            const app = JSON.parse(fileContents);
+            const screens = app.screens.map((screen) => {
+                const userflow = getUserflow(screen.userflow);
+                const tags = screen.tags.map((tag) => getTag(tag)).filter((tag) => tag);
+                const screenResult = {
+                    ...screen,
+                    app: app.slug,
+                    device: app.device,
+                    userflow,
+                    tags
+                };
 
-    screenCache = [...new Set(screens.flat())] as ScreenContent[];
+                const matterData = screenResult as {
+                    image: string;
+                    id: string;
+                    slug: string;
+                    app: string;
+                    device?: string;
+                    userflow?: UserflowContent;
+                    tags?: TagContent[];
+                };
+
+                return matterData;
+            });
+
+
+            return screens;
+        });
+
+    screenCache = [...new Set(allScreenData.flat())] as ScreenContent[];
 
     return screenCache;
 }
 
 export function listScreenContent(
 ): ScreenContent[] {
-    const apps = listAllAppContent();
-    return fetchScreenContent().map((screen) => {
-        const app = apps.find((a) => a.slug === screen.app);
-        screen.device = app ? app.device : '';
-        return screen;
-    });
+    return fetchScreenContent();
 }
 
 export function listAppScreenContent(
@@ -57,7 +88,7 @@ export function getAllAppScreenContent(
 }
 
 export function getScreenContent(
-    slug: string | string[],
+    id: string | string[],
 ): ScreenContent {
-    return fetchScreenContent().find((screen) => screen.slug === slug);
+    return fetchScreenContent().find((screen) => screen.id === id);
 }

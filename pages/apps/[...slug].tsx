@@ -5,6 +5,7 @@ import Screen from "components/app/screen/Card";
 import HeaderView from "components/app/HeaderView";
 import ScreenView from "components/app/screen/View";
 import { getAppContent, listAllAppContent } from "lib/app";
+import { getScreenContent, getAllAppScreenContent } from "lib/screen";
 import Link from "next/link";
 import Filter from "components/filter";
 import { filteredTagsByApp } from "lib/tags";
@@ -87,10 +88,8 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows }) => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const app = getAppContent(params.slug[0]);
-  const screens = app.screens;
-  const screen = params.slug[2]
-    ? screens.find((screen) => screen.id === params.slug[2])
-    : null;
+  const screens = getAllAppScreenContent(app.slug);
+  const screen = params.slug[2] ? getScreenContent(params.slug[2]) : null;
   const screenNavigation = { prev: null, next: null };
 
   const tags = filteredTagsByApp(params.slug[0]);
@@ -112,7 +111,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       app,
       screens,
-      screen: screen || null,
+      screen: screen,
       screenNavigation,
       tags,
       userflows,

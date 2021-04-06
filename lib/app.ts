@@ -4,7 +4,7 @@ import { ScreenContent } from './screen';
 import { getUserflow } from './userflows';
 import { getTag } from './tags';
 
-const postsDirectory = path.join(process.cwd(), "content/apps");
+export const postsDirectory = path.join(process.cwd(), "content/apps");
 
 export type AppContent = {
   readonly name: string;
@@ -13,6 +13,7 @@ export type AppContent = {
   readonly icon: string;
   readonly slug: string;
   readonly screens?: ScreenContent[];
+  readonly screenPreview?: ScreenContent[];
   readonly tags?: string[];
   readonly userflows?: string[];
   readonly published_at: string;
@@ -35,12 +36,13 @@ function fetchAppContent(): AppContent[] {
 
       // Use gray-matter to parse the post metadata section
       const app = JSON.parse(fileContents);
-      const screens = app.screens.map((screen) => {
+      const screens = app.screens.splice(0, 6).map((screen) => {
         const userflow = getUserflow(screen.userflow);
         const tags = screen.tags.map((tag) => getTag(tag)).filter((tag) => tag);
         return {
           ...screen,
           app: app.slug,
+          device: app.device,
           userflow,
           tags
         }
@@ -48,7 +50,7 @@ function fetchAppContent(): AppContent[] {
 
       const matterResult = {
         ...app,
-        screens,
+        screens, 
       }
 
       const matterData = matterResult as {
@@ -59,6 +61,7 @@ function fetchAppContent(): AppContent[] {
         published_at: string,
         slug: string,
         screens?: ScreenContent[],
+        screenPreview?: ScreenContent[],
         tags?: string[],
         userflows?: string[],
       };
