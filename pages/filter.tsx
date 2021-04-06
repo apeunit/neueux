@@ -7,8 +7,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
-import Filter from "components/filter/Index";
-import ScreenCard from "components/screen/Card";
+import Filter from "components/filter";
+import ScreenCard from "components/app/screen/Card";
 
 const FilterPage = ({ screens, filter }) => {
   const router = useRouter();
