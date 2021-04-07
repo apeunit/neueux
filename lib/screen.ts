@@ -35,7 +35,7 @@ function fetchScreenContent(): ScreenContent[] {
 
             // Use gray-matter to parse the post metadata section
             const app = JSON.parse(fileContents);
-            const screens = app.screens.map((screen) => {
+            const screens = app.screens?.map((screen) => {
                 const userflow = screen.userflow ? getUserflow(screen.userflow)  : null;
                 const tags = screen.tags ? screen.tags.map((tag) => getTag(tag)).filter((tag) => tag) : [];
                 const screenResult = {
@@ -78,13 +78,13 @@ export function listAppScreenContent(
     page: number,
     limit: number,
 ): ScreenContent[] {
-    return fetchScreenContent().filter((screen) => screen.app === appSlug).slice((page - 1) * limit, page * limit);
+    return fetchScreenContent().filter((screen) => screen?.app === appSlug).slice((page - 1) * limit, page * limit);
 }
 
 export function getAllAppScreenContent(
     appSlug: string | string[],
 ): ScreenContent[] {
-    return fetchScreenContent().filter((screen) => screen.app === appSlug);
+    return fetchScreenContent().filter((screen) => screen?.app === appSlug);
 }
 
 export function getScreenContent(

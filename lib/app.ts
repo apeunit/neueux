@@ -67,7 +67,7 @@ function fetchAppContent(): AppContent[] {
       };
 
       const tags = matterData.screens.map((screen) => screen.tags.map((tag) => tag.id));
-      const userflows = matterData.screens.map((screen) => screen.userflow.id);
+      const userflows = matterData.screens.filter((screen) => screen.userflow).map((screen) => screen.userflow?.id);
       matterData.tags = [...new Set(tags.flat())] as string[];
       matterData.userflows = [...userflows] as string[];
 
