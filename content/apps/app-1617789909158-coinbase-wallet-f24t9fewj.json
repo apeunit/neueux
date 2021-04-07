@@ -7,9 +7,12 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617790050/neueux/media/apps-logo/123123123.png",
   "screens": [
     {
-      "id": "2ipaq8d0p",
-      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790069/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_005.png",
-      "userflow": "gmc0zdfli"
+      "id": "43l522gi3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790070/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_006.png",
+      "userflow": "gmc0zdfli",
+      "tags": [
+        "qoi07zvgf"
+      ]
     },
     {
       "id": "ivoeoyq4w",
@@ -39,6 +42,11 @@
       "tags": [
         "szojdpfpo"
       ]
+    },
+    {
+      "id": "2ipaq8d0p",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790069/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_005.png",
+      "userflow": "gmc0zdfli"
     }
   ]
 }
