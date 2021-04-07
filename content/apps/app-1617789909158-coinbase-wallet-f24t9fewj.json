@@ -1,0 +1,186 @@
+{
+  "id": "f24t9fewj",
+  "slug": "app-1617789909158-coinbase-wallet-f24t9fewj",
+  "name": "Coinbase Wallet",
+  "device": "mobile",
+  "description": "Crypto Wallet & DApp Browser",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617790050/neueux/media/apps-logo/123123123.png",
+  "screens": [
+    {
+      "id": "q83p6c9rq",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790085/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_023.png",
+      "userflow": "eiqs8j92u",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "ivoeoyq4w",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790064/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_001.png",
+      "userflow": "urnsc8ap3"
+    },
+    {
+      "id": "nmrc1e4bv",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790065/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_002.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "qcwwc7hjw"
+      ]
+    },
+    {
+      "id": "4iqctnet3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790066/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_003.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "szojdpfpo"
+      ]
+    },
+    {
+      "id": "fbvg70jr8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790068/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_004.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "szojdpfpo"
+      ]
+    },
+    {
+      "id": "2ipaq8d0p",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790069/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_005.png",
+      "userflow": "urnsc8ap3"
+    },
+    {
+      "id": "43l522gi3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790070/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_006.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "qoi07zvgf"
+      ]
+    },
+    {
+      "id": "udbbr5zqt",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790070/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_007.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "qoi07zvgf"
+      ]
+    },
+    {
+      "id": "v6ji44g9r",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790071/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_008.png",
+      "tags": [
+        "qoi07zvgf"
+      ],
+      "userflow": "urnsc8ap3"
+    },
+    {
+      "id": "nae0uogq6",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790072/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_009.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "pmjek5egb"
+      ]
+    },
+    {
+      "id": "8kggai4p3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790074/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_010.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "pmjek5egb"
+      ]
+    },
+    {
+      "id": "doqhk6tmc",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790075/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_011.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "ty9726ow8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790076/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_013.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "ng8vdncap",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790077/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_014.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "z7yu0eq11",
+        "0nvueu7a8"
+      ]
+    },
+    {
+      "id": "jeaqj4bqc",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790078/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_015.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "8mt4v2v6x",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790079/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_016.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "qcwwc7hjw"
+      ]
+    },
+    {
+      "id": "lnx81qdh8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790080/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_017.png",
+      "tags": [
+        "cjdjocjto",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "31fpilu12",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790080/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_018.png",
+      "tags": [
+        "omgp8idir",
+        "cjdjocjto",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "fajq9l042",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790081/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_019.png",
+      "tags": [
+        "qcwwc7hjw"
+      ],
+      "userflow": "eiqs8j92u"
+    },
+    {
+      "id": "l8dhx94im",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790082/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_020.png",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ],
+      "userflow": "eiqs8j92u"
+    },
+    {
+      "id": "7tbyghktk",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790083/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_021.png",
+      "userflow": "eiqs8j92u",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "75oojcnz1",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790084/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_022.png",
+      "userflow": "eiqs8j92u",
+      "tags": [
+        "ewycpzskx"
+      ]
+    }
+  ]
+}
