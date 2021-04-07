@@ -7,6 +7,16 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617782056/neueux/media/apps-logo/unnamed.png",
   "screens": [
     {
+      "id": "886f35vmf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789450/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_050.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "z7yu0eq11",
+        "qcwwc7hjw",
+        "qcwwc7hjw"
+      ]
+    },
+    {
       "id": "40ma5jumx",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789407/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_001.png",
       "userflow": "urnsc8ap3"
@@ -346,6 +356,54 @@
     {
       "id": "rmuzmvu7s",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789444/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_043.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "b8aeaaj6d",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789444/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_044.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "otkf120n9",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789445/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_045.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "9335flgl4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789446/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_046.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "6xf1ojbok",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789447/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_047.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "1pwocqq5p",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789447/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_048.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "cfjnfhjwr",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789448/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_049.png",
       "userflow": "urnsc8ap3",
       "tags": [
         "ewycpzskx"
