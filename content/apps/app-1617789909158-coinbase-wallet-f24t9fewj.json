@@ -7,13 +7,6 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617790050/neueux/media/apps-logo/123123123.png",
   "screens": [
     {
-      "id": "v6ji44g9r",
-      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790071/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_008.png",
-      "tags": [
-        "qoi07zvgf"
-      ]
-    },
-    {
       "id": "ivoeoyq4w",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790064/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_001.png",
       "userflow": "gmc0zdfli"
@@ -61,6 +54,47 @@
       "userflow": "gmc0zdfli",
       "tags": [
         "qoi07zvgf"
+      ]
+    },
+    {
+      "id": "v6ji44g9r",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790071/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_008.png",
+      "tags": [
+        "qoi07zvgf"
+      ]
+    },
+    {
+      "id": "nae0uogq6",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790072/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_009.png",
+      "userflow": "gmc0zdfli",
+      "tags": [
+        "pmjek5egb"
+      ]
+    },
+    {
+      "id": "8kggai4p3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790074/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_010.png",
+      "userflow": "gmc0zdfli",
+      "tags": [
+        "pmjek5egb"
+      ]
+    },
+    {
+      "id": "doqhk6tmc",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790075/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_011.png",
+      "userflow": "gmc0zdfli",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "ty9726ow8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790076/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_013.png",
+      "userflow": "gmc0zdfli",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
       ]
     }
   ]
