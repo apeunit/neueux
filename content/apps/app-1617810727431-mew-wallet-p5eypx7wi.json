@@ -4,5 +4,73 @@
   "name": "MEW Wallet",
   "device": "mobile",
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617810776/neueux/media/apps-logo/mew%20wallet%20icon.png",
-  "description": "Ethereum wallet"
+  "description": "Ethereum wallet",
+  "screens": [
+    {
+      "id": "79u9xqpcr",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810806/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_001.png",
+      "userflow": "urnsc8ap3"
+    },
+    {
+      "id": "vgxe5f354",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810810/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_002.png",
+      "userflow": "amuunrve2",
+      "tags": [
+        "k7gppyh76",
+        "cjdjocjto"
+      ]
+    },
+    {
+      "id": "of19521ux",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810813/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_003.png",
+      "tags": [
+        "cjdjocjto"
+      ]
+    },
+    {
+      "id": "c70r28ueu",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810815/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_004.png",
+      "tags": [
+        "y4a8yvspt"
+      ]
+    },
+    {
+      "id": "bj9p9yx33",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810817/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_005.png",
+      "tags": [
+        "r1a1xx3ln"
+      ]
+    },
+    {
+      "id": "6hemlhyjc",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810820/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_006.png",
+      "tags": [
+        "szojdpfpo"
+      ]
+    },
+    {
+      "id": "6nmokzacg",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810823/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_007.png",
+      "tags": [
+        "cjdjocjto",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "5suocbt6i",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810825/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_008.png",
+      "tags": [
+        "szojdpfpo",
+        "qcwwc7hjw"
+      ]
+    },
+    {
+      "id": "ky3vt63fv",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617810827/neueux/media/app-1617810727431-mew-wallet-p5eypx7wi/screens/mew_Wallet_009.png",
+      "tags": [
+        "qcwwc7hjw",
+        "szojdpfpo"
+      ]
+    }
+  ]
 }
