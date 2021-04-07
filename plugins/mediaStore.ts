@@ -27,7 +27,7 @@ export class CloudinaryMediaStore implements MediaStore {
     return src;
   }
   list(options?: MediaListOptions): Promise<MediaList> {
-    const limit = 200;
+    const limit = 500;
 
     return (async () => {
       const result = await Axios.get('/api/cloudinary/list', {
