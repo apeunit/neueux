@@ -7,6 +7,14 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617790050/neueux/media/apps-logo/123123123.png",
   "screens": [
     {
+      "id": "8oyrd44ux",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790166/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_115.png",
+      "userflow": "k0xhw85zn",
+      "tags": [
+        "6741cana8"
+      ]
+    },
+    {
       "id": "ivoeoyq4w",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790064/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_001.png",
       "userflow": "urnsc8ap3"
@@ -771,6 +779,66 @@
       "tags": [
         "Turkey & Swiss",
         "y4a8yvspt"
+      ]
+    },
+    {
+      "id": "m9zxoiwuo",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790159/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_107.png",
+      "tags": [
+        "d2aypoqmv",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "92h5ok6fk",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790160/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_108.png",
+      "tags": [
+        "d2aypoqmv",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "8dk4d7s9i",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790161/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_109.png",
+      "tags": [
+        "d2aypoqmv"
+      ]
+    },
+    {
+      "id": "66vm137i3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790162/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_110.png",
+      "tags": [
+        "d2aypoqmv",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "pt65utxje",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790163/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_111.png",
+      "tags": [
+        "d2aypoqmv"
+      ]
+    },
+    {
+      "id": "vp2kkyxxx",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790164/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_112.png",
+      "tags": [
+        "cjdjocjto",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "lxlfjkklx",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790165/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_113.png",
+      "tags": [
+        "6741cana8"
+      ]
+    },
+    {
+      "id": "gblpl6839",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617790166/neueux/media/app-1617789909158-coinbase-wallet-f24t9fewj/screens/coinbase_wallet_114.png",
+      "tags": [
+        "6741cana8"
       ]
     }
   ]
