@@ -1,1 +1,8 @@
-{"id":"p5eypx7wi","slug":"app-1617810727431-mew-wallet-p5eypx7wi","name":"MEW Wallet","device":"mobile"}
+{
+  "id": "p5eypx7wi",
+  "slug": "app-1617810727431-mew-wallet-p5eypx7wi",
+  "name": "MEW Wallet",
+  "device": "mobile",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617810776/neueux/media/apps-logo/mew%20wallet%20icon.png",
+  "description": "Ethereum wallet"
+}
