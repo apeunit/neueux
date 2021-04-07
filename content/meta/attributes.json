@@ -39,10 +39,6 @@
   ],
   "tags": [
     {
-      "name": "Mnemonic Phrase",
-      "id": "ewycpzskx"
-    },
-    {
       "name": "3rd-party-service",
       "id": "7b5faxtz3"
     },
@@ -121,6 +117,10 @@
     {
       "name": "Menu",
       "id": "r84aimrt9"
+    },
+    {
+      "name": "Mnemonic Phrase",
+      "id": "ewycpzskx"
     },
     {
       "name": "Network",
