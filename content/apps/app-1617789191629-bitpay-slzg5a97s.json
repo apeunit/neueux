@@ -1,1 +1,13 @@
-{"id":"slzg5a97s","slug":"app-1617789191629-bitpay-slzg5a97s","name":"Bitpay","device":"mobile"}
+{
+  "id": "slzg5a97s",
+  "slug": "app-1617789191629-bitpay-slzg5a97s",
+  "name": "Bitpay",
+  "device": "mobile",
+  "description": "Buy Crypto",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617782056/neueux/media/apps-logo/unnamed.png",
+  "screens": [
+    {
+      "id": "40ma5jumx"
+    }
+  ]
+}
