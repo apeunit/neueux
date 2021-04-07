@@ -7,7 +7,349 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617782056/neueux/media/apps-logo/unnamed.png",
   "screens": [
     {
-      "id": "40ma5jumx"
+      "id": "40ma5jumx",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789407/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_001.png",
+      "userflow": "urnsc8ap3"
+    },
+    {
+      "id": "5b44hsao7",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789408/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_002.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "qcwwc7hjw"
+      ]
+    },
+    {
+      "id": "4bh1bkg0i",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789409/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_003.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "qcwwc7hjw"
+      ]
+    },
+    {
+      "id": "9p5w95ozk",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789410/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_004.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "qcwwc7hjw"
+      ]
+    },
+    {
+      "id": "pekb7juod",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789412/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_005.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "qcwwc7hjw"
+      ]
+    },
+    {
+      "id": "1yt7jj4m8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789413/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_006.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "lxrwx0hkf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789413/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_007.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "lre6aql6d",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789414/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_008.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "u3h5av847",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789415/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_009.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "7q72o2sm9"
+      ]
+    },
+    {
+      "id": "5flaq325j",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789416/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_010.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "7q72o2sm9"
+      ]
+    },
+    {
+      "id": "ju309vlib",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789417/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_011.png",
+      "userflow": "urnsc8ap3"
+    },
+    {
+      "id": "bi4al82zw",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789418/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_012.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "digd7jt9e",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789419/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_013.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "9neun3p98",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789421/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_014.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "m9t78oy0p",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789422/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_015.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "93hn7hcpy",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789423/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_016.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx",
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "kwvtdh72s",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789424/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_017.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "x29skpngb",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789425/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_018.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "0zd8y25gt",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789426/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_019.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "i4p6k5pw8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789427/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_020.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "8eofr829l",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789427/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_021.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "b638qet60",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789428/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_022.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "pb7edp2m6",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789429/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_023.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "bz28kumyi",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789429/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_024.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "cf2bsji83",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789430/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_025.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "ejx5qvzkr",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789431/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_026.png",
+      "tags": [
+        "ewycpzskx"
+      ],
+      "userflow": "urnsc8ap3"
+    },
+    {
+      "id": "ljhm519f4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789432/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_027.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "jl9mto262",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789432/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_028.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "zrp164kxe",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789433/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_029.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "vu3cnyt4t",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789434/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_030.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "fpd2dlyyd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789435/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_031.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "gt1i33bly",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789435/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_032.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "uoocs8gld",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789436/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_033.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "s8nvt8c2k",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789437/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_034.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "4gk1em5jc",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789438/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_035.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "xx9omx4c9",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789438/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_036.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "eo67cywjw",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789439/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_037.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "ww6hp0wv1",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789440/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_038.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "62jpa0un5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789440/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_039.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "jpq40jc40",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789441/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_040.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "aavrkubht",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789442/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_041.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "sjlxbdvee",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789443/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_042.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
+    },
+    {
+      "id": "rmuzmvu7s",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789444/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_043.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "ewycpzskx"
+      ]
     }
   ]
 }
