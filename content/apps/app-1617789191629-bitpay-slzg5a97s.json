@@ -7,6 +7,10 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617782056/neueux/media/apps-logo/unnamed.png",
   "screens": [
     {
+      "id": "h732y00ha",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789549/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_154.png"
+    },
+    {
       "id": "40ma5jumx",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789407/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_001.png",
       "userflow": "urnsc8ap3"
@@ -1129,6 +1133,26 @@
       "tags": [
         "0nvueu7a8",
         "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "ygfn21nnd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789546/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_151.png",
+      "userflow": "xoz85l8dh",
+      "tags": []
+    },
+    {
+      "id": "codhe58j5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789547/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_152.png",
+      "userflow": "xoz85l8dh"
+    },
+    {
+      "id": "b2lznnwo4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617789548/neueux/media/app-1617789191629-bitpay-slzg5a97s/screens/bitpay_wallet_153.png",
+      "userflow": "xoz85l8dh",
+      "tags": [
+        "d2aypoqmv",
+        "k7gppyh76"
       ]
     }
   ]
