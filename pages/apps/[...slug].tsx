@@ -1,22 +1,46 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import Layout from "components/Layout";
 import React from "react";
-import Screen from "components/app/screen/Card";
+import AppView from "components/app/View";
 import HeaderView from "components/app/HeaderView";
 import ScreenView from "components/app/screen/View";
 import { getAppContent, listAllAppContent } from "lib/app";
 import { getScreenContent, getAllAppScreenContent } from "lib/screen";
-import Link from "next/link";
 import Filter from "components/filter";
 import { filteredTagsByApp } from "lib/tags";
 import { filteredUserflowsByApp } from "lib/userflows";
-import Button from "components/Button";
+import { usePlugin } from "tinacms";
+import { useGithubJsonForm } from "react-tinacms-github";
+import AppFormExtended, {FormProps} from "forms/appExtended";
 
 import { useRouter } from "next/router";
 
-const App = ({ app, screens, screen, screenNavigation, tags, userflows, preview }) => {
+const App = ({
+  appData,
+  attributes,
+  screens,
+  screen,
+  screenNavigation,
+  tags,
+  userflows,
+  preview,
+  file,
+  slug
+}) => {
+  const formOptions = AppFormExtended(slug, attributes);
 
-  if (screen) {
+  // Registers a JSON Tina Form
+  const [formData, form] = useGithubJsonForm(file || {}, formOptions);
+  usePlugin(form);
+
+  const app = () => {
+    if (preview) {
+      return formData;
+    }
+    return appData;
+  };
+
+  if (screen && !preview) {
     return (
       <ScreenView
         key={screen.slug}
@@ -30,6 +54,8 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows, preview 
   const router = useRouter();
 
   const filtered = () => {
+    if (preview) return app().screens;
+
     let userflows: any = router.query.userflows;
     let tags: any = router.query.tags;
 
@@ -50,63 +76,51 @@ const App = ({ app, screens, screen, screenNavigation, tags, userflows, preview 
   };
 
   return (
-    <Layout title={`${app.name} - App`} backButton>
+    <Layout title={`${app().name} - App`} backButton>
       <main className="w-11/12 mx-auto">
-        <HeaderView app={app} />
+        <HeaderView app={app()} />
         <Filter
           tags={tags}
           userflows={userflows}
           routeParams={{
-            slug: app.slug,
+            slug: app().slug,
           }}
           routePathname={null}
           fallbackRoutePathname={null}
         />
-        <div
-          className={[
-            "mt-5 grid  gap-5",
-            app.device === "mobile"
-              ? "lg:grid-cols-6 sm:grid-cols-3 md:grid-cols-1/4 grid-cols-2"
-              : "lg:grid-cols-2 grid-cols-1 md:grid-cols-1 sm:grid-cols-1",
-          ].join(" ")}
-        >
-          {filtered().map((screen) => {
-            return (
-              <Link
-                key={`screen-card-${screen.id}`}
-                href={`/apps/${app.slug}/screen/${screen.id}`}
-              >
-                <a className="lg:mb-5 mb-0">
-                  <Screen url={screen.image} style={app.device} />
-                </a>
-              </Link>
-            );
-          })}
-        </div>
+        <AppView app={app()} screens={filtered()} preview={preview} />
       </main>
-      {preview && (
-        <div className="fixed right-5 bottom-5 inline-block">
-          <Link href={`/editor/apps/${app.slug}`}>
-            <a>
-              <Button type="primary" size="lg">
-                Edit app
-              </Button>
-            </a>
-          </Link>
-        </div>
-      )}
     </Layout>
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
+export const getStaticProps: GetStaticProps = async ({
+  params,
+  preview,
+  previewData,
+}) => {
+  const slug = params.slug[0];
+  const tags = filteredTagsByApp(params.slug[0]);
+  const userflows = filteredUserflowsByApp(params.slug[0]);
+
+  if (preview) {
+    
+    return {
+      props: {
+        ... await FormProps({previewData, slug}),
+        tags,
+        userflows,
+        appData: {},
+        slug
+      },
+    };
+  }
+
   const app = getAppContent(params.slug[0]);
+
   const screens = getAllAppScreenContent(app.slug);
   const screen = params.slug[2] ? getScreenContent(params.slug[2]) : null;
   const screenNavigation = { prev: null, next: null };
-
-  const tags = filteredTagsByApp(params.slug[0]);
-  const userflows = filteredUserflowsByApp(params.slug[0]);
 
   if (screen) {
     const screenIndex = screens.map((s) => s.id).indexOf(screen.id);
@@ -122,13 +136,15 @@ export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
 
   return {
     props: {
-      app,
+      appData: app,
       screens,
       screen: screen,
       screenNavigation,
       tags,
       userflows,
       preview: preview || false,
+      attributes: {},
+      slug
     },
   };
 };
