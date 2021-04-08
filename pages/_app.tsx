@@ -9,8 +9,6 @@ import { CloudinaryMediaStore } from "plugins/mediaStore";
 import withRouter from "next/dist/client/with-router";
 
 import "styles/global.css";
-import Link from "next/link";
-
 class Site extends App {
   cms: TinaCMS;
 
@@ -69,7 +67,6 @@ class Site extends App {
           {/**
            * 6. Add a button for entering Preview/Edit Mode
            */}
-          <EditLink cms={this.cms} />
           <Component {...pageProps} />
         </TinacmsGithubProvider>
       </TinaProvider>
@@ -100,26 +97,13 @@ const onLogout = () => {
   });
 };
 
-export const EditLink = ({ cms }) => {
-  if (cms.enabled) return null;
-
-  return (
-    <button
-      onClick={() => cms.toggle()}
-      className="text-white hover:bg-blue-700 cursor-pointer rounded-full bg-blue-400 px-5 z-50 py-3 font-bold text-xs fixed left-5 bottom-5"
-    >
-      {cms.enabled ? "Exit Edit Mode" : "Edit This Site"}
-    </button>
-  );
-};
-
 export const SidebarPlaceHolder = () => {
   return (
     <div className="h-full bg-gray-100">
       <div className="bg-white px-5 pb-3">
         <h2>Edit</h2>
       </div>
-      <ul className="mx-5 mt-5 border border-solid border-gray-200 rounded divide-y divide-solid divide-gray-200">
+      {/* <ul className="mx-5 mt-5 border border-solid border-gray-200 rounded divide-y divide-solid divide-gray-200">
         <li className="bg-white hover:bg-gray-50">
           <Link href="/editor/attributes">
             <a>
@@ -127,7 +111,7 @@ export const SidebarPlaceHolder = () => {
             </a>
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 };

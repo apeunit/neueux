@@ -17,7 +17,7 @@ export default function Home({ file, attributes, slug }) {
   const [app, form] = useGithubJsonForm(file || {}, formOptions);
   usePlugin(form);
   return (
-    <Layout title={`Edit - ${app.name} - App`} backButton>
+    <Layout title={`Edit - ${app.name} - App`} backButton editable>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
         <AppView app={app} screens={app?.screens} preview={true} />

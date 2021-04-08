@@ -39,7 +39,7 @@ const FilterPage = ({ screens, filter }) => {
   };
 
   return (
-    <Layout title="Filter">
+    <Layout title="Filter" editable>
       <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />
         <Filter

@@ -76,7 +76,7 @@ const App = ({
   };
 
   return (
-    <Layout title={`${app().name} - App`} backButton>
+    <Layout title={`${app().name} - App`} backButton editable>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app()} />
         <Filter

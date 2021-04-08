@@ -10,6 +10,7 @@ type Props = {
   title?: string;
   description?: string;
   backButton?: boolean;
+  editable?: boolean;
 };
 
 const Layout = ({
@@ -17,6 +18,7 @@ const Layout = ({
   title = null,
   description = Config.site_description,
   backButton = false,
+  editable = false,
 }: Props) => (
   <div className="pb-10 overflow-hidden">
     <Head>
@@ -53,7 +55,7 @@ const Layout = ({
     </header>
     {backButton && <BackButton />}
     {children}
-    <Footer />
+    <Footer editable={editable} />
   </div>
 );
 
