@@ -1,1 +1,15 @@
-{"id":"gdbxe7hin","slug":"app-1617881066469-metamask-gdbxe7hin","name":"Metamask","device":"mobile"}
+{
+  "id": "gdbxe7hin",
+  "slug": "app-1617881066469-metamask-gdbxe7hin",
+  "name": "Metamask",
+  "device": "mobile",
+  "description": "Buy, Send and Swap Crypto",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617881120/neueux/media/apps-logo/metamask%20icon.png",
+  "screens": [
+    {
+      "id": "59xgy1898",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617881144/neueux/media/app-1617881066469-metamask-gdbxe7hin/screens/Metamask001.png",
+      "userflow": "urnsc8ap3"
+    }
+  ]
+}
