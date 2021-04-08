@@ -1,7 +1,7 @@
 ---
 slug: about
-title: Tackling common design problems in a decentralized industry
-description: Lorem ipsum dolor sit amet, consectetur adipiscing eli nullam eu nisi et orci posuere pretium ut eu nisi.
+title: neueUX Launch!
+description: Tackling common design problems in a decentralized industry
 author: Maximilian Blazek
 authorAvatar: /img/max.png
 cover: /img/about.png
