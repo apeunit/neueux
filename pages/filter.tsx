@@ -30,7 +30,7 @@ const FilterPage = ({ screens, filter }) => {
       }
 
       if (tags && tags.length) {
-        return tags.some((t) => it.tags.some((tag) => tag.id == t));
+        return tags.some((t) => it.tags?.some((tag) => tag.id == t));
       }
       return true;
     });
