@@ -16,6 +16,9 @@ module.exports = withMdxEnhanced({
     CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
     CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
   },
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push(
       ...[

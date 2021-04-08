@@ -1,16 +1,19 @@
 import Screen from "components/app/screen/Card";
 import Link from "next/link";
+import Image from "next/image";
 
 const AppCard = ({ app }) => (
   <div className="lg:mb-10 xl:mt-0">
     <div className="flex mt-3">
-      <div className="filter-drop-shadow bg-white rounded-lg">
+      {app.icon && (
         <Link href={`/apps/${app.slug}`}>
           <a>
-            <img className="w-10 h-10 rounded-lg" src={`${app.icon}`} />
+            <div className="h-10 w-10 inline-block filter-drop-shadow-view rounded-lg bg-white overflow-hidden">
+              <Image src={app.icon} layout="fill" />
+            </div>
           </a>
         </Link>
-      </div>
+      )}
       <div className="mx-3 mt-2 text-sm font-bold">
         <h3 className="">
           <Link href={`/apps/${app.slug}`}>{app.name}</Link>{" "}
@@ -29,14 +32,14 @@ const AppCard = ({ app }) => (
       {app.screens.map((screen, i) => {
         return (
           <div
-          key={`screen-card-view-${screen.id}`}
+            key={`screen-card-view-${screen.id}`}
             className={[
               (i > 1 && app.device === "mobile") ||
-                (i > 0 && app.device === "desktop")
+              (i > 0 && app.device === "desktop")
                 ? "hidden"
                 : "block",
               (i > 2 && app.device === "mobile") ||
-                (i > 1 && app.device === "desktop")
+              (i > 1 && app.device === "desktop")
                 ? "hidden xl:block"
                 : "md:block sm:block lg:block",
             ].join(" ")}
