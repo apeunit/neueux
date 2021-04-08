@@ -53,7 +53,7 @@ const FilterPage = ({ screens, filter }) => {
           {filtered().map((screen) => {
             return (
               <div
-                key={`screen-card-view-${screen.slug}`}
+                key={`screen-card-view-${screen.id}`}
                 className={[
                   screen.device === "desktop"
                     ? "w-3/6"
@@ -63,7 +63,7 @@ const FilterPage = ({ screens, filter }) => {
               >
                 <Link
                   href={{
-                    pathname: `/apps/${screen.app}/screen/${screen.slug}`,
+                    pathname: `/apps/${screen.app}/screen/${screen.id}`,
                     query: {
                       referer: router.pathname,
                       ...router.query,
