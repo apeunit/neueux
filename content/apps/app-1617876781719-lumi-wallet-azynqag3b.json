@@ -1,1 +1,159 @@
-{"id":"azynqag3b","slug":"app-1617876781719-lumi-wallet-azynqag3b","name":"Lumi Wallet","device":"mobile"}
+{
+  "id": "azynqag3b",
+  "slug": "app-1617876781719-lumi-wallet-azynqag3b",
+  "name": "Lumi Wallet",
+  "device": "mobile",
+  "description": "Non-Custodial Crypto Wallet",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1617876851/neueux/media/apps-logo/lumi%20logo.png",
+  "screens": [
+    {
+      "id": "ah6kv3ajo",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876883/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_019.png",
+      "tags": [
+        "0nvueu7a8",
+        "6741cana8"
+      ]
+    },
+    {
+      "id": "dyp4d3pml",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876864/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_001.png",
+      "userflow": "urnsc8ap3",
+      "tags": []
+    },
+    {
+      "id": "vsq9z29n5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876865/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_002.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "wtqe8nn8w",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "aa04xz3th",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876866/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_003.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "wtqe8nn8w",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "2id0k3dqw",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876867/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_004.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "ad75viwps",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876868/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_005.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "ci40gfqz6",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876869/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_006.png",
+      "userflow": "urnsc8ap3",
+      "tags": [
+        "0nvueu7a8",
+        "z7yu0eq11"
+      ]
+    },
+    {
+      "id": "br7elnaq8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876870/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_007.png",
+      "tags": [
+        "cjdjocjto",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "2g2ibw2c3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876871/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_008.png",
+      "tags": [
+        "cjdjocjto",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "nty2vxb6n",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876872/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_009.png",
+      "tags": [
+        "cjdjocjto",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "jh1csldpq",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876873/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_010.png",
+      "tags": [
+        "d2aypoqmv",
+        "k7gppyh76"
+      ]
+    },
+    {
+      "id": "wjkexp9gu",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876874/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_011.png",
+      "tags": [
+        "6741cana8"
+      ]
+    },
+    {
+      "id": "pl6uhjs6e",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876877/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_012.png",
+      "tags": [
+        "6741cana8",
+        "rx1w7vljm"
+      ]
+    },
+    {
+      "id": "ww87yrrmd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876878/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_013.png",
+      "tags": [
+        "6741cana8"
+      ]
+    },
+    {
+      "id": "zh3pr8mh8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876879/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_014.png",
+      "tags": [
+        "lwt9kim7n",
+        "6741cana8"
+      ]
+    },
+    {
+      "id": "dolxwp0pz",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876880/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_015.png",
+      "tags": [
+        "6741cana8"
+      ]
+    },
+    {
+      "id": "qgh11zneb",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876880/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_016.png",
+      "tags": [
+        "6741cana8"
+      ]
+    },
+    {
+      "id": "l3g8b8fim",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876881/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_017.png",
+      "tags": [
+        "6741cana8"
+      ]
+    },
+    {
+      "id": "vlfez0m22",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1617876882/neueux/media/app-1617876781719-lumi-wallet-azynqag3b/screens/lumi_Wallet_018.png",
+      "tags": [
+        "6741cana8"
+      ]
+    }
+  ]
+}
