@@ -45,7 +45,7 @@ const App = ({
       <ScreenView
         key={screen.slug}
         screen={screen}
-        app={app}
+        app={app()}
         navigation={screenNavigation}
       />
     );
