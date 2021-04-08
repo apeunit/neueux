@@ -11,6 +11,11 @@ const ScreenCard = ({ url, style }) => (
       src={`${url}`}
       width={style === "desktop" ? 580 : 144}
       height={style === "desktop" ? 380 : 304}
+      sizes={
+        style === "desktop"
+          ? "max-width: 1023px) 100vw, 50vw"
+          : "(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 16vw"
+      }
       layout="responsive"
     />
   </div>

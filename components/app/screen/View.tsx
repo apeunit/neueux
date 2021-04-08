@@ -69,14 +69,17 @@ const ScreenView = ({ screen, app, navigation }) => {
       </div>
 
       <div className="lg:flex">
-        <div className="flex flex-col h-screen lg:w-9/11 w-full justify-center ">
-          <div className="h-3/4 py-10 lg:py-0 w-full filter-drop-shadow text-center">
-            <Image
-              src={`${screen.image}`}
-              width={app.device === "desktop" ? 580 : 144}
-              height={app.device === "desktop" ? 380 : 304}
-              layout="responsive"
-            />
+        <div className="flex h-screen relative lg:w-9/11 w-full justify-center items-center">
+          <div className="h-5/6 my-auto w-full relative filter-drop-shadow text-center">
+            <div className="h-full rounded-lg inline-block relative w-10/12">
+              <Image
+                src={`${screen.image}`}
+                layout="fill"
+                objectFit="contain"
+
+                // layout="fill"
+              />
+            </div>
           </div>
           <div className="lg:hidden border-t border-solid border-gray-200 py-2 text-right bottom-0 fixed w-full">
             {navigation.prev && (
