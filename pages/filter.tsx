@@ -84,7 +84,7 @@ const FilterPage = ({ screens, filter }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ preview }) => {
-  const screens = listScreenContent();
+  const screens = listScreenContent().reverse();
   const tags = filteredTagsAll(1, 30);
   const userflows = filteredUserflowsAll(1, 30);
   const pagination = {

@@ -88,13 +88,13 @@ export function listAppContent(
   page: number,
   limit: number,
 ): AppContent[] {
-  return fetchAppContent()
+  return fetchAppContent().reverse()
     .slice((page - 1) * limit, page * limit);
 }
 
 export function listAllAppContent(
 ): AppContent[] {
-  return fetchAppContent();
+  return fetchAppContent().reverse();
 }
 
 export function getAppContent(
