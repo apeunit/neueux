@@ -42,7 +42,11 @@ const App = ({
 
   if (screen && !preview) {
     return (
-      <Layout title={`${app().name} - App - Screen view`} fill>
+      <Layout
+        title={`${app().name} - Screen view`}
+        description={app().description}
+        fill
+      >
         <ScreenView
           key={screen.id}
           screen={screen}
@@ -78,7 +82,12 @@ const App = ({
   };
 
   return (
-    <Layout title={`${app().name} - App`} backButton editable>
+    <Layout
+      title={`${app().name} - App`}
+      description={app().description}
+      backButton
+      editable
+    >
       <main className="w-11/12 mx-auto">
         <HeaderView app={app()} />
         <Filter
