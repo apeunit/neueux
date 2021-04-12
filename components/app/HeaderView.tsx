@@ -7,7 +7,7 @@ const AppHeaderView = ({ app }) => (
       <div className="flex justify-center">
         <div className="h-16 w-16 inline-block filter-drop-shadow-view rounded-lg bg-white overflow-hidden">
           {app.icon && (
-            <Image src={app.icon} layout='fill'  />
+            <Image src={app.icon} width="64" height="64"  />
           )}
         </div>
       </div>
