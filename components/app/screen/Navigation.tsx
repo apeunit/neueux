@@ -42,7 +42,7 @@ const ScreenNavigation = ({ navigation, query }) => {
 
       {renderLink(
         navigation.next,
-        <NavigationButton disabled={!navigation.next} orientation="previous">
+        <NavigationButton disabled={!navigation.next} orientation="next">
           <RightIcon />
         </NavigationButton>
       )}
