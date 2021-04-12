@@ -35,7 +35,7 @@ const FilterPage = ({ screens, filter }) => {
       return true;
     });
 
-    return filter;
+    return filter.reverse();
   };
 
   return (
@@ -93,7 +93,7 @@ export const getStaticProps: GetStaticProps = async ({ preview }) => {
   };
   return {
     props: {
-      screens: screens.reverse(),
+      screens: screens,
       pagination,
       filter: {
         tags,

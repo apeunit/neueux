@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async ({
   };
   return {
     props: {
-      apps,
+      apps: apps.reverse(),
       pagination,
       filter: {
         tags,

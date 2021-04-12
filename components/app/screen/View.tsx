@@ -81,7 +81,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               />
             </div>
           </div>
-          <div className="lg:hidden border-t border-solid border-gray-200 p-2 right-0 bottom-0 fixed w-full flex justify-end">
+          <div className="lg:hidden border-t bg-white border-solid border-gray-200 p-2 right-0 bottom-0 fixed w-full flex justify-end">
             <ScreenNavigation navigation={navigation} query={navigationQuery} />
           </div>
         </div>

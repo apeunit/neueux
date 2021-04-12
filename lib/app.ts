@@ -94,7 +94,7 @@ export function listAppContent(
 
 export function listAllAppContent(
 ): AppContent[] {
-  return fetchAppContent().reverse();
+  return fetchAppContent();
 }
 
 export function getAppContent(
