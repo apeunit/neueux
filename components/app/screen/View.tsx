@@ -4,6 +4,8 @@ import React from "react";
 import RightIcon from "assets/icons/right.svg";
 import CloseIcon from "assets/icons/close.svg";
 import LeftIcon from "assets/icons/left.svg";
+import ScreenNavigation from "./Navigation";
+
 import { useRouter } from "next/router";
 import Image from "next/image";
 const ScreenView = ({ screen, app, navigation }) => {
@@ -81,26 +83,8 @@ const ScreenView = ({ screen, app, navigation }) => {
               />
             </div>
           </div>
-          <div className="lg:hidden border-t border-solid border-gray-200 py-2 text-right bottom-0 fixed w-full">
-            {navigation.prev && (
-              <Link href={navigation.prev}>
-                <a>
-                  <div data-navigation="previous" className="bg-gray-50 hover:bg-gray-200 p-3.5 inline-block rounded-full border-2 border-solid border-gray-200 ">
-                    <LeftIcon className="" />
-                  </div>
-                </a>
-              </Link>
-            )}
-
-            {navigation.next && (
-              <Link href={navigation.next}>
-                <a>
-                  <div data-navigation="next" className="bg-gray-50 mr-2 p-3.5 hover:bg-gray-200 inline-block rounded-full border-2 border-solid border-gray-200 ml-2">
-                    <RightIcon className="" />
-                  </div>
-                </a>
-              </Link>
-            )}
+          <div className="lg:hidden border-t border-solid border-gray-200 p-2 right-0 bottom-0 fixed w-full flex justify-end">
+            <ScreenNavigation navigation={navigation} query={navigationQuery} />
           </div>
         </div>
 
@@ -168,36 +152,8 @@ const ScreenView = ({ screen, app, navigation }) => {
               </div>
             ))}
           </div>
-          <div className="flex absolute right-4 bottom-4 border-none">
-            {navigation.prev && (
-              <Link
-                href={{
-                  pathname: String(navigation.prev),
-                  query: navigationQuery,
-                }}
-              >
-                <a>
-                  <div data-navigation="previous" className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ">
-                    <LeftIcon className="m-3.5" />
-                  </div>
-                </a>
-              </Link>
-            )}
-
-            {navigation.next && (
-              <Link
-                href={{
-                  pathname: String(navigation.next),
-                  query: navigationQuery,
-                }}
-              >
-                <a>
-                  <div data-navigation="next" className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2">
-                    <RightIcon className="m-3.5" />
-                  </div>
-                </a>
-              </Link>
-            )}
+          <div className="absolute right-4 bottom-4 border-none">
+            <ScreenNavigation navigation={navigation} query={navigationQuery} />
           </div>
         </div>
       </div>
