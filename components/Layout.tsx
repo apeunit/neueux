@@ -11,6 +11,7 @@ type Props = {
   description?: string;
   backButton?: boolean;
   editable?: boolean;
+  fill?: boolean;
 };
 
 const Layout = ({
@@ -19,6 +20,7 @@ const Layout = ({
   description = Config.site_description,
   backButton = false,
   editable = false,
+  fill = false,
 }: Props) => (
   <div className="pb-10 overflow-hidden">
     <Head>
@@ -50,12 +52,14 @@ const Layout = ({
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
     </Head>
-    <header>
-      <Navbar />
-    </header>
+    {!fill && (
+      <header>
+        <Navbar />
+      </header>
+    )}
     {backButton && <BackButton />}
     {children}
-    <Footer editable={editable} />
+    {!fill && <Footer editable={editable} />}
   </div>
 );
 

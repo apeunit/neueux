@@ -11,7 +11,7 @@ import { filteredTagsByApp } from "lib/tags";
 import { filteredUserflowsByApp } from "lib/userflows";
 import { usePlugin } from "tinacms";
 import { useGithubJsonForm } from "react-tinacms-github";
-import AppFormExtended, {FormProps} from "forms/appExtended";
+import AppFormExtended, { FormProps } from "forms/appExtended";
 
 import { useRouter } from "next/router";
 
@@ -25,7 +25,7 @@ const App = ({
   userflows,
   preview,
   file,
-  slug
+  slug,
 }) => {
   const formOptions = AppFormExtended(slug, attributes);
 
@@ -42,12 +42,14 @@ const App = ({
 
   if (screen && !preview) {
     return (
-      <ScreenView
-        key={screen.slug}
-        screen={screen}
-        app={app()}
-        navigation={screenNavigation}
-      />
+      <Layout title={`${app().name} - App - Screen view`} fill>
+        <ScreenView
+          key={screen.id}
+          screen={screen}
+          app={app()}
+          navigation={screenNavigation}
+        />
+      </Layout>
     );
   }
 
@@ -104,14 +106,13 @@ export const getStaticProps: GetStaticProps = async ({
   const userflows = filteredUserflowsByApp(params.slug[0]);
 
   if (preview) {
-    
     return {
       props: {
-        ... await FormProps({previewData, slug}),
+        ...(await FormProps({ previewData, slug })),
         tags,
         userflows,
         appData: {},
-        slug
+        slug,
       },
     };
   }
@@ -144,7 +145,7 @@ export const getStaticProps: GetStaticProps = async ({
       userflows,
       preview: preview || false,
       attributes: {},
-      slug
+      slug,
     },
   };
 };

@@ -85,7 +85,7 @@ const ScreenView = ({ screen, app, navigation }) => {
             {navigation.prev && (
               <Link href={navigation.prev}>
                 <a>
-                  <div className="bg-gray-50 hover:bg-gray-200 p-3.5 inline-block rounded-full border-2 border-solid border-gray-200 ">
+                  <div data-navigation="previous" className="bg-gray-50 hover:bg-gray-200 p-3.5 inline-block rounded-full border-2 border-solid border-gray-200 ">
                     <LeftIcon className="" />
                   </div>
                 </a>
@@ -95,7 +95,7 @@ const ScreenView = ({ screen, app, navigation }) => {
             {navigation.next && (
               <Link href={navigation.next}>
                 <a>
-                  <div className="bg-gray-50 mr-2 p-3.5 hover:bg-gray-200 inline-block rounded-full border-2 border-solid border-gray-200 ml-2">
+                  <div data-navigation="next" className="bg-gray-50 mr-2 p-3.5 hover:bg-gray-200 inline-block rounded-full border-2 border-solid border-gray-200 ml-2">
                     <RightIcon className="" />
                   </div>
                 </a>
@@ -177,7 +177,7 @@ const ScreenView = ({ screen, app, navigation }) => {
                 }}
               >
                 <a>
-                  <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ">
+                  <div data-navigation="previous" className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ">
                     <LeftIcon className="m-3.5" />
                   </div>
                 </a>
@@ -192,7 +192,7 @@ const ScreenView = ({ screen, app, navigation }) => {
                 }}
               >
                 <a>
-                  <div className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2">
+                  <div data-navigation="next" className="bg-gray-50 hover:bg-gray-200 rounded-full border-2 border-solid border-gray-200 ml-2">
                     <RightIcon className="m-3.5" />
                   </div>
                 </a>
