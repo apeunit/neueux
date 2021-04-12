@@ -7,7 +7,7 @@ const NavigationButton = ({ children, disabled, orientation = "next" }) => (
     data-navigation={orientation}
     className={[
       "bg-gray-50 rounded-full border-2 border-solid border-gray-200 p-3.5",
-      disabled ? "opacity-50" : "hover:bg-gray-200",
+      disabled ? "opacity-40" : "hover:bg-gray-200",
     ].join(" ")}
   >
     {children}

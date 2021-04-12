@@ -1,9 +1,7 @@
 // import Layout from "../components/Layout";
 import Link from "next/link";
 import React from "react";
-import RightIcon from "assets/icons/right.svg";
 import CloseIcon from "assets/icons/close.svg";
-import LeftIcon from "assets/icons/left.svg";
 import ScreenNavigation from "./Navigation";
 
 import { useRouter } from "next/router";
