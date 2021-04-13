@@ -22,7 +22,7 @@ const Layout = ({
   editable = false,
   fill = false,
 }: Props) => (
-  <div className="pb-10 overflow-hidden">
+  <div className="overflow-hidden">
     <Head>
       <title>
         {title ? `${title} | ` : null}
