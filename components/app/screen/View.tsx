@@ -90,7 +90,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-          <div className="text-center h-1/2 w-10/12 px-6 mx-auto flex flex-col justify-end mb-5">
+          <div className="text-center h-1/2 w-10/12 px-6 mx-auto flex flex-col justify-end pb-5">
             <Link href={`/apps/${app.slug}`}>
               <a className="block">
                 <div className="flex justify-center">
@@ -109,9 +109,9 @@ const ScreenView = ({ screen, app, navigation }) => {
               </a>
             </Link>
           </div>
-          <div className="flex justify-center w-10/12 mx-auto h-1/2 pt-6 flex-wrap space-x-2">
+          <div className="flex justify-center w-10/12 mx-auto pt-3 flex-wrap space-x-2">
             {screen.userflow && (
-              <div key={screen.userflow.id} className="mb-3">
+              <div key={screen.userflow.id} className="my-3">
                 <Link
                   href={{
                     pathname: "/filter",
@@ -127,7 +127,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               </div>
             )}
             {screen.tags.map((tag) => (
-              <div key={tag.id} className="mb-3">
+              <div key={tag.id} className="my-3">
                 <Link
                   href={{
                     pathname: "/filter",
