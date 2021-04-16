@@ -5,7 +5,7 @@ description: Tackling common design problems in a decentralized industry
 author: Maximilian Blazek
 authorAvatar: /img/max.png
 cover: /img/about.png
-date: 25-September-2020
+date: 15-April-2020
 ---
 When you text your friends, do you really understand how WhatsApp or Telegram works? Probably not, because text messaging has been built to be simple, useful, and quick for everyone to pick up. You are never faced with the complex infrastructure which lies behind those apps, just a polished, easy-to-use interface.
 
