@@ -1,1 +1,13 @@
-{"id":"r12j08vqg","slug":"app-1619216440917-daohaus-r12j08vqg","name":"DAOhaus","device":"mobile"}
+{
+  "id": "r12j08vqg",
+  "slug": "app-1619216440917-daohaus-r12j08vqg",
+  "name": "DAOhaus",
+  "device": "desktop",
+  "description": "Unlock the next tier in community coordination",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1619216676/neueux/media/apps-logo/daohaus%20logo.png",
+  "screens": [
+    {
+      "id": "388r3kml0"
+    }
+  ]
+}
