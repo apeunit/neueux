@@ -7,7 +7,8 @@
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1619216676/neueux/media/apps-logo/daohaus%20logo.png",
   "screens": [
     {
-      "id": "388r3kml0"
+      "id": "388r3kml0",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1619217227/neueux/media/app-1619216440917-daohaus-r12j08vqg/screens/daohaus_230.png"
     }
   ]
 }
