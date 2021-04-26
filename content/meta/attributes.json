@@ -39,10 +39,6 @@
   ],
   "tags": [
     {
-      "name": "Connect Wallet",
-      "id": "zflmpj5ep"
-    },
-    {
       "name": "3rd-party-service",
       "id": "7b5faxtz3"
     },
@@ -73,6 +69,10 @@
     {
       "name": "Contacts",
       "id": "x0f3obtkm"
+    },
+    {
+      "name": "Connect Wallet",
+      "id": "zflmpj5ep"
     },
     {
       "name": "Currency Overview",
