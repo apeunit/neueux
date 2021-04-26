@@ -1,6 +1,10 @@
 {
   "userflows": [
     {
+      "name": "Voting",
+      "id": "7rlo8w7ni"
+    },
+    {
       "name": "Blank",
       "id": "amuunrve2"
     },
