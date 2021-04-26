@@ -1,10 +1,6 @@
 {
   "userflows": [
     {
-      "name": "Dot Voting",
-      "id": "qg6qrzcsd"
-    },
-    {
       "name": "Blank",
       "id": "amuunrve2"
     },
@@ -19,6 +15,10 @@
     {
       "name": "Delete wallet",
       "id": "k0xhw85zn"
+    },
+    {
+      "name": "Dot Voting",
+      "id": "qg6qrzcsd"
     },
     {
       "name": "Send",
