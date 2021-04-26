@@ -51,6 +51,10 @@
       "id": "icwt2g5fx"
     },
     {
+      "name": "Allocating Funds",
+      "id": "i2iue6878"
+    },
+    {
       "name": "Backup",
       "id": "td3lccfuo"
     },
@@ -61,6 +65,10 @@
     {
       "name": "Biometrics",
       "id": "yfy10248i"
+    },
+    {
+      "name": "Bounties",
+      "id": "xvro21as9"
     },
     {
       "name": "Collectibles",
@@ -87,6 +95,10 @@
       "id": "xvay0u80k"
     },
     {
+      "name": "Dot Voting",
+      "id": "83et2dp12"
+    },
+    {
       "name": "Education",
       "id": "szojdpfpo"
     },
@@ -109,6 +121,10 @@
     {
       "name": "Fee",
       "id": "jjlq2si5k"
+    },
+    {
+      "name": "Finances",
+      "id": "nil7xmdy5"
     },
     {
       "name": "History",
@@ -167,6 +183,10 @@
       "id": "9ttwtn4q8"
     },
     {
+      "name": "Rewards",
+      "id": "18v4j4h57"
+    },
+    {
       "name": "Search",
       "id": "kzld30rz5"
     },
@@ -191,6 +211,10 @@
       "id": "lwt9kim7n"
     },
     {
+      "name": "Token Holders",
+      "id": "1znxqvydh"
+    },
+    {
       "name": "Token Visibility",
       "id": "7q72o2sm9"
     },
@@ -201,6 +225,10 @@
     {
       "name": "Username",
       "id": "qoi07zvgf"
+    },
+    {
+      "name": "Voting",
+      "id": "424ol9gf6"
     }
   ]
 }
