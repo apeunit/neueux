@@ -80,7 +80,7 @@ const FilterCard = ({
           {selectedList.length ? (
             <span
               onClick={onClear}
-              className="bg-gray-100 hover:bg-gray-200 text-center cursor-pointer text-black text-xs w-1/2 leading-4 py-4 font-bold transition-250ms rounded-tl-3xl rounded-bl-3xl"
+              className="bg-gray-100 hover:bg-gray-200 text-center cursor-pointer text-black text-ssm w-1/2 leading-4 py-4 font-bold transition-250ms rounded-tl-3xl rounded-bl-3xl"
             >
               Clear
             </span>
