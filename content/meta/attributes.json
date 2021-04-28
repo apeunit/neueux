@@ -17,6 +17,10 @@
       "id": "k0xhw85zn"
     },
     {
+      "name": "Dot Voting",
+      "id": "qg6qrzcsd"
+    },
+    {
       "name": "Send",
       "id": "xoz85l8dh"
     },
@@ -35,6 +39,10 @@
     {
       "name": "Onramp",
       "id": "kt2dfi02h"
+    },
+    {
+      "name": "Voting",
+      "id": "7rlo8w7ni"
     }
   ],
   "tags": [
@@ -51,6 +59,10 @@
       "id": "icwt2g5fx"
     },
     {
+      "name": "Allocating Funds",
+      "id": "i2iue6878"
+    },
+    {
       "name": "Backup",
       "id": "td3lccfuo"
     },
@@ -63,12 +75,20 @@
       "id": "yfy10248i"
     },
     {
+      "name": "Bounties",
+      "id": "xvro21as9"
+    },
+    {
       "name": "Collectibles",
       "id": "omgp8idir"
     },
     {
       "name": "Contacts",
       "id": "x0f3obtkm"
+    },
+    {
+      "name": "Connect Wallet",
+      "id": "zflmpj5ep"
     },
     {
       "name": "Currency Overview",
@@ -81,6 +101,10 @@
     {
       "name": "DeFi",
       "id": "xvay0u80k"
+    },
+    {
+      "name": "Dot Voting",
+      "id": "83et2dp12"
     },
     {
       "name": "Education",
@@ -107,8 +131,16 @@
       "id": "jjlq2si5k"
     },
     {
+      "name": "Finances",
+      "id": "nil7xmdy5"
+    },
+    {
       "name": "History",
       "id": "d2aypoqmv"
+    },
+    {
+      "name": "Label",
+      "id": "8d8h8fwi8"
     },
     {
       "name": "Language",
@@ -147,6 +179,10 @@
       "id": "8oc9ysbyw"
     },
     {
+      "name": "Profile",
+      "id": "bg49vohel"
+    },
+    {
       "name": "QR Code",
       "id": "r18bge4gm"
     },
@@ -161,6 +197,10 @@
     {
       "name": "Refferal",
       "id": "9ttwtn4q8"
+    },
+    {
+      "name": "Rewards",
+      "id": "18v4j4h57"
     },
     {
       "name": "Search",
@@ -187,6 +227,10 @@
       "id": "lwt9kim7n"
     },
     {
+      "name": "Token Holders",
+      "id": "1znxqvydh"
+    },
+    {
       "name": "Token Visibility",
       "id": "7q72o2sm9"
     },
@@ -197,6 +241,10 @@
     {
       "name": "Username",
       "id": "qoi07zvgf"
+    },
+    {
+      "name": "Voting",
+      "id": "424ol9gf6"
     }
   ]
 }
