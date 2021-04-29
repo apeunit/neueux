@@ -47,10 +47,6 @@
   ],
   "tags": [
     {
-      "name": "Withdrawal",
-      "id": "zs5y5zhny"
-    },
-    {
       "name": "3rd-party-service",
       "id": "7b5faxtz3"
     },
@@ -261,6 +257,10 @@
     {
       "name": "Voting",
       "id": "424ol9gf6"
+    },
+    {
+      "name": "Withdrawal",
+      "id": "zs5y5zhny"
     }
   ]
 }
