@@ -50,7 +50,7 @@ function fetchAppContent(): AppContent[] {
 
       const matterResult = {
         ...app,
-        screens: screens.splice(0, 6), 
+        screens: screens.splice(0, app.device == 'desktop' ? 2 : 6),
       }
 
       const matterData = matterResult as {

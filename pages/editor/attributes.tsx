@@ -1,11 +1,11 @@
-import { getGithubPreviewProps, parseJson } from "next-tinacms-github";
 import { GetStaticProps } from "next";
 import { usePlugin } from "tinacms";
 import Layout from "components/Layout";
 
 import { useGithubJsonForm } from "react-tinacms-github";
+import { getGithubPreviewProps } from "next-tinacms-github";
 
-export default function Home({ file }) {
+const Home = function Home({ file }) {
   const formOptions = {
     label: "Home Page",
     fields: [
@@ -87,7 +87,7 @@ export default function Home({ file }) {
       </div>
     </Layout>
   );
-}
+};
 
 export const getStaticProps: GetStaticProps = async function ({
   preview,
@@ -98,9 +98,10 @@ export const getStaticProps: GetStaticProps = async function ({
       props: {
         ...(
           await getGithubPreviewProps({
+            // @ts-ignore
             ...previewData,
             fileRelativePath: "content/meta/attributes.json",
-            parse: parseJson,
+            parse: JSON.parse,
           })
         ).props,
         editable: true,
@@ -120,3 +121,5 @@ export const getStaticProps: GetStaticProps = async function ({
     },
   };
 };
+
+export default Home;
