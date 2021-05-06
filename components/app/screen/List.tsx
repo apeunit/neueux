@@ -29,6 +29,8 @@ const ScreenList = ({
     ];
   };
 
+  if (!screens || !screens.length) return null;
+
   return (
     <div
       className={[
@@ -38,7 +40,7 @@ const ScreenList = ({
           : "lg:grid-cols-2 grid-cols-1 md:grid-cols-1 sm:grid-cols-1",
       ].join(" ")}
     >
-      {screens.map((screen, i) => {
+      {screens?.map((screen, i) => {
         if (!screen?.image) return null;
 
         if (preview) return <Screen url={screen.image} style={app?.device} />;
