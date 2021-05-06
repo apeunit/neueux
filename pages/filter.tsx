@@ -26,9 +26,7 @@ const FilterPage = ({ screens, filter }) => {
     }
     const filter = screens.filter((it) => {
       if (userflows && userflows.length) {
-        return userflows.some((u) =>
-          it.userflows?.some((userflow) => userflow.id == u)
-        );
+        return userflows.some((u) => it.userflows?.some((userflow) => userflow.id == u));
       }
 
       if (tags && tags.length) {
@@ -37,6 +35,7 @@ const FilterPage = ({ screens, filter }) => {
       return true;
     });
 
+    // console.log(filter);
 
     return filter;
   };

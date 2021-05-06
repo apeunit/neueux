@@ -76,7 +76,7 @@ const App = ({
     return screens.filter(
       (it) =>
         (!userflows && !tags) ||
-        (userflows && userflows.some((u) => it.userflow?.id === u)) ||
+        (userflows && userflows.some((u) => it.userflows?.some((userflow) => userflow.id == u))) ||
         (tags && tags.some((t) => it.tags?.some((tag) => tag.id == t)))
     );
   };
