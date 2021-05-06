@@ -1,6 +1,6 @@
-import Screen from "components/app/screen/Card";
 import Link from "next/link";
 import Image from "next/image";
+import ScreenList from "components/app/screen/List";
 
 const AppCard = ({ app }) => (
   <div className="lg:mb-10 xl:mt-0">
@@ -21,38 +21,7 @@ const AppCard = ({ app }) => (
       </div>
     </div>
 
-    <div
-      className={[
-        "mt-5 grid  gap-5",
-        app.device === "mobile"
-          ? "xl:grid-cols-6 grid-cols-2 md:grid-cols-3"
-          : "grid-cols-2",
-      ].join(" ")}
-    >
-      {app.screens.map((screen, i) => {
-        return (
-          <div
-            key={`screen-card-view-${screen.id}`}
-            className={[
-              (i > 1 && app.device === "mobile") ||
-              (i > 0 && app.device === "desktop")
-                ? "hidden"
-                : "block",
-              (i > 2 && app.device === "mobile") ||
-              (i > 1 && app.device === "desktop")
-                ? "hidden xl:block"
-                : "md:block sm:block lg:block",
-            ].join(" ")}
-          >
-            <Link href={`/apps/${app.slug}`}>
-              <a>
-                <Screen url={screen.image} style={app.device} />
-              </a>
-            </Link>
-          </div>
-        );
-      })}
-    </div>
+    <ScreenList app={app} screens={app.screens}  />
   </div>
 );
 

@@ -1,7 +1,6 @@
 import Layout from "components/Layout";
 import React from "react";
 import HeaderView from "components/app/HeaderView";
-import AppView from "components/app/View";
 
 import { usePlugin } from "tinacms";
 import { useGithubJsonForm } from "react-tinacms-github";
@@ -9,6 +8,7 @@ import { useGithubJsonForm } from "react-tinacms-github";
 import { listAllAppContent } from "lib/app";
 
 import AppFormExtended, { FormProps } from "forms/appExtended";
+import ScreenList from "components/app/screen/List";
 
 export default function Home({ file, attributes, slug }) {
   const formOptions = AppFormExtended(slug, attributes);
@@ -20,7 +20,7 @@ export default function Home({ file, attributes, slug }) {
     <Layout title={`Edit - ${app.name} - App`} backButton editable>
       <main className="w-11/12 mx-auto">
         <HeaderView app={app} />
-        <AppView app={app} screens={app?.screens} preview={true} />
+        <ScreenList app={app} screens={app?.screens} showAll={true} preview={true} />
       </main>
     </Layout>
   );
