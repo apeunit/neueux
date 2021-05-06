@@ -73,16 +73,18 @@ const form = (slug, attributes) => {
                     },
                     {
                         label: "Userflow",
-                        name: "userflow",
-                        component: "select",
+                        name: "userflows",
+                        component: "list",
                         description: "Select the userflow type",
-                        options: userflowsOptions,
+                        field: {
+                            component: "select",
+                            options: userflowsOptions,
+                        },
                     },
                     {
                         label: "Tag",
                         name: "tags",
                         component: "list",
-                        defaultItem: "Turkey & Swiss",
                         field: {
                             component: "select",
                             options: tagsOptions,

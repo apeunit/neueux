@@ -12,7 +12,7 @@ export type ScreenContent = {
     readonly slug: string;
     readonly app: string;
     readonly device?: string;
-    readonly userflow?: UserflowContent;
+    readonly userflows?: UserflowContent[];
     readonly tags?: TagContent[];
 };
 
@@ -35,14 +35,14 @@ function fetchScreenContent(): ScreenContent[] {
 
             // Use gray-matter to parse the post metadata section
             const app = JSON.parse(fileContents);
-            const screens = app.screens?.map((screen) => {
-                const userflow = screen.userflow ? getUserflow(screen.userflow) : null;
+            const screens = app.screens?.filter((screen) => screen.image).map((screen) => {
+                const userflows = screen.userflows ? screen.userflows?.map((userflow) => getUserflow(userflow)).filter((userflow) => userflow) : [];
                 const tags = screen.tags ? screen.tags.map((tag) => getTag(tag)).filter((tag) => tag) : [];
                 const screenResult = {
                     ...screen,
                     app: app.slug,
                     device: app.device,
-                    userflow,
+                    userflows,
                     tags
                 };
 
@@ -52,7 +52,7 @@ function fetchScreenContent(): ScreenContent[] {
                     slug: string;
                     app: string;
                     device?: string;
-                    userflow?: UserflowContent;
+                    userflows?: UserflowContent[];
                     tags?: TagContent[];
                 };
 
