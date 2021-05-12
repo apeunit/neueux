@@ -7,6 +7,7 @@ import BackButton from "components/BackButton";
 
 type Props = {
   children?: ReactNode;
+  image?: string;
   title?: string;
   description?: string;
   backButton?: boolean;
@@ -17,6 +18,7 @@ type Props = {
 const Layout = ({
   children,
   title = null,
+  image = null,
   description = Config.site_description,
   backButton = false,
   editable = false,
@@ -30,6 +32,9 @@ const Layout = ({
       </title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={image} />
       <meta name="description" content={description} />
       <link
         rel="apple-touch-icon"
