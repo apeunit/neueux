@@ -34,7 +34,7 @@ const Layout = ({
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={image || '/favicons/android-chrome-512x512.png'} />
       <meta name="description" content={description} />
       <link
         rel="apple-touch-icon"

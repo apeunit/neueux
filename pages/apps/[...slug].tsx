@@ -46,6 +46,7 @@ const App = ({
         title={`${app().name} - Screen view`}
         description={app().description}
         fill
+        image={screen.image}
       >
         <ScreenView
           key={screen.id}
@@ -87,6 +88,7 @@ const App = ({
       description={app().description}
       backButton
       editable
+      image={app().icon}
     >
       <main className="w-11/12 mx-auto">
         <HeaderView app={app()} />
