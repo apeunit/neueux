@@ -1,1 +1,29 @@
-{"id":"phg2vice5","slug":"app-1621347512156-opensea-phg2vice5","name":"OpenSea","device":"mobile"}
+{
+  "id": "phg2vice5",
+  "slug": "app-1621347512156-opensea-phg2vice5",
+  "name": "OpenSea",
+  "device": "desktop",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1621347551/neueux/media/apps-logo/KNIW8ufg_400x400.jpg",
+  "description": "Discover, collect, and sell extraordinary NFTs on the world's first & largest NFT marketplace",
+  "screens": [
+    {
+      "id": "eil4pdmsv"
+    },
+    {
+      "id": "js302p09h",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621347857/neueux/media/app-1621347512156-opensea-phg2vice5/screens/opensea_130.png"
+    },
+    {
+      "id": "0tw49ocfg",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621347859/neueux/media/app-1621347512156-opensea-phg2vice5/screens/opensea_131.png"
+    },
+    {
+      "id": "qgio6a2ju",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621347859/neueux/media/app-1621347512156-opensea-phg2vice5/screens/opensea_132.png"
+    },
+    {
+      "id": "ydtdsudx2",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621347860/neueux/media/app-1621347512156-opensea-phg2vice5/screens/opensea_133.png"
+    }
+  ]
+}
