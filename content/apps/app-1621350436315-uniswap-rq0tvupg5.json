@@ -1,1 +1,190 @@
-{"id":"rq0tvupg5","slug":"app-1621350436315-uniswap-rq0tvupg5","name":"Uniswap","device":"mobile"}
+{
+  "id": "rq0tvupg5",
+  "slug": "app-1621350436315-uniswap-rq0tvupg5",
+  "name": "Uniswap",
+  "device": "desktop",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1621350543/neueux/media/apps-logo/wG2eTAfD_400x400.jpg",
+  "description": "A fully decentralized protocol for automated liquidity provision on Ethereum.",
+  "screens": [
+    {
+      "id": "pptd92e6y",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350673/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_001.png"
+    },
+    {
+      "id": "cehhqcsg7",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350674/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_002.png"
+    },
+    {
+      "id": "fp05n97zg",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350676/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_003.png"
+    },
+    {
+      "id": "zkjevetzs",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350678/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_004.png"
+    },
+    {
+      "id": "5qj3ryclp",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350680/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_005.png"
+    },
+    {
+      "id": "a2vjr959k",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350681/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_006.png"
+    },
+    {
+      "id": "2b9sxof97",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350682/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_007.png"
+    },
+    {
+      "id": "pzxwvp20u",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350684/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_008.png"
+    },
+    {
+      "id": "a9b37a106",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350685/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_009.png"
+    },
+    {
+      "id": "mfxctz85n",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350686/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_010.png"
+    },
+    {
+      "id": "dr9dxgecp",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350688/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_011.png"
+    },
+    {
+      "id": "gry0mbdgs",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350689/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_012.png"
+    },
+    {
+      "id": "jhqj8txpa",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350691/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_013.png"
+    },
+    {
+      "id": "zd0xneyg3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350694/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_014.png"
+    },
+    {
+      "id": "mt96fw41l",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350696/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_015.png"
+    },
+    {
+      "id": "uefvu6a7s",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350698/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_016.png"
+    },
+    {
+      "id": "d1ljcig92",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350701/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_017.png"
+    },
+    {
+      "id": "8fh38ppx7",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350704/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_018.png"
+    },
+    {
+      "id": "8zxl86f1o",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350706/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_019.png"
+    },
+    {
+      "id": "tcr815xy3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350708/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_020.png"
+    },
+    {
+      "id": "417hx5jbc",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350709/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_021.png"
+    },
+    {
+      "id": "um5fj40vm",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350710/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_022.png"
+    },
+    {
+      "id": "7vyf5p8hf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350711/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_023.png"
+    },
+    {
+      "id": "itc0qgwsd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350713/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_024.png"
+    },
+    {
+      "id": "ulka3pp1f",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350714/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_025.png"
+    },
+    {
+      "id": "iaqnntbkq",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350715/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_026.png"
+    },
+    {
+      "id": "a83ib7lp5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350716/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_027.png"
+    },
+    {
+      "id": "1z5v2btww",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350718/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_028.png"
+    },
+    {
+      "id": "mz9uq0xkd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350719/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_029.png"
+    },
+    {
+      "id": "t0mvx56pl",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350721/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_030.png"
+    },
+    {
+      "id": "blwz1ta39",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350722/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_031.png"
+    },
+    {
+      "id": "x44r05aay",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350724/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_032.png"
+    },
+    {
+      "id": "rojbwf0fa",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350725/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_033.png"
+    },
+    {
+      "id": "tl6f57wbq",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350727/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_034.png"
+    },
+    {
+      "id": "rq5oe16wq",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350729/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_035.png"
+    },
+    {
+      "id": "mlfkdkjry",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350730/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_036.png"
+    },
+    {
+      "id": "8g6jphs09",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350732/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_037.png"
+    },
+    {
+      "id": "5fc3bnn6d",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350733/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_038.png"
+    },
+    {
+      "id": "tvnh51h4z",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350734/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_039.png"
+    },
+    {
+      "id": "c5ebssed5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350736/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_040.png"
+    },
+    {
+      "id": "h3x0pjhcm",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350737/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_041.png"
+    },
+    {
+      "id": "fg5hatvvm",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350738/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_042.png"
+    },
+    {
+      "id": "1br6f69xf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350740/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_043.png"
+    },
+    {
+      "id": "9ezp61ww4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350741/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_044.png"
+    },
+    {
+      "id": "a070375t2",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621350742/neueux/media/app-1621350436315-uniswap-rq0tvupg5/screens/uniswap_045.png"
+    }
+  ]
+}
