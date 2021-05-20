@@ -21,6 +21,10 @@
       "id": "qg6qrzcsd"
     },
     {
+      "name": "Minting",
+      "id": "m0nmc51sh"
+    },
+    {
       "name": "Send",
       "id": "xoz85l8dh"
     },
@@ -31,6 +35,10 @@
     {
       "name": "Recovery",
       "id": "c2rr1ycqt"
+    },
+    {
+      "name": "Register ENS Domain",
+      "id": "aohxjl53g"
     },
     {
       "name": "Onboarding",
@@ -81,6 +89,10 @@
     {
       "name": "Bounties",
       "id": "xvro21as9"
+    },
+    {
+      "name": "Checkout",
+      "id": "6c5osaqel"
     },
     {
       "name": "Collectibles",
@@ -173,6 +185,10 @@
     {
       "name": "Password",
       "id": "0nvueu7a8"
+    },
+    {
+      "name": "Pending Transaction",
+      "id": "fkdjeo219"
     },
     {
       "name": "Phone Number",
