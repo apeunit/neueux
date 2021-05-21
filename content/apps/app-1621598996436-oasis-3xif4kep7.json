@@ -1,1 +1,354 @@
-{"id":"3xif4kep7","slug":"app-1621598996436-oasis-3xif4kep7","name":"Oasis","device":"mobile"}
+{
+  "id": "3xif4kep7",
+  "slug": "app-1621598996436-oasis-3xif4kep7",
+  "name": "Oasis",
+  "device": "desktop",
+  "description": "The easiest way to buy, send and manage Dai.",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1621599186/neueux/media/apps-logo/63NPtxQy_400x400.png",
+  "screens": [
+    {
+      "id": "oftj0k0vj",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599222/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_001.png"
+    },
+    {
+      "id": "93zhftep9",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599223/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_002.png"
+    },
+    {
+      "id": "hrgnxjp4k",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599224/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_003.png"
+    },
+    {
+      "id": "t4crp0taw",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599225/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_004.png"
+    },
+    {
+      "id": "sqynxqph8",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599226/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_005.png"
+    },
+    {
+      "id": "sqwzq74ad",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599227/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_006.png"
+    },
+    {
+      "id": "5x7kzlolq",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599228/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_007.png"
+    },
+    {
+      "id": "wg5v3d5bu",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599229/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_008.png"
+    },
+    {
+      "id": "fl1c4b7nw",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599230/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_009.png"
+    },
+    {
+      "id": "sl1ain42r",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599231/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_010.png"
+    },
+    {
+      "id": "gkudhptqo",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599233/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_011.png"
+    },
+    {
+      "id": "6nglqa1qd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599234/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_012.png"
+    },
+    {
+      "id": "smdo5cibz",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599235/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_013.png"
+    },
+    {
+      "id": "t7eiydgo2",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599236/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_014.png"
+    },
+    {
+      "id": "yi1ws38ak",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599237/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_015.png"
+    },
+    {
+      "id": "do4ahlfwf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599238/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_016.png"
+    },
+    {
+      "id": "w59butk5m",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599238/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_017.png"
+    },
+    {
+      "id": "nj9aryimy",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599239/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_018.png"
+    },
+    {
+      "id": "jg5p6rpyd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599241/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_019.png"
+    },
+    {
+      "id": "r1qu6dk1l",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599242/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_020.png"
+    },
+    {
+      "id": "tcu06kf19",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599243/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_021.png"
+    },
+    {
+      "id": "i202aeclp",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599243/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_022.png"
+    },
+    {
+      "id": "sfhimrnci",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599244/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_023.png"
+    },
+    {
+      "id": "3svhwkho9",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599246/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_024.png"
+    },
+    {
+      "id": "y2lfgrckj",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599247/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_025.png"
+    },
+    {
+      "id": "r20ekjhyb",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599248/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_026.png"
+    },
+    {
+      "id": "5pp3ehka4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599248/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_027.png"
+    },
+    {
+      "id": "b186sollh",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599249/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_028.png"
+    },
+    {
+      "id": "audbhe4is",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599250/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_029.png"
+    },
+    {
+      "id": "owxaud5sx",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599251/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_030.png"
+    },
+    {
+      "id": "lqnnh22r1",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599252/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_031.png"
+    },
+    {
+      "id": "whuy7qubf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599253/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_032.png"
+    },
+    {
+      "id": "dgh8sox8b",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599254/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_033.png"
+    },
+    {
+      "id": "6lym6vdn0",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599256/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_034.png"
+    },
+    {
+      "id": "uilauxxtz",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599257/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_035.png"
+    },
+    {
+      "id": "s55xzxxmx",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599258/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_036.png"
+    },
+    {
+      "id": "311v8g5n9",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599259/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_037.png"
+    },
+    {
+      "id": "jbse6y9pc",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599260/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_038.png"
+    },
+    {
+      "id": "mo4yickx5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599261/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_039.png"
+    },
+    {
+      "id": "ohjv4c97a",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599262/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_040.png"
+    },
+    {
+      "id": "aeae5rt7g",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599263/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_041.png"
+    },
+    {
+      "id": "lge380u19",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599264/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_042.png"
+    },
+    {
+      "id": "6dms4wu43",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599265/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_043.png"
+    },
+    {
+      "id": "k3gsbm48j",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599266/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_044.png"
+    },
+    {
+      "id": "yhvhyutg5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599267/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_045.png"
+    },
+    {
+      "id": "jgg2g2en9",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599268/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_046.png"
+    },
+    {
+      "id": "lukarhiuo",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599269/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_047.png"
+    },
+    {
+      "id": "v1p1njao2",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599270/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_048.png"
+    },
+    {
+      "id": "mkl31xred",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599271/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_049.png"
+    },
+    {
+      "id": "thyla6xga",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599272/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_050.png"
+    },
+    {
+      "id": "8usexvjuf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599273/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_051.png"
+    },
+    {
+      "id": "fqru9jnp3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599276/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_052.png"
+    },
+    {
+      "id": "y5npvf41l",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599277/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_053.png"
+    },
+    {
+      "id": "tk0y88we2",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599278/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_054.png"
+    },
+    {
+      "id": "uyyuypqm4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599280/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_055.png"
+    },
+    {
+      "id": "6180qty4d",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599282/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_056.png"
+    },
+    {
+      "id": "ntmlt5ul0",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599284/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_057.png"
+    },
+    {
+      "id": "rr550sjca",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599286/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_058.png"
+    },
+    {
+      "id": "bwdfx8i62",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599289/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_059.png"
+    },
+    {
+      "id": "ri7n9gf6c",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599291/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_060.png"
+    },
+    {
+      "id": "4ioudeecl",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599294/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_061.png"
+    },
+    {
+      "id": "9s6o5z6i0",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599296/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_062.png"
+    },
+    {
+      "id": "oo9jl0u59",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599299/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_063.png"
+    },
+    {
+      "id": "032gsiecm",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599301/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_064.png"
+    },
+    {
+      "id": "qe3xikz9b",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599304/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_065.png"
+    },
+    {
+      "id": "yll7nkxs5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599306/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_066.png"
+    },
+    {
+      "id": "eqrho1by4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599309/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_067.png"
+    },
+    {
+      "id": "ymufg0zlo",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599311/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_068.png"
+    },
+    {
+      "id": "b7brsytrs",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599314/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_069.png"
+    },
+    {
+      "id": "19s2nkymo",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599315/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_070.png"
+    },
+    {
+      "id": "bs0v9t6q4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599317/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_071.png"
+    },
+    {
+      "id": "fkfyvqpgk",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599320/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_072.png"
+    },
+    {
+      "id": "z4lrdt2gr",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599322/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_073.png"
+    },
+    {
+      "id": "d5ys90wbi",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599325/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_074.png"
+    },
+    {
+      "id": "8ag7zgoz2",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599330/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_075.png"
+    },
+    {
+      "id": "fzfw96y79",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599333/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_076.png"
+    },
+    {
+      "id": "0h0mtcpgj",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599336/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_077.png"
+    },
+    {
+      "id": "jhmwemvb6",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599338/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_078.png"
+    },
+    {
+      "id": "fo7bx2pwl",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599341/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_079.png"
+    },
+    {
+      "id": "i06dka5bv",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599344/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_080.png"
+    },
+    {
+      "id": "70dvw5sau",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599346/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_081.png"
+    },
+    {
+      "id": "apsi79p4l",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599348/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_082.png"
+    },
+    {
+      "id": "p36l4lc5b",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599350/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_083.png"
+    },
+    {
+      "id": "cgjmua732",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599352/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_084.png"
+    },
+    {
+      "id": "4wopyp54v",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599355/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_085.png"
+    },
+    {
+      "id": "tjatumqo0",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621599357/neueux/media/app-1621598996436-oasis-3xif4kep7/screens/oasis_086.png"
+    }
+  ]
+}
