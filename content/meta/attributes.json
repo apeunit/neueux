@@ -47,10 +47,6 @@
   ],
   "tags": [
     {
-      "name": "Supply Liquidity",
-      "id": "4lg3je651"
-    },
-    {
       "name": "3rd-party-service",
       "id": "7b5faxtz3"
     },
@@ -245,6 +241,10 @@
     {
       "name": "Support",
       "id": "lwt9kim7n"
+    },
+    {
+      "name": "Supply Liquidity",
+      "id": "4lg3je651"
     },
     {
       "name": "Token Holders",
