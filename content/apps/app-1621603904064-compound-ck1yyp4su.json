@@ -301,19 +301,30 @@
     {
       "id": "1i27om4p1",
       "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621604035/neueux/media/app-1621603904064-compound-ck1yyp4su/screens/compound_045.png",
-      "tags": []
+      "tags": [
+        "t1qhrrzzh"
+      ]
     },
     {
       "id": "uux3hg6oi",
-      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621604036/neueux/media/app-1621603904064-compound-ck1yyp4su/screens/compound_046.png"
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621604036/neueux/media/app-1621603904064-compound-ck1yyp4su/screens/compound_046.png",
+      "tags": [
+        "t1qhrrzzh",
+        "424ol9gf6"
+      ]
     },
     {
       "id": "00v1am8p8",
-      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621604037/neueux/media/app-1621603904064-compound-ck1yyp4su/screens/compound_047.png"
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621604037/neueux/media/app-1621603904064-compound-ck1yyp4su/screens/compound_047.png",
+      "tags": [
+        "424ol9gf6",
+        "t1qhrrzzh"
+      ]
     },
     {
       "id": "kcnbg1xoa",
-      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621604038/neueux/media/app-1621603904064-compound-ck1yyp4su/screens/compound_048.png"
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1621604038/neueux/media/app-1621603904064-compound-ck1yyp4su/screens/compound_048.png",
+      "tags": []
     }
   ]
 }
