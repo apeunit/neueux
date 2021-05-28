@@ -2,7 +2,157 @@
   "id": "1send2gog",
   "slug": "app-1622210401468-collab.land-1send2gog",
   "name": "Collab.Land",
-  "device": "mobile",
+  "device": "desktop",
   "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1622210573/neueux/media/apps-logo/7Um6eOAJ_400x400.jpg",
-  "description": "Collab.Land is a place for tokenized communities."
+  "description": "Collab.Land is a place for tokenized communities.",
+  "screens": [
+    {
+      "id": "ig6t26a7n",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210635/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_001.png"
+    },
+    {
+      "id": "ywss75ra5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210637/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_002.png"
+    },
+    {
+      "id": "t1iyf590d",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210638/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_003.png"
+    },
+    {
+      "id": "zznoqq4w7",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210639/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_004.png"
+    },
+    {
+      "id": "ut02xd58i",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210640/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_005.png"
+    },
+    {
+      "id": "oted3jc17",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210641/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_006.png"
+    },
+    {
+      "id": "0kmoxzks1",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210643/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_007.png"
+    },
+    {
+      "id": "538a2h72d",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210644/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_008.png"
+    },
+    {
+      "id": "8di4u65xd",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210645/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_009.png"
+    },
+    {
+      "id": "2z6ta2z9p",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210646/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_010.png"
+    },
+    {
+      "id": "cw9yqv1vm",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210649/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_011.png"
+    },
+    {
+      "id": "rux53l090",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210652/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_012.png"
+    },
+    {
+      "id": "fowc0r61w",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210655/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_013.png"
+    },
+    {
+      "id": "kfid5ola6",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210659/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_014.png"
+    },
+    {
+      "id": "z3xb3xbws",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210661/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_015.png"
+    },
+    {
+      "id": "7wbwnhuue",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210664/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_016.png"
+    },
+    {
+      "id": "lp8qw7s21",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210665/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_017.png"
+    },
+    {
+      "id": "bya7k1xpx",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210666/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_018.png"
+    },
+    {
+      "id": "typxps7d5",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210667/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_019.png"
+    },
+    {
+      "id": "q6vgdakb3",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210668/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_020.png"
+    },
+    {
+      "id": "o7lyew4yu",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210669/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_021.png"
+    },
+    {
+      "id": "ex5vwmo1r",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210670/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_022.png"
+    },
+    {
+      "id": "0b2wg5yia",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210672/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_023.png"
+    },
+    {
+      "id": "sxawux5ve",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210673/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_024.png"
+    },
+    {
+      "id": "0njbmsswz",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210674/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_025.png"
+    },
+    {
+      "id": "ufbej0kt7",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210675/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_026.png"
+    },
+    {
+      "id": "wmnmn8o4x",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210676/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_027.png"
+    },
+    {
+      "id": "i8hhpotta",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210677/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_028.png"
+    },
+    {
+      "id": "48p1w4kuf",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210679/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_029.png"
+    },
+    {
+      "id": "ey0igyv5t",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210680/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_030.png"
+    },
+    {
+      "id": "g9mbgmkct",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210681/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_031.png"
+    },
+    {
+      "id": "2oofpatln",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210683/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_032.png"
+    },
+    {
+      "id": "1qooot7f1",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210684/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_033.png"
+    },
+    {
+      "id": "rn2ucf6dw",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210685/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_034.png"
+    },
+    {
+      "id": "c4tbhasmz",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210687/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_035.png"
+    },
+    {
+      "id": "hodxbdg1n",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210689/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_036.png"
+    },
+    {
+      "id": "bx6sbkut4",
+      "image": "https://res.cloudinary.com/ape-unit/image/upload/v1622210690/neueux/media/app-1622210401468-collab.land-1send2gog/screens/collab-land_037.png"
+    }
+  ]
 }
