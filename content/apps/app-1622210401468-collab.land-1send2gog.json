@@ -1,1 +1,8 @@
-{"id":"1send2gog","slug":"app-1622210401468-collab.land-1send2gog","name":"Collab.Land","device":"mobile"}
+{
+  "id": "1send2gog",
+  "slug": "app-1622210401468-collab.land-1send2gog",
+  "name": "Collab.Land",
+  "device": "mobile",
+  "icon": "https://res.cloudinary.com/ape-unit/image/upload/v1622210573/neueux/media/apps-logo/7Um6eOAJ_400x400.jpg",
+  "description": "Collab.Land is a place for tokenized communities."
+}
