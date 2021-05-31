@@ -21,6 +21,10 @@
       "id": "qg6qrzcsd"
     },
     {
+      "name": "Multisig-Transaction",
+      "id": "cytxmh9wi"
+    },
+    {
       "name": "Send",
       "id": "xoz85l8dh"
     },
@@ -89,6 +93,14 @@
     {
       "name": "Checkout",
       "id": "6c5osaqel"
+    },
+    {
+      "name": "Borrow",
+      "id": "o9fxnrwsd"
+    },
+    {
+      "name": "Collateral",
+      "id": "aks5rbp0v"
     },
     {
       "name": "Collectibles",
@@ -253,6 +265,10 @@
     {
       "name": "Support",
       "id": "lwt9kim7n"
+    },
+    {
+      "name": "Supply Liquidity",
+      "id": "4lg3je651"
     },
     {
       "name": "Token Holders",
