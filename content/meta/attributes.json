@@ -21,6 +21,10 @@
       "id": "qg6qrzcsd"
     },
     {
+      "name": "Multisig-Transaction",
+      "id": "cytxmh9wi"
+    },
+    {
       "name": "Send",
       "id": "xoz85l8dh"
     },
@@ -31,6 +35,10 @@
     {
       "name": "Recovery",
       "id": "c2rr1ycqt"
+    },
+    {
+      "name": "Register ENS Domain",
+      "id": "aohxjl53g"
     },
     {
       "name": "Onboarding",
@@ -83,12 +91,16 @@
       "id": "xvro21as9"
     },
     {
+      "name": "Checkout",
+      "id": "6c5osaqel"
+    },
+    {
       "name": "Borrow",
-      "id": "m3sxp9yzs"
+      "id": "o9fxnrwsd"
     },
     {
       "name": "Collateral",
-      "id": "m6og8xcop"
+      "id": "aks5rbp0v"
     },
     {
       "name": "Collectibles",
@@ -152,7 +164,7 @@
     },
     {
       "name": "Governance",
-      "id": "t1qhrrzzh"
+      "id": "fohjv7in1"
     },
     {
       "name": "History",
@@ -185,6 +197,10 @@
     {
       "name": "Password",
       "id": "0nvueu7a8"
+    },
+    {
+      "name": "Pending Transaction",
+      "id": "fkdjeo219"
     },
     {
       "name": "Phone Number",
@@ -256,7 +272,7 @@
     },
     {
       "name": "Supply Liquidity",
-      "id": "8uozbx46m"
+      "id": "4lg3je651"
     },
     {
       "name": "Token Holders",
