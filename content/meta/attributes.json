@@ -37,6 +37,10 @@
       "id": "c2rr1ycqt"
     },
     {
+      "name": "Register ENS Domain",
+      "id": "aohxjl53g"
+    },
+    {
       "name": "Onboarding",
       "id": "urnsc8ap3"
     },
@@ -85,6 +89,10 @@
     {
       "name": "Bounties",
       "id": "xvro21as9"
+    },
+    {
+      "name": "Checkout",
+      "id": "6c5osaqel"
     },
     {
       "name": "Borrow",
@@ -189,6 +197,10 @@
     {
       "name": "Password",
       "id": "0nvueu7a8"
+    },
+    {
+      "name": "Pending Transaction",
+      "id": "fkdjeo219"
     },
     {
       "name": "Phone Number",
