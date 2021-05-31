@@ -9,6 +9,10 @@
       "id": "eiqs8j92u"
     },
     {
+      "name": "Buy",
+      "id": "docr5htjv"
+    },
+    {
       "name": "Create wallet",
       "id": "gmc0zdfli"
     },
@@ -21,6 +25,14 @@
       "id": "qg6qrzcsd"
     },
     {
+      "name": "Minting",
+      "id": "m0nmc51sh"
+    },
+    {
+      "name": "Sell",
+      "id": "raugqpagr"
+    },
+    {  
       "name": "Multisig-Transaction",
       "id": "cytxmh9wi"
     },
@@ -177,6 +189,10 @@
     {
       "name": "Language",
       "id": "u71gbhqcz"
+    },
+    {
+      "name": "Marketplace",
+      "id": "ox8vqi3dc"
     },
     {
       "name": "Menu",
