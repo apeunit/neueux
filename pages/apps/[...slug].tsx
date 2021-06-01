@@ -1,7 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import Layout from "components/Layout";
 import React from "react";
-import AppView from "components/app/View";
 import HeaderView from "components/app/HeaderView";
 import ScreenView from "components/app/screen/View";
 import { getAppContent, listAllAppContent } from "lib/app";
@@ -14,6 +13,7 @@ import { useGithubJsonForm } from "react-tinacms-github";
 import AppFormExtended, { FormProps } from "forms/appExtended";
 
 import { useRouter } from "next/router";
+import ScreenList from "components/app/screen/List";
 
 const App = ({
   appData,
@@ -76,7 +76,7 @@ const App = ({
     return screens.filter(
       (it) =>
         (!userflows && !tags) ||
-        (userflows && userflows.some((u) => it.userflow?.id === u)) ||
+        (userflows && userflows.some((u) => it.userflows?.some((userflow) => userflow.id == u))) ||
         (tags && tags.some((t) => it.tags?.some((tag) => tag.id == t)))
     );
   };
@@ -99,7 +99,7 @@ const App = ({
           routePathname={null}
           fallbackRoutePathname={null}
         />
-        <AppView app={app()} screens={filtered()} preview={preview} />
+        <ScreenList app={app()} screens={filtered()} showAll={true} preview={preview} />
       </main>
     </Layout>
   );

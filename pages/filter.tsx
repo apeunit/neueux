@@ -26,7 +26,7 @@ const FilterPage = ({ screens, filter }) => {
     }
     const filter = screens.filter((it) => {
       if (userflows && userflows.length) {
-        return userflows.some((u) => it.userflow?.id === u);
+        return userflows.some((u) => it.userflows?.some((userflow) => userflow.id == u));
       }
 
       if (tags && tags.length) {
@@ -34,6 +34,8 @@ const FilterPage = ({ screens, filter }) => {
       }
       return true;
     });
+
+    // console.log(filter);
 
     return filter;
   };
@@ -51,12 +53,13 @@ const FilterPage = ({ screens, filter }) => {
         />
         <div className="flex flex-wrap">
           {filtered().map((screen) => {
+
             return (
               <div
                 key={`screen-card-view-${screen.id}`}
                 className={[
                   screen.device === "desktop"
-                    ? "w-3/6"
+                    ? "w-full lg:w-3/6"
                     : "lg:w-1/6 md:w-1/3 sm:w-1/6 w-1/2",
                   "px-2 mt-5",
                 ].join(" ")}

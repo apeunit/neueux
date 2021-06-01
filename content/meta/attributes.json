@@ -1,12 +1,12 @@
 {
   "userflows": [
     {
-      "name": "Blank",
-      "id": "amuunrve2"
-    },
-    {
       "name": "Backup",
       "id": "eiqs8j92u"
+    },
+    {
+      "name": "Buy",
+      "id": "docr5htjv"
     },
     {
       "name": "Create wallet",
@@ -15,6 +15,22 @@
     {
       "name": "Delete wallet",
       "id": "k0xhw85zn"
+    },
+    {
+      "name": "Dot Voting",
+      "id": "qg6qrzcsd"
+    },
+    {
+      "name": "Minting",
+      "id": "m0nmc51sh"
+    },
+    {
+      "name": "Sell",
+      "id": "raugqpagr"
+    },
+    {  
+      "name": "Multisig-Transaction",
+      "id": "cytxmh9wi"
     },
     {
       "name": "Send",
@@ -29,12 +45,20 @@
       "id": "c2rr1ycqt"
     },
     {
+      "name": "Register ENS Domain",
+      "id": "aohxjl53g"
+    },
+    {
       "name": "Onboarding",
       "id": "urnsc8ap3"
     },
     {
       "name": "Onramp",
       "id": "kt2dfi02h"
+    },
+    {
+      "name": "Voting",
+      "id": "7rlo8w7ni"
     }
   ],
   "tags": [
@@ -47,8 +71,16 @@
       "id": "mu0tsey2m"
     },
     {
+      "name": "Addons",
+      "id": "9euvuilc9"
+    },
+    {
       "name": "Address",
       "id": "icwt2g5fx"
+    },
+    {
+      "name": "Allocating Funds",
+      "id": "i2iue6878"
     },
     {
       "name": "Backup",
@@ -63,12 +95,32 @@
       "id": "yfy10248i"
     },
     {
+      "name": "Bounties",
+      "id": "xvro21as9"
+    },
+    {
+      "name": "Checkout",
+      "id": "6c5osaqel"
+    },
+    {
+      "name": "Borrow",
+      "id": "o9fxnrwsd"
+    },
+    {
+      "name": "Collateral",
+      "id": "aks5rbp0v"
+    },
+    {
       "name": "Collectibles",
       "id": "omgp8idir"
     },
     {
       "name": "Contacts",
       "id": "x0f3obtkm"
+    },
+    {
+      "name": "Connect Wallet",
+      "id": "zflmpj5ep"
     },
     {
       "name": "Currency Overview",
@@ -81,6 +133,14 @@
     {
       "name": "DeFi",
       "id": "xvay0u80k"
+    },
+    {
+      "name": "Deposit Funds",
+      "id": "qu4s2psp6"
+    },
+    {
+      "name": "Dot Voting",
+      "id": "83et2dp12"
     },
     {
       "name": "Education",
@@ -107,20 +167,32 @@
       "id": "jjlq2si5k"
     },
     {
+      "name": "Finances",
+      "id": "nil7xmdy5"
+    },
+    {
+      "name": "Governance",
+      "id": "fohjv7in1"
+    },
+    {
       "name": "History",
       "id": "d2aypoqmv"
+    },
+    {
+      "name": "Label",
+      "id": "8d8h8fwi8"
     },
     {
       "name": "Language",
       "id": "u71gbhqcz"
     },
     {
-      "name": "Menu",
-      "id": "r84aimrt9"
+      "name": "Marketplace",
+      "id": "ox8vqi3dc"
     },
     {
-      "name": "Mnemonic Phrase",
-      "id": "ewycpzskx"
+      "name": "Menu",
+      "id": "r84aimrt9"
     },
     {
       "name": "Network",
@@ -139,6 +211,10 @@
       "id": "0nvueu7a8"
     },
     {
+      "name": "Pending Transaction",
+      "id": "fkdjeo219"
+    },
+    {
       "name": "Phone Number",
       "id": "8f87dstkk"
     },
@@ -151,8 +227,20 @@
       "id": "8oc9ysbyw"
     },
     {
+      "name": "Projects",
+      "id": "983f7qdc6"
+    },
+    {
+      "name": "Profile",
+      "id": "bg49vohel"
+    },
+    {
       "name": "QR Code",
       "id": "r18bge4gm"
+    },
+    {
+      "name": "Ragequit",
+      "id": "uo4wlvpb9"
     },
     {
       "name": "Rates",
@@ -165,6 +253,10 @@
     {
       "name": "Refferal",
       "id": "9ttwtn4q8"
+    },
+    {
+      "name": "Rewards",
+      "id": "18v4j4h57"
     },
     {
       "name": "Search",
@@ -191,6 +283,14 @@
       "id": "lwt9kim7n"
     },
     {
+      "name": "Supply Liquidity",
+      "id": "4lg3je651"
+    },
+    {
+      "name": "Token Holders",
+      "id": "1znxqvydh"
+    },
+    {
       "name": "Token Visibility",
       "id": "7q72o2sm9"
     },
@@ -201,6 +301,14 @@
     {
       "name": "Username",
       "id": "qoi07zvgf"
+    },
+    {
+      "name": "Voting",
+      "id": "424ol9gf6"
+    },
+    {
+      "name": "Withdrawal",
+      "id": "zs5y5zhny"
     }
   ]
 }
