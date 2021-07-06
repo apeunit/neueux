@@ -61,7 +61,7 @@ const FilterPage = ({ screens, filter }) => {
                   screen.device === "desktop"
                     ? "screen screen-desktop"
                     : "screen screen-mobile",
-                  "mt-5",
+                  "",
                 ].join(" ")}
               >
                 <Link
