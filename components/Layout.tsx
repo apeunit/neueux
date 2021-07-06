@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import { useRouter } from "next/router";
 import Head from "next/head";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
