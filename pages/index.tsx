@@ -11,7 +11,7 @@ import Filter from "components/filter";
 
 const IndexPage = ({ apps, filter }) => {
   return (
-    <Layout title="Screen Gallery" editable>
+    <Layout title="Screen Gallery" image="/img/icon.png" editable>
       <main className="w-11/12 mx-auto xl:relative">
         <Header title="Screen gallery" />
         <Filter
