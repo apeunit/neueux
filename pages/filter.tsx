@@ -33,7 +33,7 @@ const FilterPage = ({ screens, filter }) => {
         return tags.some((t) => it.tags?.some((tag) => tag.id == t));
       }
       return true;
-    });
+    }).reverse();
 
     // console.log(filter);
 
