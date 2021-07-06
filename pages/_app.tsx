@@ -1,14 +1,17 @@
 import React from "react";
 import App from "next/app";
 import { TinaCMS, TinaProvider } from "tinacms";
-import { GithubClient, TinacmsGithubProvider } from "react-tinacms-github";
+import {
+  GithubClient,
+  TinacmsGithubProvider,
+  useGithubToolbarPlugins,
+} from "react-tinacms-github";
 import AppForm from "forms/app";
-
-import "styles/global.css";
+import 'tailwindcss/tailwind.css'
+// import "styles/global.css";
 import { CloudinaryMediaStore } from "plugins/mediaStore";
 import withRouter from "next/dist/client/with-router";
 
-import "styles/global.css";
 class Site extends App {
   cms: TinaCMS;
 
@@ -67,7 +70,9 @@ class Site extends App {
           {/**
            * 6. Add a button for entering Preview/Edit Mode
            */}
-          <Component {...pageProps} />
+          <ToolbarWrapper>
+            <Component {...pageProps} />
+          </ToolbarWrapper>
         </TinacmsGithubProvider>
       </TinaProvider>
     );
@@ -114,4 +119,10 @@ export const SidebarPlaceHolder = () => {
       </ul> */}
     </div>
   );
+};
+
+const ToolbarWrapper = ({ children }) => {
+  useGithubToolbarPlugins();
+
+  return <>{children}</>;
 };

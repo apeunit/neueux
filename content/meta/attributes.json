@@ -1,12 +1,12 @@
 {
   "userflows": [
     {
-      "name": "Blank",
-      "id": "amuunrve2"
-    },
-    {
       "name": "Backup",
       "id": "eiqs8j92u"
+    },
+    {
+      "name": "Buy",
+      "id": "docr5htjv"
     },
     {
       "name": "Create wallet",
@@ -21,6 +21,18 @@
       "id": "qg6qrzcsd"
     },
     {
+      "name": "Minting",
+      "id": "m0nmc51sh"
+    },
+    {
+      "name": "Sell",
+      "id": "raugqpagr"
+    },
+    {  
+      "name": "Multisig-Transaction",
+      "id": "cytxmh9wi"
+    },
+    {
       "name": "Send",
       "id": "xoz85l8dh"
     },
@@ -31,6 +43,10 @@
     {
       "name": "Recovery",
       "id": "c2rr1ycqt"
+    },
+    {
+      "name": "Register ENS Domain",
+      "id": "aohxjl53g"
     },
     {
       "name": "Onboarding",
@@ -81,6 +97,18 @@
     {
       "name": "Bounties",
       "id": "xvro21as9"
+    },
+    {
+      "name": "Checkout",
+      "id": "6c5osaqel"
+    },
+    {
+      "name": "Borrow",
+      "id": "o9fxnrwsd"
+    },
+    {
+      "name": "Collateral",
+      "id": "aks5rbp0v"
     },
     {
       "name": "Collectibles",
@@ -143,6 +171,10 @@
       "id": "nil7xmdy5"
     },
     {
+      "name": "Governance",
+      "id": "fohjv7in1"
+    },
+    {
       "name": "History",
       "id": "d2aypoqmv"
     },
@@ -153,6 +185,10 @@
     {
       "name": "Language",
       "id": "u71gbhqcz"
+    },
+    {
+      "name": "Marketplace",
+      "id": "ox8vqi3dc"
     },
     {
       "name": "Menu",
@@ -173,6 +209,10 @@
     {
       "name": "Password",
       "id": "0nvueu7a8"
+    },
+    {
+      "name": "Pending Transaction",
+      "id": "fkdjeo219"
     },
     {
       "name": "Phone Number",
@@ -241,6 +281,10 @@
     {
       "name": "Support",
       "id": "lwt9kim7n"
+    },
+    {
+      "name": "Supply Liquidity",
+      "id": "4lg3je651"
     },
     {
       "name": "Token Holders",
