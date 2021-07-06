@@ -51,7 +51,7 @@ const FilterPage = ({ screens, filter }) => {
           routePathname={null}
           fallbackRoutePathname={"/"}
         />
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap screen-grid">
           {filtered().map((screen) => {
 
             return (
@@ -59,9 +59,9 @@ const FilterPage = ({ screens, filter }) => {
                 key={`screen-card-view-${screen.id}`}
                 className={[
                   screen.device === "desktop"
-                    ? "w-full lg:w-3/6"
-                    : "lg:w-1/6 md:w-1/3 sm:w-1/3 w-1/2",
-                  "px-2 mt-5",
+                    ? "screen screen-desktop"
+                    : "screen screen-mobile",
+                  "mt-5",
                 ].join(" ")}
               >
                 <Link

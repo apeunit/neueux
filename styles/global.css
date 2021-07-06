@@ -74,3 +74,19 @@ ul.nav {
 .plain-page strong {
   font-weight: 700;
 }
+
+.screen-grid {
+  @apply -mx-1.5 sm:-mx-2 lg:-mx-u1 3xl:-mx-4;
+}
+
+.screen {
+  @apply p-1.5 sm:p-2 lg:p-u1 3xl:p-4;
+}
+
+.screen-mobile {
+  @apply w-1/2 sm:w-1/3 lg:w-1/6;
+}
+
+.screen-desktop {
+  @apply lg:w-1/2 w-full;
+}
