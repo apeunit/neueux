@@ -1,25 +1,23 @@
 import React from "react";
 import CMSProvider from "./_cms";
-
-
+import App from "next/app";
 
 import "tailwindcss/tailwind.css";
 // import { MarkdownFieldPlugin, HtmlFieldPlugin } from "react-tinacms-editor";
 // import "styles/global.css";
 
-export const Toolbar = ({ children }) => {
-  return <>{children}</>;
-};
-
-const Site = ({ pageProps, Component }) => {
-  return (
-    /**
-     * 5. Wrap the page Component with the Tina and Github providers
-     */
-    <CMSProvider pageProps={pageProps}>
-      <Component {...pageProps} />
-    </CMSProvider>
-  );
-};
+class Site extends App {
+  render() {
+    const { pageProps, Component } = this.props;
+    return (
+      /**
+       * 5. Wrap the page Component with the Tina and Github providers
+       */
+      <CMSProvider preview={pageProps?.preview} error={pageProps?.error}>
+        <Component {...pageProps} />
+      </CMSProvider>
+    );
+  }
+}
 
 export default Site;

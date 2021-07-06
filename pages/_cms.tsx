@@ -1,15 +1,18 @@
 import React from "react";
-import App from "next/app";
 import { TinaCMS, TinaProvider } from "tinacms";
 import { GithubClient, TinacmsGithubProvider } from "react-tinacms-github";
 import AppForm from "forms/app";
 import ArticleForm from "forms/article";
 import { useGithubToolbarPlugins } from "react-tinacms-github";
-import { MarkdownFieldPlugin, HtmlFieldPlugin } from 'react-tinacms-editor'
+import { MarkdownFieldPlugin, HtmlFieldPlugin } from "react-tinacms-editor";
 // import "styles/global.css";
 import { CloudinaryMediaStore } from "plugins/mediaStore";
 
-class CMSProvider extends App {
+class CMSProvider extends React.Component<{
+  preview: any;
+  error: any;
+  children: React.ReactElement;
+}> {
   cms: TinaCMS;
 
   constructor(props) {
@@ -27,7 +30,7 @@ class CMSProvider extends App {
      * 1. Create the TinaCMS instance
      */
     this.cms = new TinaCMS({
-      enabled: !!props.pageProps.preview,
+      enabled: !!props?.preview,
       apis: {
         /**
          * 2. Register the GithubClient
@@ -44,7 +47,7 @@ class CMSProvider extends App {
       sidebar: {
         placeholder: SidebarPlaceHolder,
       },
-      toolbar: props.pageProps.preview,
+      toolbar: true,
     });
 
     this.cms.plugins.add(
@@ -54,12 +57,12 @@ class CMSProvider extends App {
     this.cms.plugins.add(
       ArticleForm((slug) => (window.location.href = `/editor/articles/${slug}`))
     );
-    this.cms.plugins.add(MarkdownFieldPlugin)
-    this.cms.plugins.add(HtmlFieldPlugin)
+    this.cms.plugins.add(MarkdownFieldPlugin);
+    this.cms.plugins.add(HtmlFieldPlugin);
   }
 
   render() {
-    const { children, pageProps } = this.props;
+    const { children, error } = this.props;
     return (
       /**
        * 5. Wrap the page Component with the Tina and Github providers
@@ -68,7 +71,7 @@ class CMSProvider extends App {
         <TinacmsGithubProvider
           onLogin={onLogin}
           onLogout={onLogout}
-          error={pageProps.error}
+          error={error}
         >
           {/**
            * 6. Add a button for entering Preview/Edit Mode

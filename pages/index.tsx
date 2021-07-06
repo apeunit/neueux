@@ -4,7 +4,6 @@ import React from "react";
 import AppCard from "components/app/Card";
 import Header from "components/Header";
 import { listAppContent } from "lib/app";
-import { useCMS } from "tinacms";
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/filter";

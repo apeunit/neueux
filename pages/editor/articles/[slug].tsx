@@ -7,8 +7,6 @@ import { useGithubMarkdownForm } from "react-tinacms-github";
 import { InlineForm } from "react-tinacms-inline";
 import { InlineWysiwyg } from "react-tinacms-editor";
 
-import { listAllAppContent } from "lib/app";
-
 import ArticleFormExtended, { FormProps } from "forms/articleExtended";
 
 export default function Home({ file }) {
@@ -62,14 +60,15 @@ export const getStaticProps = async function ({
 };
 
 export const getStaticPaths = async () => {
-  const apps = listAllAppContent();
-  const paths = apps
-    .filter((app) => app.slug)
-    .map((app) => ({
-      params: {
-        slug: app.slug,
-      },
-    }));
+  // const apps = listAllAppContent();
+  // const paths = apps
+  //   .filter((app) => app.slug)
+  //   .map((app) => ({
+  //     params: {
+  //       slug: app.slug,
+  //     },
+  //   }));
+  const paths = [];
   return {
     paths,
     fallback: true,
