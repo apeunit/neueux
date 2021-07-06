@@ -60,7 +60,7 @@ const FilterPage = ({ screens, filter }) => {
                 className={[
                   screen.device === "desktop"
                     ? "w-full lg:w-3/6"
-                    : "lg:w-1/6 md:w-1/3 sm:w-1/6 w-1/2",
+                    : "lg:w-1/6 md:w-1/3 sm:w-1/3 w-1/2",
                   "px-2 mt-5",
                 ].join(" ")}
               >
