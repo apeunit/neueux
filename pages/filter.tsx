@@ -26,14 +26,14 @@ const FilterPage = ({ screens, filter }) => {
     }
     const filter = screens.filter((it) => {
       if (userflows && userflows.length) {
-        return userflows.some((u) => it.userflows?.some((userflow) => userflow.id == u).reverse());
+        return userflows.some((u) => it.userflows?.some((userflow) => userflow.id == u));
       }
 
       if (tags && tags.length) {
         return tags.some((t) => it.tags?.some((tag) => tag.id == t));
       }
       return true;
-    });
+    }).reverse();
 
     // console.log(filter);
 
