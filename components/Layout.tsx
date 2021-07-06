@@ -5,9 +5,15 @@ import Footer from "components/Footer";
 import Config from "config.json";
 import BackButton from "components/BackButton";
 
+type OgImage = {
+  width?: string;
+  height?: string;
+  src?: string;
+};
+
 type Props = {
   children?: ReactNode;
-  image?: string;
+  image?: OgImage;
   title?: string;
   description?: string;
   backButton?: boolean;
@@ -18,7 +24,7 @@ type Props = {
 const Layout = ({
   children,
   title = null,
-  image = null,
+  image = {},
   description = Config.site_description,
   backButton = false,
   editable = false,
@@ -57,8 +63,14 @@ const Layout = ({
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
-          content={image || "/favicons/android-chrome-512x512.png"}
+          content={image.src || "/favicons/android-chrome-512x512.png"}
         />
+        {image.width && (
+          <meta property="og:image:width" content={image.width} />
+        )}
+        {image.height && (
+          <meta property="og:image:height" content={image.height} />
+        )}
         <meta property="og:site_name" content={Config.site_title} />
         <meta property="og:type" content="website" />
       </Head>
