@@ -26,7 +26,9 @@ const FilterPage = ({ screens, filter }) => {
     }
     const filter = screens.filter((it) => {
       if (userflows && userflows.length) {
-        return userflows.some((u) => it.userflows?.some((userflow) => userflow.id == u));
+        return userflows.some((u) =>
+          it.userflows?.some((userflow) => userflow.id == u)
+        );
       }
 
       if (tags && tags.length) {
@@ -51,35 +53,36 @@ const FilterPage = ({ screens, filter }) => {
           routePathname={null}
           fallbackRoutePathname={"/"}
         />
-        <div className="flex flex-wrap screen-grid">
-          {filtered().map((screen) => {
-
-            return (
-              <div
-                key={`screen-card-view-${screen.id}`}
-                className={[
-                  screen.device === "desktop"
-                    ? "screen screen-desktop"
-                    : "screen screen-mobile",
-                  "",
-                ].join(" ")}
-              >
-                <Link
-                  href={{
-                    pathname: `/apps/${screen.app}/screen/${screen.id}`,
-                    query: {
-                      referer: router.pathname,
-                      ...router.query,
-                    },
-                  }}
+        <div className="wrapper">
+          <div className="flex flex-wrap screen-grid">
+            {filtered().map((screen) => {
+              return (
+                <div
+                  key={`screen-card-view-${screen.id}`}
+                  className={[
+                    screen.device === "desktop"
+                      ? "screen screen-desktop"
+                      : "screen screen-mobile",
+                    "",
+                  ].join(" ")}
                 >
-                  <a>
-                    <ScreenCard url={screen.image} style={screen.device} />
-                  </a>
-                </Link>
-              </div>
-            );
-          })}
+                  <Link
+                    href={{
+                      pathname: `/apps/${screen.app}/screen/${screen.id}`,
+                      query: {
+                        referer: router.pathname,
+                        ...router.query,
+                      },
+                    }}
+                  >
+                    <a>
+                      <ScreenCard url={screen.image} style={screen.device} />
+                    </a>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </main>
     </Layout>

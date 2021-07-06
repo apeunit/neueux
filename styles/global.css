@@ -90,3 +90,7 @@ ul.nav {
 .screen-desktop {
   @apply lg:w-1/2 w-full;
 }
+
+.wrapper{
+  @apply mx-auto max-w-8xl
+}
