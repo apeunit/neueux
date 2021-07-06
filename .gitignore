@@ -38,3 +38,4 @@ yarn.lock
 # Local Netlify folder
 .netlify
 .env
+package-lock.json
