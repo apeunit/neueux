@@ -2,11 +2,14 @@ const withMdxEnhanced = require("next-mdx-enhanced");
 const rehypePrism = require("@mapbox/rehype-prism");
 require('dotenv').config()
 
-module.exports = withMdxEnhanced({
+module.exports =
+  withMdxEnhanced(
+  {
   layoutPath: "pages",
   defaultLayout: true,
   rehypePlugins: [rehypePrism],
-})({
+    })
+  ({
   pageExtensions: ["mdx", "tsx", "ts"],
   env: {
     GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
@@ -38,9 +41,11 @@ module.exports = withMdxEnhanced({
       ]
     );
     
-    config.node = {
-      fs: "empty",
-    };
+    webpack.resolve = {
+      fallback: {
+        fs: true
+      }
+    }
 
     return config;
   },
