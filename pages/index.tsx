@@ -4,12 +4,14 @@ import React from "react";
 import AppCard from "components/app/Card";
 import Header from "components/Header";
 import { listAppContent } from "lib/app";
-
+import { useCMS } from "tinacms";
 import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/filter";
 
 const IndexPage = ({ apps, filter }) => {
+  // const cms = useCMS();
+  // console.log(cms);
   return (
     <Layout title="Screen Gallery" editable>
       <main className="w-11/12 mx-auto xl:relative">

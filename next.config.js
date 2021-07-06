@@ -1,16 +1,8 @@
-const withMdxEnhanced = require("next-mdx-enhanced");
-const rehypePrism = require("@mapbox/rehype-prism");
-require('dotenv').config()
 
-module.exports =
-  withMdxEnhanced(
-  {
-  layoutPath: "pages",
-  defaultLayout: true,
-  rehypePlugins: [rehypePrism],
-    })
-  ({
-  pageExtensions: ["mdx", "tsx", "ts"],
+require("dotenv").config();
+
+module.exports = {
+  pageExtensions: ["tsx", "ts"],
   env: {
     GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
     REPO_FULL_NAME: process.env.REPO_FULL_NAME,
@@ -20,33 +12,28 @@ module.exports =
     CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
   },
   images: {
-    domains: ['res.cloudinary.com'],
+    domains: ["res.cloudinary.com"],
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push(
       ...[
         {
-          test: /\.yml$/,
-          type: "json",
-          use: "yaml-loader",
-        },
-        {
           test: /\.svg$/,
-          use: ["@svgr/webpack"]
+          use: "@svgr/webpack",
         },
         {
           test: /\.md$/,
-          use: 'raw-loader',
-        }
+          use: "raw-loader",
+        },
       ]
     );
-    
+
     webpack.resolve = {
       fallback: {
-        fs: true
-      }
-    }
+        fs: true,
+      },
+    };
 
     return config;
   },
-});
+}
