@@ -9,7 +9,7 @@ date: 15-April-2020
 ---
 When you text your friends, do you really understand how WhatsApp or Telegram works? Probably not, because text messaging has been built to be simple, useful, and quick for everyone to pick up. You are never faced with the complex infrastructure which lies behind those apps, just a polished, easy-to-use interface.
 
-But what about decentralized apps (dApps)? Do you think about the underlying technology, or do you just see the interface? The answer inst so clear in this case, but it isn’t your fault. Often decentralized apps are built with complex interfaces that demand a knowledge of the underlying blockchain technology.
+But what about decentralized apps (dApps)? Do you think about the underlying technology, or do you just see the interface? The answer isn't so clear in this case, but it isn’t your fault. Often decentralized apps are built with complex interfaces that demand a knowledge of the underlying blockchain technology.
 
 Many blockchain apps don’t match the UX standards of conventional consumer-focused apps.
 While researching common UX pitfalls in blockchain apps, we realized how few free resources are available to start blockchain projects' design process.
