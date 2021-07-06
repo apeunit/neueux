@@ -12,6 +12,7 @@
     "@svgr/webpack": "^5.5.0",
     "@tailwindcss/typography": "^0.4.0",
     "@tinacms/alerts": "^0.39.0",
+    "@tinacms/react-modals": "^0.42.1",
     "@types/js-yaml": "^3.12.5",
     "axios": "^0.21.1",
     "cloudinary": "^1.25.1",
