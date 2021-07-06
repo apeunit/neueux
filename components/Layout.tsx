@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
@@ -24,20 +25,15 @@ const Layout = ({
   editable = false,
   fill = false,
 }: Props) => {
-  const siteTitle = title ? `${title} | ${Config.site_title}` : Config.site_title;
+  const siteTitle = title
+    ? `${title} | ${Config.site_title}`
+    : Config.site_title;
   return (
     <div className="overflow-hidden">
       <Head>
         <title>{siteTitle}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:title" content={siteTitle} />
-        <meta property="og:description" content={description} />
-        <meta
-          property="og:image"
-          content={image || "/favicons/android-chrome-512x512.png"}
-        />
-        <meta name="description" content={description} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -55,9 +51,17 @@ const Layout = ({
           sizes="16x16"
           href="/favicons/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="description" content={description} />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={description} />
+        <meta
+          property="og:image"
+          content={image || "/favicons/android-chrome-512x512.png"}
+        />
+        <meta property="og:site_name" content={Config.site_title} />
+        <meta property="og:type" content="website" />
       </Head>
       {!fill && (
         <header>
