@@ -16,32 +16,32 @@ export default function Home({ file }) {
   const [article, form] = useGithubMarkdownForm(file || {}, formOptions);
   usePlugin(form);
   return (
-    <Layout title={`Edit - ${article.name} - App`} backButton editable>
+    <Layout title={`Edit - ${article?.frontmatter?.name} - App`} backButton editable>
       <main className="w-11/12 mx-auto mt-5 prose max-w-full">
-        <InlineForm key={`form-${article.id}`} form={form}>
+        <InlineForm key={`form-${article?.frontmatter?.id}`} form={form}>
           <h1>
             <InlineText className="mb-10" name="frontmatter.title">
-              {article.frontmatter.title}
+              {article?.frontmatter?.title}
             </InlineText>
           </h1>
 
           <p>
             <InlineText className="mb-10" name="frontmatter.summary">
-              {article.frontmatter.title}
+              {article?.frontmatter?.title}
             </InlineText>
           </p>
 
-          {article.frontmatter.featured_image && (
+          {article?.frontmatter?.featured_image && (
             <div className="w-1/4">
-              <img src={article.frontmatter.featured_image} />
+              <img src={article?.frontmatter?.featured_image} />
             </div>
           )}
           <InlineWysiwyg
-            key={`Wysiwyg-${article.id}`}
+            key={`Wysiwyg-${article?.frontmatter?.id}`}
             name="markdownBody"
             format="markdown"
           >
-            <ReactMarkdown key={`markdown-${article.id}`}>
+            <ReactMarkdown key={`markdown-${article?.frontmatter?.id}`}>
               {article.markdownBody}
             </ReactMarkdown>
           </InlineWysiwyg>

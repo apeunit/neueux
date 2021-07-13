@@ -39,9 +39,6 @@ const form = () => {
         uploadDir: () => "neueux/media/articles",
       },
     ],
-    onSubmit(values, cms) {
-      console.log(values);
-    },
   };
 };
 

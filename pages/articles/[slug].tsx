@@ -5,6 +5,7 @@ import { getArticleContent, listAllArticleContent } from "lib/articles";
 import ReactMarkdown from "react-markdown";
 
 const App = ({ article }) => {
+  if (!article) return null;
   return (
     <Layout
       title={`${article.title} - Article`}
@@ -53,7 +54,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }));
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 };
 
