@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 import { usePlugin } from "tinacms";
 import { useGithubMarkdownForm } from "react-tinacms-github";
-import { InlineForm } from "react-tinacms-inline";
+import { InlineForm, InlineText } from "react-tinacms-inline";
 import { InlineWysiwyg } from "react-tinacms-editor";
 
 import ArticleFormExtended, { FormProps } from "forms/articleExtended";
@@ -17,10 +17,33 @@ export default function Home({ file }) {
   usePlugin(form);
   return (
     <Layout title={`Edit - ${article.name} - App`} backButton editable>
-      <main className="w-11/12 mx-auto">
+      <main className="w-11/12 mx-auto mt-5 prose max-w-full">
         <InlineForm key={`form-${article.id}`} form={form}>
-          <InlineWysiwyg key={`Wysiwyg-${article.id}`} name="markdownBody" format="markdown">
-            <ReactMarkdown key={`markdown-${article.id}`}>{article.markdownBody}</ReactMarkdown>
+          <h1>
+            <InlineText className="mb-10" name="frontmatter.title">
+              {article.frontmatter.title}
+            </InlineText>
+          </h1>
+
+          <p>
+            <InlineText className="mb-10" name="frontmatter.summary">
+              {article.frontmatter.title}
+            </InlineText>
+          </p>
+
+          {article.frontmatter.featured_image && (
+            <div className="w-1/4">
+              <img src={article.frontmatter.featured_image} />
+            </div>
+          )}
+          <InlineWysiwyg
+            key={`Wysiwyg-${article.id}`}
+            name="markdownBody"
+            format="markdown"
+          >
+            <ReactMarkdown key={`markdown-${article.id}`}>
+              {article.markdownBody}
+            </ReactMarkdown>
           </InlineWysiwyg>
         </InlineForm>
       </main>

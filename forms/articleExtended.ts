@@ -6,15 +6,23 @@ const form = () => {
     fields: [
       {
         label: "Title",
-        name: "title",
+        name: "frontmatter.title",
         component: "text",
         validation(title) {
           if (!title) return "Required.";
         },
       },
       {
+        label: "Summary",
+        name: "frontmatter.summary",
+        component: "text",
+        validation(summary) {
+          if (!summary) return "Required.";
+        },
+      },
+      {
         label: "Category",
-        name: "category",
+        name: "frontmatter.category",
         component: "select",
         description: "Select the category",
         options: [
@@ -22,7 +30,18 @@ const form = () => {
           { label: "Desktop", value: "desktop" },
         ],
       },
+      {
+        label: "Featured image",
+        name: "frontmatter.featured_image",
+        component: "image",
+        // Generate the frontmatter value based on the filename
+        parse: (media) => media.previewSrc,
+        uploadDir: () => "neueux/media/articles",
+      },
     ],
+    onSubmit(values, cms) {
+      console.log(values);
+    },
   };
 };
 
