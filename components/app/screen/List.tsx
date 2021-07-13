@@ -24,7 +24,7 @@ const ScreenList = ({
         ? "hidden"
         : "block",
       (i > 2 && app.device === "mobile") || (i > 1 && app.device === "desktop")
-        ? "hidden xl:block"
+        ? "hidden lg:block"
         : "md:block sm:block lg:block",
     ];
   };
