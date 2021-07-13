@@ -16,6 +16,12 @@ const Navbar = () => {
             </li>
           </ul>
 
+          <ul className="w-1/2 text-center hidden lg:block sm:block md:block mt-2 py-6">
+            <li className="font-bold text-gray-500 text-sm">
+              <Link href="/articles"><a href="">Articles</a></Link>
+            </li>
+          </ul>
+
           <ul className="w-1/2 text-right hidden lg:block sm:block md:block mt-2 py-6">
             <li className="font-bold text-gray-500 text-sm">
               <Link href="/about"><a href="">About this project</a></Link>
