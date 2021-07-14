@@ -46,6 +46,11 @@ const App = ({
         title={`${app().name} - Screen view`}
         description={app().description}
         fill
+        image={{
+          src: screen.image,
+          width: app().device === "mobile" ? "180" : "580",
+          height: app().device === "mobile" ? "380" : "380",
+        }}
       >
         <ScreenView
           key={screen.id}
@@ -76,7 +81,10 @@ const App = ({
     return screens.filter(
       (it) =>
         (!userflows && !tags) ||
-        (userflows && userflows.some((u) => it.userflows?.some((userflow) => userflow.id == u))) ||
+        (userflows &&
+          userflows.some((u) =>
+            it.userflows?.some((userflow) => userflow.id == u)
+          )) ||
         (tags && tags.some((t) => it.tags?.some((tag) => tag.id == t)))
     );
   };
@@ -87,6 +95,9 @@ const App = ({
       description={app().description}
       backButton
       editable
+      image={{
+        src: app().icon,
+      }}
     >
       <main className="w-11/12 mx-auto">
         <HeaderView app={app()} />
@@ -99,7 +110,12 @@ const App = ({
           routePathname={null}
           fallbackRoutePathname={null}
         />
-        <ScreenList app={app()} screens={filtered()} showAll={true} preview={preview} />
+        <ScreenList
+          app={app()}
+          screens={filtered()}
+          showAll={true}
+          preview={preview}
+        />
       </main>
     </Layout>
   );
