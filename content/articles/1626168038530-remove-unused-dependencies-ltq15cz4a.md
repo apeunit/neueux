@@ -1,11 +1,11 @@
 ---
-id: ltq15cz4j
+id: ltq15cz4a
 title: Featured test article groom
 author: content/authors/maximilian.md
 authors:
   - Maximilian Blazek
   - Dario Aschero
-slug: 1626168038530-remove-unused-dependencies-ltq15cz4j
+slug: 1626168038530-remove-unused-dependencies-ltq15cz4a
 category: 'Blockchain UX'
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1626174818/neueux/media/articles/tacode02_red%20%281%29.webp

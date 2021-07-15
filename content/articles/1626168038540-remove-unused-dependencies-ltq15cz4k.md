@@ -1,15 +1,14 @@
 ---
-id: ltq15cz4j
-title: Featured test article groom
+id: ltq15cz4k
+title: Test article groom
 author: content/authors/maximilian.md
+slug: 1626168038540-remove-unused-dependencies-ltq15cz4k
+category: 'Blockchain UX'
 authors:
   - Maximilian Blazek
-  - Dario Aschero
-slug: 1626168038530-remove-unused-dependencies-ltq15cz4j
-category: 'Blockchain UX'
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1626174818/neueux/media/articles/tacode02_red%20%281%29.webp
-summary: Highlights from Medium by our very own content staff, consectetur adipiscing eli nullam eu nisi et orci posuere pretium ut eu nisi
+summary: Highlights from Medium by our very own content staff
 ---
 In a time where there’s a global pandemic, a looming cicada uprising, and millions of new trending topics a day on socials, staying focused has been the hardest it’s ever been. Everyone here at Medium has been struggling with productivity, and consequently, we’ve really been into reading stories around battling distractions. We wanted to share some of our favorites with you, so here’s a roundup of a few standouts, courtesy of your friends at Medium.
 
