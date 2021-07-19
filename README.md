@@ -1,7 +1,7 @@
 ![](https://i.imgur.com/WuW4ykq.png)
 
 # neueux
-neueUX is a platform dedicated to provide UI and UX ressources for blockchain applictaions.
+Neueux is a platform dedicated to provide UI and UX ressources for blockchain applications.
 
 ## 📄 Project Description
 
