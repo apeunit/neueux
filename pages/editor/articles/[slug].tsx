@@ -16,7 +16,11 @@ export default function Home({ file }) {
   const [article, form] = useGithubMarkdownForm(file || {}, formOptions);
   usePlugin(form);
   return (
-    <Layout title={`Edit - ${article?.frontmatter?.name} - App`} backButton editable>
+    <Layout
+      title={`Edit - ${article?.frontmatter?.name} - App`}
+      backButton
+      editable
+    >
       <main className="w-11/12 mx-auto mt-5 prose max-w-full">
         <InlineForm key={`form-${article?.frontmatter?.id}`} form={form}>
           <h1>
@@ -40,6 +44,10 @@ export default function Home({ file }) {
             key={`Wysiwyg-${article?.frontmatter?.id}`}
             name="markdownBody"
             format="markdown"
+            imageProps={{
+              parse: (media) => media.previewSrc,
+              uploadDir: () => "neueux/media/articles",
+            }}
           >
             <ReactMarkdown key={`markdown-${article?.frontmatter?.id}`}>
               {article.markdownBody}
