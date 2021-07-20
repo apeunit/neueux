@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 import { usePlugin } from "tinacms";
 import { useGithubMarkdownForm } from "react-tinacms-github";
-import { InlineForm, InlineText } from "react-tinacms-inline";
+import { InlineForm, InlineText, InlineImage } from "react-tinacms-inline";
 import { InlineWysiwyg } from "react-tinacms-editor";
 
 import ArticleFormExtended, { FormProps } from "forms/articleExtended";
@@ -23,23 +23,26 @@ export default function Home({ file }) {
     >
       <main className="w-11/12 mx-auto mt-5 prose max-w-full">
         <InlineForm key={`form-${article?.frontmatter?.id}`} form={form}>
-          <h1>
+          <div className="text-3xl font-medium">
             <InlineText className="mb-10" name="frontmatter.title">
               {article?.frontmatter?.title}
             </InlineText>
-          </h1>
+          </div>
 
-          <p>
-            <InlineText className="mb-10" name="frontmatter.summary">
-              {article?.frontmatter?.title}
+          <div className="w-1/4">
+            <InlineImage
+              name="frontmatter.featured_image"
+              parse={(media) => media.previewSrc}
+              uploadDir={() => "neueux/media/articles"}
+              alt={article?.frontmatter?.title}
+            />
+          </div>
+          <div className="text-base italic font-medium font-light">
+            <InlineText className="mb-10 italic" name="frontmatter.summary">
+              {article?.frontmatter?.summary}
             </InlineText>
-          </p>
+          </div>
 
-          {article?.frontmatter?.featured_image && (
-            <div className="w-1/4">
-              <img src={article?.frontmatter?.featured_image} />
-            </div>
-          )}
           <InlineWysiwyg
             key={`Wysiwyg-${article?.frontmatter?.id}`}
             name="markdownBody"
