@@ -1,9 +1,7 @@
-// import Layout from "../components/Layout";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import CloseIcon from "assets/icons/close.svg";
 import ScreenNavigation from "./Navigation";
-
 import { useRouter } from "next/router";
 import Image from "next/image";
 const ScreenView = ({ screen, app, navigation }) => {
@@ -13,7 +11,6 @@ const ScreenView = ({ screen, app, navigation }) => {
     : `/apps/${app.slug}`;
   let backQuery: any = {};
   let navigationQuery: any = {};
-
   if (router.query.referer) {
     const { userflows, tags, referer } = router.query;
     backQuery = {
@@ -26,7 +23,35 @@ const ScreenView = ({ screen, app, navigation }) => {
       tags,
     };
   }
-
+  const onButtonPress = (e) => {
+    const key = String(e.key);
+    if (key !== "ArrowRight" && key !== "ArrowLeft" && key !== "Escape") return;
+    if (key === "ArrowLeft" && navigation.prev) {
+      router.push({
+        pathname: navigation.prev,
+        query: navigationQuery,
+      });
+    }
+    if (key === "ArrowRight" && navigation.next) {
+      router.push({
+        pathname: navigation.next,
+        query: navigationQuery,
+      });
+    }
+    if (key === "Escape") {
+      router.push({
+        pathname: String(backUrl),
+        query: backQuery,
+      });
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("keydown", onButtonPress);
+    // Specify how to clean up after this effect:
+    return function cleanup() {
+      document.removeEventListener("keydown", onButtonPress);
+    };
+  });
   return (
     <main>
       <div className="flex h-screen flex-col">
@@ -44,7 +69,6 @@ const ScreenView = ({ screen, app, navigation }) => {
                   </a>
                 </Link>
               </div>
-
               <div className="truncate flex-grow">
                 <p className="text-xl font-extrabold leading-6 tracking-tighter">
                   {app.name}
@@ -53,7 +77,6 @@ const ScreenView = ({ screen, app, navigation }) => {
                   {app.description}
                 </span>
               </div>
-
               <div>
                 <Link
                   href={{
@@ -151,5 +174,4 @@ const ScreenView = ({ screen, app, navigation }) => {
     </main>
   );
 };
-
 export default ScreenView;
