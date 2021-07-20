@@ -30,29 +30,12 @@ const ScreenNavigation = ({ navigation, query }) => {
     }
     return children;
   };
-  
-  const handleKeyDown = (event) => {
-    const key = event.nativeEvent.code;
-    switch (key) {
-      case 'KeyW':
-        //moveTop();
-        break;
-      case 'KeyA':
-        //moveLeft();
-        break;
-      case 'KeyD':
-        //moveRight();
-        break;
-      default:
-      //custom logic  
-    }
-  }
 
   return (
     <div className="relative flex space-x-2">
       {renderLink(
         navigation.prev,
-        <NavigationButton disabled={!navigation.prev} orientation="previous" onKeyPress={handleKeyDown}>
+        <NavigationButton disabled={!navigation.prev} orientation="previous">
           <LeftIcon />
         </NavigationButton>
       )}
