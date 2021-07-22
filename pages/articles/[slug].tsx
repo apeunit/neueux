@@ -1,10 +1,22 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import Layout from "components/Layout";
-import React from "react";
+import React, { useEffect } from "react";
 import { getArticleContent, listAllArticleContent } from "lib/articles";
 import ReactMarkdown from "react-markdown";
+import { useRouter } from "next/router";
 
-const App = ({ article }) => {
+const App = ({ article, preview, slug }) => {
+  console.log(preview);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (preview) {
+      router.push({
+        pathname: `/editor/articles/${slug}`,
+      });
+    }
+  });
+
   if (!article) return null;
   return (
     <Layout
@@ -30,7 +42,7 @@ const App = ({ article }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
   const slug = params.slug;
 
   const article = getArticleContent(slug);
@@ -39,6 +51,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       article,
       slug,
+      preview,
     },
   };
 };
