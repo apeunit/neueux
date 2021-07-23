@@ -1,7 +1,7 @@
 ---
 id: ltq15cz4j
 title: Featured test article groom
-author: content/authors/maximilian.md
+author: Maximilian Blazek
 authors:
   - Maximilian Blazek
   - Dario Aschero

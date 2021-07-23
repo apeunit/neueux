@@ -1,7 +1,7 @@
 ---
 id: ltq15cz4k
 title: Test article groom
-author: content/authors/maximilian.md
+author: Maximilian Blazek
 slug: 1626168038540-remove-unused-dependencies-ltq15cz4k
 category: 'Blockchain UX'
 authors:

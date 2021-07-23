@@ -1,7 +1,7 @@
 ---
 id: ltq15cz4a
-title: Featured test article groom
-author: content/authors/maximilian.md
+title: Addresses
+author: Maximilian Blazek
 authors:
   - Maximilian Blazek
   - Dario Aschero
