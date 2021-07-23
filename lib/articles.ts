@@ -17,6 +17,34 @@ export type ArticleContent = {
 
 let articleCache: ArticleContent[];
 
+function parseArticleContent(fileName): ArticleContent {
+  // Read markdown file as string
+  const fullPath = path.join(articlesDirectory, fileName);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+
+  // Use gray-matter to parse the post metadata section
+  const article = matter(fileContents);
+
+  const matterResult = {
+    ...article.data,
+    content: article.content,
+  };
+
+  //   console.log(matterResult);
+
+  const matterData = matterResult as {
+    id: string;
+    title: string;
+    slug: string;
+    category: string;
+    featured_image: string;
+    summary: string;
+    content: string;
+  };
+
+  return matterData;
+}
+
 function fetchArticleContent(): any[] {
   if (articleCache && articleCache.length) {
     return articleCache;
@@ -26,32 +54,13 @@ function fetchArticleContent(): any[] {
   const allPostsData = fileNames
     .filter((it) => it.endsWith(".md"))
     .map((fileName) => {
-      // Read markdown file as string
-      const fullPath = path.join(articlesDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
-
-      // Use gray-matter to parse the post metadata section
-      const article = matter(fileContents);
-
-      const matterResult = {
-        ...article.data,
-        content: article.content,
-      };
-
-    //   console.log(matterResult);
-
-      const matterData = matterResult as {
-        id: string,
-        title: string,
-        slug: string,
-        category: string,
-        featured_image: string,
-        summary: string,
-        content: string,
-      };
-
-      return matterData;
-    });
+      try {
+        return parseArticleContent(fileName);
+      } catch (e) {
+        return null;
+      }
+    })
+    .filter((data) => data);
   // Sort posts by date
   articleCache = allPostsData;
   return articleCache;
