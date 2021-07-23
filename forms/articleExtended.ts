@@ -20,15 +20,23 @@ const form = () => {
           if (!summary) return "Required.";
         },
       },
+      // {
+      //   label: "Category",
+      //   name: "frontmatter.category",
+      //   component: "select",
+      //   description: "Select the category",
+      //   options: [
+      //     { label: "Mobile", value: "mobile" },
+      //     { label: "Desktop", value: "desktop" },
+      //   ],
+      // },
       {
-        label: "Category",
-        name: "frontmatter.category",
-        component: "select",
-        description: "Select the category",
-        options: [
-          { label: "Mobile", value: "mobile" },
-          { label: "Desktop", value: "desktop" },
-        ],
+        label: "Author",
+        name: "frontmatter.author",
+        component: "text",
+        validation(author) {
+          if (!author) return "Required.";
+        },
       },
       {
         label: "Featured image",
