@@ -35,9 +35,9 @@ const FeatArticle = ({ article, key }) => {
   )
 }
 
-const ItemArticle = ({ article, key }) => {
+const ItemArticle = ({ article }) => {
   return (
-    <div className="w-full pl-6" key={key}>
+    <div className="w-full pl-6">
       <Link href={`/articles/${article.slug}`}>
         <img
           className="cursor-pointer object-cover w-full h-72"
