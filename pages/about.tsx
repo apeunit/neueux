@@ -43,15 +43,14 @@ const AboutPage = ({ content, data }) => {
           </div>
         </div>
         <article className="prose lg:prose-xl md:prose-xl sm:prose-xl list">
-          <ReactMarkdown escapeHtml={true} source={content} />
+          <ReactMarkdown>{content}</ReactMarkdown>
         </article>
-
       </main>
     </Layout>
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({preview}) => {
+export const getStaticProps: GetStaticProps = async ({ preview }) => {
   // Import our .md file using the `slug` from the URL
   const content = await import(`content/about.md`);
 
