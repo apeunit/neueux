@@ -80,22 +80,25 @@ function fetchAppContent(): AppContent[] {
   if (appCache && appCache.length) {
     return appCache;
   }
-  // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames
-    .filter((it) => it.endsWith(".json"))
-    .map((fileName) => {
-      // Read markdown file as string
-      try {
-        return parseAppContent(fileName);
-      } catch (e) {
-        return null;
-      }
-    })
-    .filter((data) => data);
-  // Sort posts by date
-  appCache = allPostsData;
-  return appCache;
+  try {
+    // Get file names under /posts
+    const fileNames = fs.readdirSync(postsDirectory);
+    const allPostsData = fileNames
+      .filter((it) => it.endsWith(".json"))
+      .map((fileName) => {
+        // Read markdown file as string
+        try {
+          return parseAppContent(fileName);
+        } catch (e) {
+          return null;
+        }
+      })
+      .filter((data) => data);
+    // Sort posts by date
+    appCache = allPostsData;
+  } catch (e) {
+    return [];
+  }
 }
 
 // export function countPosts(tag?: string): number {
