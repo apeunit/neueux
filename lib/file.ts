@@ -5,7 +5,7 @@ export default class File {
     try {
       return fs.readdirSync(directory);
     } catch (e) {
-      return null;
+      return [];
     }
   }
   static open(path) {
