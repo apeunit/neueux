@@ -3,7 +3,7 @@ import path from "path";
 // import { ScreenContent } from "./screen";
 import matter from "gray-matter";
 
-export const articlesDirectory = path.join(process.cwd(), "content/articles");
+export const articlesDirectory = "content/articles";
 
 export type ArticleContent = {
   readonly id: string;

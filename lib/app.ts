@@ -4,7 +4,7 @@ import { ScreenContent } from "./screen";
 import { getUserflow } from "./userflows";
 import { getTag } from "./tags";
 
-export const postsDirectory = path.join(process.cwd(), "content/apps");
+export const postsDirectory = "content/apps";
 
 export type AppContent = {
   readonly name: string;
@@ -80,26 +80,22 @@ function fetchAppContent(): AppContent[] {
   if (appCache && appCache.length) {
     return appCache;
   }
-  try {
-    // Get file names under /posts
-    const fileNames = fs.readdirSync(postsDirectory);
-    const allPostsData = fileNames
-      .filter((it) => it.endsWith(".json"))
-      .map((fileName) => {
-        // Read markdown file as string
-        try {
-          return parseAppContent(fileName);
-        } catch (e) {
-          return null;
-        }
-      })
-      .filter((data) => data);
-    // Sort posts by date
-    appCache = allPostsData
-    return appCache;
-  } catch (e) {
-    return [];
-  }
+  // Get file names under /posts
+  const fileNames = fs.readdirSync(postsDirectory);
+  const allPostsData = fileNames
+    .filter((it) => it.endsWith(".json"))
+    .map((fileName) => {
+      // Read markdown file as string
+      try {
+        return parseAppContent(fileName);
+      } catch (e) {
+        return null;
+      }
+    })
+    .filter((data) => data);
+  // Sort posts by date
+  appCache = allPostsData;
+  return appCache;
 }
 
 // export function countPosts(tag?: string): number {
