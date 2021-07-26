@@ -95,7 +95,8 @@ function fetchAppContent(): AppContent[] {
       })
       .filter((data) => data);
     // Sort posts by date
-    appCache = allPostsData;
+    appCache = allPostsData
+    return appCache;
   } catch (e) {
     return [];
   }
