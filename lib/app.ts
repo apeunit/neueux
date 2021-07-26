@@ -1,4 +1,4 @@
-import fs from "fs";
+import File from "./file";
 import path from "path";
 import { ScreenContent } from "./screen";
 import { getUserflow } from "./userflows";
@@ -23,7 +23,7 @@ let appCache: AppContent[];
 
 function parseAppContent(fileName): AppContent {
   const fullPath = path.join(postsDirectory, fileName);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const fileContents = File.open(fullPath);
 
   // Use gray-matter to parse the post metadata section
   const app = JSON.parse(fileContents);
@@ -80,8 +80,9 @@ function fetchAppContent(): AppContent[] {
   if (appCache && appCache.length) {
     return appCache;
   }
+  console.log(postsDirectory);
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = File.openDirectory(postsDirectory);
   const allPostsData = fileNames
     .filter((it) => it.endsWith(".json"))
     .map((fileName) => {

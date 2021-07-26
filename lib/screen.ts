@@ -1,4 +1,4 @@
-import fs from "fs";
+import File from "./file";
 import path from "path";
 import { UserflowContent } from "./userflows";
 import { TagContent } from "./tags";
@@ -20,7 +20,7 @@ let screenCache: ScreenContent[];
 
 function parseScreenContent(fileName): ScreenContent[] {
   const fullPath = path.join(postsDirectory, fileName);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const fileContents = File.open(fullPath);
 
   // Use gray-matter to parse the post metadata section
   const app = JSON.parse(fileContents);
@@ -65,7 +65,7 @@ function fetchScreenContent(): ScreenContent[] {
 
   // // Get file names under /screens
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = File.openDirectory(postsDirectory);
   const allScreenData = fileNames
     .filter((it) => it.endsWith(".json"))
     .map((fileName) => {

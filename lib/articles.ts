@@ -1,4 +1,4 @@
-import fs from "fs";
+import File from "./file";
 import path from "path";
 // import { ScreenContent } from "./screen";
 import matter from "gray-matter";
@@ -20,7 +20,7 @@ let articleCache: ArticleContent[];
 function parseArticleContent(fileName): ArticleContent {
   // Read markdown file as string
   const fullPath = path.join(articlesDirectory, fileName);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const fileContents = File.open(fullPath);
 
   // Use gray-matter to parse the post metadata section
   const article = matter(fileContents);
@@ -50,7 +50,7 @@ function fetchArticleContent(): any[] {
     return articleCache;
   }
   // Get file names under /posts
-  const fileNames = fs.readdirSync(articlesDirectory);
+  const fileNames = File.openDirectory(articlesDirectory);
   const allPostsData = fileNames
     .filter((it) => it.endsWith(".md"))
     .map((fileName) => {
