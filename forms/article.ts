@@ -1,20 +1,21 @@
 import Slugify from "slugify";
 import Matter from "gray-matter";
+import { ContentCreatorPlugin } from "tinacms";
 
 const form = (
   callback = (slug) => {
     return slug;
   }
-) => {
+): ContentCreatorPlugin<any> => {
   return {
-    name: "Articles",
+    name: 'Article',
     __type: "content-creator",
     fields: [
       {
         label: "Title",
         name: "title",
         component: "text",
-        validation(title) {
+        validate(title) {
           if (!title) return "Required.";
         },
       },

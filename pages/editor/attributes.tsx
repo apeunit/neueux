@@ -4,10 +4,14 @@ import Layout from "components/Layout";
 
 import { useGithubJsonForm } from "react-tinacms-github";
 import { getGithubPreviewProps } from "next-tinacms-github";
+import { FormOptions } from "tinacms";
+import { Field } from "types/Field";
 
 const Home = function Home({ file }) {
   const formOptions = {
-    label: "Home Page",
+    id: "attributes-form",
+    label: "Attributes",
+    onSubmit: () => {},
     fields: [
       {
         label: "Tags List",
@@ -58,7 +62,7 @@ const Home = function Home({ file }) {
         ],
       },
     ],
-  };
+  } as FormOptions<any, Field>;
 
   // Registers a JSON Tina Form
   const [data, form] = useGithubJsonForm(file, formOptions);

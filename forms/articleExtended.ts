@@ -1,14 +1,18 @@
 import { parseMarkdown, getGithubPreviewProps } from "next-tinacms-github";
+import { FormOptions } from "tinacms";
+import { Field } from "types/Field";
 
-const form = () => {
+const form = (): FormOptions<any, Field> => {
   return {
-    label: "Home Page",
+    id: "article-form-extended",
+    label: "Article Form",
+    onSubmit: ()=> {},
     fields: [
       {
         label: "Title",
         name: "frontmatter.title",
         component: "text",
-        validation(title) {
+        validate(title) {
           if (!title) return "Required.";
         },
       },
@@ -16,7 +20,7 @@ const form = () => {
         label: "Summary",
         name: "frontmatter.summary",
         component: "text",
-        validation(summary) {
+        validate(summary) {
           if (!summary) return "Required.";
         },
       },
@@ -34,7 +38,7 @@ const form = () => {
         label: "Author",
         name: "frontmatter.author",
         component: "text",
-        validation(author) {
+        validate(author) {
           if (!author) return "Required.";
         },
       },
