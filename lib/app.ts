@@ -4,7 +4,7 @@ import { ScreenContent } from "./screen";
 import { getUserflow } from "./userflows";
 import { getTag } from "./tags";
 
-export const postsDirectory = "content/apps";
+export const postsDirectory = path.join(process.cwd(), "content/apps");
 
 export type AppContent = {
   readonly name: string;
