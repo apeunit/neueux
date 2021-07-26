@@ -35,7 +35,6 @@ const ArticlesPage = ({ articles }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({
-  preview,
   // previewData,
 }) => {
   const articles = listArticleContent(1, 30);
@@ -47,7 +46,6 @@ export const getStaticProps: GetStaticProps = async ({
     props: {
       articles,
       pagination,
-      preview: preview || false,
       // previewData,
     },
   };
