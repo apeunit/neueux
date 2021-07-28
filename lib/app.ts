@@ -80,7 +80,6 @@ function fetchAppContent(): AppContent[] {
   if (appCache && appCache.length) {
     return appCache;
   }
-  console.log(postsDirectory);
   // Get file names under /posts
   const fileNames = File.openDirectory(postsDirectory);
   const allPostsData = fileNames

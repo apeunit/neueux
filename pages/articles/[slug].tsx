@@ -6,7 +6,6 @@ import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 
 const App = ({ article, preview, slug }) => {
-  console.log(preview);
   const router = useRouter();
 
   useEffect(() => {
