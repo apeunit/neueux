@@ -58,13 +58,20 @@ const form = (slug, attributes): FormOptions<any, Field> => {
         name: "screens",
         component: "group-list",
         description: "Screen List",
-        itemProps: (item) => ({
-          key: item.id,
-          label: `Screen list item ${item.id}`,
-        }),
+        itemProps: (item) => {
+          let label = "Screen list item";
+          if (item.image) {
+            const name = item.image?.split("/")?.reverse()[0];
+            label = name || label;
+          }
+          return {
+            key: item.id,
+            label,
+          };
+        },
         defaultItem: () => ({
           // name: Math.random().toString(36).substr(2, 9),
-          id: Math.random().toString(36).substr(2, 9),
+          id: `${Math.random().toString(36).substr(2, 9)}${Date.now()}`,
         }),
         fields: [
           {
