@@ -23,7 +23,9 @@ const ArticlesPage = ({ articles }) => {
                 />
               </Link>
               <Link href={`/articles/${article.slug}`}>
-                <h1 className="font-bold text-lg cursor-pointer">{article.title}</h1>
+                <h1 className="font-bold text-lg cursor-pointer">
+                  {article.title}
+                </h1>
               </Link>
               <p className="text-sm text-gray-500">{article.summary}</p>
             </div>
@@ -34,9 +36,7 @@ const ArticlesPage = ({ articles }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({
-  // previewData,
-}) => {
+export const getStaticProps: GetStaticProps = async ({ preview }) => {
   const articles = listArticleContent(1, 30);
   const pagination = {
     current: 1,
@@ -46,6 +46,7 @@ export const getStaticProps: GetStaticProps = async ({
     props: {
       articles,
       pagination,
+      preview: preview || false,
       // previewData,
     },
   };

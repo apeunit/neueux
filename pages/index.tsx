@@ -30,7 +30,7 @@ const IndexPage = ({ apps, filter}) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({preview}) => {
   const apps = listAppContent(1, 30);
   const tags = filteredTagsAll(1, 30);
   const userflows = filteredUserflowsAll(1, 30);
@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps = async () => {
         tags,
         userflows,
       },
-      // previewData,
+      preview: preview || false
     },
   };
 };
