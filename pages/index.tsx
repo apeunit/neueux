@@ -8,7 +8,8 @@ import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/filter";
 
-const IndexPage = ({ apps, filter }) => {
+const IndexPage = ({ apps, filter, base_path }) => {
+  console.log(base_path);
   // const cms = useCMS();
   // console.log(cms);
   return (
@@ -46,6 +47,7 @@ export const getStaticProps: GetStaticProps = async () => {
         tags,
         userflows,
       },
+      base_path: process.cwd(),
       // previewData,
     },
   };
