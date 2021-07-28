@@ -21,7 +21,7 @@
     "js-yaml": "^3.14.0",
     "lodash.kebabcase": "^4.1.1",
     "multer": "^1.4.2",
-    "next": "latest",
+    "next": "^10.2.3",
     "next-connect": "^0.10.1",
     "next-mdx-enhanced": "^5.0.0",
     "next-tinacms-github": "^0.38.0",
