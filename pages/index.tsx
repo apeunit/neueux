@@ -40,7 +40,7 @@ export const getStaticProps: GetStaticProps = async ({preview}) => {
   };
   return {
     props: {
-      apps: [...apps].reverse(),
+      apps,
       pagination,
       filter: {
         tags,

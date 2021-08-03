@@ -84,6 +84,7 @@ function fetchAppContent(): AppContent[] {
   const fileNames = File.openDirectory(postsDirectory);
   const allPostsData = fileNames
     .filter((it) => it.endsWith(".json"))
+    .reverse()
     .map((fileName) => {
       // Read markdown file as string
       try {
