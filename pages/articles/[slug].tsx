@@ -5,6 +5,7 @@ import { getArticleContent, listAllArticleContent } from "lib/articles";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import style from './markdown-styles.module.css';
 
 const App = ({ article, preview, slug }) => {
   console.log(preview);
@@ -42,14 +43,16 @@ const App = ({ article, preview, slug }) => {
             <img className="h-56 sm:h-80 lg:h-102 lg:w-11/12 mx-auto object-cover w-full" src={article.featured_image} />
           </div>
         )}
-        <div className="w-11/12 mx-auto max-w-2xl">
-          <div>
+        <div className="w-11/12 mx-auto max-w-2xl divide-2 divide-y divide-gray-300">
+          <div className="flex flex-row justify-between">
 
-            <p className="text-xs pt-2">by <b>{article.author}</b></p>
+            <p className="text-ssm pt-2">by <span className="font-bolder">{article.author}</span></p>
             <p className="text-xs pt-2">{article.date}</p>
           </div>
 
-        <ReactMarkdown>{article.content}</ReactMarkdown>
+        <ReactMarkdown
+          className={style.reactMarkDown}
+        >{article.content}</ReactMarkdown>
         </div>
       </main>
     </Layout>

@@ -1,0 +1,22 @@
+.reactMarkDown {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #6B7280;
+}
+
+.reactMarkDown a {
+    text-decoration: none;
+}
+.reactMarkDown ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style: disc outside none;
+}
+.reactMarkDown ul li {
+    margin-left: 2em;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
