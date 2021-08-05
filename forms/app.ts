@@ -1,6 +1,11 @@
 import Slugify from "slugify";
+import { ContentCreatorPlugin } from "tinacms";
 
-const form  = (callback = (slug)=> { return slug}) => {
+const form = (
+  callback = (slug) => {
+    return slug;
+  }
+): ContentCreatorPlugin<any> => {
   return {
     name: "Apps",
     __type: "content-creator",
@@ -9,7 +14,7 @@ const form  = (callback = (slug)=> { return slug}) => {
         label: "Name",
         name: "name",
         component: "text",
-        validation(name) {
+        validate(name) {
           if (!name) return "Required.";
         },
       },
@@ -27,7 +32,7 @@ const form  = (callback = (slug)=> { return slug}) => {
             id,
             slug,
             ...values,
-            device: 'mobile'
+            device: "mobile",
           };
           await cms.api.github.commit(
             `content/apps/${slug}.json`,
