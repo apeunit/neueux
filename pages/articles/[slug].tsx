@@ -44,10 +44,12 @@ const App = ({ article, preview, slug }) => {
           </div>
         )}
         <div className="w-11/12 mx-auto max-w-2xl divide-2 divide-y divide-gray-300">
-          <div className="flex flex-row justify-between">
-
-            <p className="text-ssm pt-2">by <span className="font-bolder">{article.author}</span></p>
-            <p className="text-xs pt-2">{article.date}</p>
+          <div className="flex flex-row align-middle text-ssm justify-between -my-4">
+            <div className="flex flex-row space-x-2">
+              <img className="m-0 w-10 h-10" src="/img/max.png" />
+              <p className="font-light pt-5">by <span className="font-extrabold">{article.author}</span></p>
+            </div>
+            <p className="font-light text-gray-500 pt-5">{article.date}</p>
           </div>
 
         <ReactMarkdown
