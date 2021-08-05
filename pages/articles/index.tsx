@@ -80,10 +80,7 @@ const ArticlesPage = ({ articles }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({
-  preview,
-  // previewData,
-}) => {
+export const getStaticProps: GetStaticProps = async ({ preview }) => {
   const articles = listArticleContent(1, 30);
   const pagination = {
     current: 1,
