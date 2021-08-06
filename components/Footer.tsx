@@ -7,7 +7,7 @@ const Footer = ({ editable }) => {
   const cms = useCMS();
   return (
     <footer className="w-11/12 mx-auto border-t pt-4 pb-6 mt-24 border-gray-200">
-      <div className="lg:flex md:flex justify-between text-gray-500 p-6 pb-24 lg:pb-0 md:pb-0">
+      <div className="lg:flex md:flex justify-between text-gray-500 py-6 pb-24 lg:pb-0 md:pb-0">
         <div className="lg:w-1/3  w-full text-sm">
           <p>
             We are a network of designers, researchers and developers initiated

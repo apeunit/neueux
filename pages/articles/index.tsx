@@ -13,7 +13,7 @@ const FeatArticle = ({ article, key }) => {
         <div className="space-y-3 mr-5">
           <p className="text-xs mt-4 leading-loose font-bold text-accent">{article.category}</p>
           <Link href={`/articles/${article.slug}`}>
-            <h1 className="font-extrabold text-3xl leading-2 cursor-pointer">{article.title}</h1>
+            <h1 className="font-extrabold text-5xl leading-2 cursor-pointer">{article.title}</h1>
           </Link>
           <p className="text-lg text-gray-700">{article.summary}</p>
           <p className="text-xs pt-2">by <b>{article.author}</b></p>
@@ -52,7 +52,7 @@ const ItemArticle = ({ article }) => {
           <Link href={`/articles/${article.slug}`}>
             <h1 className="font-extrabold text-2.5xl leading-2 cursor-pointer">{article.title}</h1>
           </Link>
-          <p className="text-lg text-gray-700">{article.summary}</p>
+          <p className="text-md text-gray-700">{article.summary}</p>
           <p className="text-xs pt-2">by <b>{article.author}</b></p>
         </div>
       </div>
