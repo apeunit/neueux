@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
-import Navbar from "components/Navbar";
+import Navbar from "components/navbar/Navbar";
 import Footer from "components/Footer";
 import Config from "config.json";
 import BackButton from "components/BackButton";

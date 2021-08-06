@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import Link from "next/link";
-import ActiveLink from "../components/ActiveLink";
+import ActiveLink from "../ActiveLink";
+import PopupMenu from "./PopupMenu";
+// import FilterBadge from "./Badge";
+// import { useRouter } from "next/router";
+import MenuIcon from "assets/icons/menu.svg";
+
+// import Button from "components/Button";
 const Navbar = () => {
+  const [showFilter, setShowFilter] = useState(false);
+
   return (
+    <>
     <nav className="">
           <style jsx>{`
           .nav-link {
@@ -17,9 +26,9 @@ const Navbar = () => {
         text-underline-width: 120%;
       }
     `}</style>
-      <div className="w-11/12 mx-auto border-b border-gray-200">
+      <div className="w-11/12 justify-between mx-auto border-b border-gray-200">
         <div className="flex text-base">
-          <ul className="w-1/2 py-6">
+          <ul className="w-full sm:w-1/2 py-6">
             <li className="cursor-pointer">
               <Link href="/">
                 <a>
@@ -47,14 +56,35 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <ul className="w-1/2 text-right lg:hidden sm:hidden md:hidden mt-2 py-6">
+          <ul className="self-end text-right lg:hidden sm:hidden md:hidden mt-2 py-6">
             <li className="font-bold text-gray-500 text-sm">
-              <Link href="/about"><a href="">About</a></Link>
+            {/* <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
+            Filter
+        </Button> */}
+        
+        <MenuIcon onClick={() => setShowFilter(true)}  />
+              {/* <Link onClick={() => setShowFilter(true)} type="Primary" size="sm"><a href="">About</a></Link> */}
             </li>
           </ul>
         </div>
       </div>
     </nav>
+          {showFilter && (
+            <PopupMenu
+              onClose={() => setShowFilter(false)}
+
+              // key={`filter-card-${listIndex}`}
+              // tags={tags}
+              // index={listIndex}
+              // userflows={userflows}
+              // selectedList={selectedList}
+              // onClose={() => setShowFilter(false)}
+              // onClear={onFilterClear}
+              // onSelect={(value, type) => onFilterSelect(value, type)}
+              // onRemove={onFilterRemove}
+            />
+          )}
+    </>
   );
 };
 
