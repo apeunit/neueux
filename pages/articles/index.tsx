@@ -71,7 +71,7 @@ const ArticlesPage = ({ articles }) => {
         {/* <Header title="Articles" /> */}
         <FeatArticle key={articles[0].key} article={articles[0]} />
         <div className="
-        pt-7
+        md:pt-5
         grid
         grid-cols-1
         lg:grid-cols-3
