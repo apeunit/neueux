@@ -8,10 +8,10 @@ import Link from "next/link";
 
 const FeatArticle = ({ article, key }) => {
   return (
-    <div key={key} className="w-full flex flex-row justify-between py-5">
-      <div className="max-w-md w-full justify-around flex-col flex align-middle px-auto">
+    <div key={key} className="w-full flex flex-col-reverse lg:flex-row justify-between py-5">
+      <div className="lg:max-w-md w-full justify-around flex-col flex align-middle px-auto">
         <div className="space-y-3 mr-5">
-          <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
+          <p className="text-xs mt-4 leading-loose font-bold text-accent">{article.category}</p>
           <Link href={`/articles/${article.slug}`}>
             <h1 className="font-extrabold text-3xl leading-2 cursor-pointer">{article.title}</h1>
           </Link>
@@ -25,8 +25,8 @@ const FeatArticle = ({ article, key }) => {
           <Image
             className="object-fill cursor-pointer border-0 max-h-96"
             src={article.featured_image}
-            width="770px"
-            height="770px"
+            width="900px"
+            height="900px"
           />
         </Link>
       </div>
@@ -37,17 +37,17 @@ const FeatArticle = ({ article, key }) => {
 
 const ItemArticle = ({ article }) => {
   return (
-    <div className="w-full pl-6">
+    <div className="w-full pt-5 md:pt-0 md:pl-5 first:pl-0 first:-ml-5">
       <Link href={`/articles/${article.slug}`}>
         <img
           className="cursor-pointer object-cover w-full h-72"
           src={article.featured_image}
           // width="30vw"
-          height="240px"
+          height="175px"
         />
       </Link>
-      <div className="max-w-md w-full justify-around flex-col flex align-middle px-auto">
-        <div className="space-y-3 mt-5 mr-5">
+      <div className="max-w-md w-full justify-around flex-col flex align-middle">
+        <div className="space-y-3 mt-5">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
           <Link href={`/articles/${article.slug}`}>
             <h1 className="font-extrabold text-2.5xl leading-2 cursor-pointer">{article.title}</h1>
@@ -70,7 +70,20 @@ const ArticlesPage = ({ articles }) => {
       <main className="w-11/12 max-w-content mx-auto justify-between relative divide-y-gray-200 divide-y-2">
         {/* <Header title="Articles" /> */}
         <FeatArticle key={articles[0].key} article={articles[0]} />
-        <div className="pt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-stretch gap-6 md:divide-x-gray-200 md:divide-x-2">
+        <div className="
+        pt-7
+        grid
+        grid-cols-1
+        lg:grid-cols-3
+        justify-items-stretch
+        // gap-0
+        divide-y-2
+        divide-y-gray-200
+        lg:divide-y-0
+        lg:divide-x-gray-200
+        lg:divide-x-2
+        gap-5
+         ">
           {articles.map((article, key) => {
             if (key !== 0) return <ItemArticle key={key} article={article} />
           })}
