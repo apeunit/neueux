@@ -4,7 +4,7 @@ title: Addresses
 slug: 1626168038530-remove-unused-dependencies-ltq15cz4j
 category: ''
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1626174818/neueux/media/articles/tacode02_red%20%281%29.webp
+  https://res.cloudinary.com/ape-unit/image/upload/v1628507823/neueux/media/articles/Frame%202037.png
 summary: Addresses
 author: Maximilian Blazek
 ---
