@@ -43,15 +43,6 @@ const FilterCard = ({
               <ActiveLink activeClassName="active"  href="/about"><a href="/about">About</a></ActiveLink>
             </li>
           </ul>
-
-        <div className="text-xs absolute bottom-10 xl:absolute flex justify-center w-full px-2">
-
-          <span
-            onClick={onClose}
-          >
-            Close
-          </span>
-        </div>
       </div>
       <style jsx>{`
           .nav-link {
