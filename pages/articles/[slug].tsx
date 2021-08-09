@@ -61,7 +61,7 @@ const App = ({ article, preview, slug }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
   const slug = params.slug;
 
   const article = getArticleContent(slug);
@@ -70,7 +70,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       article,
       slug,
-      // preview,
+      preview,
     },
   };
 };
