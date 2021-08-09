@@ -3,12 +3,11 @@ id: ltq15cz4k
 title: Intro to neueux
 author: Maximilian Blazek
 slug: intro_neueux
-category: 'neueux'
+category: neueux
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1626174818/neueux/media/articles/tacode02_red%20%281%29.webp
+  https://res.cloudinary.com/ape-unit/image/upload/v1628511839/neueux/media/articles/Frame%202010.png
 summary: Intro to what neueux is about.
 date: 'August 9th, 2021'
-
 ---
 # Intro: neueux
 
