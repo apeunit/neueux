@@ -7,13 +7,16 @@ module.exports = {
   theme: {
     extend: {
       typography: {
-        css: {
-          h1: {
-            fontSize: '6rem',
+        DEFAULT:{
+          css: {
+            h1: {
+              fontSize: '6rem',
+            }
           }
         }
       }
     }
+
     screens: {
       sm: "640px",
       md: "768px",
