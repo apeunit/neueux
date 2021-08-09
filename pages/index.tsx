@@ -8,7 +8,7 @@ import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/filter";
 
-const IndexPage = ({ apps, filter}) => {
+const IndexPage = ({ apps, filter }) => {
   // const cms = useCMS();
   // console.log(cms);
   return (

@@ -1,18 +1,14 @@
 import { parseMarkdown, getGithubPreviewProps } from "next-tinacms-github";
-import { FormOptions } from "tinacms";
-import { Field } from "types/Field";
 
-const form = (): FormOptions<any, Field> => {
+const form = () => {
   return {
-    id: "article-form-extended",
-    label: "Article Form",
-    onSubmit: ()=> {},
+    label: "Home Page",
     fields: [
       {
         label: "Title",
         name: "frontmatter.title",
         component: "text",
-        validate(title) {
+        validation(title) {
           if (!title) return "Required.";
         },
       },
@@ -20,27 +16,19 @@ const form = (): FormOptions<any, Field> => {
         label: "Summary",
         name: "frontmatter.summary",
         component: "text",
-        validate(summary) {
+        validation(summary) {
           if (!summary) return "Required.";
         },
       },
-      // {
-      //   label: "Category",
-      //   name: "frontmatter.category",
-      //   component: "select",
-      //   description: "Select the category",
-      //   options: [
-      //     { label: "Mobile", value: "mobile" },
-      //     { label: "Desktop", value: "desktop" },
-      //   ],
-      // },
       {
-        label: "Author",
-        name: "frontmatter.author",
-        component: "text",
-        validate(author) {
-          if (!author) return "Required.";
-        },
+        label: "Category",
+        name: "frontmatter.category",
+        component: "select",
+        description: "Select the category",
+        options: [
+          { label: "Mobile", value: "mobile" },
+          { label: "Desktop", value: "desktop" },
+        ],
       },
       {
         label: "Featured image",

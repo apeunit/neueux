@@ -24,11 +24,7 @@ export default function Home({ file }) {
       <main className="w-11/12 mx-auto mt-5 prose max-w-full">
         <InlineForm key={`form-${article?.frontmatter?.id}`} form={form}>
           <div className="text-3xl font-medium">
-            <InlineText
-              className="mb-10"
-              name="frontmatter.title"
-              placeholder="Title"
-            >
+            <InlineText className="mb-10" name="frontmatter.title">
               {article?.frontmatter?.title}
             </InlineText>
           </div>
@@ -41,27 +37,10 @@ export default function Home({ file }) {
               alt={article?.frontmatter?.title}
             />
           </div>
-          <div className="text-base italic font-light">
-            <InlineText
-              className="mb-10 italic"
-              name="frontmatter.summary"
-              placeholder="Summary"
-            >
+          <div className="text-base italic font-medium font-light">
+            <InlineText className="mb-10 italic" name="frontmatter.summary">
               {article?.frontmatter?.summary}
             </InlineText>
-          </div>
-
-          <div className="text-base italic font-light leading-tight flex mb-16">
-            <span className="height-auto  font-medium">Author:</span>
-            <div className="block flex-grow pl-5">
-              <InlineText
-                className="italic inline-block"
-                name="frontmatter.author"
-                placeholder="Author"
-              >
-                {article?.frontmatter?.author}
-              </InlineText>
-            </div>
           </div>
 
           <InlineWysiwyg
@@ -72,7 +51,6 @@ export default function Home({ file }) {
               parse: (media) => media.previewSrc,
               uploadDir: () => "neueux/media/articles",
             }}
-            sticky="5rem"
           >
             <ReactMarkdown key={`markdown-${article?.frontmatter?.id}`}>
               {article.markdownBody}
