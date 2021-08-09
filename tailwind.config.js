@@ -5,18 +5,6 @@ module.exports = {
   // presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      typography: (theme) => ({
-        DEFAULT:{
-          css: {
-            h1: {
-              fontSize: theme('text.6xl'),
-            }
-          }
-        }
-      }
-    },
-
     screens: {
       sm: "640px",
       md: "768px",
