@@ -5,6 +5,15 @@ module.exports = {
   // presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      typography: {
+        css: {
+          h1: {
+            fontSize: '6rem',
+          }
+        }
+      }
+    }
     screens: {
       sm: "640px",
       md: "768px",
