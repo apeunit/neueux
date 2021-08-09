@@ -11,7 +11,7 @@ module.exports = {
           css: {
             h1: {
               fontSize: '6rem',
-            }
+            },
           }
         }
       }
