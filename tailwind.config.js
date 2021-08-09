@@ -6,11 +6,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      typography: {
+      typography: (theme) => ({
         DEFAULT:{
           css: {
             h1: {
-              fontSize: '6rem',
+              fontSize: theme('text-6xl'),
             }
           }
         }
