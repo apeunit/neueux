@@ -67,7 +67,7 @@ const ItemArticle = ({ article }) => {
 const ArticlesPage = ({ articles }) => {
   return (
     <Layout title="Articles" editable>
-      <main className="w-11/12 max-w-content mx-auto justify-between relative divide-y-gray-200 divide-y-2">
+      <main className="w-11/12 max-w-content mx-auto justify-between relative divide-y-gray-200 divide-y-1">
         {/* <Header title="Articles" /> */}
         <FeatArticle key={articles[0].key} article={articles[0]} />
         <div className="
@@ -77,11 +77,11 @@ const ArticlesPage = ({ articles }) => {
         lg:grid-cols-3
         justify-items-stretch
         // gap-0
-        divide-y-2
+        divide-y-1
         divide-y-gray-200
         lg:divide-y-0
         lg:divide-x-gray-200
-        lg:divide-x-2
+        lg:divide-x-1
         gap-5
          ">
           {articles.map((article, key) => {
