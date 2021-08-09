@@ -70,7 +70,7 @@ export const getStaticProps: GetStaticProps = async ({ params, preview }) => {
     props: {
       article,
       slug,
-      preview,
+      preview: preview || false,
     },
   };
 };
