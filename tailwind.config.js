@@ -11,11 +11,11 @@ module.exports = {
           css: {
             h1: {
               fontSize: '6rem',
-            },
+            }
           }
         }
       }
-    }
+    },
 
     screens: {
       sm: "640px",
