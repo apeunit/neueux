@@ -7,6 +7,7 @@ featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628507823/neueux/media/articles/Frame%202037.png
 summary: The UX issue of addresses in Blockchain.
 author: Maximilian Blazek
+date: 'August 9th, 2021'
 ---
 ## Addresses in the Internet
 
