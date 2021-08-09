@@ -1,102 +1,81 @@
 ---
 id: ltq15cz4j
-title: Test article groom
+title: Addresses
 slug: 1626168038530-remove-unused-dependencies-ltq15cz4j
 category: ''
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1626174818/neueux/media/articles/tacode02_red%20%281%29.webp
-summary: Highlights from Medium by our very own content staff
+summary: Addresses
+author: Maximilian Blazek
 ---
-In a time where there’s a global pandemic, a looming cicada uprising, and millions of new trending topics a day on socials, staying focused has been the hardest it’s ever been. Everyone here at Medium has been struggling with productivity, and consequently, we’ve really been into reading stories around battling distractions. We wanted to share some of our favorites with you, so here’s a roundup of a few standouts, courtesy of your friends at Medium.
+## Addresses in the Internet
 
-## [**You Are Making Progress Towards Your Goals — Even if it Doesn’t Feel Like it**](https://allison-wonchoba.medium.com/you-are-making-progress-towards-your-goals-even-if-it-doesnt-feel-like-it-5fd6684246a8) _**—** [**Allison Wonchoba**](https://medium.com/u/60a344028b6e?source=post_page-----4c696f39a12d--------------------------------)_
+If you think back to your first interactions with the Internet, one of them is probably setting up an E-Mail address. For many people, it was (and is) their first interaction with the Internet and a gateway to many other services (aka. sign-up with E-Mail).
+Luckily we all got an E-Mail with the `mail@example.com` format instead of an IP address (which is the actual address computers use in the background) like `123.456.78.90`. Having a human-readable email address name or website name like `example.com` is, of course, way more convenient than having to remember the actual IP address — a “random” string of numbers.
+The precedent of using names instead of IP addresses on the user side was set in the 1970s on the ARPAnet — a predecessor to the Internet.  In 1971, Peggy Karp suggested  standardizing the mapping of names to IP addresses ([RFC226](https://datatracker.ietf.org/doc/html/rfc226), [RFC247](https://datatracker.ietf.org/doc/html/RFC247)). This custom was later adopted on the Internet in the form of domain names like `example.com`, `example.org` or `example.xyz`.
+Mapping names to IP addresses for the sake of usability is by no means a new idea. On the contrary, it was conceived almost 20 years before the invention of the Internet as we know it today.
 
-When tackling a long-term project, all the to-do lists, short-term goals, and supplementary tasks can seem overwhelming. Whether you are frozen at the starting line by the sheer volume of it all, or feeling stuck years into your creative journey, it can sometimes be hard to find the motivation to continue producing.
+## Addresses in Blockchain
 
-Allison Wonchoba uses author James Clear’s 1% rule (from his book, _Atomic Habits_) to remind us that even a tiny amount of progress every day adds up to a huge difference. So don’t dwell on that long-term goal to the point that the journey becomes unbearable. You will get there, but it will take time.
+Wallets on the Blockchain serve a similar purpose to E-Mail Addresses on the Internet. They are the gateway to most Blockchain based products and services. You want to buy an NFT? You will have to "log in" to the NFT-marketplace and later pay with your wallet. Wallets are, similarly to E-Mail on the Internet, the first and primary way of interacting with this new technology (Blockchain) and therefore play an extremely vital role in the usability and adoption of the Blockchain ecosystem.
 
-Wonchoba adds additional value to this 1% principle with wonderful anecdotes to explain a variety of practices that help you stay motivated throughout the journey, recognizing and celebrating each step of your progress made along the way. It’s a powerful reminder that we are all in this together, learning and growing as we go.
+Unlike mail providers, cryptocurrency wallets don't give you a nice "name" like `mail@example.com`, but an address that in most cases looks similar to this `0xd8da6bf26964af9d7eed9e03e53415d37aa96045`. It’s not hard to see that, in terms of usability, this is way worse than an E-Mail-Address (which people are used to from the Internet). Wallet addresses are even longer and less memorable than IP addresses.But the usability issues of wallet addresses don't end with simply being hard to remember.
 
-— 
+* Due to their length and complexity, it is easy to make mistakes when typing the address by hand.
+* It is nearly impossible to recite it to someone without either person making a mistake.
+* The addresses have no apparent structure to them, so it is way harder to spot mistakes. Even when you copy-paste the address but miss a character, chances are you will not recognise that you made a mistake.
+* Making mistakes with crypto addresses is way more detrimental than other traditional financial services since blockchain transactions are final. You cannot reverse a blockchain transaction the same way you can reverse a bank transaction by simply calling your bank.
+* Lastly, you receive a different address for every cryptocurrency. So you don't have just one monstrous address but potentially dozens.
 
-[Sarah Marie](https://medium.com/u/f7d5821a4efd?source=post_page-----4c696f39a12d--------------------------------)
+Considering how vital wallets and their addresses are to the blockchain ecosystem, it is baffling to me that no one realized earlier in the development of different blockchain protocols how important human-readable names are to the usability and adoption of this technology. Mapping names to address has been commonplace since the 1970s. One can hardly expect first-time wallet users coming from the user-friendly applications on the Internet to be satisfied with the poor usability of crypto addresses.
 
-, curation
+## Solutions
 
-## [**Knowing the Difference Between “Traction” and “Distraction” will Change Your Life This Year**](https://nireyal.medium.com/knowing-the-difference-between-traction-and-distraction-will-change-your-life-this-year-dc085e7a6a21) **—** [**Nir Eyal**](https://medium.com/u/295258f6269d?source=post_page-----4c696f39a12d--------------------------------)
+One of the first major blockchain projects after Bitcoin was Namecoin. The idea behind Namecoin was that the blockchain could also be used to store mappings of data to names. Theoretically, Namecoin could have been used to map a cryptocurrency address to a .bit domain (example.bit for example), but unfortunately, it never gained widespread adoption due to various technical issues.
+Vitalik Buterin even referenced Namecoin in his whitepaper for Ethereum and suggested a similar service could be built on Ethereum:
 
-There’s a reason Nir Eyal’s books _Hooked_ and _Indistractable_, on maintaining one’s focus in a world full of increasingly more (and more powerful) distractions, became bestsellers. The renowned behavioral-design and time-management expert has a way of helping us see familiar concepts in a new — and maybe more importantly, easily actionable — light.
+> _The earliest alternative cryptocurrency of all, Namecoin, attempted to use a Bitcoin-like blockchain to provide a name registration system, where users can register their names in a public database alongside other data. The major cited use case is for a DNS system, mapping domain names like "bitcoin.org" (or, in Namecoin's case, "bitcoin.bit") to an IP address. Other use cases include email authentication and potentially more advanced reputation systems. Here is the basic contract to provide a Namecoin-like name registration system on Ethereum_ \[...\]
 
-In his recent Medium post, “Knowing the Difference Between ‘Traction’ and ‘Distraction’ Will Change Your Life This Year,” for example, he helps us look at the whole idea of distraction with fresh eyes.
+Interestingly, Vitalik doesn't reference `name → cryptocurrency address` mapping as a possible use case, which suggests that there still wasn't a widespread awareness that this would be big UX issue. Nonetheless, it is interesting that a name service on the blockchain has been considered for a long time; it just took a long time until a solution was implemented that was technically mature enough to find widespread adoption.
+Since Namecoin, there have been several projects that aimed to solve the challenges of name mapping based on blockchain technology.
+In this article, however, I want to focus exclusively on ENS and Unstoppable Domains. These are by far the most popular blockchain-based naming services that focus on mapping names to cryptocurrency addresses.
 
-“Any action can be either a distraction or traction depending on what you intend to do with your time,” he writes. “There’s nothing wrong with scrolling through your Facebook feed, watching YouTube videos, or playing a video game, as long as that’s what you intend to do. [Taking a break can](https://www.nirandfar.com/how-to-spend-your-breaks-wisely-and-have-a-better-workday/) be good for you. It’s when you do things unintentionally that you get into trouble.”
+### ENS
 
-His point: The trick to being productive is to be purposeful, not haphazard, with how you spend your time.
+As the name suggests, the Ethereum Name Service (ENS) is built on the Ethereum Blockchain. ENS was first proposed by Nick Johnson in Ethereum Improvement Proposal 137 in 2016 and was launched in 2017.
+It started with a rather minimal feature set (you could register `.eth` domains and point them at an Ethereum address) but has grown in functionality since then. The features most relevant to this article are:
 
-He follows that observation with characteristically useful advice — for instance, how to keep a detailed calendar to help you ensure that your actions are intentional.
+* You can map a name to any cryptocurrency address, even those that are not Ethereum based. So an ENS name like example.ens can also be mapped to a bitcoin address.
+* You can import some traditional domains like .xyz (with the plan to support many more in the future).
+  * This opens up the possibility to have your website on example.xyz, but also receive all cryptocurrencies using the same address!
+* Domain owners can create subdomains like subexample.example.eth. This allows wallet providers to issue all of their users an ENS domain in the form of a subdomain of their own ENS name, for example user1.wallet.eth
 
-That’s Nir’s go-to move: a perfect mix of the theoretical and the practical. It doesn’t hurt that he lets us off the hook for playing video games.
+According to their website, ENS is (by far) the most integrated blockchain naming standard with over 250+ integrations with different blockchain-based applications.
 
-— 
+### Unstoppable Domains
 
-[Jon Gluck](https://medium.com/u/c40368eb8edc?source=post_page-----4c696f39a12d--------------------------------)
+Unstoppable Domains is another blockchain domain name provider which has a lot of traction. They launched their first domains, most notably `.crypto`, in 2019.
+Unstoppable Domainsprovides a very similar crypto address feature set to ENS. The only difference is that you cannot import traditional domains and an unstoppable domain is a one-time purchase rather than a yearly fee (like ENS).
+Unstoppable Domains currently has about 50 integrations with blockchain based applications.
 
-, editorial director
+## Conclusion
 
-## [**The Lost Art of Letting Your Mind Wander**](https://medium.com/illumination/the-lost-art-of-letting-your-mind-wander-428b9c33127f) **—** [**Erik Ruof**](https://medium.com/u/1d308816d4fe?source=post_page-----4c696f39a12d--------------------------------)
+Personally, I find it odd that blockchain-based naming services, which map names to crypto addresses, have not been successfully implemented earlier. Even the people building ARPAnet, one of the Internet’s predecessors, realized that a standardized naming system is vital for the usability of their system. In comparison, it took 6 years after Namecoin was released for a service to launch (ENS) which successfully solved the issue of mapping names to cryptocurrency addresses. Nonetheless, there are now two excellent services which solve the issue of mapping names to cryptocurrency addresses.
 
-When I read this piece by [Erik Ruof](https://eruof.medium.com/), I was immediately transported to a past life where I helped run corporate conferences. For one productivity conference, I was made to send dozens of shower crayons (those [kids drawing tools](https://parentingchaos.com/homemade-bath-crayons/) meant to make bathing fun and to [encourage writing on walls](https://twitter.com/DrMassicotte/status/930225763638317058)) to the event. The speaker advocated for adults to keep them in the shower so when those great ideas/shower thoughts hit you, you could jot them down. Right there. In the middle of your shower.
+The final step to completely solving this UX issue is adoption by both blockchain applications and users.
 
-As much as I hate when good ideas escape me, I think that the presence of those crayons defeated the purpose: the taunting shower crayons were a distraction, filling in the blank space my mind needs in order to creatively roam. Ruof speaks to the positive role of mindlessness with humor, and a quick dip into depth, that made me exhale and feel a lot better about doing nothing.
+### Adoption
 
-Like Ruof, without the chance for my mind to wander — to give it space from the endless scroll of distracting blue light emitting think pieces about _[Mare of Easttown](https://www.indiewire.com/2021/05/mare-of-easttown-characters-bed-hair-1234636363/)_[’s hair](https://www.indiewire.com/2021/05/mare-of-easttown-characters-bed-hair-1234636363/) — the subconscious trickles of inspiration are unable to flow. Also, Ruof made me really think hard about [Koopalings](https://mario.fandom.com/wiki/Koopalings) and, to answer his mind-wandering question that turned into my hour long distraction. I think [Bowser](https://www.mariowiki.com/Bowser) is part turtle/dragon/reptile so maybe one, er, encounter could produce/hatch [many, many children](https://www.turtleconservationsociety.org.my/how-many-eggs-does-a-turtle-lay-at-a-time/)?
+Blockchain application developers have to embrace these services, which means integrating them with their dApps and prioritising them in their interfaces. It isn't enough that your app can resolve ENS or unstoppable domain names in the address field. If a cryptocurrency address has an ENS linked to it, you should display it instead of the cryptocurrency address!
 
-— 
+We need to make it the norm to see names in wallet apps instead of monstrous crypto addresses!
 
-[Donna K.](https://medium.com/u/42f8e531c416?source=post_page-----4c696f39a12d--------------------------------)
+> _It’s a small change with a big psychological impact._ — Itamar Lesuisse, Argent CEO, about integrating ENS.
 
-, curation
+Beyond prioritizing names in interfaces, we need to make it easier and cheaper for users to obtain names. Currently, users have to go out of their way to register a domain and map it to their different cryptocurrency addresses.
+Think back to your first steps on the Internet: Imagine you would just have gotten an IP address (ex. `123.456.78.90`)  as an E-Mail-Address. Would you have gone out of your way to get yourself a eaily readable domain name, payed 10$ for it, and set up the correct mapping to the IP address of your E-Mail? For most people, that’s probably a no. So, we also can't expect new users coming to Blockchain to do that.
 
-## [**How to Use Affirmations to Boost Your Productivity**](https://medium.com/mind-cafe/how-to-use-affirmations-to-boost-your-productivity-6565e6a50737) **—** [**James Ssekamatte**](https://medium.com/u/409d690887d1?source=post_page-----4c696f39a12d--------------------------------)
+Ideally, wallet providers would give a free name to all of their users, maybe in the form of a subdomain like `user1.wallet.eth`. At the moment, this seems unrealistic since creating a subdomain on the blockchain costs a fee, which can be quite high at times. So it would be uneconomical for most wallets to give them away for free.
+Luckily ENS seems to be on top of that. They are planning to move subdomain registration to L2. If you are unfamiliar with the technical term "L2" in this case, it basically means that subdomain registration would become so cheap that most wallet providers could give out subdomains for free.
 
-One of the challenges with productivity advice is that different methods work for different people. If you’re aiming to be more productive in some area of your life, you might ask productive people what they do. They may recommend different apps, timers, courses, or planners that worked to get them where they are today. What’s interesting about James Ssekamatte’s method is that it allows you to look inward and not just out.
-
-Using scientific research and advice from life coaches, business moguls, and even professional sports players, Ssekamatte details three different types of affirmations that can be used to help you create better habits and boost productivity. Very simply, affirmations move ideas from working to automatic memory. If you tell yourself something enough times, you believe it; it becomes ingrained in your automatic memory as a habit, an automatic state of being. As Ssekamatte explains, there are many different ideas about ourselves and our work that have been ingrained in our automatic memory from family, friends, work colleagues, and society. Not all of these are helpful.
-
-Affirmations help you take control and rewrite the narrative — for example, by turning a general statement like “I am an awesome (insert profession, like writer)” into a more specific goal such as “I will complete everything on my to-do list today.”
-
-Ssekamatte walks the reader through mental, visual, and verbal affirmations to help them find which option, or combination of options, works best for them. He also walks through how he uses them, giving readers a sense of how it all works together in a day. In this piece, Ssekamatte offers an option for finding focus that readers may not have been exposed to before and addresses the issue from a psychological stance: convincing yourself that you can do what you set out to do, because just as you can be your greatest critic, you can also be your greatest supporter.
-
-— 
-
-[Sarah Marie](https://medium.com/u/f7d5821a4efd?source=post_page-----4c696f39a12d--------------------------------)
-
-, curator
-
-## [**The Only Source of Distraction Creators Should Worry About**](https://medium.com/swlh/the-only-source-of-distractions-creators-should-worry-about-3e610162d54d) **—** [**Loudt Darrow**](https://medium.com/u/daf04b4fd8eb?source=post_page-----4c696f39a12d--------------------------------)
-
-As an artist and writer, distraction is something I think about often. I imagine it’s the same for many creators — one minute you’re in a “[flow state](https://medium.com/personal-growth-lab/how-to-reach-flow-state-using-10-flow-state-triggers-473aa28dc3e5)” and the next minute, you’ve unconsciously picked up your phone and are scrolling Instagram or Facebook without even realizing it.
-
-It’s easy to blame the myriad distractions that compete for our attention — social media, Netflix, the news (the _New York Times_ is my biggest “[unconscious refresh](https://zulie.medium.com/how-to-stop-yourself-from-constantly-checking-your-notifications-dc0038f2b9f2)” site!). There are many takes on [creative productivity](https://skooloflife.medium.com/21-keys-to-creative-productivity-7b04cc01996e) right here on Medium, but what stood out to me most about [Darrow’s piece](https://medium.com/swlh/the-only-source-of-distractions-creators-should-worry-about-3e610162d54d) is the idea that distraction isn’t coming from an external source, like our phones, or TVs, but rather, an internal one — right inside our own minds.
-
-Our brains are, of course, our greatest source of both inspiration and distraction. And we tend to focus on getting all the right productivity hacks down, or getting rid of all of our external distractions. But this piece helped me renegotiate with myself how I view the distractions in my life and how to do better brain management as opposed to just turning off my phone or having better organizational skills.
-
-One of the areas of advice that really caught my eye was Darrow’s proclamation about embracing loneliness. With the rise in mindfulness content, we have significantly more positive associations with solitude, but we’re still apt to frame loneliness as something negative. Darrow urges us to consider the flow state that can be tapped into by viewing aloneness as a creative win.
-
-Darrow’s got it right when he says, “distraction-blocking advice can only go so far.” The end goal, then, is not to get rid of distraction, but self-consciousness. He writes, “In fact, when you’re in flow state, your sense of self disappears altogether.” Ultimately, the biggest creative battle we face will always be with ourselves, but it’s one we’re capable of winning.
-
-— 
-
-[Genesis Lauu](https://medium.com/u/519d8aef07c1?source=post_page-----4c696f39a12d--------------------------------)
-
-, curation
-
-## [**On Living a Conscious Life**](https://medium.com/darius-foroux/on-living-a-conscious-life-e07a05505e66) **—** [**Darius Foroux**](https://medium.com/u/54163a1723f6?source=post_page-----4c696f39a12d--------------------------------)
-
-Darius Foroux is a master of [staying in the present](https://medium.com/darius-foroux/on-living-a-conscious-life-e07a05505e66), but that doesn’t mean that it comes easy even to him. The entrepreneur/Stoic philosopher reminds us that our thoughts are constantly urging us away from the present moment, but that we can stay in control — release the thoughts that spin out and away from the task at hand, and focus on what really matters, right now. It takes practice — but it’s worth the effort.
-
-— 
-
-[Amy Shearn](https://medium.com/u/b137beb220b9?source=post_page-----4c696f39a12d--------------------------------)
-
-, editor
+> _Which wallet provider's subdomains will become the Gmail accounts of ENS names?_ — Brantly Millegan, Director of Operations @ENS
