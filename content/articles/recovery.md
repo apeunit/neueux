@@ -2,15 +2,12 @@
 id: ltq15cz4l
 title: Recovery
 author: Maximilian Blazek
-authors:
-  - Maximilian Blazek
-  - Dario Aschero
-slug: 1626168038530-remove-unused-dependencies-ltq15cz4l
+slug: recovery
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628507892/neueux/media/articles/Frame%202038.png
-summary: UX issues of recovery
-date: 'January 28, 2021'
+summary: UX issues of recovery in Blockchain.
+date: 'August 9th, 2021'
 ---
 ## Background
 
