@@ -30,12 +30,10 @@ const App = ({ article, preview, slug }) => {
         src: article.featured_image,
       }}
     >
-      <main className="w-full mt-5 prose max-w-full">
+      <main className="w-full mt-5 max-w-full">
       <div className="space-y-3 w-11/12 mx-auto">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
-          <Link href={`/articles/${article.slug}`}>
-            <h1 className="font-extrabold text-3xl leading-2 cursor-pointer">{article.title}</h1>
-          </Link>
+          <h1 className="font-extrabold text-3xl leading-2">{article.title}</h1>
           <p className="text-lg text-gray-700 max-w-xl">{article.summary}</p>
         </div>
         {article.featured_image && (
@@ -43,7 +41,7 @@ const App = ({ article, preview, slug }) => {
             <img className="h-56 sm:h-80 lg:h-102 lg:w-11/12 mx-auto object-cover w-full" src={article.featured_image} />
           </div>
         )}
-        <div className="w-11/12 mx-auto max-w-2xl divide-2 divide-y divide-gray-300">
+        <div className="prose w-11/12 mx-auto max-w-2xl divide-2 divide-y divide-gray-300">
           <div className="flex flex-row align-middle text-ssm justify-between -my-4">
             <div className="flex flex-row space-x-2">
               <img className="m-0 w-10 h-10" src="/img/max.png" />
