@@ -33,6 +33,7 @@ const form = (
             title: values.title,
             slug,
             category: "",
+            created_at: Date.now().toString()
           });
           await cms.api.github.commit(
             `content/articles/${slug}.md`,
