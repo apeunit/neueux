@@ -1,11 +1,11 @@
 ---
 id: ltq15cz4j
 title: Addresses
-slug: 1626168038530-remove-unused-dependencies-ltq15cz4j
-category: ''
+slug: addresses
+category: 'Blockchain UX'
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628507823/neueux/media/articles/Frame%202037.png
-summary: Addresses
+summary: The UX issue of addresses in Blockchain.
 author: Maximilian Blazek
 ---
 ## Addresses in the Internet
