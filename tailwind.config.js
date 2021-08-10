@@ -26,8 +26,8 @@ module.exports = {
             },
             
             code: {
-              fontWeight: '100',
-              backgroundColor: theme('colors.gray.100'),
+              fontWeight: '200',
+              backgroundColor: theme('colors.gray.300'),
             },
 
             'code::before': {
