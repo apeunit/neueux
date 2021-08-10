@@ -29,7 +29,6 @@ module.exports = {
               color: theme('colors.accent'),
               fontWeight: '200',
               backgroundColor: theme('colors.gray.100'),
-              borderRadius: rem(6),
             },
 
             'code::before': {
