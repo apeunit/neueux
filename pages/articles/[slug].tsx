@@ -34,7 +34,7 @@ const App = ({ article, preview, slug }) => {
         <div className="space-y-3 w-11/12 mx-auto">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
           <Link href={`/articles/${article.slug}`}>
-            <h1>{article.title}</h1>
+            <h1 className="lg:prose-2xl">{article.title}</h1>
           </Link>
           <p className="text-lg text-gray-700 max-w-xl">{article.summary}</p>
         </div>
