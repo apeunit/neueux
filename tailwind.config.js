@@ -26,17 +26,16 @@ module.exports = {
             },
             
             code: {
-              color: theme('colors.accent'),
-              fontWeight: '200',
+              fontWeight: '100',
               backgroundColor: theme('colors.gray.100'),
             },
 
             'code::before': {
-              content: ' ',
+              content: 'none',
             },
             
             'code::after': {
-              content: ' ',
+              content: 'none',
             },
 
           },
