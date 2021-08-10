@@ -12,7 +12,7 @@ const FeatArticle = ({ article, key }) => {
       <div className="lg:max-w-md w-full justify-around flex-col flex align-middle px-auto">
         <div className="space-y-3 mr-5">
           <p className="text-xs mt-4 leading-loose font-bold text-accent">{article.category}</p>
-          <Link to={article.slug}>
+          <Link to={`/articles/${article.slug}`}>
             <h1 className="font-extrabold text-5xl leading-2 cursor-pointer">{article.title}</h1>
           </Link>
           <p className="text-lg text-gray-700">{article.summary}</p>
