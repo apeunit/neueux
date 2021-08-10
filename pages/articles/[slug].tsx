@@ -33,7 +33,9 @@ const App = ({ article, preview, slug }) => {
       <main className="w-full mt-5 prose max-w-full">
         <div className="space-y-3 w-11/12 mx-auto">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
-          <h1>{article.title}</h1>
+          <Link href={`/articles/${article.slug}`}>
+            <h1>{article.title}</h1>
+          </Link>
           <p className="text-lg text-gray-700 max-w-xl">{article.summary}</p>
         </div>
         {article.featured_image && (
