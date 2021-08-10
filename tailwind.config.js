@@ -27,12 +27,14 @@ module.exports = {
             
             code: {
               color: theme('colors.accent'),
+              backgroundColor: theme('colors.gray.300'),
+              borderRadius: '3',
             },
 
             'code::before': {
               content: 'none',
             },
-
+            
             'code::after': {
               content: 'none',
             },
