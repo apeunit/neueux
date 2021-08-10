@@ -19,6 +19,12 @@ module.exports = {
               color: theme('colors.accent'),
               fontWeight: '500',
             },
+
+            blockquote: {
+              fontWeight: '400',
+              borderLeftColor: theme('colors.accent'),
+            },
+
           },
         },
       }),
