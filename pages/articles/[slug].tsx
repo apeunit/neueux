@@ -34,7 +34,7 @@ const App = ({ article, preview, slug }) => {
         <div className="space-y-3 w-11/12 mx-auto prose-xl lg:prose-2xl">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
           <Link href={`/articles/${article.slug}`}>
-            <h1 className="lg:prose-2xl">{article.title}</h1>
+            <h1>{article.title}</h1>
           </Link>
           <p className="text-lg text-gray-700 max-w-xl">{article.summary}</p>
         </div>
@@ -43,7 +43,7 @@ const App = ({ article, preview, slug }) => {
             <img className="h-56 sm:h-80 lg:h-102 lg:w-11/12 mx-auto object-cover w-full" src={article.featured_image} />
           </div>
         )}
-        <div className="prose-lg lg:prose-xl w-11/12 mx-auto max-w-2xl divide-2 divide-y divide-gray-300">
+        <div className="w-11/12 mx-auto max-w-2xl divide-2 divide-y divide-gray-300">
           <div className="flex flex-row align-middle text-ssm justify-between -my-4">
             <div className="flex flex-row space-x-2">
               <img className="m-0 w-10 h-10" src="/img/max.png" />
@@ -51,10 +51,7 @@ const App = ({ article, preview, slug }) => {
             </div>
             <p className="font-light text-gray-500 pt-5">{article.date}</p>
           </div>
-
-        <ReactMarkdown
-          className={style.reactMarkDown}
-        >{article.content}</ReactMarkdown>
+        <ReactMarkdown className="prose-lg lg:prose-xl">{article.content}</ReactMarkdown>
         </div>
       </main>
     </Layout>
