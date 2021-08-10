@@ -44,7 +44,7 @@ const App = ({ article, preview, slug }) => {
 
         <div className="flex flex-col space-y-6 w-11/12 mx-auto max-w-2xl divide-y">
           <div className="flex flex-row items-center text-ssm justify-between">
-            <div className="flex flex-row space-x-2">
+            <div className="flex flex-row items-center space-x-2">
               <img className="w-10 h-10" src="/img/max.png" />
               <p className="font-light">by <span className="font-extrabold">{article.author}</span></p>
             </div>
