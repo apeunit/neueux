@@ -24,6 +24,19 @@ module.exports = {
               fontWeight: '400',
               borderLeftColor: theme('colors.accent'),
             },
+            
+            code: {
+              color: theme('colors.accent'),
+              backgroundColor: theme('colors.grey.300'),
+              borderRadius: '3',
+            },
+
+            'code::before': {
+              content: 'none',
+            },
+            'code::after': {
+              content: 'none',
+            },
 
           },
         },
