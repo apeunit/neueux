@@ -51,7 +51,7 @@ const App = ({ article, preview, slug }) => {
             </div>
             <p className="font-light text-gray-500 pt-5">{article.date}</p>
           </div>
-        <ReactMarkdown className="prose-lg lg:prose-xl" children={article.content}/>
+        <ReactMarkdown className="prose-lg lg:prose-xl mt-6" children={article.content}/>
         </div>
       </main>
     </Layout>
