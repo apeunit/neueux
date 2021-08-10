@@ -32,11 +32,11 @@ const App = ({ article, preview, slug }) => {
     >
       <main className="w-full mt-5 prose max-w-full">
         <div className="space-y-3 w-11/12 mx-auto prose-xl lg:prose-2xl">
-          <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
+          <p className="prose-sm leading-loose font-bold text-accent">{article.category}</p>
           <Link href={`/articles/${article.slug}`}>
             <h1>{article.title}</h1>
           </Link>
-          <p className="text-lg text-gray-700 max-w-xl">{article.summary}</p>
+          <p className="text-gray-700 max-w-xl">{article.summary}</p>
         </div>
         {article.featured_image && (
           <div className="w-screen">
