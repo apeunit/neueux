@@ -27,16 +27,17 @@ module.exports = {
             
             code: {
               color: theme('colors.accent'),
-              backgroundColor: theme('colors.gray.300'),
-              borderRadius: '3',
+              fontWeight: '200',
+              backgroundColor: theme('colors.gray.100'),
+              borderRadius: rem(6),
             },
 
             'code::before': {
-              content: 'none',
+              content: ' ',
             },
             
             'code::after': {
-              content: 'none',
+              content: ' ',
             },
 
           },

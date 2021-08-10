@@ -39,7 +39,7 @@ const App = ({ article, preview, slug }) => {
         </div>
 
         <div className="w-screen">
-          <img className="h-full w-full lg:w-11/12 max-w-4xl mx-auto my-8 object-cover" src={article.featured_image} />
+          <img className="h-full w-full lg:w-11/12 max-w-7xl mx-auto my-8 object-cover" src={article.featured_image} />
         </div>
 
         <div className="w-11/12 mx-auto max-w-2xl divide-y">
