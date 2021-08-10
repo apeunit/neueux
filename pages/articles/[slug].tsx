@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { getArticleContent, listAllArticleContent } from "lib/articles";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
-import Link from "next/link";
+//import Link from "next/link";
 //import style from './markdown-styles.module.css';
 
 const App = ({ article, preview, slug }) => {
@@ -31,20 +31,19 @@ const App = ({ article, preview, slug }) => {
       }}
     >
       <main className="w-full mt-5 max-w-full">
-        <div className="space-y-3 w-11/12 mx-auto prose prose-xl lg:prose-2xl">
+
+        <div className="w-11/12 space-y-3 prose prose-xl lg:prose-2xl">
           <p className="prose-sm leading-loose font-bold text-accent">{article.category}</p>
-          <Link href={`/articles/${article.slug}`}>
-            <h1>{article.title}</h1>
-          </Link>
+          <h1>{article.title}</h1>
           <p className="text-gray-700 max-w-xl">{article.summary}</p>
         </div>
-        {article.featured_image && (
-          <div className="w-screen">
-            <img className="h-56 sm:h-80 lg:h-102 lg:w-11/12 mx-auto object-cover w-full" src={article.featured_image} />
-          </div>
-        )}
+
+        <div className="w-screen">
+          <img className="h-56 sm:h-80 lg:h-102 lg:w-11/12 mx-auto my-8 object-cover w-full" src={article.featured_image} />
+        </div>
+
         <div className="flex flex-col space-y-6 w-11/12 mx-auto max-w-2xl divide-y">
-          <div className="flex flex-row align-middle text-ssm justify-between">
+          <div className="flex flex-row items-center text-ssm justify-between">
             <div className="flex flex-row space-x-2">
               <img className="w-10 h-10" src="/img/max.png" />
               <p className="font-light">by <span className="font-extrabold">{article.author}</span></p>
@@ -53,6 +52,7 @@ const App = ({ article, preview, slug }) => {
           </div>
           <ReactMarkdown className="prose prose-lg lg:prose-xl mt-6" children={article.content}/>
         </div>
+
       </main>
     </Layout>
   );
