@@ -53,7 +53,7 @@ const App = ({ article, preview, slug }) => {
           </div>
 
         <ReactMarkdown
-          className={"prose-xl lg:prose"}
+          className={prose-xl lg:prose}
         >{article.content}</ReactMarkdown>
         </div>
       </main>
