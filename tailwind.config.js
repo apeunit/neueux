@@ -6,13 +6,22 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      typography: {
+      typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: "#6B7280",
+            color: theme('colors.article'),
+
+            'ul > li::before': {
+              backgroundColor: theme('colors.accent'),
+            },
+
+            strong: {
+              color: theme('colors.accent'),
+              fontWeight: '500',
+            },
           },
         },
-      },
+      }),
     },
     screens: {
       sm: "640px",
@@ -25,7 +34,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-
+      article: "#6B7280",
       accent: "#FF3A02",
       black: colors.black,
       white: colors.white,
