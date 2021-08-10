@@ -17,14 +17,14 @@ const Navbar = () => {
           .nav-link {
             font-weight: 400 !important;
           }
-          .active {
-            text-decoration: underline #FF3A02;
-            font-weight: 700;
-            color: #111827;
-            text-underline-offset: 28px;
-            text-decoration-thickness: 4px;
-            text-underline-width: 120%;
-          }
+      .active {
+        text-decoration: underline #FF3A02;
+        font-weight: 700;
+        color: #111827;
+        text-underline-offset: 28px;
+        text-decoration-thickness: 4px;
+        text-underline-width: 120%;
+      }
     `}</style>
       <div className="w-11/12 justify-between mx-auto border-b border-gray-200">
         <div className="flex text-base">
