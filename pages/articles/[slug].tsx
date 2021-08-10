@@ -42,7 +42,7 @@ const App = ({ article, preview, slug }) => {
           <img className="h-full w-full lg:w-11/12 max-w-4xl mx-auto my-8 object-cover" src={article.featured_image} />
         </div>
 
-        <div className="flex flex-col space-y-6 w-11/12 mx-auto max-w-2xl divide-y">
+        <div className="w-11/12 mx-auto max-w-2xl divide-y">
           <div className="flex flex-row items-center text-ssm justify-between">
             <div className="flex flex-row items-center space-x-2">
               <img className="w-10 h-10" src="/img/max.png" />

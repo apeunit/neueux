@@ -49,7 +49,7 @@ const ItemArticle = ({ article }) => {
       <div className="max-w-md w-full justify-around flex-col flex align-middle">
         <div className="space-y-3 mt-5">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
-          <Link href={`/articles/${article.slug}`}>
+          <Link to={`articles/${article.slug}`}>
             <h1 className="font-extrabold text-2.5xl leading-2 cursor-pointer">{article.title}</h1>
           </Link>
           <p className="text-md text-gray-700">{article.summary}</p>
@@ -81,7 +81,7 @@ const ArticlesPage = ({ articles }) => {
         divide-y-gray-200
         lg:divide-y-0
         lg:divide-x-gray-200
-        lg:divide-x
+        lg:divide-x-2
         gap-5
          ">
           {articles.map((article, key) => {
