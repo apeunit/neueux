@@ -5,7 +5,7 @@ import { getArticleContent, listAllArticleContent } from "lib/articles";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import style from './markdown-styles.module.css';
+//import style from './markdown-styles.module.css';
 
 const App = ({ article, preview, slug }) => {
   console.log(preview);
@@ -51,10 +51,7 @@ const App = ({ article, preview, slug }) => {
             </div>
             <p className="font-light text-gray-500 pt-5">{article.date}</p>
           </div>
-
-        <ReactMarkdown
-          className={style.reactMarkDown}
-        >{article.content}</ReactMarkdown>
+        <ReactMarkdown>{article.content}</ReactMarkdown>
         </div>
       </main>
     </Layout>
