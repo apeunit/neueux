@@ -27,8 +27,8 @@ module.exports = {
             
             code: {
               color: theme('colors.accent'),
-              backgroundColor: theme('colors.grey.300'),
-              borderRadius: '3',
+              backgroundColor: theme('colors.gray.300'),
+              borderRadius: rem(8),
             },
 
             'code::before': {
