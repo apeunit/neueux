@@ -101,6 +101,6 @@ ul.nav {
 .active {
   @apply underline font-bold text-gray-900;
   text-decoration-color: #FF3A02;
-  text-underline-offset: 1.5rem;
+  text-underline-offset: 1.6rem;
   text-decoration-thickness: 4px;
 }
