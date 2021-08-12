@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Link from "next/link";
-import ActiveLink from "../ActiveLink";
+import { useRouter } from "next/router";
+//import ActiveLink from "../ActiveLink";
 import PopupMenu from "./PopupMenu";
 // import FilterBadge from "./Badge";
 // import { useRouter } from "next/router";
@@ -26,20 +27,20 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/"><a href="">Screens</a></ActiveLink>
+            <li className={router.pathname.split("?")[0] == "/" ? "active"} >
+              <Link href="/">Screens</Link>
             </li>
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/articles"><a href="">Articles</a></ActiveLink>
+            <li className={router.pathname.split("?")[0] == "/articles" ? "active"}>
+              <Link href="/articles">Articles</Link>
             </li>
           </ul>
 
           <ul className="w-1/2 items-end text-right hidden sm:block">
-            <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/about"><a href="">About this project</a></ActiveLink>
+            <li className={router.pathname.split("?")[0] == "/about" ? "active"}>
+              <Link href="/about">About this project</Link>
             </li>
           </ul>
 
