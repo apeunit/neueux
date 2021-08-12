@@ -33,7 +33,7 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className={router.pathname.startsWith('/articles') ? "active" : "not active"}>
+            <li className={router.pathname.startsWith('/articles') ? "active" : ""}>
               <Link href="/articles">Articles</Link>
             </li>
           </ul>
