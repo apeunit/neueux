@@ -39,6 +39,11 @@ module.exports = {
       maxHeight: {
         104: "50rem",
       },
+
+      padding: {
+        "1/3": "33.33333%",
+        "2/3": "66.66667%",
+      },
     },
     screens: {
       sm: "640px",

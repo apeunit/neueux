@@ -22,7 +22,10 @@ const FeatArticle = ({ article, key }) => {
 
       <div className="cursor-pointer">
         <Link href={`/articles/${article.slug}`}>
-          <img className="object-cover cursor-pointer border-0" src={article.featured_image} width="900px" height="900px" />
+          {/*edit this once aspect ratio plugin is installed*/}
+          <div className="relative h-0 pb-2/3 pt-1/3">
+            <img className="absolute inset-0 w-full h-full object-cover" src={article.featured_image}/>
+          </div>
         </Link>
       </div>
     </div>
