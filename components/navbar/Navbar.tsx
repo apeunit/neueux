@@ -26,25 +26,25 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className="p-0 font-normal text-gray-500 text-sm">
+            <li className="font-normal text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/"><a href="">Screens</a></ActiveLink>
             </li>
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className="p-0 font-normal text-gray-500 text-sm">
+            <li className="font-normal text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/articles"><a href="">Articles</a></ActiveLink>
             </li>
           </ul>
 
           <ul className="w-1/2 items-end text-right hidden sm:block">
-            <li className="p-0 font-bold text-gray-500 text-sm">
+            <li className="font-bold text-gray-500 text-sm">
               <Link href="/about"><a href="">About this project</a></Link>
             </li>
           </ul>
 
           <ul className="text-right sm:hidden">
-            <li className="p-0 font-bold text-gray-500 text-sm">
+            <li className="font-bold text-gray-500 text-sm">
             {/* <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
             Filter
         </Button> */}
