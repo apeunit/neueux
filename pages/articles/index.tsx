@@ -22,7 +22,7 @@ const FeatArticle = ({ article, key }) => {
 
       <div className="cursor-pointer">
         <Link href={`/articles/${article.slug}`}>
-          <img className="object-cover cursor-pointer border-0 max-h-96" src={article.featured_image} width="900px" height="900px" />
+          <img className="object-cover cursor-pointer border-0" src={article.featured_image} width="900px" height="900px" />
         </Link>
       </div>
     </div>
