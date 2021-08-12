@@ -25,6 +25,7 @@ module.exports = {
               color: theme('colors.gray.900'),
               fontFamily: theme('fontFamily.mono'),
               backgroundColor: theme('colors.gray.300'),
+              overflowX: 'auto',
             },
             'code::before': {
               content: 'none',
