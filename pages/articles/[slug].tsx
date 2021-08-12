@@ -39,18 +39,18 @@ const App = ({ article, preview, slug }) => {
         </div>
 
         <div className="w-screen">
-          <img className="h-full w-full lg:w-11/12 xl:h-104 mx-auto my-8 object-cover" src={article.featured_image} />
+          <img className="h-full w-full lg:w-11/12 max-h-104 mx-auto my-8 object-cover" src={article.featured_image} />
         </div>
 
         <div className="w-11/12 mx-auto max-w-2xl divide-y">
-          <div className="flex flex-row items-center text-ssm justify-between">
+          <div className="flex flex-row items-center text-ssm justify-between pb-4">
             <div className="flex flex-row items-center space-x-2">
               <img className="w-10 h-10" src="/img/max.png" />
               <p className="font-light">by <span className="font-extrabold">{article.author}</span></p>
             </div>
             <p className="font-light text-gray-500">{article.date}</p>
           </div>
-          <ReactMarkdown className="prose prose-lg lg:prose-xl mt-6" children={article.content}/>
+          <ReactMarkdown className="prose prose-lg lg:prose-xl pt-6" children={article.content}/>
         </div>
 
       </main>

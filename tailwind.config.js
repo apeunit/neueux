@@ -35,7 +35,7 @@ module.exports = {
         },
       }),
 
-      height: {
+      maxHeight: {
         104: "50rem",
       },
     },
