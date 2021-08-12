@@ -22,9 +22,9 @@ module.exports = {
               borderLeftColor: theme('colors.accent'),
             },
             code: {
-              color: theme('colors.gray.900'),
+              color: theme('colors.gray.700'),
               fontFamily: theme('fontFamily.mono'),
-              backgroundColor: theme('colors.gray.300'),
+              backgroundColor: theme('colors.gray.200'),
               overflowX: 'auto',
             },
             'code::before': {
