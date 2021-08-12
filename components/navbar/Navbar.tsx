@@ -3,12 +3,13 @@ import Link from "next/link";
 import ActiveLink from "../ActiveLink";
 import PopupMenu from "./PopupMenu";
 // import FilterBadge from "./Badge";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import MenuIcon from "assets/icons/menu.svg";
 
 // import Button from "components/Button";
 const Navbar = () => {
   const [showFilter, setShowFilter] = useState(false);
+  const router = useRouter();
 
   return (
     <>
