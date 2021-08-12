@@ -2,7 +2,7 @@ import { GetStaticProps } from "next";
 import Layout from "components/Layout";
 import React from "react";
 // import Header from "components/Header";
-import Image from "next/image";
+// import Image from "next/image";
 import { listArticleContent } from "lib/articles";
 import Link from "next/link";
 
@@ -22,12 +22,7 @@ const FeatArticle = ({ article, key }) => {
 
       <div className="cursor-pointer">
         <Link href={`/articles/${article.slug}`}>
-          <img
-            className="object-cover cursor-pointer border-0 max-h-96"
-            src={article.featured_image}
-            width="900px"
-            height="900px"
-          />
+          <img className="object-cover cursor-pointer border-0 max-h-96" src={article.featured_image} width="900px" height="900px" />
         </Link>
       </div>
     </div>
@@ -54,6 +49,7 @@ const ItemArticle = ({ article }) => {
     </div>
   )
 }
+
 const ArticlesPage = ({ articles }) => {
   return (
     <Layout title="Articles" editable>
