@@ -38,7 +38,7 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-1/2 items-end text-right hidden sm:block">
-            <li className="font-bold text-gray-500 text-sm">
+            <li className="text-gray-500 text-sm">
               <Link href="/about"><a href="">About this project</a></Link>
             </li>
           </ul>
