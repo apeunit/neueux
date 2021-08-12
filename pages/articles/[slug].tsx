@@ -31,9 +31,9 @@ const App = ({ article, preview, slug }) => {
       }}
     >
       <main className="mt-5">
-        <div className="w-screen lg:w-11/12 max-w-8xl mx-auto">
+        <div className="w-screen lg:w-11/12 max-w-6xl mx-auto">
 
-          <div className="w-11/12 lg:w-full space-y-3">
+          <div className="w-11/12 lg:w-full mx-auto space-y-3">
             <p className="text-xs lg:text-sm font-bold text-accent">{article.category}</p>
             <h1 className="text-6xl lg:text-8xl font-extrabold leading-2">{article.title}</h1>
             <p className="text-lg lg:text-2xl text-gray-700 max-w-xl">{article.summary}</p>
