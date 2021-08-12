@@ -24,8 +24,6 @@ module.exports = {
             code: {
               color: theme('colors.gray.900'),
               fontFamily: theme('fontFamily.mono'),
-              fontWeight: '200',
-              padding: em(12, 12),
               backgroundColor: theme('colors.gray.300'),
             },
             'code::before': {
