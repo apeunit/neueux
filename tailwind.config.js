@@ -10,37 +10,34 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.article'),
-
             'ul > li::before': {
               backgroundColor: theme('colors.accent'),
             },
-
             strong: {
               color: theme('colors.accent'),
               fontWeight: '500',
             },
-
             blockquote: {
               fontWeight: '400',
               borderLeftColor: theme('colors.accent'),
             },
-            
             code: {
               fontWeight: '200',
               backgroundColor: theme('colors.gray.300'),
             },
-
             'code::before': {
               content: 'none',
             },
-            
             'code::after': {
               content: 'none',
             },
-
           },
         },
       }),
+
+      height: {
+        104: "28rem",
+      },
     },
     screens: {
       sm: "640px",
