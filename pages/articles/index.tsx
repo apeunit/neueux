@@ -19,15 +19,9 @@ const FeatArticle = ({ article, key }) => {
           <p className="text-xs pt-2">by <b>{article.author}</b></p>
         </div>
       </div>
-
       <div className="cursor-pointer">
         <Link href={`/articles/${article.slug}`}>
-          <Image
-            className="object-cover cursor-pointer border-0 max-h-96"
-            src={article.featured_image}
-            width="900px"
-            height="900px"
-          />
+          <Image className="object-cover cursor-pointer border-0 max-h-96" src={article.featured_image} width="900px" height="900px"/>
         </Link>
       </div>
     </div>
@@ -39,12 +33,7 @@ const ItemArticle = ({ article }) => {
   return (
     <div className="w-full pt-5 md:pt-0 md:pl-5 first:pl-0 first:-ml-5">
       <Link href={`/articles/${article.slug}`}>
-        <img
-          className="cursor-pointer object-cover w-full h-72"
-          src={article.featured_image}
-          // width="30vw"
-          height="175px"
-        />
+        <img className="cursor-pointer object-cover w-full h-72" src={article.featured_image} height="175px" />
       </Link>
       <div className="max-w-md w-full justify-around flex-col flex align-middle">
         <div className="space-y-3 mt-5">
@@ -56,11 +45,6 @@ const ItemArticle = ({ article }) => {
           <p className="text-xs pt-2">by <b>{article.author}</b></p>
         </div>
       </div>
-      {/* <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
-      <Link href={`/articles/${article.slug}`}>
-        <h1 className="font-bold text-lg cursor-pointer">{article.title}</h1>
-      </Link>
-      <p className="text-sm text-gray-500">{article.summary}</p> */}
     </div>
   )
 }
@@ -68,22 +52,8 @@ const ArticlesPage = ({ articles }) => {
   return (
     <Layout title="Articles" editable>
       <main className="w-11/12 max-w-content mx-auto justify-between relative divide-y-gray-200 divide-y">
-        {/* <Header title="Articles" /> */}
         <FeatArticle key={articles[0].key} article={articles[0]} />
-        <div className="
-        md:pt-5
-        grid
-        grid-cols-1
-        lg:grid-cols-3
-        justify-items-stretch
-        // gap-0
-        divide-y
-        divide-y-gray-200
-        lg:divide-y-0
-        lg:divide-x-gray-200
-        lg:divide-x
-        gap-5
-         ">
+        <div className="md:pt-5 grid grid-cols-1 lg:grid-cols-3 justify-items-stretch divide-y divide-y-gray-200 lg:divide-y-0 lg:divide-x-gray-200 lg:divide-x gap-5">
           {articles.map((article, key) => {
             if (key !== 0) return <ItemArticle key={key} article={article} />
           })}
