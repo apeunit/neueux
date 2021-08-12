@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
     <nav className="">
       <div className="w-11/12 mx-auto border-b border-gray-200">
-        <div className="flex text-base py-6">
+        <div className="flex items-end text-base py-6">
           <ul className="w-full sm:w-1/2">
             <li className="cursor-pointer">
               <Link href="/">
@@ -25,25 +25,25 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <ul className="w-32 text-center hidden lg:block sm:block md:block">
+          <ul className="w-32 items-end text-center hidden sm:block">
             <li className="font-normal text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/"><a href="">Screens</a></ActiveLink>
             </li>
           </ul>
 
-          <ul className="w-32 text-center hidden lg:block sm:block md:block">
+          <ul className="w-32 items-end text-center hidden sm:block">
             <li className="font-normal text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/articles"><a href="">Articles</a></ActiveLink>
             </li>
           </ul>
 
-          <ul className="w-1/2 text-right hidden lg:block sm:block md:block">
+          <ul className="w-1/2 items-end text-right hidden sm:block">
             <li className="font-bold text-gray-500 text-sm">
               <ActiveLink href="/about"><a href="">About this project</a></Link>
             </li>
           </ul>
 
-          <ul className="self-end text-right lg:hidden sm:hidden md:hidden">
+          <ul className="text-right sm:hidden">
             <li className="font-bold text-gray-500 text-sm">
             {/* <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
             Filter
