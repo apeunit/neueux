@@ -26,20 +26,20 @@ const Navbar = () => {
           </ul>
 
           <ul className="cursor-pointer w-32 items-end text-center hidden sm:block">
-            <li className={router.pathname.startsWith('/') ? "active" : ""}>
-              <Link className="text-gray-500 text-sm" href="/">Screens</Link>
+            <li className={`${router.pathname.startsWith('/') ? "active" : ""} text-gray-500 text-sm`}>
+              <Link  href="/">Screens</Link>
             </li>
           </ul>
 
           <ul className="cursor-pointer w-32 items-end text-center hidden sm:block">
             <li className={router.pathname.startsWith('/articles') ? "active" : ""}>
-              <Link className="text-gray-500 text-sm" href="/articles">Articles</Link>
+              <Link href="/articles">Articles</Link>
             </li>
           </ul>
 
           <ul className="cursor-pointer w-1/2 items-end text-right hidden sm:block">
             <li className={router.pathname.startsWith('/') ? "active" : ""}>
-              <Link className="text-gray-500 text-sm" href="/about">About this project</Link>
+              <Link href="/about">About this project</Link>
             </li>
           </ul>
 
