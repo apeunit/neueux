@@ -21,7 +21,7 @@ const FeatArticle = ({ article, key }) => {
       </div>
       <div className="cursor-pointer">
         <Link href={`/articles/${article.slug}`}>
-          <Image className="object-cover cursor-pointer border-0 max-h-96" src={article.featured_image} width="900px" height="900px"/>
+          <Image className="object-cover cursor-pointer border-0 max-h-96" src={article.featured_image}/>
         </Link>
       </div>
     </div>
@@ -33,7 +33,7 @@ const ItemArticle = ({ article }) => {
   return (
     <div className="w-full pt-5 md:pt-0 md:pl-5 first:pl-0 first:-ml-5">
       <Link href={`/articles/${article.slug}`}>
-        <Image className="object-cover cursor-pointer w-full h-72" src={article.featured_image} height="175px" />
+        <img className="cursor-pointer object-cover w-full h-72" src={article.featured_image} height="175px" />
       </Link>
       <div className="max-w-md w-full justify-around flex-col flex align-middle">
         <div className="space-y-3 mt-5">
@@ -48,7 +48,6 @@ const ItemArticle = ({ article }) => {
     </div>
   )
 }
-
 const ArticlesPage = ({ articles }) => {
   return (
     <Layout title="Articles" editable>
