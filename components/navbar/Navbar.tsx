@@ -26,20 +26,20 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className="font-normal text-gray-500 text-sm">
+            <li className="text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/"><a href="">Screens</a></ActiveLink>
             </li>
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className="font-normal text-gray-500 text-sm">
+            <li className="text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/articles"><a href="">Articles</a></ActiveLink>
             </li>
           </ul>
 
           <ul className="w-1/2 items-end text-right hidden sm:block">
             <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/about"><a href="">About this project</a></Link>
+              <ActiveLink activeClassName="active" href="/about"><a href="">About this project</a></ActiveLink>
             </li>
           </ul>
 
