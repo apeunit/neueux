@@ -32,8 +32,8 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/articles"><a href="">Articles</a></ActiveLink>
+            <li className={router.pathname.startsWith('/articles') ? "active" : "not active"}>
+              <Link href="/articles">Articles</Link>
             </li>
           </ul>
 
