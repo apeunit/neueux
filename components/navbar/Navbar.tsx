@@ -39,7 +39,7 @@ const Navbar = () => {
 
           <ul className="w-1/2 items-end text-right hidden sm:block">
             <li className="text-gray-500 text-sm">
-              <Link href="/about"><a href="">About this project</a></Link>
+              <ActiveLink activeClassName="active" href="/about"><a href="">About this project</a></Link>
             </li>
           </ul>
 
