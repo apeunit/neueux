@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import Link from "next/link";
-import ActiveLink from "../ActiveLink";
 import PopupMenu from "./PopupMenu";
 // import FilterBadge from "./Badge";
 import { useRouter } from "next/router";
@@ -26,21 +25,21 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <ul className="w-32 items-end text-center hidden sm:block">
-            <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/"><a href="">Screens</a></ActiveLink>
+          <ul className="cursor-pointer w-32 items-end text-center hidden sm:block">
+            <li className={router.pathname.startsWith('/') ? "active" : ""}>
+              <Link className="text-gray-500 text-sm" href="/">Screens</Link>
             </li>
           </ul>
 
-          <ul className="w-32 items-end text-center hidden sm:block">
+          <ul className="cursor-pointer w-32 items-end text-center hidden sm:block">
             <li className={router.pathname.startsWith('/articles') ? "active" : ""}>
-              <Link href="/articles">Articles</Link>
+              <Link className="text-gray-500 text-sm" href="/articles">Articles</Link>
             </li>
           </ul>
 
-          <ul className="w-1/2 items-end text-right hidden sm:block">
-            <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/about"><a href="">About this project</a></ActiveLink>
+          <ul className="cursor-pointer w-1/2 items-end text-right hidden sm:block">
+            <li className={router.pathname.startsWith('/') ? "active" : ""}>
+              <Link className="text-gray-500 text-sm" href="/about">About this project</Link>
             </li>
           </ul>
 
