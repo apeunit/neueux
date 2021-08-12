@@ -26,7 +26,7 @@ const Navbar = () => {
           </ul>
 
           <ul className="cursor-pointer w-32 items-end text-center hidden sm:block">
-            <li className={`${router.pathname.startsWith('/') ? "active" : ""} text-gray-500 text-sm`}>
+            <li className={router.pathname.startsWith('/') ? "active" : ""}>
               <Link  href="/">Screens</Link>
             </li>
           </ul>
