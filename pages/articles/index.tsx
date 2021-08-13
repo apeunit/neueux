@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const FeatArticle = ({ article, key }) => {
   return (
-    <div key={key} className="grid grid-cols-1 lg:grid-cols-3 pb-5">
+    <div key={key} className="grid grid-cols-1 lg:grid-cols-3 gap-5 pb-5">
       <div className="col-span-1 flex-col flex align-middle">
         <div className="space-y-3 mr-5">
           <p className="text-xs mt-4 leading-loose font-bold text-accent">{article.category}</p>

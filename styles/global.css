@@ -92,7 +92,7 @@ ul.nav {
 }
 
 .wrapper{
-  @apply mx-auto max-w-8xl
+  @apply mx-auto max-w-8xl;
 }
 
 .nav-link {
