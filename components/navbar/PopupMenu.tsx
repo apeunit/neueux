@@ -1,7 +1,7 @@
 import React from "react";
-// import FilterBadge from "./Badge";
 import CloseIcon from "assets/icons/close.svg";
-import ActiveLink from "../ActiveLink";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const FilterCard = ({
 //   tags,
@@ -13,6 +13,8 @@ const FilterCard = ({
 //   index,
 //   onClear
 }) => {
+  const router = useRouter();
+  
   return (
     <div className="z-99 fixed h-screen top-0 py-4 lg:w-auto md:w-auto sm:w-auto w-full px-4 lg:px-0 md:px-0 sm:px-0 right-0 lg:pr-4 md:pr-4 sm:pr-4 text-left text-gray-700">
       <div onClick={onClose} className="w-full h-screen top-0 left-0 bg-black z-0 fixed opacity-5" />
@@ -29,29 +31,20 @@ const FilterCard = ({
           </div>
         </div>
         <ul className="text-center lg:hidden sm:hidden md:hidden mt-2 py-6">
-            <li className="font-bold text-gray-500 text-lg">
-            <ActiveLink activeClassName="active" href="/"><a href="/">Screens</a></ActiveLink>
-            </li>
-          </ul>
-          <ul className="text-center lg:hidden sm:hidden md:hidden mt-2 py-6">
-            <li className="font-bold text-gray-500 text-lg">
-            <ActiveLink activeClassName="active" href="/articles"><a href="/articles">Articles</a></ActiveLink>
-            </li>
-          </ul>
+          <li className={`text-gray-500 text-lg ${router.pathname.startsWith("/apps") ? "active" : ""} `}>
+            <Link href="/">Screens</Link>
+          </li>
+        </ul>
         <ul className="text-center lg:hidden sm:hidden md:hidden mt-2 py-6">
-            <li className="font-bold text-gray-500 text-lg">
-              <ActiveLink activeClassName="active"  href="/about"><a href="/about">About</a></ActiveLink>
-            </li>
-          </ul>
-
-        <div className="text-xs absolute bottom-10 xl:absolute flex justify-center w-full px-2">
-
-          <span
-            onClick={onClose}
-          >
-            Close
-          </span>
-        </div>
+          <li className={`text-gray-500 text-lg ${router.pathname.startsWith("/articles") ? "active" : ""} `}>
+            <Link href="/articles">Articles</Link>
+          </li>
+        </ul>
+        <ul className="text-center lg:hidden sm:hidden md:hidden mt-2 py-6">
+        <li className={`text-gray-500 text-lg ${router.pathname.startsWith("/about") ? "active" : ""} `}>
+            <Link href="/about">About this project</Link>
+          </li>
+        </ul>
       </div>
       <style jsx>{`
           .nav-link {

@@ -92,5 +92,15 @@ ul.nav {
 }
 
 .wrapper{
-  @apply mx-auto max-w-8xl
+  @apply mx-auto max-w-8xl;
+}
+
+.nav-link {
+  @apply font-normal;
+}
+.active {
+  @apply underline font-bold text-gray-900;
+  text-decoration-color: #FF3A02;
+  text-underline-offset: 1.6rem;
+  text-decoration-thickness: 4px;
 }

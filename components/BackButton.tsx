@@ -5,7 +5,7 @@ import Button from "components/Button";
 
 const BackButton = ({url}: {url?: string}) => (
   <div className="w-11/12 mx-auto mt-5">
-    <Link href={url || '/'}>
+      <Link href={url || '/'}>
       <a>
         <Button type="secondary" size="lg">
           <ArrowIcon className="inline-block mr-2" />

@@ -13,7 +13,7 @@ const IndexPage = ({ apps, filter }) => {
   // console.log(cms);
   return (
     <Layout title="Screen Gallery" editable>
-      <main className="w-11/12 mx-auto xl:relative">
+      <main className="w-11/12 mx-auto max-w-8xl xl:relative">
         <Header title="Screen gallery" />
         <Filter
           tags={filter.tags}

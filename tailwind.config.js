@@ -5,6 +5,46 @@ module.exports = {
   // presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.article'),
+            'ul > li::before': {
+              backgroundColor: theme('colors.accent'),
+            },
+            strong: {
+              color: theme('colors.accent'),
+              fontWeight: '500',
+            },
+            blockquote: {
+              fontWeight: '400',
+              borderLeftColor: theme('colors.accent'),
+            },
+            code: {
+              color: theme('colors.gray.700'),
+              fontFamily: theme('fontFamily.mono'),
+              backgroundColor: theme('colors.gray.200'),
+            },
+            'code::before': {
+              content: 'none',
+            },
+            'code::after': {
+              content: 'none',
+            },
+          },
+        },
+      }),
+
+      maxHeight: {
+        104: "50rem",
+      },
+
+      padding: {
+        "1/3": "33.33333%",
+        "2/3": "66.66667%",
+      },
+    },
     screens: {
       sm: "640px",
       md: "768px",
@@ -16,7 +56,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-
+      article: "#6B7280",
       accent: "#FF3A02",
       black: colors.black,
       white: colors.white,
@@ -932,5 +972,5 @@ module.exports = {
     wordBreak: ["responsive"],
     zIndex: ["responsive", "focus-within", "focus"],
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require('@tailwindcss/aspect-ratio'), require("@tailwindcss/typography")],
 };
