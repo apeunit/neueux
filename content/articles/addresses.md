@@ -16,6 +16,8 @@ Luckily we all got an E-Mail with the `mail@example.com` format instead of an IP
 The precedent of using names instead of IP addresses on the user side was set in the 1970s on the ARPAnet — a predecessor to the Internet.  In 1971, Peggy Karp suggested  standardizing the mapping of names to IP addresses ([RFC226](https://datatracker.ietf.org/doc/html/rfc226), [RFC247](https://datatracker.ietf.org/doc/html/RFC247)). This custom was later adopted on the Internet in the form of domain names like `example.com`, `example.org` or `example.xyz`.
 Mapping names to IP addresses for the sake of usability is by no means a new idea. On the contrary, it was conceived almost 20 years before the invention of the Internet as we know it today.
 
+![](https://res.cloudinary.com/ape-unit/image/upload/v1628859483/neueux/media/articles/Frame%202041.png)
+
 ## Addresses in Blockchain
 
 Wallets on the Blockchain serve a similar purpose to E-Mail Addresses on the Internet. They are the gateway to most Blockchain based products and services. You want to buy an NFT? You will have to "log in" to the NFT-marketplace and later pay with your wallet. Wallets are, similarly to E-Mail on the Internet, the first and primary way of interacting with this new technology (Blockchain) and therefore play an extremely vital role in the usability and adoption of the Blockchain ecosystem.
