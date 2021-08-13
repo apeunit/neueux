@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { getArticleContent, listAllArticleContent } from "lib/articles";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
+import BackButton from "components/BackButton";
 //import Link from "next/link";
 //import style from './markdown-styles.module.css';
 
@@ -24,12 +25,12 @@ const App = ({ article, preview, slug }) => {
     <Layout
       title={`${article.title} - Article`}
       description={article.summary}
-      backButton
       editable
       image={{
         src: article.featured_image,
       }}
     >
+      <BackButton url="/articles" />
       <main className="mt-5">
         <div className="w-screen lg:w-11/12 max-w-8xl mx-auto">
 

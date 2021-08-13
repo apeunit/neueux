@@ -1,11 +1,8 @@
 import React, {useState} from "react";
 import Link from "next/link";
-// import ActiveLink from "../ActiveLink";
 import PopupMenu from "./PopupMenu";
-// import FilterBadge from "./Badge";
 import { useRouter } from "next/router";
 import MenuIcon from "assets/icons/menu.svg";
-// import Button from "components/Button";
 
 const Navbar = () => {
   const [showFilter, setShowFilter] = useState(false);
@@ -46,12 +43,7 @@ const Navbar = () => {
 
           <ul className="text-right sm:hidden">
             <li className="font-bold text-gray-500 text-sm">
-            {/* <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
-            Filter
-        </Button> */}
-        
-        <MenuIcon onClick={() => setShowFilter(true)}  />
-              {/* <Link onClick={() => setShowFilter(true)} type="Primary" size="sm"><a href="">About</a></Link> */}
+              <MenuIcon onClick={() => setShowFilter(true)}  />
             </li>
           </ul>
         </div>

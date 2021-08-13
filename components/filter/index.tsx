@@ -150,19 +150,19 @@ const Filter = ({
       </div>
 
       <div className={["ml-auto text-right w-1/2 lg:w-1/3 sm:w-4/5",
-    !selectedList.length 
+        !selectedList.length
           ? "lg:absolute md:absolute sm:absolute lg:-top-26 md:-top-26 sm:-top-26 right-0" : "",
       ].join(" ")}>
 
         <div className="hidden lg:block md:block sm:block">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
             Filter by Categories
-        </Button>
+          </Button>
         </div>
         <div className="lg:hidden md:hidden sm:hidden bottom-6 z-50 fixed  left-0 w-full text-center">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
             Filter
-        </Button>
+          </Button>
         </div>
       </div>
       {showFilter && (
