@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Link from "next/link";
-import ActiveLink from "../ActiveLink";
+// import ActiveLink from "../ActiveLink";
 import PopupMenu from "./PopupMenu";
 // import FilterBadge from "./Badge";
 import { useRouter } from "next/router";
@@ -27,7 +27,7 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className={(router.pathname.startsWith("") || router.pathname.startsWith("/apps") ) ? "active" : ""}>
+            <li className={router.pathname.startsWith("/apps") ? "active" : ""}>
               <Link href="/">Screens</Link>
             </li>
           </ul>
@@ -39,8 +39,8 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-1/2 items-end text-right hidden sm:block">
-            <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/about"><a href="">About this project</a></ActiveLink>
+            <li className={router.pathname.startsWith('/about') ? "active" : ""}>
+              <Link href="/about">About this project</Link>
             </li>
           </ul>
 
