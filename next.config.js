@@ -2,6 +2,15 @@
 require("dotenv").config();
 
 module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/apps',
+        permanent: true,
+      },
+    ]
+  },
   pageExtensions: ["tsx", "ts"],
   env: {
     GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
