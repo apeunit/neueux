@@ -11,7 +11,7 @@ const FeatArticle = ({ article, key }) => {
     <div key={key} className="grid grid-cols-1 lg:grid-cols-3 gap-5 pb-5 items-center">
       <div className="col-span-1 order-last lg:order-first">
         <div className="space-y-3 mr-5">
-          <p className="text-xs mt-4 leading-loose font-bold text-accent">{article.category}</p>
+          <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
           <Link href={`/articles/${article.slug}`}>
             <h1 className="font-extrabold text-5xl leading-2 cursor-pointer">{article.title}</h1>
           </Link>
