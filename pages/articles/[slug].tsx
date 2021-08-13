@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { getArticleContent, listAllArticleContent } from "lib/articles";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
-import Link from "next/link";
 import BackButton from "components/BackButton";
 
 const App = ({ article, preview, slug }) => {
