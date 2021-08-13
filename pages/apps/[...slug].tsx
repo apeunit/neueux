@@ -99,7 +99,7 @@ const App = ({
         src: app().icon,
       }}
     >
-      <main className="w-11/12 mx-auto">
+      <main className="w-11/12 mx-auto max-w-8xl">
         <HeaderView app={app()} />
         <Filter
           tags={tags}
