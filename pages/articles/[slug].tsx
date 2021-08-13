@@ -38,9 +38,9 @@ const App = ({ article, preview, slug }) => {
             <h1 className="text-6xl lg:text-8xl font-extrabold leading-2">{article.title}</h1>
             <p className="text-lg lg:text-2xl text-gray-700 max-w-xl">{article.summary}</p>
           </div>
-
-          <img className="my-8" src={article.featured_image} />
-
+          <div className="my-8 w-full aspect-w-2 aspect-h-1">
+            <img className="object-cover" src={article.featured_image} />
+          </div>
         </div>
 
         <div className="w-11/12 mx-auto max-w-2xl divide-y">
