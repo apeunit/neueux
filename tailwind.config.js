@@ -971,5 +971,5 @@ module.exports = {
     wordBreak: ["responsive"],
     zIndex: ["responsive", "focus-within", "focus"],
   },
-  plugins: [require("@tailwindcss/typography"), require('@tailwindcss/aspect-ratio')],
+  plugins: [require('@tailwindcss/aspect-ratio'), require("@tailwindcss/typography")],
 };
