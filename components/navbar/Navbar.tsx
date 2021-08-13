@@ -28,15 +28,16 @@ const Navbar = () => {
 
           <ul className="w-32 items-end text-center hidden sm:block">
             <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/apps" as="/apps"><a href="">Screens</a></ActiveLink>
+              <ActiveLink  activeClassName="active" href="/" ><a href="">Screens</a></ActiveLink>
             </li>
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className={router.pathname.split("?")[0] == "/articles" ? "active" : ""}>
+            <li className={router.pathname.startsWith('/articles') ? "active" : ""}>
               <Link href="/articles">Articles</Link>
             </li>
           </ul>
+          
           <ul className="w-1/2 items-end text-right hidden sm:block">
             <li className="text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/about"><a href="">About this project</a></ActiveLink>
