@@ -10,6 +10,7 @@
   "dependencies": {
     "@mapbox/rehype-prism": "^0.7.0",
     "@svgr/webpack": "^5.5.0",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "@tinacms/alerts": "^0.39.0",
     "@tinacms/react-modals": "^0.42.1",
@@ -30,13 +31,13 @@
     "raw-loader": "^4.0.2",
     "react-helmet": "^6.1.0",
     "react-markdown": "^6.0.2",
+    "react-tinacms-editor": "^0.38",
     "react-tinacms-github": "^0.38",
+    "react-tinacms-inline": "^0.38",
     "resolve": "^1.20.0",
     "slugify": "^1.5.3",
     "styled-components": "^5.3.0",
-    "tinacms": "^0.38",
-    "react-tinacms-editor": "^0.38",
-    "react-tinacms-inline": "^0.38"
+    "tinacms": "^0.38"
   },
   "devDependencies": {
     "@mdx-js/loader": "^1.6.22",
