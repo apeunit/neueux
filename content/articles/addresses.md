@@ -2,9 +2,9 @@
 id: ltq15cz4j
 title: Addresses
 slug: addresses
-category: 'Blockchain UX'
+category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1628507823/neueux/media/articles/Frame%202037.png
+  https://res.cloudinary.com/ape-unit/image/upload/v1628611403/neueux/media/articles/Frame16465%202037.png
 summary: The UX issue of addresses in Blockchain.
 author: Maximilian Blazek
 date: 'August 9th, 2021'

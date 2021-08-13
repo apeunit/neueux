@@ -4,9 +4,8 @@ import React, { useEffect } from "react";
 import { getArticleContent, listAllArticleContent } from "lib/articles";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import BackButton from "components/BackButton";
-//import Link from "next/link";
-//import style from './markdown-styles.module.css';
 
 const App = ({ article, preview, slug }) => {
   console.log(preview);
