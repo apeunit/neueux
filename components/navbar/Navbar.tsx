@@ -5,8 +5,8 @@ import PopupMenu from "./PopupMenu";
 // import FilterBadge from "./Badge";
 import { useRouter } from "next/router";
 import MenuIcon from "assets/icons/menu.svg";
-
 // import Button from "components/Button";
+
 const Navbar = () => {
   const [showFilter, setShowFilter] = useState(false);
   const router = useRouter();
@@ -26,9 +26,6 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <ul className="cursor-pointer w-32 items-end text-center hidden sm:block">
-            <li className={router.pathname.startsWith('/') ? "active" : ""}>
-              <Link  href="/">Screens</Link>
           <ul className="w-32 items-end text-center hidden sm:block">
             <li className="text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/"><a href="">Screens</a></ActiveLink>
@@ -40,10 +37,6 @@ const Navbar = () => {
               <Link href="/articles">Articles</Link>
             </li>
           </ul>
-
-          <ul className="cursor-pointer w-1/2 items-end text-right hidden sm:block">
-            <li className={router.pathname.startsWith('/') ? "active" : ""}>
-              <Link href="/about">About this project</Link>
           <ul className="w-1/2 items-end text-right hidden sm:block">
             <li className="text-gray-500 text-sm">
               <ActiveLink activeClassName="active" href="/about"><a href="">About this project</a></ActiveLink>
@@ -66,7 +59,6 @@ const Navbar = () => {
           {showFilter && (
             <PopupMenu
               onClose={() => setShowFilter(false)}
-
               // key={`filter-card-${listIndex}`}
               // tags={tags}
               // index={listIndex}
@@ -81,5 +73,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;
