@@ -28,7 +28,7 @@ const Navbar = () => {
 
           <ul className="w-32 items-end text-center hidden sm:block">
             <li className="text-gray-500 text-sm">
-              <ActiveLink activeClassName="active" href="/"><a href="">Screens</a></ActiveLink>
+              <ActiveLink children="/apps" activeClassName="active" href="/"><a href="">Screens</a></ActiveLink>
             </li>
           </ul>
 
