@@ -58,12 +58,7 @@ const Navbar = () => {
 
           <ul className="self-end text-right lg:hidden sm:hidden md:hidden mt-2 py-6">
             <li className="font-bold text-gray-500 text-sm">
-            {/* <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
-            Filter
-        </Button> */}
-        
-        <MenuIcon onClick={() => setShowFilter(true)}  />
-              {/* <Link onClick={() => setShowFilter(true)} type="Primary" size="sm"><a href="">About</a></Link> */}
+                <MenuIcon onClick={() => setShowFilter(true)}  />
             </li>
           </ul>
         </div>
