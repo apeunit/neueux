@@ -19,12 +19,13 @@ const FeatArticle = ({ article, key }) => {
           <p className="text-xs pt-2">by <b>{article.author}</b></p>
         </div>
       </div>
-
-      <Link href={`/articles/${article.slug}`}>
-        <div className="aspect-w-2 aspect-h-1">
-          <img className="cursor-pointer object-cover" src={article.featured_image}/>
-        </div>
-      </Link>
+      <div className="w-1/2">
+        <Link href={`/articles/${article.slug}`}>
+          <div className="aspect-w-1 aspect-h-1">
+            <img className="cursor-pointer object-cover" src={article.featured_image}/>
+          </div>
+        </Link>
+      </div>
     </div>
 
   )
