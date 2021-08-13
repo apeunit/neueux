@@ -10,11 +10,9 @@ author: Maximilian Blazek
 date: 'August 9th, 2021'
 ---
 ## Addresses in the Internet
-![](https://res.cloudinary.com/ape-unit/image/upload/v1628859483/neueux/media/articles/Frame%202041.png)
 
 If you think back to your first interactions with the Internet, one of them is probably setting up an E-Mail address. For many people, it was (and is) their first interaction with the Internet and a gateway to many other services (aka. sign-up with E-Mail).
 Luckily we all got an E-Mail with the **mail@example.com** format instead of an IP address (which is the actual address computers use in the background) like **123.456.78.90**. Having a human-readable email address name or website name like **example.com** is, of course, way more convenient than having to remember the actual IP address — a “random” string of numbers.
-
 The precedent of using names instead of IP addresses on the user side was set in the 1970s on the ARPAnet — a predecessor to the Internet.  In 1971, Peggy Karp suggested  standardizing the mapping of names to IP addresses ([RFC226](https://datatracker.ietf.org/doc/html/rfc226), [RFC247](https://datatracker.ietf.org/doc/html/RFC247)). This custom was later adopted on the Internet in the form of domain names like **example.com**, **example.org** or **example.xyz**.
 Mapping names to IP addresses for the sake of usability is by no means a new idea. On the contrary, it was conceived almost 20 years before the invention of the Internet as we know it today.
 

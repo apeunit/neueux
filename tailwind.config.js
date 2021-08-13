@@ -32,10 +32,6 @@ module.exports = {
             'code::after': {
               content: 'none',
             },
-
-            img: {
-              float: theme('float.left'),
-            },
           },
         },
       }),
