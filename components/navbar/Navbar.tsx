@@ -33,13 +33,13 @@ const Navbar = () => {
           </ul>
 
           <ul className="w-32 items-end text-center hidden sm:block">
-            <li className={router.pathname.startsWith('/articles') ? "active" : ""}>
+            <li className={`text-gray-500 text-sm ${router.pathname.startsWith("/articles") ? "active" : ""} `}>
               <Link href="/articles">Articles</Link>
             </li>
           </ul>
 
           <ul className="w-1/2 items-end text-right hidden sm:block">
-            <li className={router.pathname.startsWith('/about') ? "active" : ""}>
+            <li className={`text-gray-500 text-sm ${router.pathname.startsWith("/about") ? "active" : ""} `}>
               <Link href="/about">About this project</Link>
             </li>
           </ul>
