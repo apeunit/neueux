@@ -21,7 +21,7 @@ const FeatArticle = ({ article, key }) => {
       </div>
 
       <Link href={`/articles/${article.slug}`}>
-        <div className="aspect-w-1 aspect-h-1">
+        <div className="aspect-w-2 aspect-h-1">
           <img className="cursor-pointer object-cover" src={article.featured_image}/>
         </div>
       </Link>
