@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import style from './markdown-styles.module.css';
+import BackButton from "components/BackButton";
 
 const App = ({ article, preview, slug }) => {
   console.log(preview);
@@ -24,12 +25,12 @@ const App = ({ article, preview, slug }) => {
     <Layout
       title={`${article.title} - Article`}
       description={article.summary}
-      backButton
       editable
       image={{
         src: article.featured_image,
       }}
     >
+      <BackButton url="/articles" />
       <main className="w-full mt-5 prose max-w-full">
       <div className="space-y-3 w-11/12 mx-auto">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
