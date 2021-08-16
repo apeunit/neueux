@@ -6,8 +6,7 @@ slug: trust
 category: neueux
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628511839/neueux/media/articles/Frame%202010.png
-summary: "Users will generally expect most interactions to be the same on blockchain as they are in "traditional" web products and services. If an interaction is perceived as different in blockchain, they will seek an explanation for the cause of this anomaly.
-In the case of transaction fees, users will quickly notice that the fees seem to change every time they make a transaction; they will want to know why that's the case. If no sufficient explanation is provided, they might become skeptical and develop distrust for the technology."
+summary: "Users will generally expect most interactions to be the same on blockchain as they are in "traditional" web products and services. If an interaction is perceived as different in blockchain, they will seek an explanation for the cause of this anomaly. In the case of transaction fees, users will quickly notice that the fees seem to change every time they make a transaction; they will want to know why that's the case. If no sufficient explanation is provided, they might become skeptical and develop distrust for the technology."
 date: 'August 9th, 2021'
 ---
 # **The Problem**
