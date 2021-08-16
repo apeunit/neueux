@@ -2,7 +2,7 @@
 id: ltq15cz4j
 title: 4/ Addresses
 author: Maximilian Blazek
-slug: addresses
+slug: 01_addresses
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628611403/neueux/media/articles/Frame16465%202037.png

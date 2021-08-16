@@ -2,7 +2,7 @@
 id: ltq15cz4l
 title: 1/ The UX Pitfalls of Blockchain
 author: Maximilian Blazek
-slug: intro_ux-pitfalls-of-blockchain
+slug: 04_intro_ux-pitfalls-of-blockchain
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628506140/neueux/media/articles/00_header_image.png
