@@ -52,7 +52,7 @@ const App = ({ article, preview, slug }) => {
             </div>
             <p className="font-light text-gray-500">{article.date}</p>
           </div>
-          <ReactMarkdown rehypePlugins={[rehype_raw] [rehype_sanitize]} className="prose prose-lg lg:prose-xl pt-16" children={article.content} />
+          <ReactMarkdown rehypePlugins={[rehype_raw]} className="prose prose-lg lg:prose-xl pt-16" children={article.content} />
         </div>
 
       </main>
