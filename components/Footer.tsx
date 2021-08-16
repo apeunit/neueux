@@ -11,7 +11,7 @@ const Footer = ({ editable }) => {
         <div className="lg:w-1/3  w-full text-sm">
           <p>
             We are a network of designers, researchers and developers initiated
-            by <a className="cursor-pointer underline">Ape Unit.</a> If this is interesting to you, please <a className="cursor-pointer underline">get in touch.</a>
+            by <a href="https://apeunit.com/" className="cursor-pointer underline">Ape Unit.</a> If this is interesting to you, please <a href="mailto:neueux@apeunit.com" className="cursor-pointer underline">get in touch.</a>
           </p>
           <p className="leading-loose text-sm pt-3.5">
             <Link href="/imprint">Imprint</Link>
@@ -19,7 +19,7 @@ const Footer = ({ editable }) => {
         </div>
         <div className="text-center lg:w-1/3  w-full pb-10 lg:pb-0 md:pb-0 ">
           <span className="text-4xl">👹</span>
-          <p className="text-gray-500 leading-loose text-sm pt-7">Supported by <a className="cursor-pointer underline">MolochDAO.</a></p>
+          <p className="text-gray-500 leading-loose text-sm pt-7">Supported by <a href="https://www.molochdao.com/" className="cursor-pointer underline">MolochDAO.</a></p>
         </div>
         {editable && (
           <div className="lg:w-1/3  w-full lg:text-right sm:text-right md:text-right hidden lg:block md:block sm:block">
