@@ -41,7 +41,7 @@ A good portion of the lost Bitcoin is likely a result of users not being activel
 Let’s say that our users have learned about their responsibility and are aware that they need to backup. Now the inconvenient part begins, the backup process.
 A seed (from which the private and public key are generated) usually looks something like this:
 
-`770cf2cc7e97cd6174d3cdd02d346e43ddaa1df00f5b42d4b71bb4dcc806426077665777da53d5f022f76607e72c7361463bc21522444d9512a0d24ebd51b0ab`
+```770cf2cc7e97cd6174d3cdd02d346e43ddaa1df00f5b42d4b71bb4dcc806426077665777da53d5f022f76607e72c7361463bc21522444d9512a0d24ebd51b0ab```
 
 You could, of course, back up this seed directly, but it would provide the same issues current crypto addresses have, as discussed in the Address article:
 
@@ -55,7 +55,7 @@ Other backup methods have been devised to improve the backup process’s user ex
 
 Currently, the most common way of generating and, consequently, backing up a wallet is a so-called "seed phrase" or "mnemonic phrase". The "seed phrase" is usually a group of 12 to 24 words. A mnemonic phrase usually looks something like this:
 
-`stem foam found piano cricket gorilla main you vacant cruel antique rifle`
+```stem foam found piano cricket gorilla main you vacant cruel antique rifle```
 
 These words can be used to create the seed and accordingly the private and public keys.
 If the device on which your wallet is stored is broken or lost, you can use your seed phrase to restore it on another device. These words are usually written down on a piece of paper (or similar) and stored in a "safe place" (or multiple safe places).
