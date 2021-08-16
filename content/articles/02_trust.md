@@ -2,7 +2,7 @@
 id: ltq15cz4k
 title: 3/ Trust
 author: Maximilian Blazek
-slug: trust
+slug: 02_trust
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628511839/neueux/media/articles/Frame%202010.png

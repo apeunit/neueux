@@ -2,7 +2,7 @@
 id: ltq15cz4a
 title: 2/ Recovery
 author: Maximilian Blazek
-slug: recovery
+slug: 03_recovery
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628507892/neueux/media/articles/Frame%202038.png
