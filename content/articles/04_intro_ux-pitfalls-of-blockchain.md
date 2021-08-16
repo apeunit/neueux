@@ -6,7 +6,7 @@ slug: intro_ux-pitfalls-of-blockchain
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628506140/neueux/media/articles/00_header_image.png
-summary: This is the first, introductory article of the eight-part article series we are launching, about the biggest UX problems we see in blockchain at the moment.
+summary: We started neueux with the Screen Gallery to have a quick way to see the current design patterns of popular blockchain applications at a glance. The screen gallery gives you an overview that lets you see not only the good designs, but also where potential UX challenges may lie. We are launching this article series to create a deeper awareness of the blockchain industry's UX challenges. We believe it is important to facilitate a deeper understanding of the problems before offering resources to solve them; that's why we are launching this series as the next step for the platform. The series is aimed at Designers which are new to blockchain and developers interested in furthering their understanding of the UX problems blockchain products are facing.
 date: 'August 9th, 2021'
 ---
 ## 1. Introduction
