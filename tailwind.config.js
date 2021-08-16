@@ -25,7 +25,7 @@ module.exports = {
               color: theme('colors.gray.700'),
               fontFamily: theme('fontFamily.mono'),
               backgroundColor: theme('colors.gray.200'),
-              'overflow-wrap': theme('wordBreak.break-words'),
+              'overflow-wrap': 'break-word',
             },
             'code::before': {
               content: 'none',
