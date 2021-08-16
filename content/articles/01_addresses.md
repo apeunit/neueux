@@ -6,7 +6,7 @@ slug: addresses
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628611403/neueux/media/articles/Frame16465%202037.png
-summary: "Addresses are one of the centerpieces of everything blockchain, and they typically look like this: 0x8eD92a86148723A980A408A1De2cFE746b056b24. An address is a user's unique identifier to which other users can send cryptocurrencies. Looking at the above address, anyone can see that it is not the most useful for everyday payments as it is not easy for humans to read or copy."
+summary: "Addresses are one of the centerpieces of everything blockchain. Looking at blockchain addresses, anyone can see that it is not the most optimal for everyday payments as it is not easy for humans to read or copy."
 date: 'August 9th, 2021'
 ---
 ## Addresses in the Internet

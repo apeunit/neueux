@@ -6,7 +6,7 @@ slug: trust
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628511839/neueux/media/articles/Frame%202010.png
-summary: "Blockchain has fundamental differences from traditional technologies that affect, among other things, how the app interacts with the user and vice versa. To avoid alienating users, blockchain applications need to explain why interactions are different from other platforms, and which information users need to pay special attention to."
+summary: "To avoid alienating users, blockchain applications need to explain why interactions are different compared to 'traditional' applications, and which information users need to pay special attention to."
 date: 'August 9th, 2021'
 ---
 # **The Problem**

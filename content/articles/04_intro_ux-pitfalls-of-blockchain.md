@@ -22,7 +22,7 @@ This first article will give a brief overview of the problems we want to address
 
 ## 2. Addresses
 
-*Addresses are one of the centerpieces of everything blockchain, and they typically look like this: 0x8eD92a86148723A980A408A1De2cFE746b056b24. An address is a user's unique identifier to which other users can send cryptocurrencies. Looking at the above address, anyone can see that it is not the most useful for everyday payments as it is not easy for humans to read or copy.*
+*Addresses are one of the centerpieces of everything blockchain, and they typically look like this: 0x8eD92a86148723A980A408A1De2cFE746b056b24. An address is a user's unique identifier to which other users can send cryptocurrencies. Looking at the above address, anyone can see that it is not the most optimal for everyday payments as it is not easy for humans to read or copy.*
 
 In the second article, we will go in-depth into why we think these addresses are a UX issue and how current industry players are trying to solve this UX issue.
 
