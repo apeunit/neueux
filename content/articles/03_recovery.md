@@ -5,8 +5,12 @@ author: Maximilian Blazek
 slug: 03_recovery
 category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1628507892/neueux/media/articles/Frame%202038.png
-summary: "With the need to do their own backups, users have a high level of responsibility, which is uncommon among other popular apps. The backup process and the responsibility that comes with it are, therefore, a significant inconvenience to users."
+  https://res.cloudinary.com/ape-unit/image/upload/v1629127521/neueux/media/articles/Frame_2038.png
+summary: >-
+  With the need to do their own backups, users have a high level of
+  responsibility, which is uncommon among other popular apps. The backup process
+  and the responsibility that comes with it are, therefore, a significant
+  inconvenience to users.
 date: 'August 9, 2021'
 ---
 ## Background
