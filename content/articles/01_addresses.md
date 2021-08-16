@@ -1,12 +1,12 @@
 ---
 id: ltq15cz4j
 title: 4/ Addresses
+author: Maximilian Blazek
 slug: addresses
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628611403/neueux/media/articles/Frame16465%202037.png
-summary: "Considering how vital wallets and their addresses are to the blockchain ecosystem, it is baffling that no one realized earlier in the development of different blockchain protocols how important human-readable names are to the usability and adoption of this technology."
-author: Maximilian Blazek
+summary: Considering how vital wallets and their addresses are to the blockchain ecosystem, it is baffling that no one realized earlier in the development of different blockchain protocols how important human-readable names are to the usability and adoption of this technology.
 date: 'August 9th, 2021'
 ---
 ## Addresses in the Internet

@@ -6,7 +6,7 @@ slug: intro_ux-pitfalls-of-blockchain
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628506140/neueux/media/articles/00_header_image.png
-summary: "We are launching this article series to create a deeper awareness of the blockchain industry's UX challenges. The series is aimed at Designers which are new to blockchain and developers interested in furthering their understanding of the UX problems blockchain products are facing."
+summary: We are launching this article series to create a deeper awareness of the blockchain industrys UX challenges. The series is aimed at Designers which are new to blockchain and developers interested in furthering their understanding of the UX problems blockchain products are facing.
 date: 'August 9th, 2021'
 ---
 ## 1. Introduction
