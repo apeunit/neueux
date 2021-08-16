@@ -6,7 +6,7 @@ slug: recovery
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628507892/neueux/media/articles/Frame%202038.png
-summary: "Statistics show that over 20% of bitcoin's supply has already been lost and about 4% of the current supply is lost annually. Statistics like these suggest that it is relatively easy to lose one's cryptocurrencies and recovery methods will have to improve."
+summary: "If a user loses their crypto wallet, they cannot call anyone to help them recover it - the wallet must be backed up in order to be recovered. Backing up the wallet means (in most cases) writing down a secret recovery phrase. With recovery phrases, users have a high level of responsibility, which is uncommon among other popular apps. The backup process and the responsibility that comes with it are, therefore, a significant inconvenience to users."
 date: 'August 9, 2021'
 ---
 ## Background
