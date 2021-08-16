@@ -6,7 +6,7 @@ slug: recovery
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628507892/neueux/media/articles/Frame%202038.png
-summary: If Blockchain is going to hold a significant portion of the wealth of a large portion of the population in the future, then recovery methods will have to improve. Most of the world's population could not afford to lose a significant portion of their savings. Statistics show that over 20% of bitcoin's supply has already been lost and about 4% of the current supply is lost annually. Statistics like these suggest that it is relatively easy to lose one's cryptocurrencies.
+summary: "If Blockchain is going to hold a significant portion of the wealth of a large portion of the population in the future, then recovery methods will have to improve. Most of the world's population could not afford to lose a significant portion of their savings. Statistics show that over 20% of bitcoin's supply has already been lost and about 4% of the current supply is lost annually. Statistics like these suggest that it is relatively easy to lose one's cryptocurrencies."
 date: 'August 9, 2021'
 ---
 ## Background
