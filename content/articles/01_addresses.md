@@ -5,7 +5,7 @@ slug: addresses
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628611403/neueux/media/articles/Frame16465%202037.png
-summary: "Considering how vital wallets and their addresses are to the blockchain ecosystem, it is baffling that no one realized earlier in the development of different blockchain protocols how important human-readable names are to the usability and adoption of this technology. Mapping names to addresses has been commonplace since the 1970s. One can hardly expect first-time wallet users coming from the user-friendly applications on the Internet to be satisfied with the poor usability of crypto addresses."
+summary: "Considering how vital wallets and their addresses are to the blockchain ecosystem, it is baffling that no one realized earlier in the development of different blockchain protocols how important human-readable names are to the usability and adoption of this technology."
 author: Maximilian Blazek
 date: 'August 9th, 2021'
 ---
