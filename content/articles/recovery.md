@@ -1,13 +1,13 @@
 ---
-id: ltq15cz4l
-title: Recovery
+id: ltq15cz4a
+title: 2/ Recovery
 author: Maximilian Blazek
 slug: recovery
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628507892/neueux/media/articles/Frame%202038.png
-summary: UX issues of recovery in Blockchain.
-date: 'August 9th, 2021'
+summary: In this article we will discuss the UX issues of self-responsibility, the need for backups, and the backup methods themselfs.
+date: 'August 9, 2021'
 ---
 ## Background
 

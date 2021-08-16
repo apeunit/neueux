@@ -1,6 +1,6 @@
 ---
 id: ltq15cz4j
-title: Addresses
+title: 4/ Addresses
 slug: addresses
 category: Blockchain UX
 featured_image: >-
