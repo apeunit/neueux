@@ -6,7 +6,7 @@ slug: recovery
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1628507892/neueux/media/articles/Frame%202038.png
-summary: Statistics show that over 20% of bitcoins supply has already been lost and about 4% of the current supply is lost annually. Statistics like these suggest that it is relatively easy to lose ones cryptocurrencies and recovery methods will have to improve.
+summary: "Statistics show that over 20% of bitcoin's supply has already been lost and about 4% of the current supply is lost annually. Statistics like these suggest that it is relatively easy to lose one's cryptocurrencies and recovery methods will have to improve."
 date: 'August 9, 2021'
 ---
 ## Background
