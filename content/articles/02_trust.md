@@ -60,29 +60,25 @@ Essentially, transactions on blockchains are not reversible. When people uninten
 The following four examples explain situations where inexperienced users could become suspicious of cryptocurrency transactions — suspicion which could easily be fixed by providing explanations. I will show how different wallets incorporate explanations for some of these interactions into their user flow.
 
 ### Onboarding
-
-![](https://res.cloudinary.com/ape-unit/image/upload/v1629205504/neueux/media/articles/Frame%20316.png)
+<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629205504/neueux/media/articles/Frame%20316.png" alt="">
 
 During the MEW app’s onboarding process, users are provided with a rundown of the most important things to be aware of when dealing with cryptocurrencies. In point 2 they warn their users about the finality of cryptocurrency transactions.
 
 ### Part of the process
-
-![](https://res.cloudinary.com/ape-unit/image/upload/v1629205519/neueux/media/articles/Frame%202005.png)
+<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629205519/neueux/media/articles/Frame%202005.png" alt="">
 
 Zengo informs their users about the finality of cryptocurrency transactions as part of the sending process. Instead of overloading users with information right when they download the app, they make the information available at the time it is most relevant to the user — in the transaction process.
 
 ### Tooltips
 
-![](https://res.cloudinary.com/ape-unit/image/upload/v1629205539/neueux/media/articles/Frame%202007.png)
+<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629205539/neueux/media/articles/Frame%202007.png" alt="">
+<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629205540/neueux/media/articles/Frame%202008.png" alt="">
 
-![](https://res.cloudinary.com/ape-unit/image/upload/v1629205540/neueux/media/articles/Frame%202008.png)
-
-Coinbase provides information about miner fees in the form of a tooltip.
+The Coinbase wallet provides information about miner fees in the form of a tooltip.
 Tooltips are a way of making information available when it is most relevant to a user. However, in this case, the information is only shown once the user seeks out help and clicks on the tooltip.
 
 ### Knowledge base
-
-![](https://res.cloudinary.com/ape-unit/image/upload/v1629205584/neueux/media/articles/Frame%202006.png)
+<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629205584/neueux/media/articles/Frame%202006.png" alt="">
 
 Lastly, information can also be given in the form of a knowledge base; the MEW app uses their education center as a knowledge base.
 The goal of a knowledge base seems to be to fulfill the users' desire to learn rather than to clarify inconsistencies when they come up.
