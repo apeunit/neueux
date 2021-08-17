@@ -24,7 +24,7 @@ This responsibility, the need for backups, and the backup methods themselves are
 
 ## The Problem
 
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629205400/neueux/media/articles/Frame%20317.png" alt="">
+<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238157/neueux/media/articles/Frame%20317.jpg" alt="">
 
 The self-sovereignty of cryptocurrencies is what attracts many people, so there is no changing the fact that users must take full responsibility for their keys and, consequently, their funds.
 
@@ -58,7 +58,8 @@ You could, of course, back up this seed directly, but it would provide the same 
 Other backup methods have been devised to improve the backup process’s user experience. In the following section, I will present the most popular method as well as one promising alternative.
 
 ### Mnemonic Phrase
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629205433/neueux/media/articles/Frame%20316.png" alt="">
+
+<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238156/neueux/media/articles/Frame%20316.jpg" alt="">
 
 Currently, the most common way of generating and, consequently, backing up a wallet is a so-called "seed phrase" or "mnemonic phrase". The "seed phrase" is usually a group of 12 to 24 words. A mnemonic phrase usually looks something like this:
 
@@ -74,7 +75,7 @@ There are methods to partially circumvent this problem. However, there are still
 
 ### Social Recovery
 
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629205451/neueux/media/articles/Frame%20315.png" alt="">
+<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238154/neueux/media/articles/Frame%20315.jpg" alt="">
 
 In an effort to provide a better user experience during the backup process and higher security overall, some wallets have adopted a "social recovery" process. With social recovery, users won't have to write down a seed phrase. Instead, users appoint guardians to their wallets.
 
