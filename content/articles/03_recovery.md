@@ -5,7 +5,7 @@ author: Maximilian Blazek
 slug: 03_recovery
 category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1629204000/neueux/media/articles/header_recovery.png
+  https://res.cloudinary.com/ape-unit/image/upload/v1629205276/neueux/media/articles/header_recovery.jpg
 summary: >-
   With the need to do their own backups, users have a high level of
   responsibility, which is uncommon among other popular apps. The backup process
