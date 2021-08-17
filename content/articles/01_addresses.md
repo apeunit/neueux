@@ -26,7 +26,7 @@ Mapping names to IP addresses for the sake of usability is by no means a new ide
 
 Wallets on the Blockchain serve a similar purpose to E-Mail Addresses on the Internet. They are the gateway to most Blockchain based products and services. You want to buy an NFT? You will have to "log in" to the NFT-marketplace and later pay with your wallet. Wallets are, similarly to E-Mail on the Internet, the first and primary way of interacting with this new technology (Blockchain) and therefore play an extremely vital role in the usability and adoption of the Blockchain ecosystem.
 
-Unlike mail providers, cryptocurrency wallets don't give you a nice "name" like **mail@example.com**, but an address that in most cases looks similar to this `0xd8da6bf26964af9d7eed9e03e53415d37aa96045`. It’s not hard to see that, in terms of usability, this is way worse than an E-Mail-Address (which people are used to from the Internet). Wallet addresses are even longer and less memorable than IP addresses.But the usability issues of wallet addresses don't end with simply being hard to remember.
+Unlike mail providers, cryptocurrency wallets don't give you a nice "name" like **mail@example.com**, but an address that in most cases looks similar to this **0xd8da6bf26964af9d7eed9e03e53415d37aa96045**. It’s not hard to see that, in terms of usability, this is way worse than an E-Mail-Address (which people are used to from the Internet). Wallet addresses are even longer and less memorable than IP addresses.But the usability issues of wallet addresses don't end with simply being hard to remember.
 
 * Due to their length and complexity, it is easy to make mistakes when typing the address by hand.
 * It is nearly impossible to recite it to someone without either person making a mistake.
