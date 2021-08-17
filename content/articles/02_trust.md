@@ -73,7 +73,7 @@ Zengo informs their users about the finality of cryptocurrency transactions as p
 
 ### Tooltips
 
-<img src="https://res.cloudinary.com/ape-unit/image/upload/v1629238913/neueux/media/articles/Frame%203000.jpg" alt="">
+<img class="article-image-middle" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238913/neueux/media/articles/Frame%203000.jpg" alt="">
 
 The Coinbase wallet provides information about miner fees in the form of a tooltip.
 Tooltips are a way of making information available when it is most relevant to a user. However, in this case, the information is only shown once the user seeks out help and clicks on the tooltip.
