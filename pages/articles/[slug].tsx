@@ -7,9 +7,9 @@ import { useRouter } from "next/router";
 import BackButton from "components/BackButton";
 import rehypeRaw from 'rehype-raw'
 import rehypeSanitize, {defaultSchema} from 'rehype-sanitize'
-import deepmerge from 'deepmerge'
+//import deepmerge from 'deepmerge'
 
-var schema = deepmerge(defaultSchema, {attributes: {'*': ['className']}})
+//var schema = deepmerge(defaultSchema, {attributes: {'*': ['className']}})
 
 const App = ({ article, preview, slug }) => {
   console.log(preview);
