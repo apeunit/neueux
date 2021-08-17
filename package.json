@@ -30,7 +30,7 @@
     "prebuild-webpack-plugin": "^1.1.1",
     "raw-loader": "^4.0.2",
     "react-helmet": "^6.1.0",
-    "react-markdown": "^7.0.0",
+    "react-markdown": "^6.0.2",
     "react-tinacms-editor": "^0.38",
     "react-tinacms-github": "^0.38",
     "react-tinacms-inline": "^0.38",
