@@ -78,11 +78,7 @@ There are methods to partially circumvent this problem. However, there are still
 
 In an effort to provide a better user experience during the backup process and higher security overall, some wallets have adopted a "social recovery" process. With social recovery, users won't have to write down a seed phrase. Instead, users appoint guardians to their wallets.
 
-These guardians can be:
-
-* Another device of the user, a laptop, for example.
-* Friends and family.
-* A third-party provider.
+These guardians can be other devices, friends and family, aswell as third-party providers.
 
 If the wallet is lost, the user can ask the guardians to reinstate the wallet on another device. To do that, guardians just have to sign a transaction, similar to a normal cryptocurrency transfer.
 
