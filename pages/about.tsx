@@ -43,7 +43,7 @@ const AboutPage = ({ content, data }) => {
           </div>
         </div>
         <article className="prose lg:prose-xl md:prose-xl sm:prose-xl list">
-          <ReactMarkdown child={content} ></ReactMarkdown>
+          <ReactMarkdown children={content} ></ReactMarkdown>
         </article>
       </main>
     </Layout>
