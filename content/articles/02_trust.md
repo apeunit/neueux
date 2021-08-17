@@ -103,6 +103,6 @@ At some point, we would like to offer these resources on neueux. By allowing ope
 
 1: <a name="1" href="https://doi.org/10.1007/s10676-010-9253-3">Pieters 2011</a>
 
-2: <a name="2" href="https://doi.org/10.2307/249487">Gregor, Benbasat, 1999</a>
+2: <a name="2" href="https://doi.org/10.2307/249487">Gregor, Benbasat 1999</a>
 
 3: <a name="3" href="https://www.irishtimes.com/business/economy/eu-to-ban-cryptocurrency-anonymity-in-anti-money-laundering-plan-1.4626129">Irishtimes 2021</a>
