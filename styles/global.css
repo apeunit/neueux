@@ -106,9 +106,9 @@ ul.nav {
 }
 
 .article-image-left {
-  @apply lg:float-left lg:py-5 lg:-ml-1/2 w-3/4 item-center;
+  @apply lg:float-left lg:py-5 lg:-ml-1/2 w-3/4;
 }
 
 .article-image-right {
-  @apply lg:float-right lg:py-5 lg:ml-1/2 w-3/4 item-center;
+  @apply lg:float-right lg:py-5 lg:ml-1/2 w-3/4;
 }
