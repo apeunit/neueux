@@ -116,3 +116,9 @@ ul.nav {
   margin-bottom: 0 !important;
   @apply mx-auto lg:float-right lg:p-5 lg:-mr-1/2 w-2/3;
 }
+
+.article-image-middle {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  @apply lg:p-5 lg:-mx-1/2 w-2/3;
+}
