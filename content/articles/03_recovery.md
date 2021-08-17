@@ -24,6 +24,8 @@ This responsibility, the need for backups, and the backup methods themselves are
 
 ## The Problem
 
+![](https://res.cloudinary.com/ape-unit/image/upload/v1629205400/neueux/media/articles/Frame%20317.png)
+
 The self-sovereignty of cryptocurrencies is what attracts many people, so there is no changing the fact that users must take full responsibility for their keys and, consequently, their funds.
 
 Even though people value the self-sovereignty of cryptocurrencies, many underestimate what kind of responsibility it entails. As a result, many people back up their wallet poorly or don't back it up at all. There are many accounts of people losing huge amounts of money because they haven’t properly backed up their wallet. There are studies which suggest that about 20% of bitcoin has been lost forever (irretrievably stuck in wallets). [1](#1), [2](#2)
@@ -45,7 +47,7 @@ A good portion of the lost Bitcoin is likely a result of users not being activel
 Let’s say that our users have learned about their responsibility and are aware that they need to backup. Now the inconvenient part begins, the backup process.
 A seed (from which the private and public key are generated) usually looks something like this:
 
-```770cf2cc7e97cd6174d3cdd02d346e43ddaa1df00f5b42d4b71bb4dcc806426077665777da53d5f022f76607e72c7361463bc21522444d9512a0d24ebd51b0ab```
+`770cf2cc7e97cd6174d3cdd02d346e43ddaa1df00f5b42d4b71bb4dcc806426077665777da53d5f022f76607e72c7361463bc21522444d9512a0d24ebd51b0ab`
 
 You could, of course, back up this seed directly, but it would provide the same issues current crypto addresses have, as discussed in the Address article:
 
@@ -57,9 +59,11 @@ Other backup methods have been devised to improve the backup process’s user ex
 
 ### Mnemonic Phrase
 
+![](https://res.cloudinary.com/ape-unit/image/upload/v1629205433/neueux/media/articles/Frame%20316.png)
+
 Currently, the most common way of generating and, consequently, backing up a wallet is a so-called "seed phrase" or "mnemonic phrase". The "seed phrase" is usually a group of 12 to 24 words. A mnemonic phrase usually looks something like this:
 
-```stem foam found piano cricket gorilla main you vacant cruel antique rifle```
+`stem foam found piano cricket gorilla main you vacant cruel antique rifle`
 
 These words can be used to create the seed and accordingly the private and public keys.
 If the device on which your wallet is stored is broken or lost, you can use your seed phrase to restore it on another device. These words are usually written down on a piece of paper (or similar) and stored in a "safe place" (or multiple safe places).
@@ -70,6 +74,8 @@ Additionally, mnemonic phrases don't prevent theft. Quite the contrary actually,
 There are methods to partially circumvent this problem. However, there are still security issues, and increasing security would increase the mental overhead and worsen the UX of backing up even more.
 
 ### Social Recovery
+
+![](https://res.cloudinary.com/ape-unit/image/upload/v1629205451/neueux/media/articles/Frame%20315.png)
 
 In an effort to provide a better user experience during the backup process and higher security overall, some wallets have adopted a "social recovery" process. With social recovery, users won't have to write down a seed phrase. Instead, users appoint guardians to their wallets.
 
@@ -107,7 +113,7 @@ The first step for preventing potential loss is for wallet providers to properly
 Mnemonic phrases are obviously better than backing up the raw seed, but they come with several UX and security drawbacks. While social recovery is a big step forward in terms of UX and security, the UX still isn't perfect.
 UX designers and developers will have to continue working together to either improve current recovery methods or develop new and better ones. Recovery UX will play a critical role in preparing blockchain technology to hold the wealth of a majority of  people in the future.
 
-- - -
+***
 
 #### Sources
 
