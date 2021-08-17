@@ -106,5 +106,5 @@ ul.nav {
 }
 
 .article-image-left {
-  @apply lg:float-left lg:p-5 lg:-ml-1/2 lg:-mb-5 w-3/4;
+  @apply lg:float-left lg:p-5 lg:-ml-1/2 lg:-mb-5 w-3/4 item-center;
 }
