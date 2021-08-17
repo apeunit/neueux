@@ -5,7 +5,7 @@ author: Maximilian Blazek
 slug: 02_trust
 category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1629203984/neueux/media/articles/header_trust.png
+  https://res.cloudinary.com/ape-unit/image/upload/v1629205256/neueux/media/articles/header_trust.jpg
 summary: >-
   To avoid alienating users, blockchain applications need to explain why
   interactions are different compared to 'traditional' applications, and which
