@@ -5,8 +5,11 @@ author: Maximilian Blazek
 slug: 01_addresses
 category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1628611403/neueux/media/articles/Frame16465%202037.png
-summary: "Addresses are one of the centerpieces of everything blockchain. Looking at blockchain addresses, anyone can see that it is not the most optimal for everyday payments as it is not easy for humans to read or copy."
+  https://res.cloudinary.com/ape-unit/image/upload/v1629202859/neueux/media/articles/addresses.png
+summary: >-
+  Addresses are one of the centerpieces of everything blockchain. Looking at
+  blockchain addresses, anyone can see that it is not the most optimal for
+  everyday payments as it is not easy for humans to read or copy.
 date: 'August 9th, 2021'
 ---
 ## Addresses in the Internet
