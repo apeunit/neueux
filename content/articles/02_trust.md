@@ -14,7 +14,7 @@ date: 'August 9th, 2021'
 ---
 ## The Problem
 Most people would agree that you have to be able to trust the system that holds a significant amount of your (financial) wealth. Therefore, it’s crucial for the mass adoption of blockchain and cryptocurrencies, that users coming into the blockchain ecosystem learn to trust it.
-Trust often appears to involve the belief in an explanation of the person or thing we do or do not trust. In this sense, trust and explanation seem to be inherently linked to one another. ([1](#1))
+Trust often appears to involve the belief in an explanation of the person or thing we do or do not trust. In this sense, trust and explanation seem to be inherently linked to one another. [1](#1)
 In previous articles in this series, we established that cryptocurrency wallets would be one of the first and primary interactions with blockchain technology for many people.
 Considering that trust will be crucial to the adoption of blockchain, and that wallets are one of the first interactions with the technology, it seems that the burden of educating new users and creating trust falls on wallets.
 In my research, I found that many wallets don't provide enough explanation to cultivate trust. When I think back to my first experience with cryptocurrencies and when I created my first wallet, I had to go out of my way to inform myself about the peculiarities of blockchain. **Why is the transaction fee different every time I make a transaction?**
@@ -25,7 +25,7 @@ The absence of such explanations might not prevent users from being able to oper
 >
 >*2.) Do benefits arise from the use of explanations? What kinds of benefits?*
 >Explanation use has been shown to have positive outcomes, better performance, higher user perceptions of the system and in some cases, improved learning.
-([2](#2))
+[2](#2)
 
 As this paper suggests, it’s especially the peculiarities, the *perceived anomalies*, that users seek explanations for. Blockchain has many of these peculiarities. Most of the perceived anomalies in the context of blockchain are the differences in interactions on decentralized applications when compared to web applications we know today.
 Users will generally expect most interactions to be the same on blockchain as they are in "traditional" web products and services. If an interaction is perceived as different in blockchain, they will seek an explanation for the cause of this anomaly.
@@ -43,7 +43,7 @@ People who are used to transactions from traditional payment services may be con
 Again, the time a transaction takes to go through depends on the amount of transaction fees the user paid and how busy the network is. So, if a user decides they want to cheap out on the transaction fee while the network is receiving high traffic, it might take (very) long for the transaction to go through. If a user doesn't know that the transaction time is based on both the fee they paid and the current status of the network, they might get confused and frustrated that their simple transaction is taking so long.
 
 ### Transactions are public
-Many newspapers report on cryptocurrencies as if they are completely [anonymous and untraceable](#3), so it might be surprising to users unfamiliar with blockchain that this is not the case. In fact, most blockchains are only pseudonymous and transactions are public for anyone to see.
+Many newspapers report on cryptocurrencies as if they are completely anonymous and untraceable, so it might be surprising to users unfamiliar with blockchain that this is not the case. In fact, most blockchains are only pseudonymous and transactions are public for anyone to see. [3](#3)
 If someone knows your cryptocurrency address, they can see how much "money" is in your account, as well as every transaction your account has ever been involved in. This might lead to uncomfortable situations if a user thinks that their transactions are private (as they are in traditional payment services) because anyone who knows their address could see all of their potentially compromising transactions.
 
 ### Transactions are final

@@ -26,7 +26,7 @@ This responsibility, the need for backups, and the backup methods themselves are
 
 The self-sovereignty of cryptocurrencies is what attracts many people, so there is no changing the fact that users must take full responsibility for their keys and, consequently, their funds.
 
-Even though people value the self-sovereignty of cryptocurrencies, many underestimate what kind of responsibility it entails. As a result, many people back up their wallet poorly or don't back it up at all. There are many accounts of people losing huge amounts of money because they haven’t properly backed up their wallet. There are studies which suggest that about 20% of bitcoin has been lost forever (irretrievably stuck in wallets). ([1](https://static1.squarespace.com/static/5d580747908cdc0001e6792d/t/5e98dde5558a587a09fac0cc/1587076583519/research+note+4.17.pdf), [2](https://blog.chainalysis.com/reports/bitcoin-market-data-exchanges-trading))
+Even though people value the self-sovereignty of cryptocurrencies, many underestimate what kind of responsibility it entails. As a result, many people back up their wallet poorly or don't back it up at all. There are many accounts of people losing huge amounts of money because they haven’t properly backed up their wallet. There are studies which suggest that about 20% of bitcoin has been lost forever (irretrievably stuck in wallets). [1](#1), [2](#2)
 
 I think that backing up ones wallet is underestimated because such a high level of self-responsibility is uncommon amongst most services and products. How many web2 products do you know where you can't recover your account through their customer support?
 
@@ -98,7 +98,7 @@ But there are still points that users might find inconvenient:
 
 ## Conclusion
 
-According to some reports, many people live paycheck to paycheck ([ex. 54% of people in the USA](https://www.pymnts.com/study/paycheck-to-paycheck-consumer-finances-american-households/)).
+According to some reports, many people live paycheck to paycheck ex. 54% of people in the USA. [3](#3)
 If Blockchain is going to hold a significant portion of the wealth of a large portion of the population in the future, then recovery methods will have to improve. Most of the world's population could not afford to lose a significant portion of their savings. Statistics show that over 20% of bitcoin's supply has already been lost and about 4% of the current supply is lost annually. Statistics like these suggest that it is relatively easy to lose one's cryptocurrencies.
 
 The backup and recovery processes should definitely not be an afterthought in the design process of a wallet. While the backup process might be cumbersome for users I think there is no worse wallet user experience than losing access to all of your funds.
@@ -106,3 +106,11 @@ The backup and recovery processes should definitely not be an afterthought in th
 The first step for preventing potential loss is for wallet providers to properly educate their users about their self-responsibility and the importance of backing up.
 Mnemonic phrases are obviously better than backing up the raw seed, but they come with several UX and security drawbacks. While social recovery is a big step forward in terms of UX and security, the UX still isn't perfect.
 UX designers and developers will have to continue working together to either improve current recovery methods or develop new and better ones. Recovery UX will play a critical role in preparing blockchain technology to hold the wealth of a majority of  people in the future.
+
+- - -
+
+#### Sources
+
+1: <a name="1" href="https://static1.squarespace.com/static/5d580747908cdc0001e6792d/t/5e98dde5558a587a09fac0cc/1587076583519/research+note+4.17.pdf">Cane Island Digital Research 2020</a>
+2: <a name="2" href="https://blog.chainalysis.com/reports/bitcoin-market-data-exchanges-trading">Chainalysis Insights 2020</a>
+3: <a name="3" href="https://www.pymnts.com/study/paycheck-to-paycheck-consumer-finances-american-households/">PYMNTS Reality Check 2021</a>
