@@ -6,10 +6,10 @@ import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 import BackButton from "components/BackButton";
 import rehypeRaw from 'rehype-raw'
-import rehypeSanitize, {defaultSchema} from 'rehype-sanitize'
-import deepmerge from 'deepmerge'
+import rehypeSanitize from 'rehype-sanitize'
+//import deepmerge from 'deepmerge'
 
-var schema = deepmerge(defaultSchema, {attributes: {'*': ['className']}})
+//var schema = deepmerge(defaultSchema, {attributes: {'*': ['className']}})
 
 const App = ({ article, preview, slug }) => {
   console.log(preview);
@@ -55,7 +55,7 @@ const App = ({ article, preview, slug }) => {
             </div>
             <p className="font-light text-gray-500">{article.date}</p>
           </div>
-          <ReactMarkdown rehypePlugins={[[rehypeSanitize, {schema}], rehypeRaw]} className="prose prose-lg lg:prose-xl pt-16" children={article.content} />
+          <ReactMarkdown rehypePlugins={[rehypeSanitize, rehypeRaw]} className="prose prose-lg lg:prose-xl pt-16" children={article.content} />
         </div>
 
       </main>
