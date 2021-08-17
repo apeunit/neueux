@@ -14,18 +14,19 @@ date: 'August 9th, 2021'
 ---
 # The Problem
 Most people would agree that you have to be able to trust the system that holds a significant amount of your (financial) wealth. Therefore, it’s crucial for the mass adoption of blockchain and cryptocurrencies, that users coming into the blockchain ecosystem learn to trust it.
-Trust often appears to involve the belief in an explanation of the person or thing we do or do not trust. In this sense, trust and explanation seem to be inherently linked to one another.
+Trust often appears to involve the belief in an explanation of the person or thing we do or do not trust. In this sense, trust and explanation seem to be inherently linked to one another. ([1](#1))
 In previous articles in this series, we established that cryptocurrency wallets would be one of the first and primary interactions with blockchain technology for many people.
 Considering that trust will be crucial to the adoption of blockchain, and that wallets are one of the first interactions with the technology, it seems that the burden of educating new users and creating trust falls on wallets.
 In my research, I found that many wallets don't provide enough explanation to cultivate trust. When I think back to my first experience with cryptocurrencies and when I created my first wallet, I had to go out of my way to inform myself about the peculiarities of blockchain. **Why is the transaction fee different every time I make a transaction?**
 The absence of such explanations might not prevent users from being able to operate a wallet, or other blockchain applications. However, it may make them refrain from actually using these applications if they mistrust the technology. **Why is the transaction fee suddenly so high? Am I being scammed?**
 
-*1.) Do users of intelligent systems want explanations? Why are explanations needed?*
-It appears that explanations should be provided in intelligent systems, despite the low use observed in some situations. This low use may be, at least in part, occasioned by the desire to avoid expending cognitive effort and the Production Paradox. The occasions on which users want explanations are likely to be highly context-specific. These occasions include the need to resolve perceived anomalies, the desire to learn on the user’s part, and a lack of knowledge of the terms or procedures used by the intelligent system. [...]*
-
-*2.) Do benefits arise from the use of explanations? What kinds of benefits?*
-Explanation use has been shown to have positive outcomes, better performance, higher user perceptions of the system and in some cases, improved learning.
-
+>*1.) Do users of intelligent systems want explanations? Why are explanations needed?*
+>It appears that explanations should be provided in intelligent systems, despite the low use observed in some situations. This low use may be, at least in part, occasioned by the desire to avoid expending cognitive effort and the Production Paradox. The occasions on which users want explanations are likely to be highly context-specific. These occasions include the need to resolve perceived anomalies, the desire to learn on the user’s part, and a lack of knowledge of the terms or procedures used by the intelligent system. [...]*
+>
+>*2.) Do benefits arise from the use of explanations? What kinds of benefits?*
+>Explanation use has been shown to have positive outcomes, better performance, higher user perceptions of the system and in some cases, improved learning.
+>
+>([2](#2))
 
 As this paper suggests, it’s especially the peculiarities, the *perceived anomalies*, that users seek explanations for. Blockchain has many of these peculiarities. Most of the perceived anomalies in the context of blockchain are the differences in interactions on decentralized applications when compared to web applications we know today.
 Users will generally expect most interactions to be the same on blockchain as they are in "traditional" web products and services. If an interaction is perceived as different in blockchain, they will seek an explanation for the cause of this anomaly.
@@ -74,3 +75,10 @@ However, the question might arise: How can we raise the overall level of explana
 In my opinion, a collection of open source explanations and illustrations focusing on the peculiarities of blockchain is the answer. It would empower the designers and developers of wallets and other blockchain applications to take these explanations and integrate them into their apps. Also, it would remove their need to invest personal resources into creating high quality explanations and illustrations.
 
 At some point, we would like to offer these resources on neueux. By allowing open source contributors to work out which explanations and illustrations would be most useful and are of high quality, we want to make a valuable contribution to the improvement of UX in blockchain.
+
+- - -
+
+### Sources
+1: <a name="1" href="https://doi.org/10.1007/s10676-010-9253-3">Pieters 2011</a>
+2: <a name="2" href="https://doi.org/10.2307/249487">Gregor, Benbasat, 1999</a>
+3: <a name="3" href="https://www.irishtimes.com/business/economy/eu-to-ban-cryptocurrency-anonymity-in-anti-money-laundering-plan-1.4626129">Irishtimes 2021</a>
