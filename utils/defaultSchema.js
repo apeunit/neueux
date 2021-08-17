@@ -113,6 +113,7 @@ export const defaultSchema = {
         'charOff',
         'charSet',
         'checked',
+        'className',
         'clear',
         'cols',
         'colSpan',
