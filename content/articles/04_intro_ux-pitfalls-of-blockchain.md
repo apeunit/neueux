@@ -5,7 +5,7 @@ author: Maximilian Blazek
 slug: 04_intro_ux-pitfalls-of-blockchain
 category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1629204016/neueux/media/articles/header_intro.png
+  https://res.cloudinary.com/ape-unit/image/upload/v1629205296/neueux/media/articles/header_intro.jpg
 summary: >-
   We are launching this article series to create a deeper awareness of the
   blockchain industry's UX challenges. The series is aimed at Designers which
