@@ -60,26 +60,26 @@ Essentially, transactions on blockchains are not reversible. When people uninten
 The following four examples explain situations where inexperienced users could become suspicious of cryptocurrency transactions — suspicion which could easily be fixed by providing explanations. I will show how different wallets incorporate explanations for some of these interactions into their user flow.
 
 ### Onboarding
-<div class="block ">
+<div class="grid grid-cols-2">
   <p>During the MEW app’s onboarding process, users are provided with a rundown of the most important things to be aware of when dealing with cryptocurrencies. In point 2 they warn their users about the finality of cryptocurrency transactions.</p>
   <img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238914/neueux/media/articles/Frame%20316111.jpg" alt="">
 </div>
 
 
 ### Part of the process
-<div class="block">
+<div class="grid grid-cols-2">
   <p>Zengo informs their users about the finality of cryptocurrency transactions as part of the sending process. Instead of overloading users with information right when they download the app, they make the information available at the time it is most relevant to the user — in the transaction process.</p>
   <img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238915/neueux/media/articles/Frame%2020051111.jpg" alt="">
 </div>
 
 ### Tooltips
-<div class="block">
+<div class="grid grid-cols-2">
   <p>The Coinbase wallet provides information about miner fees in the form of a tooltip. Tooltips are a way of making information available when it is most relevant to a user. However, in this case, the information is only shown once the user seeks out help and clicks on the tooltip.</p>
 <img class="article-image-middle" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238913/neueux/media/articles/Frame%203000.jpg" alt="">
 </div>
 
 ### Knowledge base
-<div class="block">
+<div class="grid grid-cols-2">
   <p>Lastly, information can also be given in the form of a knowledge base; the MEW app uses their education center as a knowledge base. The goal of a knowledge base seems to be to fulfill the users' desire to learn rather than to clarify inconsistencies when they come up.</p>
   <img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238916/neueux/media/articles/Frame%2020061111.jpg" alt="">
 </div>
