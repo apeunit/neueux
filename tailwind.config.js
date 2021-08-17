@@ -36,6 +36,10 @@ module.exports = {
           },
         },
       }),
+      
+      margin: {
+        "-1/2": "-40%",
+      },
 
       maxHeight: {
         104: "50rem",
