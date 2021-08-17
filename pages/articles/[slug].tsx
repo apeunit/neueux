@@ -9,6 +9,8 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSanitize, {defaultSchema} from 'rehype-sanitize'
 //import deepmerge from 'deepmerge'
 
+var test = defaultSchema
+
 //var schema = deepmerge(defaultSchema, {attributes: {'*': ['className']}})
 
 const App = ({ article, preview, slug }) => {
