@@ -6,17 +6,14 @@ slug: 01_addresses
 category: Blockchain UX
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629202859/neueux/media/articles/addresses.png
-summary: >-
-  Addresses are one of the centerpieces of everything blockchain. Looking at
-  blockchain addresses, anyone can see that it is not the most optimal for
-  everyday payments as it is not easy for humans to read or copy.
+summary: "Addresses are one of the centerpieces of everything blockchain. Looking at blockchain addresses, anyone can see that it is not the most optimal for everyday payments as it is not easy for humans to read or copy."
 date: 'August 9th, 2021'
 ---
 ## Addresses in the Internet
 
 If you think back to your first interactions with the Internet, one of them is probably setting up an E-Mail address. For many people, it was (and is) their first interaction with the Internet and a gateway to many other services (aka. sign-up with E-Mail).
 Luckily we all got an E-Mail with the **mail@example.com** format instead of an IP address (which is the actual address computers use in the background) like **123.456.78.90**. Having a human-readable email address name or website name like **example.com** is, of course, way more convenient than having to remember the actual IP address — a “random” string of numbers.
-The precedent of using names instead of IP addresses on the user side was set in the 1970s on the ARPAnet — a predecessor to the Internet.  In 1971, Peggy Karp suggested  standardizing the mapping of names to IP addresses. [₁](#1), [₂](#2) This custom was later adopted on the Internet in the form of domain names like **example.com**, **example.org** or **example.xyz**.
+The precedent of using names instead of IP addresses on the user side was set in the 1970s on the ARPAnet — a predecessor to the Internet.  In 1971, Peggy Karp suggested  standardizing the mapping of names to IP addresses. [1](#1), [2](#2) This custom was later adopted on the Internet in the form of domain names like **example.com**, **example.org** or **example.xyz**.
 Mapping names to IP addresses for the sake of usability is by no means a new idea. On the contrary, it was conceived almost 20 years before the invention of the Internet as we know it today.
 
 ## Addresses in Blockchain
@@ -89,4 +86,5 @@ Luckily ENS seems to be on top of that. They are planning to move subdomain regi
 #### Sources
 
 1:  <a name="1" href="https://datatracker.ietf.org/doc/html/rfc226">RFC226</a>
+
 2:  <a name="2" href="https://datatracker.ietf.org/doc/html/RFC247">RFC247</a>
