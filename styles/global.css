@@ -110,5 +110,5 @@ ul.nav {
 }
 
 .article-image-right {
-  @apply lg:float-right lg:py-5 lg:ml-1/2 w-3/4;
+  @apply lg:float-right lg:py-5 lg:-mr-1/2 w-3/4;
 }
