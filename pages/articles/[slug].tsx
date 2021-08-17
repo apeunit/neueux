@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import BackButton from "components/BackButton";
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';
-import { defaultSchema } from "utils/defaultSchema";
+import { defaultSchema } from "utils/schema";
 
 
 const App = ({ article, preview, slug }) => {
@@ -54,7 +54,7 @@ const App = ({ article, preview, slug }) => {
             </div>
             <p className="font-light text-gray-500">{article.date}</p>
           </div>
-          <ReactMarkdown rehypePlugins={[[rehypeSanitize, {defaultSchema}], rehypeRaw]} className="prose prose-lg lg:prose-xl pt-16" children={article.content} />
+          <ReactMarkdown rehypePlugins={[[rehypeSanitize, defaultSchema], rehypeRaw]} className="prose prose-lg lg:prose-xl pt-16" children={article.content} />
         </div>
 
       </main>

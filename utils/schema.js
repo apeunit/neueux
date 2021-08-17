@@ -1,4 +1,3 @@
-/** @type {import('./index.js').Schema} */
 export const defaultSchema = {
     strip: ['script'],
     clobberPrefix: 'user-content-',
