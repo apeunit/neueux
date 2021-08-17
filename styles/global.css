@@ -108,11 +108,11 @@ ul.nav {
 .article-image-left {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  @apply lg:float-left lg:px-5 lg:-ml-1/2 w-3/4;
+  @apply lg:float-left lg:p-5 lg:-ml-1/2 w-2/3;
 }
 
 .article-image-right {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  @apply lg:float-right lg:px-5 lg:-mr-1/2 w-3/4;
+  @apply lg:float-right lg:p-5 lg:-mr-1/2 w-2/3;
 }
