@@ -14,7 +14,7 @@ date: 'August 9th, 2021'
 ---
 # The Problem
 Most people would agree that you have to be able to trust the system that holds a significant amount of your (financial) wealth. Therefore, it’s crucial for the mass adoption of blockchain and cryptocurrencies, that users coming into the blockchain ecosystem learn to trust it.
-Trust often appears to involve the belief in an explanation of the person or thing we do or do not trust. In this sense, trust and explanation seem to be inherently linked to one another. ([₁](#1))
+Trust often appears to involve the belief in an explanation of the person or thing we do or do not trust. In this sense, trust and explanation seem to be inherently linked to one another. ([1](#1))
 In previous articles in this series, we established that cryptocurrency wallets would be one of the first and primary interactions with blockchain technology for many people.
 Considering that trust will be crucial to the adoption of blockchain, and that wallets are one of the first interactions with the technology, it seems that the burden of educating new users and creating trust falls on wallets.
 In my research, I found that many wallets don't provide enough explanation to cultivate trust. When I think back to my first experience with cryptocurrencies and when I created my first wallet, I had to go out of my way to inform myself about the peculiarities of blockchain. **Why is the transaction fee different every time I make a transaction?**
@@ -26,7 +26,7 @@ The absence of such explanations might not prevent users from being able to oper
 >*2.) Do benefits arise from the use of explanations? What kinds of benefits?*
 >Explanation use has been shown to have positive outcomes, better performance, higher user perceptions of the system and in some cases, improved learning.
 >
->([₂](#2))
+>([2](#2))
 
 As this paper suggests, it’s especially the peculiarities, the *perceived anomalies*, that users seek explanations for. Blockchain has many of these peculiarities. Most of the perceived anomalies in the context of blockchain are the differences in interactions on decentralized applications when compared to web applications we know today.
 Users will generally expect most interactions to be the same on blockchain as they are in "traditional" web products and services. If an interaction is perceived as different in blockchain, they will seek an explanation for the cause of this anomaly.
