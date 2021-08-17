@@ -5,11 +5,13 @@ author: Maximilian Blazek
 slug: 01_addresses
 category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1629202859/neueux/media/articles/addresses.png
+  https://res.cloudinary.com/ape-unit/image/upload/v1629203966/neueux/media/articles/header_address.png
 summary: "Addresses are one of the centerpieces of everything blockchain. Looking at blockchain addresses, anyone can see that it is not the most optimal for everyday payments as it is not easy for humans to read or copy."
 date: 'August 9th, 2021'
 ---
 ## Addresses in the Internet
+
+![](https://res.cloudinary.com/ape-unit/image/upload/v1629203415/neueux/media/articles/Frame%20313.png)
 
 If you think back to your first interactions with the Internet, one of them is probably setting up an E-Mail address. For many people, it was (and is) their first interaction with the Internet and a gateway to many other services (aka. sign-up with E-Mail).
 Luckily we all got an E-Mail with the **mail@example.com** format instead of an IP address (which is the actual address computers use in the background) like **123.456.78.90**. Having a human-readable email address name or website name like **example.com** is, of course, way more convenient than having to remember the actual IP address — a “random” string of numbers.
@@ -17,6 +19,8 @@ The precedent of using names instead of IP addresses on the user side was set in
 Mapping names to IP addresses for the sake of usability is by no means a new idea. On the contrary, it was conceived almost 20 years before the invention of the Internet as we know it today.
 
 ## Addresses in Blockchain
+
+![](https://res.cloudinary.com/ape-unit/image/upload/v1629203455/neueux/media/articles/Frame%20314.png)
 
 Wallets on the Blockchain serve a similar purpose to E-Mail Addresses on the Internet. They are the gateway to most Blockchain based products and services. You want to buy an NFT? You will have to "log in" to the NFT-marketplace and later pay with your wallet. Wallets are, similarly to E-Mail on the Internet, the first and primary way of interacting with this new technology (Blockchain) and therefore play an extremely vital role in the usability and adoption of the Blockchain ecosystem.
 
@@ -67,6 +71,8 @@ The final step to completely solving this UX issue is adoption by both blockchai
 
 ### Adoption
 
+![](https://res.cloudinary.com/ape-unit/image/upload/v1629203510/neueux/media/articles/Frame%20315.png)
+
 Blockchain application developers have to embrace these services, which means integrating them with their dApps and prioritising them in their interfaces. It isn't enough that your app can resolve ENS or unstoppable domain names in the address field. If a cryptocurrency address has an ENS linked to it, you should display it instead of the cryptocurrency address!
 
 We need to make it the norm to see names in wallet apps instead of monstrous crypto addresses!
@@ -81,7 +87,7 @@ Luckily ENS seems to be on top of that. They are planning to move subdomain regi
 
 > _Which wallet provider's subdomains will become the Gmail accounts of ENS names?_ — Brantly Millegan, Director of Operations @ENS
 
-- - -
+***
 
 #### Sources
 
