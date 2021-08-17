@@ -106,13 +106,13 @@ ul.nav {
 }
 
 .article-image-left {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   @apply lg:float-left lg:px-5 lg:-ml-1/2 w-3/4;
 }
 
 .article-image-right {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   @apply lg:float-right lg:px-5 lg:-mr-1/2 w-3/4;
 }
