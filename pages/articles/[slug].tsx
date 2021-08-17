@@ -6,10 +6,10 @@ import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 import BackButton from "components/BackButton";
 import rehypeRaw from 'rehype-raw'
-import rehypeSanitize from 'rehype-sanitize'
-//import deepmerge from 'deepmerge'
+import rehypeSanitize, {defaultSchema} from 'rehype-sanitize'
+import deepmerge from 'deepmerge'
 
-//var schema = deepmerge(defaultSchema, {attributes: {'*': ['className']}})
+var schema = deepmerge(defaultSchema, {attributes: {'*': ['className']}})
 
 const App = ({ article, preview, slug }) => {
   console.log(preview);
