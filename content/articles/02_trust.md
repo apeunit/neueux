@@ -60,16 +60,16 @@ Essentially, transactions on blockchains are not reversible. When people uninten
 The following four examples explain situations where inexperienced users could become suspicious of cryptocurrency transactions — suspicion which could easily be fixed by providing explanations. I will show how different wallets incorporate explanations for some of these interactions into their user flow.
 
 ### Onboarding
-
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238914/neueux/media/articles/Frame%20316111.jpg" alt="">
-
-During the MEW app’s onboarding process, users are provided with a rundown of the most important things to be aware of when dealing with cryptocurrencies. In point 2 they warn their users about the finality of cryptocurrency transactions.
+<div class="trust-article-image-block">
+  <img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238914/neueux/media/articles/Frame%20316111.jpg" alt="">
+  During the MEW app’s onboarding process, users are provided with a rundown of the most important things to be aware of when dealing with cryptocurrencies. In point 2 they warn their users about the finality of cryptocurrency transactions.
+</div>
 
 ### Part of the process
-
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238915/neueux/media/articles/Frame%2020051111.jpg" alt="">
-
-Zengo informs their users about the finality of cryptocurrency transactions as part of the sending process. Instead of overloading users with information right when they download the app, they make the information available at the time it is most relevant to the user — in the transaction process.
+<div class="trust-article-image-block">
+  <img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238915/neueux/media/articles/Frame%2020051111.jpg" alt="">
+  Zengo informs their users about the finality of cryptocurrency transactions as part of the sending process. Instead of overloading users with information right when they download the app, they make the information available at the time it is most relevant to the user — in the transaction process.
+</div>
 
 ### Tooltips
 

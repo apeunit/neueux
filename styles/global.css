@@ -122,3 +122,8 @@ ul.nav {
   margin-bottom: 0 !important;
   @apply lg:p-5 lg:-mx-1/2 w-2/3;
 }
+
+.trust-article-image-block {
+  @apply flow-root
+}
+
