@@ -60,20 +60,22 @@ Essentially, transactions on blockchains are not reversible. When people uninten
 The following four examples explain situations where inexperienced users could become suspicious of cryptocurrency transactions — suspicion which could easily be fixed by providing explanations. I will show how different wallets incorporate explanations for some of these interactions into their user flow.
 
 ### Onboarding
+
 <div class="trust-article-image-block">
-  <img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238914/neueux/media/articles/Frame%20316111.jpg" alt="">
-  During the MEW app’s onboarding process, users are provided with a rundown of the most important things to be aware of when dealing with cryptocurrencies. In point 2 they warn their users about the finality of cryptocurrency transactions.
+<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238914/neueux/media/articles/Frame%20316111.jpg" alt="">
+During the MEW app’s onboarding process, users are provided with a rundown of the most important things to be aware of when dealing with cryptocurrencies. In point 2 they warn their users about the finality of cryptocurrency transactions.
 </div>
 
 ### Part of the process
+
 <div class="trust-article-image-block">
-  <img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238915/neueux/media/articles/Frame%2020051111.jpg" alt="">
-  Zengo informs their users about the finality of cryptocurrency transactions as part of the sending process. Instead of overloading users with information right when they download the app, they make the information available at the time it is most relevant to the user — in the transaction process.
+<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238915/neueux/media/articles/Frame%2020051111.jpg" alt="">
+Zengo informs their users about the finality of cryptocurrency transactions as part of the sending process. Instead of overloading users with information right when they download the app, they make the information available at the time it is most relevant to the user — in the transaction process.
 </div>
 
 ### Tooltips
 
-<img class="article-image-middle" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238913/neueux/media/articles/Frame%203000.jpg" alt="">
+<img class="article-image-middle" src="https://res.cloudinary.com/ape-unit/image/upload/v1629291979/neueux/media/articles/Frame%202008.jpg" alt="">
 
 The Coinbase wallet provides information about miner fees in the form of a tooltip.
 Tooltips are a way of making information available when it is most relevant to a user. However, in this case, the information is only shown once the user seeks out help and clicks on the tooltip.
