@@ -74,18 +74,18 @@ Zengo informs their users about the finality of cryptocurrency transactions as p
 </div>
 
 ### Tooltips
+<div class="trust-article-image-block">
+  <img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629291979/neueux/media/articles/Frame%202008.jpg" alt="">
+  The Coinbase wallet provides information about miner fees in the form of a tooltip. Tooltips are a way of making information available when it is most relevant to a user. However, in this case, the information is only shown once the user seeks out help and clicks on the tooltip.
+</div>
 
-<img class="article-image-middle" src="https://res.cloudinary.com/ape-unit/image/upload/v1629291979/neueux/media/articles/Frame%202008.jpg" alt="">
-
-The Coinbase wallet provides information about miner fees in the form of a tooltip.
-Tooltips are a way of making information available when it is most relevant to a user. However, in this case, the information is only shown once the user seeks out help and clicks on the tooltip.
 
 ### Knowledge base
-
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238916/neueux/media/articles/Frame%2020061111.jpg" alt="">
-
-Lastly, information can also be given in the form of a knowledge base; the MEW app uses their education center as a knowledge base.
-The goal of a knowledge base seems to be to fulfill the users' desire to learn rather than to clarify inconsistencies when they come up.
+<div class="trust-article-image-block">
+  <img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238916/neueux/media/articles/Frame%2020061111.jpg" alt="">
+  Lastly, information can also be given in the form of a knowledge base; the MEW app uses their education center as a knowledge base.
+  The goal of a knowledge base seems to be to fulfill the users' desire to learn rather than to clarify inconsistencies when they come up.
+</div>
 
 ## Conclusion
 
