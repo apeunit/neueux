@@ -39,7 +39,7 @@ In the Backup and Recovery article, we will look at why exactly this is so incon
 
 ## 4. Trust
 
-*lockchain has fundamental differences from traditional technologies that affect, among other things, how the app interacts with the user and vice versa. To avoid alienating users, Blockchain applications need to explain why interactions are different from other platforms, and which information users need to pay special attention to.*
+*Blockchain has fundamental differences from traditional technologies that affect, among other things, how the app interacts with the user and vice versa. To avoid alienating users, Blockchain applications need to explain why interactions are different from other platforms, and which information users need to pay special attention to.*
 
 The fourth article will revolve around the current state of educational content in Blockchain apps. Specifically, it will focus on wallets, as they are the first and primary way of interacting with Blockchain technology for most people. We will then give examples of these "special interactions" that need to be explained to newcomers and how developers could better implement educational content in Blockchain applications.
 
