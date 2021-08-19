@@ -28,9 +28,9 @@ This responsibility, the need for backups, and the backup methods themselves are
 
 The self-sovereignty of cryptocurrencies is what attracts many people, so there is no changing the fact that users must take full responsibility for their keys and, consequently, their funds.
 
-Even though people value the self-sovereignty of cryptocurrencies, many underestimate what kind of responsibility it entails. As a result, many people back up their wallet poorly or don't back it up at all. There are many accounts of people losing huge amounts of money because they haven’t properly backed up their wallet. There are studies which suggest that about 20% of bitcoin has been lost forever (irretrievably stuck in wallets). [1](#user-content-1), [2](#user-content-2)
+Even though people value the self-sovereignty of cryptocurrencies, many underestimate what kind of responsibility it entails. As a result, many people back up their wallet poorly or don't back it up at all. There are many accounts of people losing huge amounts of money because they haven’t properly backed up their wallet. There are studies which suggest that about 20% of bitcoin has been lost forever (irretrievably stuck in wallets). [1](#1), [2](#2)
 
-I think that backing up ones wallet is underestimated because such a high level of self-responsibility is uncommon amongst most services and products. How many web2 products do you know where you can't recover your account through their customer support?
+I think that backing up ones wallet is underestimated because such a high level of self-responsibility is uncommon amongst most services and products. How many traditional web products do you know where you can't recover your account through their customer support?
 
 In addition, many wallets provide terrible UX during the backup process:
 
@@ -100,7 +100,7 @@ But there are still points that users might find inconvenient:
 
 ## Conclusion
 
-According to some reports, many people live paycheck to paycheck ex. 54% of people in the USA. [3](#user-content-3)
+According to some reports, many people live paycheck to paycheck ex. 54% of people in the USA. [3](#3)
 If Blockchain is going to hold a significant portion of the wealth of a large portion of the population in the future, then recovery methods will have to improve. Most of the world's population could not afford to lose a significant portion of their savings. Statistics show that over 20% of bitcoin's supply has already been lost and about 4% of the current supply is lost annually. Statistics like these suggest that it is relatively easy to lose one's cryptocurrencies.
 
 The backup and recovery processes should definitely not be an afterthought in the design process of a wallet. While the backup process might be cumbersome for users I think there is no worse wallet user experience than losing access to all of your funds.
