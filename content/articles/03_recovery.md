@@ -16,7 +16,7 @@ date: 'August 9, 2021'
 ## Background
 
 Cryptocurrencies greatly differ from traditional payment services. With crypto, your funds exist in a decentralized system rather than being held by a company.
-A user can interact with this decentralized system using two different (numerical) keys, a public and a private key. The public key allows you to receive transactions (your address is generated from this public key), while the private key is necessary to send transactions. This system is called asymmetric cryptography and is a vital aspect of all blockchains.
+A user can interact with this decentralized system using two different (numerical) keys, a public and a private key. The public key allows you to receive transactions (your address is generated from this public key), while the private key is necessary to send transactions. This system is called asymmetric cryptography and is a vital aspect of all Blockchains.
 The private key is used to authorize a transaction. It is the proof that you are the owner of the account. As the name suggests, this private key is supposed to be private; only the user themself should have access to it, so only they can control the funds.
 Consequently, the user has full responsibility for their funds. If a user loses their private key, they cannot call anyone to help them recover it. The seed,  an initial random input from which the keys are created, needs to be backed up in order to be recovered. Otherwise, someone who loses their seed won't be able to recover their private key and will lose their funds forever.
 
@@ -94,7 +94,7 @@ But there are still points that users might find inconvenient:
 * Many people don't have anyone else in their social circle who uses cryptocurrencies. Finding guardians might be difficult for them since having a wallet is a requirement to being a guardian.
 * It might take a considerable amount of time to recover your wallet. You will have to contact the majority of your guardians and ask them to approve the reinstatement of your wallet or a transaction that exceeds your spending limit.
   * This might be incredibly frustrating if you have to make an important payment, and now you have to wait for your guardians to approve your transaction or reinstatement.
-* Due to the transparent nature of blockchain, if someone knows your address, they can see how many cryptocurrencies you own and your entire transaction history. When you add someone (friends or family) as a guardian, they will know your address.
+* Due to the transparent nature of Blockchain, if someone knows your address, they can see how many cryptocurrencies you own and your entire transaction history. When you add someone (friends or family) as a guardian, they will know your address.
   * A big part of what makes social recovery wallets so appealing is that friends and family (instead of corporations and other devices) are your "guardians" and can potentially help you recover your wallet. However, many people might be uncomfortable with their social circle knowing about their personal wealth and  transactions.
     * Imagine you would like to buy something that you are embarrassed about and that is over your spending limit. You would have to ask your Guardians if they could approve this embarrassing transaction.
 
@@ -107,7 +107,7 @@ The backup and recovery processes should definitely not be an afterthought in th
 
 The first step for preventing potential loss is for wallet providers to properly educate their users about their self-responsibility and the importance of backing up.
 Mnemonic phrases are obviously better than backing up the raw seed, but they come with several UX and security drawbacks. While social recovery is a big step forward in terms of UX and security, the UX still isn't perfect.
-UX designers and developers will have to continue working together to either improve current recovery methods or develop new and better ones. Recovery UX will play a critical role in preparing blockchain technology to hold the wealth of a majority of  people in the future.
+UX designers and developers will have to continue working together to either improve current recovery methods or develop new and better ones. Recovery UX will play a critical role in preparing Blockchain technology to hold the wealth of a majority of  people in the future.
 
 ***
 
