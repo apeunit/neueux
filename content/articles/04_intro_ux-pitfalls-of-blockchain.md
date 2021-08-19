@@ -51,9 +51,9 @@ With this article I want to draw attention to a problem that is currently hardly
 
 ## 6. Privacy
 
-> "As seductive as a Blockchain’s other advantages are, neither companies nor individuals are particularly keen on publishing all of their information onto a public database that can be arbitrarily read without any restrictions by one’s own government, foreign governments, family members, coworkers and business competitors." - Vitalik Buterin, 2016
+> As seductive as a Blockchain’s other advantages are, neither companies nor individuals are particularly keen on publishing all of their information onto a public database that can be arbitrarily read without any restrictions by one’s own government, foreign governments, family members, coworkers and business competitors. - Vitalik Buterin, 2016
 
-In the last article of the series, we will discuss how storing all transactional data publicly might lead to UX issues for some users. Additionally, we will take a look at some privacy-preserving Blockchain solutions out there.
+In this article, we will discuss how storing all transactional data publicly might lead to UX issues for some users. Additionally, we will take a look at some privacy-preserving Blockchain solutions out there.
 
 ## 7. On- and Off-Ramp
 
