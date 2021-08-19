@@ -118,3 +118,5 @@ UX designers and developers will have to continue working together to either imp
 2: <a name="2" href="https://blog.chainalysis.com/reports/bitcoin-market-data-exchanges-trading">Chainalysis Insights 2020</a>
 
 3: <a name="3" href="https://www.pymnts.com/study/paycheck-to-paycheck-consumer-finances-american-households/">PYMNTS Reality Check 2021</a>
+
+<a href="https://vitalik.ca/general/2021/01/11/recovery.html">Buterin 2021</a>
