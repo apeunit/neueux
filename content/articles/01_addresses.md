@@ -63,7 +63,7 @@ According to their website, ENS is (by far) the most integrated Blockchain namin
 ### Unstoppable Domains
 
 Unstoppable Domains is another Blockchain domain name provider which has a lot of traction. They launched their first domains, most notably **.crypto**, in 2019.
-Unstoppable Domainsprovides a very similar crypto address feature set to ENS. The only difference is that you cannot import traditional domains and an unstoppable domain is a one-time purchase rather than a yearly fee (like ENS).
+Unstoppable Domains provides a very similar crypto address feature set to ENS. The only difference is that you cannot import traditional domains and an unstoppable domain is a one-time purchase rather than a yearly fee (like ENS).
 Unstoppable Domains currently has about 50 integrations with Blockchain based applications.
 
 ## Conclusion
