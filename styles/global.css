@@ -122,11 +122,9 @@ ul.nav {
 }
 
 .first-of-row:nth-child(3n-2) {
-  @apply pl-0;
-  border-left: none !important;
+  @apply pl-0 border-l-0;
 }
 
 .last-of-row:nth-child(3n) {
-  @apply pr-0;
-  border-right: none !important;
+  @apply pr-0 border-r-0;
 }
