@@ -121,3 +121,7 @@ ul.nav {
   @apply flow-root;
 }
 
+.first-of-row:first-child, article-overiew-grid-first-of-row:nth-child(3n+1) {
+  @apply pl-0
+  border-left: none !important;
+}
