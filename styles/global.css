@@ -122,9 +122,9 @@ ul.nav {
 }
 
 .first-of-row:nth-child(3n-2) {
-  @apply -ml-5;
+  @apply pl-0;
 }
 
 .last-of-row:nth-child(3n), .last-of-row:last-child {
-  @apply -mr-5 border-r-0;
+  @apply pr-0 border-r-0;
 }
