@@ -121,12 +121,12 @@ ul.nav {
   @apply flow-root;
 }
 
-.first-of-row :first-child, :nth-child(3n+1) {
+.first-of-row:nth-child(3n-2) {
   @apply pl-0
   border-left: none !important;
 }
 
-.last-of-row :last-child, :nth-child(2n+1) {
+.last-of-row:nth-child(3n) {
   @apply pr-0
   border-right: none !important;
 }
