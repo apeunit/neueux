@@ -122,7 +122,7 @@ ul.nav {
 }
 
 .first-of-row:nth-child(3n-2) {
-  @apply pl-0 border-l-0;
+  @apply pl-0;
 }
 
 .last-of-row:nth-child(3n) {
