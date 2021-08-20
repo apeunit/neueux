@@ -33,7 +33,7 @@ const FeatArticle = ({ article, key }) => {
 
 const ItemArticle = ({ article }) => {
   return (
-    <div className="w-full pt-5 lg:p-5 border-r-1 first-of-row last-of-row">
+    <div className="w-full pt-5 lg:px-5 lg:my-5 border-r-1 first-of-row last-of-row">
 
       <Link href={`/articles/${article.slug}`}>
         <div className="aspect-w-2 aspect-h-1">
