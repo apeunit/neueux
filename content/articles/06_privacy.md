@@ -5,7 +5,7 @@ author: Maximilian Blazek
 slug: 06_privacy
 category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1629205296/neueux/media/articles/header_intro.jpg
+  https://res.cloudinary.com/ape-unit/image/upload/v1629470767/neueux/media/articles/Frame%202018.png
 summary: >-
   As seductive as a Blockchain’s other advantages are, neither companies nor individuals are particularly keen on publishing all of their information onto a public database that can be arbitrarily read without any restrictions by one’s own government, foreign governments, family members, coworkers and business competitors.
 date: 'August 16th, 2021'

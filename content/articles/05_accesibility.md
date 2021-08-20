@@ -5,7 +5,7 @@ author: Maximilian Blazek
 slug: 05_accesibility
 category: Blockchain UX
 featured_image: >-
-  https://res.cloudinary.com/ape-unit/image/upload/v1629205296/neueux/media/articles/header_intro.jpg
+  https://res.cloudinary.com/ape-unit/image/upload/v1629470770/neueux/media/articles/Frame%202036.png
 summary: >-
   For many people financial inclusion is an important value of Blockchain. We need to extend this inclusion further and try to make Blockchain applications more accessible to people with physical and mental disabilities by designing them to be barrier-free.
 date: 'August 16th, 2021'
