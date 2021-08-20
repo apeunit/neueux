@@ -125,6 +125,6 @@ ul.nav {
   @apply -ml-5;
 }
 
-.last-of-row:nth-child(3n), :last-child {
+.last-of-row:nth-child(3n).last-of-row:last-child {
   @apply -mr-5 border-r-0;
 }
