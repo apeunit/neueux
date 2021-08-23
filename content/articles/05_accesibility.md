@@ -76,7 +76,7 @@ The first challenge that could arise is the long letter and number combinations 
 These could become a problem especially for people with visual impairments who rely on screen readers.
 At the moment, the complex addresses still play a big role in the daily use of cryptocurrencies and other blockchain applications. Verifying the correctness of the recipient's address in a transaction is vital and could be even more difficult with a screen reader than it already is visually. As an example, here is Google's Wavenet, one of the most advanced text-to-speech programs, trying to read out a cryptocurrency address.
 
- <audio controls>
+ <audio class="w-full" controls>
   <source src="address.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio> 
