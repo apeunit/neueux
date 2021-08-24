@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const FeatArticle = ({ article, key }) => {
   return (
-    <div key={key} className="grid grid-cols-1 lg:grid-cols-3 gap-5 pb-5 items-center">
+    <div key={key} className="grid grid-cols-1 lg:grid-cols-3 gap-10 pb-5 items-center">
       <div className="col-span-1 order-last lg:order-first">
         <div className="space-y-3 mr-5">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
@@ -19,7 +19,7 @@ const FeatArticle = ({ article, key }) => {
           <p className="text-xs pt-2">by <b>{article.author}</b></p>
         </div>
       </div>
-      <div className="col-span-1 order-first lg:order-last lg:col-span-2 lg:pl-5">
+      <div className="col-span-1 order-first lg:order-last lg:col-span-2">
         <Link href={`/articles/${article.slug}`}>
           <div className="aspect-w-1 aspect-h-1">
             <img className="rounded-lg cursor-pointer object-cover" src={article.featured_image}/>
