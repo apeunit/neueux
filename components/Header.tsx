@@ -1,8 +1,8 @@
 import React from "react";
 const Header = ({ title }) => (
-  <div className="mt-32 hidden lg:block md:block sm:block">
+  <div className="mt-16 hidden lg:block md:block sm:block">
     <div className="flex">
-      <div className="w-3/6 text-5xl leading-loose font-extralight tracking-tighter">
+      <div className="w-3/6 font-extrabold text-2.5xl leading-2">
         <h1>{title}</h1>
       </div>
     </div>

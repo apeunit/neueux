@@ -60,7 +60,7 @@ const ArticlesPage = ({ articles }) => {
     <Layout title="Articles" editable>
       <main className="w-11/12 max-w-8xl mt-16 mx-auto justify-between relative">
         <FeatArticle key={articles[0].key} article={articles[0]} />
-        <div className="pt-5 grid grid-cols-1 gap-10 justify-items-stretch divide-y lg:divide-y-0 lg:grid-cols-3">
+        <div className="pt-5 grid grid-cols-1 gap-10 justify-items-stretch lg:grid-cols-3">
           {articles.map((article, key) => {
             if (key !== 0) return <ItemArticle key={key} article={article} />
           })}

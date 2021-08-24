@@ -151,7 +151,7 @@ const Filter = ({
 
       <div className={["ml-auto text-right w-1/2 lg:w-1/3 sm:w-4/5",
         !selectedList.length
-          ? "lg:absolute md:absolute sm:absolute lg:-top-26 md:-top-26 sm:-top-26 right-0" : "",
+          ? "sm:absolute sm:-top-12 right-0" : "",
       ].join(" ")}>
 
         <div className="hidden lg:block md:block sm:block">
