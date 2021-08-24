@@ -14,14 +14,10 @@ const IndexPage = ({ apps, filter }) => {
   return (
     <Layout title="Screen Gallery" editable>
       <main className="w-11/12 mx-auto max-w-8xl xl:relative">
-        <Header title="Screen gallery" />
-        <Filter
-          tags={filter.tags}
-          userflows={filter.userflows}
-          routeParams={null}
-          routePathname={"/filter"}
-          fallbackRoutePathname={"/"}
-        />
+        <div className="mt-16">
+          <Header title="Screen gallery" />
+          <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={"/filter"} fallbackRoutePathname={"/"}/>
+        </div>
         {apps.map((app) => {
           return <AppCard key={`app-list-${app.slug}`} app={app} />;
         })}

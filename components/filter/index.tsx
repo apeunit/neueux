@@ -151,10 +151,10 @@ const Filter = ({
 
       <div className={["ml-auto text-right w-1/2 lg:w-1/3 sm:w-4/5",
         !selectedList.length
-          ? "sm:absolute sm:-top-12 right-0" : "",
+          ? "right-0" : "",
       ].join(" ")}>
 
-        <div className="hidden sm:block">
+        <div className="hidden">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
             Filter by Categories
           </Button>
