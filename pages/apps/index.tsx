@@ -14,7 +14,7 @@ const IndexPage = ({ apps, filter }) => {
   return (
     <Layout title="Screen Gallery" editable>
       <main className="w-11/12 mx-auto max-w-8xl">
-        <div className="mt-16 flex">
+        <div className="mt-16 flex justify-between">
           <Header title="Screen gallery" />
           <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={"/filter"} fallbackRoutePathname={"/"}/>
         </div>

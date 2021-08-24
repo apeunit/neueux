@@ -128,7 +128,7 @@ const Filter = ({
   };
 
   return (
-    <div className="self-end flex">
+    <div className="flex">
       <div
         key={`list-index-filter-${listIndex}`}
         className="space-x-2"
