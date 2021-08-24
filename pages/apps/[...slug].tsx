@@ -101,15 +101,9 @@ const App = ({
     >
       <main className="w-11/12 mx-auto max-w-8xl">
         <HeaderView app={app()} />
-        <Filter
-          tags={tags}
-          userflows={userflows}
-          routeParams={{
-            slug: app().slug,
-          }}
-          routePathname={null}
-          fallbackRoutePathname={null}
-        />
+        <div className="relative flex">
+          <Filter tags={tags} userflows={userflows} routeParams={{slug: app().slug,}} routePathname={null} fallbackRoutePathname={null}/>
+        </div>
         <ScreenList
           app={app()}
           screens={filtered()}
