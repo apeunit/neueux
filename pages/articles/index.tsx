@@ -33,11 +33,11 @@ const FeatArticle = ({ article, key }) => {
 
 const ItemArticle = ({ article }) => {
   return (
-    <div className="w-full pt-5 lg:py-0 lg:px-5 lg:my-5 border-r first-of-row last-of-row">
+    <div className="w-full pt-5 lg:py-0">
 
       <Link href={`/articles/${article.slug}`}>
         <div className="aspect-w-2 aspect-h-1">
-          <img className="cursor-pointer object-cover" src={article.featured_image} />
+          <img className="rounded-t-lg cursor-pointer object-cover" src={article.featured_image} />
         </div>
       </Link>
 
@@ -60,7 +60,7 @@ const ArticlesPage = ({ articles }) => {
     <Layout title="Articles" editable>
       <main className="w-11/12 max-w-8xl mt-16 mx-auto justify-between relative divide-y">
         <FeatArticle key={articles[0].key} article={articles[0]} />
-        <div className="grid grid-cols-1 justify-items-stretch divide-y lg:divide-y-0 lg:grid-cols-3">
+        <div className="pt-5 grid grid-cols-1 gap-10 justify-items-stretch divide-y lg:divide-y-0 lg:grid-cols-3">
           {articles.map((article, key) => {
             if (key !== 0) return <ItemArticle key={key} article={article} />
           })}
