@@ -149,7 +149,7 @@ const Filter = ({
         ))}
       </div>
 
-      <div className={["ml-auto text-right w-1/2 lg:w-1/3 sm:w-4/5",
+      <div className={["self-end",
         !selectedList.length
           ? "right-0" : "",
       ].join(" ")}>
