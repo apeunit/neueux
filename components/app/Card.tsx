@@ -3,7 +3,7 @@ import Image from "next/image";
 import ScreenList from "components/app/screen/List";
 
 const AppCard = ({ app }) => (
-  <div className="lg:mb-10 xl:mt-0">
+  <div className="mb-16">
     <div className="flex mt-3">
       {app.icon && (
         <Link href={`/apps/${app.slug}`}>
