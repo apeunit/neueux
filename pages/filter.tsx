@@ -45,7 +45,7 @@ const FilterPage = ({ screens, filter }) => {
   return (
     <Layout title="Filter" editable>
       <main className="w-11/12 mx-auto max-w-8xl">
-        <div className="my-16 flex justify-between">
+        <div className="my-16 relative flex justify-between">
           <Header title="Screen gallery" />
           <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={null} fallbackRoutePathname={"/"}/>
         </div>
