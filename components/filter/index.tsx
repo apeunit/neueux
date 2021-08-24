@@ -149,22 +149,17 @@ const Filter = ({
         ))}
       </div>
 
-      <div className={["self-end",
-        !selectedList.length
-          ? "test" : "",
-      ].join(" ")}>
-
         <div className="hidden sm:inline">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
             Filter by Categories
           </Button>
         </div>
-        <div className="sm:hidden bottom-6 z-50 fixed  left-0 w-full text-center">
+        <div className="sm:hidden bottom-6 z-50 fixed left-0 w-full text-center">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
             Filter
           </Button>
         </div>
-      </div>
+        
       {showFilter && (
         <FilterCard
           key={`filter-card-${listIndex}`}
