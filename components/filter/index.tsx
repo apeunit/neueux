@@ -128,7 +128,7 @@ const Filter = ({
   };
 
   return (
-    <div className="relative">
+    <>
       <div key={`list-index-filter-${listIndex}`} className="absolute left-0 space-x-2">
         {selectedUserflows.map((userflow) => (
           <FilterBadge
@@ -171,7 +171,7 @@ const Filter = ({
           onRemove={onFilterRemove}
         />
       )}
-    </div>
+    </>
   );
 };
 
