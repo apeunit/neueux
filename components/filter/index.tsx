@@ -128,11 +128,8 @@ const Filter = ({
   };
 
   return (
-    <div className="flex">
-      <div
-        key={`list-index-filter-${listIndex}`}
-        className="space-x-2"
-      >
+    <div className="static">
+      <div key={`list-index-filter-${listIndex}`} className="absolute left-0 space-x-2">
         {selectedUserflows.map((userflow) => (
           <FilterBadge
             key={`userflow-filter-${userflow.id}`}
@@ -149,17 +146,18 @@ const Filter = ({
         ))}
       </div>
 
-        <div className="hidden sm:inline">
-          <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
-            Filter by Categories
-          </Button>
-        </div>
-        <div className="sm:hidden bottom-6 z-50 fixed left-0 w-full text-center">
-          <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
-            Filter
-          </Button>
-        </div>
-        
+      <div className="hidden sm:inline">
+        <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
+          Filter by Categories
+        </Button>
+      </div>
+      
+      <div className="sm:hidden bottom-6 z-50 fixed left-0 w-full text-center">
+        <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
+          Filter
+        </Button>
+      </div>
+
       {showFilter && (
         <FilterCard
           key={`filter-card-${listIndex}`}
