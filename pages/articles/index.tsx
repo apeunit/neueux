@@ -45,7 +45,7 @@ const ItemArticle = ({ article }) => {
         <div className="space-y-3 mt-5">
           <p className="text-xs leading-loose font-bold text-accent">{article.category}</p>
           <Link href={`/articles/${article.slug}`}>
-            <h1 className="font-extrabold text-2.5xl leading-2 cursor-pointer">{article.title}</h1>
+            <h2 className="font-extrabold text-2.5xl leading-2 cursor-pointer">{article.title}</h2>
           </Link>
           <p className="text-md text-gray-700">{article.summary}</p>
           <p className="text-xs pt-2">by <b>{article.author}</b></p>

@@ -128,7 +128,7 @@ const Filter = ({
   };
 
   return (
-    <div className="w-full flex lg:relative md:relative sm:relative  mt-10">
+    <div className="w-full flex sm:relative mt-10">
       <div
         key={`list-index-filter-${listIndex}`}
         className="space-x-2"
@@ -154,12 +154,12 @@ const Filter = ({
           ? "sm:absolute sm:-top-12 right-0" : "",
       ].join(" ")}>
 
-        <div className="hidden lg:block md:block sm:block">
+        <div className="hidden sm:block">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
             Filter by Categories
           </Button>
         </div>
-        <div className="lg:hidden md:hidden sm:hidden bottom-6 z-50 fixed  left-0 w-full text-center">
+        <div className="sm:hidden bottom-6 z-50 fixed  left-0 w-full text-center">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
             Filter
           </Button>
