@@ -151,7 +151,7 @@ const Filter = ({
 
       <div className={["self-end",
         !selectedList.length
-          ? "right-0" : "",
+          ? "test" : "",
       ].join(" ")}>
 
         <div className="hidden sm:inline">
