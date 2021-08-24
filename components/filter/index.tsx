@@ -128,7 +128,7 @@ const Filter = ({
   };
 
   return (
-    <div className="w-full flex sm:relative mt-10">
+    <div className="self-end flex">
       <div
         key={`list-index-filter-${listIndex}`}
         className="space-x-2"
@@ -154,7 +154,7 @@ const Filter = ({
           ? "right-0" : "",
       ].join(" ")}>
 
-        <div className="hidden">
+        <div className="hidden sm:inline">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
             Filter by Categories
           </Button>
