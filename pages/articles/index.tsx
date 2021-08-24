@@ -22,7 +22,7 @@ const FeatArticle = ({ article, key }) => {
       <div className="col-span-1 order-first lg:order-last lg:col-span-2 lg:pl-5">
         <Link href={`/articles/${article.slug}`}>
           <div className="aspect-w-1 aspect-h-1">
-            <img className="cursor-pointer object-cover" src={article.featured_image}/>
+            <img className="rounded-lg cursor-pointer object-cover" src={article.featured_image}/>
           </div>
         </Link>
       </div>
@@ -58,7 +58,7 @@ const ItemArticle = ({ article }) => {
 const ArticlesPage = ({ articles }) => {
   return (
     <Layout title="Articles" editable>
-      <main className="w-11/12 max-w-8xl mt-16 mx-auto justify-between relative divide-y">
+      <main className="w-11/12 max-w-8xl mt-16 mx-auto justify-between relative">
         <FeatArticle key={articles[0].key} article={articles[0]} />
         <div className="pt-5 grid grid-cols-1 gap-10 justify-items-stretch divide-y lg:divide-y-0 lg:grid-cols-3">
           {articles.map((article, key) => {
