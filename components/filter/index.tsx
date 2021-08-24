@@ -146,7 +146,7 @@ const Filter = ({
         ))}
       </div>
 
-      <div className="hidden justify-self-end sm:inline">
+      <div className="hidden place-self-end sm:inline">
         <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
           Filter by Categories
         </Button>
