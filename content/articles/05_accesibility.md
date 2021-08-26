@@ -38,17 +38,17 @@ Right at the beginning, this guide lists 3 pillars according to which one should
 
 <div class="article-grid"> 
   <div>
-    <p><strong>Clear</strong></p> 
+    <strong>Clear</strong>
     <p>Help users navigate by designing clear layouts with distinct calls to action.</p>
   </div>
   
   <div>
-    <p><strong>Robust</strong></p> 
+    <strong>Robust</strong> 
     <p>Design your app to accommodate a variety of users.</p>    
   </div>
   
   <div>
-    <p><strong>Specific</strong></p> 
+    <strong>Specific</strong>
     <p>Support assistive technologies specific to your platform, just as you support the input methods of touch, keyboard, and mouse.</p>
   </div>
 </div>
