@@ -121,6 +121,6 @@ ul.nav {
   @apply flow-root;
 }
 
-.article.grid {
+.article-grid {
   @apply grid grid-cols-3 gap-4;
 }
