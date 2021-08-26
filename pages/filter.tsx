@@ -45,6 +45,7 @@ const FilterPage = ({ screens, filter }) => {
   return (
     <Layout title="Filter" editable>
       <main className="w-11/12 mx-auto max-w-8xl">
+        
         <div className="mt-16">
           <Header title="Screen gallery" />
         </div>
