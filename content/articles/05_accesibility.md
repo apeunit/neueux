@@ -26,7 +26,7 @@ Designing for accessibility includes considering all disabilities that may limit
 - Seizures
 - Learning/cognitive
 
-There are also many situational limitations where accessible applications provide a better user experience to both people with physical or mental disabilities and those without. Strong sunlight, lost optical glasses, or even a too-small screen can lead to visual limitations. Temporary conditions like a broken arm or a broken touchscreen lead to tactile restrictions. Finally, even something as common as sleep deprivation can lead to minor mental impairments.
+There are also many situational limitations where accessible applications provide a better user experience to both people with physical or mental disabilities and those without. **Strong sunlight**, **lost optical glasses**, or even a **too-small screen** can lead to visual limitations. Temporary conditions like a **broken arm** or a **broken touchscreen** lead to tactile restrictions. Finally, even something as common as **sleep deprivation** can lead to minor mental impairments.
 
 This means that designing for accessibility not only benefits people with disabilities but also leads to significantly better user experiences for everyone.
 
@@ -74,6 +74,8 @@ Finally, I would like to focus on the accessibility issues of the blockchain eco
 
 ### Long strings of numbers and letters
 
+<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234014/neueux/media/articles/Frame%20314.jpg" alt="">
+
 The first challenge that could arise is the long letter and number combinations prevalent in blockchain — frequently found in things like transaction hashes and wallet addresses. These could become a problem, especially for people with visual impairments who rely on screen readers. At the moment, the complex addresses still play a significant role in the daily use of cryptocurrencies and other blockchain applications. Using a screen reader turns to verify a transaction recipient’s already complex wallet address into a near-impossible task. As an example, here is Google's Wavenet, one of the most advanced text-to-speech programs, trying to read out a cryptocurrency address.
 
 <audio class="w-full" controls>
@@ -114,4 +116,4 @@ I have a feeling that for many people in blockchain, (financial) inclusion is an
 
 If these become widespread, QR codes would not have to be prioritized as much. There have already been efforts to create a hardware wallet for visually impaired people, namely the IcyWallet. However, IcyWallet’s development never seemed to pass the MVP stage and at the time of publishing this article, the IcyWallet website and GitHub repository are offline.
 
-Ultimately, what is most important is that software and hardware wallet developers are aware of the accessibility issues (and the security issues that could come with it) and are actively working to address them. As I have mentioned in previous articles, wallets are one of the primary ways people will interact with blockchain, and it’s no different for people with disabilities. Therefore, it is important that both software and hardware wallets are designed to be accessible for everyone.
+Ultimately, what is most important is that software and hardware wallet developers are aware of the accessibility issues (and the security issues that could come with it) and are actively working to address them. As I have mentioned in previous articles, wallets are one of the primary ways people will interact with blockchain, and it’s no different for people with disabilities. Therefore, it is important that both software and hardware wallets are **designed to be accessible for everyone**.
