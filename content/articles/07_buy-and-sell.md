@@ -10,7 +10,6 @@ summary: >-
   On-ramp and off-ramp services are a way to buy and sell cryptocurrencies with fiat money quickly and easily. They provide an essential service because they significantly lower the barrier to entry for inexperienced users. Without these services, inexperienced users would be overwhelmed with the interfaces and interactions required to buy cryptocurrencies on an exchange.
 date: 'August 16th, 2021'
 ---
-
 One of the first steps you will take when beginning to interact with blockchain is to get cryptocurrencies (possibly even before you create a wallet). Without Cryptocurrencies, you can hardly do anything on the blockchain. Consequently, the process of getting your first cryptocurrency is a critical step in onboarding new users. The UX has to ensure that this initial important step is pleasant and easy for everyone to do. In extension,it's just as important to be able to convert your cryptocurrencies back into fiat currency, because sometimes you need to buy things in everyday life.
 
 That's why in this article, I'll take a closer look at the process of new users receiving their first cryptocurrencies, as well as how they can sell them back for fiat currency.
