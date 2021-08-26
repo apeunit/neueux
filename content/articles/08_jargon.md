@@ -10,7 +10,6 @@ summary: >-
   Jargon is the specific terminology associated with a particular field or area of activity. It is [well documented](https://doi.org/10.2190%2FJ8JJ-4YD0-4R00-G5N0) that jargon can have a negative impact on communication between professionals and laypeople. When niche words and phrases are used in applications that are intended for first time users, these unfamiliar words become meaningless jargon that provides no value. It clouds and complicates meaning, which is irritating and alienating to users, with potentially harmful consequences to all parties.
 date: 'August 16th, 2021'
 ---
-
 ## What is Jargon
 
 Jargon is specific terminology associated with a particular domain. It is essential to describe new entities for which there is no name yet, and it ensures the lingual precision and accuracy required for some domains. Jargon definitely has its place in the world as a means of making communication between experts more efficient and precise. But suppose it is used in the wrong context, for example, in an app intended for end consumers. In that case, it can have a clear negative impact on the communication between the application and the user. When niche words and phrases are used in applications intended for users who are not experts in the domain, these words become meaningless and hold no value. It obfuscates and complicates meaning, which can be irritating and off-putting to users and ultimately detrimental to both the user and the application.

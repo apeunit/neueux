@@ -20,9 +20,7 @@ As many already know, there are two main ways to get cryptocurrencies.
 
 ### Mining / Staking
 
-Depending on the blockchain’s technical structure, you can recieve a specific cryptocurrency from a particular blockchain by either mining or staking.  Mining and staking mechanisms are how new tokens are brought into circulation.
-
-Mining and staking are, of course, rather advanced activities. So, it is not likely that someone will receive their first crypto by mining.
+Depending on the blockchain’s technical structure, you can recieve a specific cryptocurrency from a particular blockchain by either mining or staking.  Mining and staking mechanisms are how new tokens are brought into circulation. Mining and staking are, of course, rather advanced activities. So, it is not likely that someone will receive their first crypto by mining.
 
 That's why we are now going to look at the second way: buying them.
 
@@ -33,7 +31,6 @@ There are several different ways to buy crypto, but the two most relevant to thi
 ### Exchange
 
 At the moment, most people still buy their first cryptocurrencies on exchanges, despite the fact that exchanges are relatively complex products that require a lot of customer understanding (KYC). Exchanges are relatively complex products because exchanges are predominantly designed as a special tool for people who invest. In my opinion, this is why most people currently purchase their first cryptos on exchanges—because the most common use case for crypto at the moment is investments.
-
 People tolerate these complex interfaces because they are willing to spend some time to learn the tool they are using to invest.However, as more use-cases arise beyond investing, more  people who are not willing to invest time learning how to use investing tools, will come into contact with blockchain and crypto.
 
 As a result of the diversity of crypto users, there is another product category for buying cryptocurrencies: ramp services.
