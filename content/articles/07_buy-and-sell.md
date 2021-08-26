@@ -28,14 +28,14 @@ That's why we are now going to look at the second way: buying them.
 
 There are several different ways to buy crypto, but the two most relevant to this article are buying on exchanges and buying through ramp services.
 
-### Exchange
+#### Exchange
 
 At the moment, most people still buy their first cryptocurrencies on exchanges, despite the fact that exchanges are relatively complex products that require a lot of customer understanding (KYC). Exchanges are relatively complex products because exchanges are predominantly designed as a special tool for people who invest. In my opinion, this is why most people currently purchase their first cryptos on exchanges—because the most common use case for crypto at the moment is investments.
-People tolerate these complex interfaces because they are willing to spend some time to learn the tool they are using to invest.However, as more use-cases arise beyond investing, more  people who are not willing to invest time learning how to use investing tools, will come into contact with blockchain and crypto.
+People tolerate these complex interfaces because they are willing to spend some time to learn the tool they are using to invest. However, as more use-cases arise beyond investing, more people who are not willing to invest time learning how to use investing tools, will come into contact with blockchain and crypto.
 
 As a result of the diversity of crypto users, there is another product category for buying cryptocurrencies: ramp services.
 
-### Ramp Services
+#### Ramp Services
 
 Theoretically, an exchange could also be called a ramp service. Since, strictly speaking, the term, ‘ramp service’ only refers to the process of buying cryptocurrencies with fiat money. However,the term is often used for a type of product that greatly simplifies the process of buying crypto.
 
@@ -62,11 +62,12 @@ For blockchain protocols that are looking to develop use-cases beyond investing,
 
 ## Conclusion
 
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629993584/neueux/media/articles/onramp_2.jpg" alt="">
+<div class="trust-article-image-block">
+  <img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629993584/neueux/media/articles/onramp_2.jpg" alt="">
 
-It is still very common for people to buy their first cryptocurrencies on an exchange. However, one should not expect that all users will be willing to do so in the future, especially as t use-cases outside of investing become more prevalent. Therefore, all blockchain protocols should seek out ramp services to support their cryptocurrency.
+  It is still very common for people to buy their first cryptocurrencies on an exchange. However, one should not expect that all users will be willing to do so in the future, especially as t use-cases outside of investing become more prevalent. Therefore, all blockchain protocols should seek out ramp services to support their cryptocurrency.
 
-It is great that so many wallets already have onramp services built into their product. However, I think there is still much room for improvement. Wallets should not redirect users to an external website. Instead, they should do everything within their own app (as the ZenGo Wallet does in this example). This change would be a significant step toward a smoother experience for users.
-
+  It is great that so many wallets already have onramp services built into their product. However, I think there is still much room for improvement. Wallets should not redirect users to an external website. Instead, they should do everything within their own app (as the ZenGo Wallet does in this example). This change would be a significant step toward a smoother experience for users.
+</div>
 
 
