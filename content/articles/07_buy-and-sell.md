@@ -48,7 +48,9 @@ For example, popular ramp services include:
 - wyre
 - mercuryo
 
-Many wallets have provided on-ramp services in their platforms so that users do not have to go out of their way to buy crypto. However, most wallets only redirect to an on-ramp service, which then opens in a new browser window.
+<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629993583/neueux/media/articles/onramp_1.jpg" alt="">
+
+Many wallets have provided on-ramp services in their platforms so that users do not have to go out of their way to buy crypto. However, most wallets only redirect to an on-ramp service, which then opens in a new browser window (as for example the Trust Wallet does in the screenshot shown). 
 
 In my opinion, this is not an optimal solution. It is already difficult to build trust for crypto products as many people are inherently skeptical. Being redirected to another website in order to make a purchase, often without an explanation why, undoubtedly deters some people from actually going through with the purchase, because they are not sure if they can trust the website they have been redirected to.
 
@@ -60,6 +62,11 @@ For blockchain protocols that are looking to develop use-cases beyond investing,
 
 ## Conclusion
 
+<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629993584/neueux/media/articles/onramp_2.jpg" alt="">
+
 It is still very common for people to buy their first cryptocurrencies on an exchange. However, one should not expect that all users will be willing to do so in the future, especially as t use-cases outside of investing become more prevalent. Therefore, all blockchain protocols should seek out ramp services to support their cryptocurrency.
 
-It is great that so many wallets already have onramp services built into their product. However, I think there is still much room for improvement. Wallets should not redirect users to an external website. Instead, they should do everything within their own app. This change would be a significant step toward a smoother experience for users.
+It is great that so many wallets already have onramp services built into their product. However, I think there is still much room for improvement. Wallets should not redirect users to an external website. Instead, they should do everything within their own app (as the ZenGo Wallet does in this example). This change would be a significant step toward a smoother experience for users.
+
+
+
