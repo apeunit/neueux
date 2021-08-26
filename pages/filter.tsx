@@ -47,8 +47,10 @@ const FilterPage = ({ screens, filter }) => {
       <main className="w-11/12 mx-auto max-w-8xl">
 
         <Header title="Screen gallery" />
-        <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={null} fallbackRoutePathname={"/"} showResult={true}/>
-        
+        <div>
+          <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={null} fallbackRoutePathname={"/"} showResult={true}/>
+        </div>
+
         <div className="flex flex-wrap screen-grid">
           {filtered().map((screen) => {
             return (
