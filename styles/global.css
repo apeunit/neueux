@@ -126,14 +126,15 @@ ul.nav {
 }
 
 .article-grid-span-3 {
-  @apply col-span-3 rounded-lg;
+  @apply col-span-3;
 }
 
 .article-grid-span-1 {
-  @apply col-span-1 rounded-lg;
+  @apply col-span-1;
 }
 
 .article-grid-image {
+  @apply rounded-lg;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
