@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4a
-title: 2/ Recovery
+title: Recovery
 author: Maximilian Blazek
 slug: 03_recovery
-category: Blockchain UX
+category: "UX Pitfalls of Blockchain: 3"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629205276/neueux/media/articles/header_recovery.jpg
 summary: >-

@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4k
-title: 3/ Trust
+title: Trust
 author: Maximilian Blazek
 slug: 02_trust
-category: Blockchain UX
+category: "UX Pitfalls of Blockchain: 2"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629205256/neueux/media/articles/header_trust.jpg
 summary: >-

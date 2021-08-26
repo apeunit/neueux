@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4l
-title: 5/ Accessibility
+title: Accessibility
 author: Maximilian Blazek
-slug: 05_accesibility
-category: Blockchain UX
+slug: 04_accesibility
+category: "UX Pitfalls of Blockchain: 4"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629470770/neueux/media/articles/Frame%202036.png
 summary: >-

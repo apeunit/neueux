@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4l
-title: 7/ Buy and Sell Crypto
+title: Buy and Sell Crypto
 author: Maximilian Blazek
 slug: 07_buy-and-sell
-category: Blockchain UX
+category: "UX Pitfalls of Blockchain: 7"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629470773/neueux/media/articles/Frame%202042.png
 summary: >-

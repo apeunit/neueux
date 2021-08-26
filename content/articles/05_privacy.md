@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4l
-title: 6/ Privacy
+title: Privacy
 author: Maximilian Blazek
-slug: 06_privacy
-category: Blockchain UX
+slug: 05_privacy
+category: "UX Pitfalls of Blockchain: 5"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629470767/neueux/media/articles/Frame%202018.png
 summary: >-

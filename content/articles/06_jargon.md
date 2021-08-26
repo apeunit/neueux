@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4l
-title: 8/ Jargon
+title: Jargon
 author: Maximilian Blazek
-slug: 08_jargon
-category: Blockchain UX
+slug: 06_jargon
+category: "UX Pitfalls of Blockchain: 6"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629470775/neueux/media/articles/Frame%202043.png
 summary: >-

@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4j
-title: 4/ Addresses
+title: Addresses
 author: Maximilian Blazek
 slug: 01_addresses
-category: Blockchain UX
+category: "UX Pitfalls of Blockchain: 1"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629205239/neueux/media/articles/header_address.jpg
 summary: >-
