@@ -39,17 +39,17 @@ Right at the beginning, this guide lists 3 pillars according to which one should
 <div class="article-grid"> 
   <div>
     <strong>Clear</strong>
-    <p>Help users navigate by designing clear layouts with distinct calls to action.</p>
+    </br>Help users navigate by designing clear layouts with distinct calls to action.
   </div>
   
   <div>
     <strong>Robust</strong> 
-    <p>Design your app to accommodate a variety of users.</p>    
+    </br>Design your app to accommodate a variety of users.
   </div>
   
   <div>
     <strong>Specific</strong>
-    <p>Support assistive technologies specific to your platform, just as you support the input methods of touch, keyboard, and mouse.</p>
+    </br>Support assistive technologies specific to your platform, just as you support the input methods of touch, keyboard, and mouse.
   </div>
 </div>
 
@@ -109,7 +109,7 @@ For example, it is conceivable that the mnemonic phrase is unintentionally read 
 
 I have a feeling that for many people in blockchain, (financial) inclusion is an important value that drew them to the space. However, we need to extend this inclusion further and make blockchain applications more accessible to people with physical and mental disabilities by designing them to be barrier-free. The aforementioned problems are far from being unsolvable. On the contrary, some of them seem relatively easy to solve and are even aligned with other UX efforts. For example, the use of ENS names instead of addresses would be a big step in the right direction for visually impaired people since an ENS name is much easier for a screen reader to read and less complex for a person to understand than an address.
 
-<audio class="w-full" controls>
+<audio controls>
   <source src="/article_extra_content/ens.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio> 
