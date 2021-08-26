@@ -10,7 +10,6 @@ summary: >-
   For many people financial inclusion is an important value of Blockchain. We need to extend this inclusion further and try to make Blockchain applications more accessible to people with physical and mental disabilities by designing them to be barrier-free.
 date: 'August 16th, 2021'
 ---
-
 Right off the bat, I want to state that I am not an accessibility expert. With this article, I simply want to draw attention to a problem that has been hardly discussed in Blockchain — the accessibility of Blockchain applications. Some aspects of blockchain are rather inaccessible, and in this article, I would like to point out the ones that stood out to me.
 
 ## Designing for Accessibility
@@ -37,11 +36,22 @@ There are many resources that can help you get started with designing (and devel
 
 Right at the beginning, this guide lists 3 pillars according to which one should design for accessibility, namely:
 
-**Clear** Help users navigate by designing clear layouts with distinct calls to action.
-
-**Robust** Design your app to accommodate a variety of users.
-
-**Specific** Support assistive technologies specific to your platform, just as you support the input methods of touch, keyboard, and mouse.
+<div class="article-grid"> 
+  <div>
+    **Clear** 
+    Help users navigate by designing clear layouts with distinct calls to action.
+  </div>
+  
+  <div>
+    **Robust**
+    Design your app to accommodate a variety of users.
+  </div>
+  
+  <div>
+    **Specific**
+    Support assistive technologies specific to your platform, just as you support the input methods of touch, keyboard, and mouse.
+  </div>
+</div>
 
 These pillars might still be a bit abstract for many people; therefore I will summarize the most important points of the accessibility guidelines of Google here:
 
@@ -65,6 +75,11 @@ Finally, I would like to focus on the accessibility issues of the blockchain eco
 ### Long strings of numbers and letters
 
 The first challenge that could arise is the long letter and number combinations prevalent in blockchain — frequently found in things like transaction hashes and wallet addresses. These could become a problem, especially for people with visual impairments who rely on screen readers. At the moment, the complex addresses still play a significant role in the daily use of cryptocurrencies and other blockchain applications. Using a screen reader turns to verify a transaction recipient’s already complex wallet address into a near-impossible task. As an example, here is Google's Wavenet, one of the most advanced text-to-speech programs, trying to read out a cryptocurrency address.
+
+<audio class="w-full" controls>
+  <source src="article_extra_content/address.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
 
 Listening to this audio file, it is obvious that checking a wallet address could be problematic.
 
@@ -91,6 +106,11 @@ For example, it is conceivable that the mnemonic phrase is unintentionally read 
 ## Conclusion
 
 I have a feeling that for many people in blockchain, (financial) inclusion is an important value that drew them to the space. However, we need to extend this inclusion further and make blockchain applications more accessible to people with physical and mental disabilities by designing them to be barrier-free. The aforementioned problems are far from being unsolvable. On the contrary, some of them seem relatively easy to solve and are even aligned with other UX efforts. For example, the use of ENS names instead of addresses would be a big step in the right direction for visually impaired people since an ENS name is much easier for a screen reader to read and less complex for a person to understand than an address.
+
+<audio class="w-full" controls>
+  <source src="article_extra_content/ens.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
 
 If these become widespread, QR codes would not have to be prioritized as much. There have already been efforts to create a hardware wallet for visually impaired people, namely the IcyWallet. However, IcyWallet’s development never seemed to pass the MVP stage and at the time of publishing this article, the IcyWallet website and GitHub repository are offline.
 

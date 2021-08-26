@@ -121,10 +121,6 @@ ul.nav {
   @apply flow-root;
 }
 
-.first-of-row:nth-child(3n-2) {
-  @apply pl-0;
-}
-
-.last-of-row:nth-child(3n), .last-of-row:last-child {
-  @apply pr-0 border-r-0;
+.article.grid {
+  @apply grid grid-cols-3 gap-4;
 }
