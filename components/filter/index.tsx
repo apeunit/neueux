@@ -10,6 +10,7 @@ const Filter = ({
   routeParams,
   routePathname,
   fallbackRoutePathname,
+  showResult,
 }) => {
   const router = useRouter();
 
@@ -130,22 +131,25 @@ const Filter = ({
   return (
     <>
       <div className="flow-root">
-        <div key={`list-index-filter-${listIndex}`} className="float-left space-x-2">
-          {selectedUserflows.map((userflow) => (
-            <FilterBadge
-              key={`userflow-filter-${userflow.id}`}
-              onSelect={() => onFilterRemove(userflow)}
-              text={userflow.name}
-            />
-          ))}
-          {selectedTags.map((tag) => (
-            <FilterBadge
-              key={`tag-filter-${tag.id}`}
-              onSelect={() => onFilterRemove(tag)}
-              text={tag.name}
-            />
-          ))}
-        </div>
+
+        {showResult &&              
+          <div key={`list-index-filter-${listIndex}`} className="float-left space-x-2">
+            {selectedUserflows.map((userflow) => (
+              <FilterBadge
+                key={`userflow-filter-${userflow.id}`}
+                onSelect={() => onFilterRemove(userflow)}
+                text={userflow.name}
+              />
+            ))}
+            {selectedTags.map((tag) => (
+              <FilterBadge
+                key={`tag-filter-${tag.id}`}
+                onSelect={() => onFilterRemove(tag)}
+                text={tag.name}
+              />
+            ))}
+          </div>
+        }
 
         <div className="hidden sm:inline float-right">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
