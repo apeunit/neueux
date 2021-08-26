@@ -47,7 +47,7 @@ const FilterPage = ({ screens, filter }) => {
       <main className="w-11/12 mx-auto max-w-8xl">
 
         <Header title="Screen gallery" />
-        <div>
+        <div className="my-8">
           <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={null} fallbackRoutePathname={"/"} showResult={true}/>
         </div>
 
