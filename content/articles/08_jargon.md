@@ -19,9 +19,9 @@ From my research, I can say that pretty much all blockchain applications are ful
 
 ## Why Jargon is bad
 
-> [...] he will be able to speak of it in the easy language, and with the completeness of conviction, with which he talks of any ordinary every-day matter. If he does not, he will be afraid to wander beyond the limits of the technical phraseology which he has got up; and a dead dogmatism, which oppresses, or raises opposition, will take the place of the lively confidence, born of personal conviction [...] - Aldous Huxley on teaching
+> [...] he will be able to speak of it in the easy language, and with the completeness of conviction, with which he talks of any ordinary every-day matter. If he does not, he will be afraid to wander beyond the limits of the technical phraseology which he has got up; and a dead dogmatism, which oppresses, or raises opposition, will take the place of the lively confidence, born of personal conviction [...] - Aldous Huxley on teaching [1](#1)
 
-There are two ways in which jargon can be bad. The first is when it is poorly formed — for example, when it is linguistically incorrect, a misnomer, unnecessarily long, or similar (a more detailed list can be found in [1]). Although jargon in blockchain often falls into this category (i.e., Zero-Knowledge Succinct Non-Interactive Argument of Knowledge or zkSNARK 👀), I will focus on the second type of Jargon in this article: jargon that is ill-adapted to its audience.
+There are two ways in which jargon can be bad. The first is when it is poorly formed — for example, when it is linguistically incorrect, a misnomer, unnecessarily long, or similar (a more detailed list can be found in [2](#2)). Although jargon in blockchain often falls into this category (i.e., Zero-Knowledge Succinct Non-Interactive Argument of Knowledge or zkSNARK 👀), I will focus on the second type of Jargon in this article: jargon that is ill-adapted to its audience.
 
 This second poor use of jargon is anywhere in an application intended for end-users who are not blockchain experts. Likely, the majority of blockchain users will not understand blockchain jargon when they are first getting started. And if jargon is not understood, it might lead to unwanted outcomes.
 
@@ -37,6 +37,24 @@ Finally, jargon makes an app less accessible because it disadvantages people wit
 
 The following screenshots are not meant to criticize the design of the apps. On the contrary, most of the applications shown are very well designed! Some of these apps may have deliberately chosen to use particular jargon, because their app’s target audience is more experienced users. Thus, these screenshots are only meant to be examples of the prevalence of jargon in blockchain applications in general.
 
+<div class="article-grid">
+  <div class="article-grid-span-3"><img src="https://res.cloudinary.com/ape-unit/image/upload/v1629991540/neueux/media/articles/image10.jpg" alt=""></div>
+  <div class="article-grid-span-1"><img src="https://res.cloudinary.com/ape-unit/image/upload/v1629991537/neueux/media/articles/image5.jpg" alt=""></div>
+  <div class="article-grid-span-1"><img src="https://res.cloudinary.com/ape-unit/image/upload/v1629991536/neueux/media/articles/image4.jpg" alt=""></div>
+  <div class="article-grid-span-1"><img src="https://res.cloudinary.com/ape-unit/image/upload/v1629991535/neueux/media/articles/image1.jpg" alt=""></div>
+  <div class="article-grid-span-3"><img src="https://res.cloudinary.com/ape-unit/image/upload/v1629991539/neueux/media/articles/image9.jpg" alt=""></div>
+  <div class="article-grid-span-3"><img src="https://res.cloudinary.com/ape-unit/image/upload/v1629991538/neueux/media/articles/image8.jpg" alt=""></div>
+  <div class="article-grid-span-1"><img src="https://res.cloudinary.com/ape-unit/image/upload/v1629991534/neueux/media/articles/image.jpg" alt=""></div>
+  <div class="article-grid-span-1"><img src="https://res.cloudinary.com/ape-unit/image/upload/v1629991581/neueux/media/articles/image3.png" alt=""></div>
+</div>
+
 ## Conclusion
 
 If blockchain products are to be usable by everyone, at every level of understanding, then applications will have to communicate to users in a way that everyone can quickly and easily understand. They should use jargon sparsely, and communicate in as plain language as possible. Otherwise, as described above, niche phrases will increase users’ mental overhead considerably. I know that it is difficult to determine what is jargon and what is not when you are deeply familiar with a subject. It happens to me all the time. However, as designers (and people interested in design), it's our job to bridge the gap between specialists and end-users. We should take a step back and evaluate if all the information in the text of an application is easy and quick to understand. In the end, an easy to understand application creates the best outcomes for everyone — inside and outside the blockchain domain.
+
+***
+
+#### Sources
+1:  <a name="1" href="https://mathcs.clarku.edu/huxley/CE3/SciEd.html">Scientific Education: Notes of an After-Dinner Speech, Aldous Huxley, 1869</a>
+
+2:  <a name="2" href="https://journals.sagepub.com/doi/10.2190/J8JJ-4YD0-4R00-G5N0">Scientific Jargon, Good and Bad, Russel Hirst, 2003</a>

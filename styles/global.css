@@ -122,5 +122,13 @@ ul.nav {
 }
 
 .article-grid {
-  @apply grid grid-cols-3 gap-4;
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-4;
+}
+
+.article-grid-span-3 {
+  @apply col-span-3;
+}
+
+.article-grid-span-1 {
+  @apply col-span-1;
 }
