@@ -45,8 +45,10 @@ const FilterPage = ({ screens, filter }) => {
   return (
     <Layout title="Filter" editable>
       <main className="w-11/12 mx-auto max-w-8xl">
+        <div className="mt-16">
+          <Header title="Screen gallery" />
+        </div>
 
-        <Header title="Screen gallery" />
         <div className="my-8">
           <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={null} fallbackRoutePathname={"/"} showResult={true}/>
         </div>
