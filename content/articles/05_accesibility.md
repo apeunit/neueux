@@ -32,7 +32,7 @@ This means that designing for accessibility not only benefits people with disabi
 
 ### How to Design for Accessibility?
 
-There are many resources that can help you get started with designing (and developing) for accessibility. One which I can highly recommend is the accessibility section of the Material Guidelines from Google. It is a thorough list of the most important things to consider when designing for accessibility.
+There are many resources that can help you get started with designing (and developing) for accessibility. One which I can highly recommend is the accessibility section of the Material Guidelines from Google. It is a thorough list of the most important things to consider when designing for accessibility. [1](#1)
 
 Right at the beginning, this guide lists 3 pillars according to which one should design for accessibility, namely:
 
@@ -117,3 +117,15 @@ I have a feeling that for many people in blockchain, (financial) inclusion is an
 If these become widespread, QR codes would not have to be prioritized as much. There have already been efforts to create a hardware wallet for visually impaired people, namely the IcyWallet. However, IcyWallet’s development never seemed to pass the MVP stage and at the time of publishing this article, the IcyWallet website and GitHub repository are offline.
 
 Ultimately, what is most important is that software and hardware wallet developers are aware of the accessibility issues (and the security issues that could come with it) and are actively working to address them. As I have mentioned in previous articles, wallets are one of the primary ways people will interact with blockchain, and it’s no different for people with disabilities. Therefore, it is important that both software and hardware wallets are **designed to be accessible for everyone**.
+
+***
+
+#### Sources
+
+1:  <a name="1" href="https://material.io/design/usability/accessibility.html">Material Design Accesibility </a>
+
+2:  <a name="2" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Web Accessibility Initiative</a>
+
+3:  <a name="3" href="https://www.interaction-design.org/literature/topics/accessibility">Interaction Design Foundation</a>
+
+4:  <a name="3" href="https://www.nasdaq.com/articles/icywallet-offers-a-cold-storage-bitcoin-wallet-for-the-visually-impaired-2017-12-12">Nasdaq 2017 - IcyWallet</a> 
