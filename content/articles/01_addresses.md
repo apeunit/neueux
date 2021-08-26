@@ -94,6 +94,6 @@ Luckily ENS seems to be on top of that. They are planning to move subdomain regi
 
 #### Sources
 
-1:  <a name="1" href="https://datatracker.ietf.org/doc/html/rfc226">RFC226</a>
+1:  <a name="1" href="https://datatracker.ietf.org/doc/html/rfc226">Standartization of host mnemonics, Peggy Karp, 1971</a>
 
-2:  <a name="2" href="https://datatracker.ietf.org/doc/html/RFC247">RFC247</a>
+2:  <a name="2" href="https://datatracker.ietf.org/doc/html/RFC247">Proferred Set of Standard Host Names, Peggy Karp, 1971</a>

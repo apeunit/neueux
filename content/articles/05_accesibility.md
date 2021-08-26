@@ -122,10 +122,10 @@ Ultimately, what is most important is that software and hardware wallet develope
 
 #### Sources
 
-1:  <a name="1" href="https://material.io/design/usability/accessibility.html">Material Design Accesibility </a>
+1:  <a name="1" href="https://material.io/design/usability/accessibility.html">Accesibility, Material Design</a>
 
-2:  <a name="2" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Web Accessibility Initiative</a>
+2:  <a name="2" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Accesibility Introduction, Web Accessibility Initiative</a>
 
-3:  <a name="3" href="https://www.interaction-design.org/literature/topics/accessibility">Interaction Design Foundation</a>
+3:  <a name="3" href="https://www.interaction-design.org/literature/topics/accessibility">Accessibility, Interaction Design Foundation</a>
 
-4:  <a name="3" href="https://www.nasdaq.com/articles/icywallet-offers-a-cold-storage-bitcoin-wallet-for-the-visually-impaired-2017-12-12">Nasdaq 2017 - IcyWallet</a> 
+4:  <a name="4" href="https://www.nasdaq.com/articles/icywallet-offers-a-cold-storage-bitcoin-wallet-for-the-visually-impaired-2017-12-12">IcyWallet Offers a Cold Storage Bitcoin Wallet for the Visually Impaired, Nasdaq, 2017</a> 
