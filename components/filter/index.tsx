@@ -129,29 +129,31 @@ const Filter = ({
 
   return (
     <>
-      <div key={`list-index-filter-${listIndex}`} className="relative top-16 space-x-2">
-        {selectedUserflows.map((userflow) => (
-          <FilterBadge
-            key={`userflow-filter-${userflow.id}`}
-            onSelect={() => onFilterRemove(userflow)}
-            text={userflow.name}
-          />
-        ))}
-        {selectedTags.map((tag) => (
-          <FilterBadge
-            key={`tag-filter-${tag.id}`}
-            onSelect={() => onFilterRemove(tag)}
-            text={tag.name}
-          />
-        ))}
+      <div className="flow-root">
+        <div key={`list-index-filter-${listIndex}`} className="float-left space-x-2">
+          {selectedUserflows.map((userflow) => (
+            <FilterBadge
+              key={`userflow-filter-${userflow.id}`}
+              onSelect={() => onFilterRemove(userflow)}
+              text={userflow.name}
+            />
+          ))}
+          {selectedTags.map((tag) => (
+            <FilterBadge
+              key={`tag-filter-${tag.id}`}
+              onSelect={() => onFilterRemove(tag)}
+              text={tag.name}
+            />
+          ))}
+        </div>
+
+        <div className="hidden sm:inline float-right">
+          <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
+            Filter by Categories
+          </Button>
+        </div>
       </div>
 
-      <div className="hidden sm:inline relative right-0">
-        <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
-          Filter by Categories
-        </Button>
-      </div>
-      
       <div className="sm:hidden bottom-6 z-50 fixed left-0 w-full text-center">
         <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
           Filter
