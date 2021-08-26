@@ -129,7 +129,7 @@ const Filter = ({
 
   return (
     <>
-      <div key={`list-index-filter-${listIndex}`} className="absolute top-16 space-x-2">
+      <div key={`list-index-filter-${listIndex}`} className="relative top-16 space-x-2">
         {selectedUserflows.map((userflow) => (
           <FilterBadge
             key={`userflow-filter-${userflow.id}`}
@@ -146,7 +146,7 @@ const Filter = ({
         ))}
       </div>
 
-      <div className="hidden sm:inline absolute right-0">
+      <div className="hidden sm:inline relative right-0">
         <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
           Filter by Categories
         </Button>
