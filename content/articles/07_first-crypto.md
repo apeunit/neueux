@@ -1,8 +1,8 @@
 ---
 id: ltq15cz4l
-title: Buy and Sell Crypto
+title: Your First Crypto
 author: Maximilian Blazek
-slug: 07_buy-and-sell
+slug: 07_first-crypto
 category: "UX Pitfalls of Blockchain: 7"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629470773/neueux/media/articles/Frame%202042.png
