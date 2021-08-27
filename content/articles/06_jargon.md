@@ -36,7 +36,7 @@ Finally, jargon makes an app less accessible because it disadvantages people wit
 
 The following screenshots are not meant to criticize the design of the apps. On the contrary, most of the applications shown are very well designed! Some of these apps may have deliberately chosen to use particular jargon, because their app’s target audience is more experienced users. Thus, these screenshots are only meant to be examples of the prevalence of jargon in blockchain applications in general.
 
-<div class="article-grid">
+<div class="article-grid article-jargon-image-grid">
   <div class="article-grid-span-3"><a href="/apps/app-1622214203974-gnosis-safe-elq6rg1tr/screen/qb1o7t1g5"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991540/neueux/media/articles/image10.jpg" alt=""></a></div>
   <div class="article-grid-span-1"><a href="/apps/app-1617876781719-lumi-wallet-azynqag3b/screen/od6hqu4e9"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991537/neueux/media/articles/image5.jpg" alt=""></a></div>
   <div class="article-grid-span-1"><a href="/apps/app-1617869675070-brd-khnlkeubl/screen/oxfdghcfx"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991536/neueux/media/articles/image4.jpg" alt=""></a></div>
