@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4j
-title: 4/ Addresses
+title: Addresses
 author: Maximilian Blazek
 slug: 01_addresses
-category: Blockchain UX
+category: "UX Pitfalls of Blockchain: 1"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629205239/neueux/media/articles/header_address.jpg
 summary: >-
@@ -23,7 +23,8 @@ Mapping names to IP addresses for the sake of usability is by no means a new ide
 
 ## Addresses in Blockchain
 
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234014/neueux/media/articles/Frame%20314.jpg" alt="">
+
+<a href="/apps/app-1617789909158-coinbase-wallet-f24t9fewj/screen/7gqf12qgb"><img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234014/neueux/media/articles/Frame%20314.jpg" alt=""></a>
 
 Wallets on the Blockchain serve a similar purpose to E-Mail Addresses on the Internet. They are the gateway to most Blockchain based products and services. You want to buy an NFT? You will have to "log in" to the NFT-marketplace and later pay with your wallet. Wallets are, similarly to E-Mail on the Internet, the first and primary way of interacting with this new technology (Blockchain) and therefore play an extremely vital role in the usability and adoption of the Blockchain ecosystem.
 
@@ -39,8 +40,8 @@ Considering how vital wallets and their addresses are to the Blockchain ecosyste
 
 ## Solutions
 
-One of the first major Blockchain projects after Bitcoin was Namecoin. The idea behind Namecoin was that the Blockchain could also be used to store mappings of data to names. Theoretically, Namecoin could have been used to map a cryptocurrency address to a .bit domain (example.bit for example), but unfortunately, it never gained widespread adoption due to various technical issues.
-Vitalik Buterin even referenced Namecoin in his whitepaper for Ethereum and suggested a similar service could be built on Ethereum:
+One of the first major Blockchain projects after Bitcoin was Namecoin. [3](#3) The idea behind Namecoin was that the Blockchain could also be used to store mappings of data to names. Theoretically, Namecoin could have been used to map a cryptocurrency address to a .bit domain (example.bit for example), but unfortunately, it never gained widespread adoption due to various technical issues.
+Vitalik Buterin even referenced Namecoin in his whitepaper for Ethereum and suggested a similar service could be built on Ethereum: [4](#4)
 
 > _The earliest alternative cryptocurrency of all, Namecoin, attempted to use a Bitcoin-like Blockchain to provide a name registration system, where users can register their names in a public database alongside other data. The major cited use case is for a DNS system, mapping domain names like "bitcoin.org" (or, in Namecoin's case, "bitcoin.bit") to an IP address. Other use cases include email authentication and potentially more advanced reputation systems. Here is the basic contract to provide a Namecoin-like name registration system on Ethereum_ \[...\]
 
@@ -58,7 +59,7 @@ It started with a rather minimal feature set (you could register **.eth** domain
   * This opens up the possibility to have your website on example.xyz, but also receive all cryptocurrencies using the same address!
 * Domain owners can create subdomains like subexample.example.eth. This allows wallet providers to issue all of their users an ENS domain in the form of a subdomain of their own ENS name, for example user1.wallet.eth
 
-According to their website, ENS is (by far) the most integrated Blockchain naming standard with over 250+ integrations with different Blockchain-based applications.
+According to their website, ENS is (by far) the most integrated Blockchain naming standard with over 250+ integrations with different Blockchain-based applications. [6](#6)
 
 ### Unstoppable Domains
 
@@ -74,7 +75,7 @@ The final step to completely solving this UX issue is adoption by both Blockchai
 
 ### Adoption
 
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234016/neueux/media/articles/Frame%20315.jpg" alt="">
+<a href="/apps/app-1617284064442-argent-mr9vab4xa/screen/sh7adnu5k"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1630054645/neueux/media/articles/03_example_ens_address.jpg" alt=""></a>
 
 Blockchain application developers have to embrace these services, which means integrating them with their dApps and prioritising them in their interfaces. It isn't enough that your app can resolve ENS or unstoppable domain names in the address field. If a cryptocurrency address has an ENS linked to it, you should display it instead of the cryptocurrency address!
 
@@ -94,6 +95,16 @@ Luckily ENS seems to be on top of that. They are planning to move subdomain regi
 
 #### Sources
 
-1:  <a name="1" href="https://datatracker.ietf.org/doc/html/rfc226">RFC226</a>
+1:  <a name="1" href="https://datatracker.ietf.org/doc/html/rfc226">Standartization of host mnemonics, Peggy Karp, 1971</a>
 
-2:  <a name="2" href="https://datatracker.ietf.org/doc/html/RFC247">RFC247</a>
+2:  <a name="2" href="https://datatracker.ietf.org/doc/html/RFC247">Proferred Set of Standard Host Names, Peggy Karp, 1971</a>
+
+3:  <a name="3" href="https://www.namecoin.org/">Namecoin</a>
+
+4:  <a name="4" href="https://ethereum.org/en/whitepaper/">Ethereum Whitepaper, Vitalik Buterin, 2013</a>
+
+5:  <a name="5" href="https://eips.ethereum.org/EIPS/eip-137">Ethereum Improvement Proposal 137, Nick Johnson, 2016</a>
+
+6:  <a name="6" href="https://ens.domains/">ENS Domains</a>
+
+7:  <a name="7" href="https://unstoppabledomains.com/">Unstoppable Domains</a>

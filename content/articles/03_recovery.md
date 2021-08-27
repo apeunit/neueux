@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4a
-title: 2/ Recovery
+title: Recovery
 author: Maximilian Blazek
 slug: 03_recovery
-category: Blockchain UX
+category: "UX Pitfalls of Blockchain: 3"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629205276/neueux/media/articles/header_recovery.jpg
 summary: >-
@@ -59,7 +59,7 @@ Other backup methods have been devised to improve the backup process’s user ex
 
 ### Mnemonic Phrase
 
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238156/neueux/media/articles/Frame%20316.jpg" alt="">
+<a href="/apps/app-1617810727431-mew-wallet-p5eypx7wi/screen/agy2sot3a"><img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238156/neueux/media/articles/Frame%20316.jpg" alt=""></a>
 
 Currently, the most common way of generating and, consequently, backing up a wallet is a so-called "seed phrase" or "mnemonic phrase". The "seed phrase" is usually a group of 12 to 24 words. A mnemonic phrase usually looks something like this:
 
@@ -75,7 +75,7 @@ There are methods to partially circumvent this problem. However, there are still
 
 ### Social Recovery
 
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238154/neueux/media/articles/Frame%20315.jpg" alt="">
+<a href="/apps/app-1617284064442-argent-mr9vab4xa/screen/t9naexans"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238154/neueux/media/articles/Frame%20315.jpg" alt=""></a>
 
 In an effort to provide a better user experience during the backup process and higher security overall, some wallets have adopted a "social recovery" process. With social recovery, users won't have to write down a seed phrase. Instead, users appoint guardians to their wallets.
 
@@ -113,10 +113,10 @@ UX designers and developers will have to continue working together to either imp
 
 #### Sources
 
-1: <a name="1" href="https://static1.squarespace.com/static/5d580747908cdc0001e6792d/t/5e98dde5558a587a09fac0cc/1587076583519/research+note+4.17.pdf">Cane Island Digital Research 2020</a>
+1: <a name="1" href="https://static1.squarespace.com/static/5d580747908cdc0001e6792d/t/5e98dde5558a587a09fac0cc/1587076583519/research+note+4.17.pdf">There Will Never Be More Than 14 Million Bitcoins, Cane Island Digital Research, 2020</a>
 
-2: <a name="2" href="https://blog.chainalysis.com/reports/bitcoin-market-data-exchanges-trading">Chainalysis Insights 2020</a>
+2: <a name="2" href="https://blog.chainalysis.com/reports/bitcoin-market-data-exchanges-trading">60% of Bitcoin is Held Long Term as Digital Gold. What About the Rest?, Chainalysis Insights, 2020</a>
 
-3: <a name="3" href="https://www.pymnts.com/study/paycheck-to-paycheck-consumer-finances-american-households/">PYMNTS Reality Check 2021</a>
+3: <a name="3" href="https://www.pymnts.com/study/paycheck-to-paycheck-consumer-finances-american-households/">Reality Check: Paycheck-to-Paycheck, PYMNTS, 2021</a>
 
-<a href="https://vitalik.ca/general/2021/01/11/recovery.html">Buterin 2021</a>
+4: <a name="4" href="https://vitalik.ca/general/2021/01/11/recovery.html">Why we need wide adoption of social recovery wallets, Vitalik Buterin, 2021</a>

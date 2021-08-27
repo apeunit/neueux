@@ -10,6 +10,7 @@ const Filter = ({
   routeParams,
   routePathname,
   fallbackRoutePathname,
+  showResult,
 }) => {
   const router = useRouter();
 
@@ -128,43 +129,41 @@ const Filter = ({
   };
 
   return (
-    <div className="w-full flex lg:relative md:relative sm:relative  mt-10">
-      <div
-        key={`list-index-filter-${listIndex}`}
-        className="space-x-2"
-      >
-        {selectedUserflows.map((userflow) => (
-          <FilterBadge
-            key={`userflow-filter-${userflow.id}`}
-            onSelect={() => onFilterRemove(userflow)}
-            text={userflow.name}
-          />
-        ))}
-        {selectedTags.map((tag) => (
-          <FilterBadge
-            key={`tag-filter-${tag.id}`}
-            onSelect={() => onFilterRemove(tag)}
-            text={tag.name}
-          />
-        ))}
-      </div>
+    <>
+      <div className="flow-root">
 
-      <div className={["ml-auto text-right w-1/2 lg:w-1/3 sm:w-4/5",
-        !selectedList.length
-          ? "lg:absolute md:absolute sm:absolute lg:-top-26 md:-top-26 sm:-top-26 right-0" : "",
-      ].join(" ")}>
+        {showResult &&              
+          <div key={`list-index-filter-${listIndex}`} className="float-left space-x-2">
+            {selectedUserflows.map((userflow) => (
+              <FilterBadge
+                key={`userflow-filter-${userflow.id}`}
+                onSelect={() => onFilterRemove(userflow)}
+                text={userflow.name}
+              />
+            ))}
+            {selectedTags.map((tag) => (
+              <FilterBadge
+                key={`tag-filter-${tag.id}`}
+                onSelect={() => onFilterRemove(tag)}
+                text={tag.name}
+              />
+            ))}
+          </div>
+        }
 
-        <div className="hidden lg:block md:block sm:block">
+        <div className="hidden sm:inline float-right">
           <Button onClick={() => setShowFilter(true)} type="Primary" size="lg" >
             Filter by Categories
           </Button>
         </div>
-        <div className="lg:hidden md:hidden sm:hidden bottom-6 z-50 fixed  left-0 w-full text-center">
-          <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
-            Filter
-          </Button>
-        </div>
       </div>
+
+      <div className="sm:hidden bottom-6 z-50 fixed left-0 w-full text-center">
+        <Button onClick={() => setShowFilter(true)} type="Primary" size="sm">
+          Filter
+        </Button>
+      </div>
+
       {showFilter && (
         <FilterCard
           key={`filter-card-${listIndex}`}
@@ -178,7 +177,7 @@ const Filter = ({
           onRemove={onFilterRemove}
         />
       )}
-    </div>
+    </>
   );
 };
 

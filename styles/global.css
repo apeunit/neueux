@@ -108,16 +108,37 @@ ul.nav {
 .article-image-left {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  @apply mx-auto lg:float-left lg:p-5 lg:-ml-1/2 w-2/3;
+  @apply mx-auto lg:float-left lg:p-5 lg:-ml-7/20 w-2/3;
 }
 
 .article-image-right {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  @apply mx-auto lg:float-right lg:p-5 lg:-mr-1/2 w-2/3;
+  @apply mx-auto lg:float-right lg:p-5 lg:-mr-7/20 w-2/3;
 }
 
 .trust-article-image-block {
   @apply flow-root;
 }
 
+.article-grid {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-4;
+}
+
+.article-jargon-image-grid {
+  @apply lg:w-3/2 lg:-ml-3/10;
+}
+
+.article-grid-span-3 {
+  @apply col-span-1 lg:col-span-3;
+}
+
+.article-grid-span-1 {
+  @apply col-span-1;
+}
+
+.article-grid-image {
+  @apply rounded-lg;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

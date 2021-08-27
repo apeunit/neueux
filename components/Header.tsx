@@ -1,12 +1,6 @@
 import React from "react";
 const Header = ({ title }) => (
-  <div className="mt-32 hidden lg:block md:block sm:block">
-    <div className="flex">
-      <div className="w-3/6 text-5xl leading-loose font-extralight tracking-tighter">
-        <h1>{title}</h1>
-      </div>
-    </div>
-  </div>
+  <h1 className="font-extrabold text-5xl leading-2">{title}</h1>
 );
 
 export default Header;

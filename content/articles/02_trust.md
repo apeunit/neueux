@@ -1,9 +1,9 @@
 ---
 id: ltq15cz4k
-title: 3/ Trust
+title: Trust
 author: Maximilian Blazek
 slug: 02_trust
-category: Blockchain UX
+category: "UX Pitfalls of Blockchain: 2"
 featured_image: >-
   https://res.cloudinary.com/ape-unit/image/upload/v1629205256/neueux/media/articles/header_trust.jpg
 summary: >-
@@ -48,7 +48,7 @@ Again, the time a transaction takes to go through depends on the amount of trans
 
 ### Transactions are public
 
-Many newspapers report on cryptocurrencies as if they are completely anonymous and untraceable, so it might be surprising to users unfamiliar with Blockchain that this is not the case. In fact, most Blockchains are only pseudonymous and transactions are public for anyone to see. [3](#3)
+Many newspapers report on cryptocurrencies as if they are completely anonymous and untraceable, so it might be surprising to users unfamiliar with Blockchain that this is not the case. [3](#3) In fact, most Blockchains are only pseudonymous and transactions are public for anyone to see. 
 If someone knows your cryptocurrency address, they can see how much "money" is in your account, as well as every transaction your account has ever been involved in. This might lead to uncomfortable situations if a user thinks that their transactions are private (as they are in traditional payment services) because anyone who knows their address could see all of their potentially compromising transactions.
 
 ### Transactions are final
@@ -62,27 +62,27 @@ The following four examples explain situations where inexperienced users could b
 ### Onboarding
 
 <div class="trust-article-image-block">
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238914/neueux/media/articles/Frame%20316111.jpg" alt="">
-During the MEW app’s onboarding process, users are provided with a rundown of the most important things to be aware of when dealing with cryptocurrencies. In point 2 they warn their users about the finality of cryptocurrency transactions.
+  <a href="/apps/app-1617810727431-mew-wallet-p5eypx7wi/screen/ky3vt63fv"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238914/neueux/media/articles/Frame%20316111.jpg" alt=""></a>
+  During the MEW app’s onboarding process, users are provided with a rundown of the most important things to be aware of when dealing with cryptocurrencies. In point 2 they warn their users about the finality of cryptocurrency transactions.
 </div>
 
 ### Part of the process
 
 <div class="trust-article-image-block">
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238915/neueux/media/articles/Frame%2020051111.jpg" alt="">
-Zengo informs their users about the finality of cryptocurrency transactions as part of the sending process. Instead of overloading users with information right when they download the app, they make the information available at the time it is most relevant to the user — in the transaction process.
+  <a href="/apps/app-1618409563523-zengo-wallet-hejeoxdps/screen/0d0u7hi1y"><img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238915/neueux/media/articles/Frame%2020051111.jpg" alt=""></a>
+  Zengo informs their users about the finality of cryptocurrency transactions as part of the sending process. Instead of overloading users with information right when they download the app, they make the information available at the time it is most relevant to the user — in the transaction process.
 </div>
 
 ### Tooltips
 <div class="trust-article-image-block">
-  <img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629291979/neueux/media/articles/Frame%202008.jpg" alt="">
+  <a href="/apps/app-1617789909158-coinbase-wallet-f24t9fewj/screen/ujj3w2drd"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629291979/neueux/media/articles/Frame%202008.jpg" alt=""></a>
   The Coinbase wallet provides information about miner fees in the form of a tooltip. Tooltips are a way of making information available when it is most relevant to a user. However, in this case, the information is only shown once the user seeks out help and clicks on the tooltip.
 </div>
 
 
 ### Knowledge base
 <div class="trust-article-image-block">
-  <img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238916/neueux/media/articles/Frame%2020061111.jpg" alt="">
+  <a href="/apps/app-1617810727431-mew-wallet-p5eypx7wi/screen/6hemlhyjc"><img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238916/neueux/media/articles/Frame%2020061111.jpg" alt=""></a>
   Lastly, information can also be given in the form of a knowledge base; the MEW app uses their education center as a knowledge base.
   The goal of a knowledge base seems to be to fulfill the users' desire to learn rather than to clarify inconsistencies when they come up.
 </div>
@@ -91,7 +91,7 @@ Zengo informs their users about the finality of cryptocurrency transactions as p
 
 If Blockchain is to hold a significant part of many people's wealth in the future, then all its users will have to learn to trust this technology. This trust can be achieved through well crafted explanations. Users trust products and services which they believe to understand (to some degree). Since wallets will be one of the first touch points for many new users, they should contain adequate explanation. These explanations need to focus primarily on the idiosyncrasies of Blockchain, i.e. the interactions that are different from what most people are used to. The interactions that are perceived as different from the norm will be distinct causes of skepticism, and it is precisely this skepticism that must be overcome in order to foster trust.
 In this article, I have given examples of the types of interactions that should be explained and how some flagship wallets are currently trying to integrate explanations into their platforms.
-However, the question might arise: How can we raise the overall level of explanations (and their quality) industrywide?
+**However, the question might arise: How can we raise the overall level of explanations (and their quality) industrywide?**
 
 In my opinion, a collection of open source explanations and illustrations focusing on the peculiarities of Blockchain is the answer. It would empower the designers and developers of wallets and other Blockchain applications to take these explanations and integrate them into their apps. Also, it would remove their need to invest personal resources into creating high quality explanations and illustrations.
 
@@ -101,8 +101,8 @@ At some point, we would like to offer these resources on neueux. By allowing ope
 
 #### Sources
 
-1: <a name="1" href="https://doi.org/10.1007/s10676-010-9253-3">Pieters 2011</a>
+1: <a name="1" href="https://doi.org/10.1007/s10676-010-9253-3">Explanation and trust: what to tell the user in security and AI?, Wolter Pieters, 2011</a>
 
-2: <a name="2" href="https://doi.org/10.2307/249487">Gregor, Benbasat 1999</a>
+2: <a name="2" href="https://doi.org/10.2307/249487">Explanations from Intelligent Systems: Theoretical Foundations and Implications for Practice, Shirley Gregor and Izak Benbasat, 1999</a>
 
-3: <a name="3" href="https://www.irishtimes.com/business/economy/eu-to-ban-cryptocurrency-anonymity-in-anti-money-laundering-plan-1.4626129">Irishtimes 2021</a>
+3: <a name="3" href="https://www.irishtimes.com/business/economy/eu-to-ban-cryptocurrency-anonymity-in-anti-money-laundering-plan-1.4626129">EU to ban cryptocurrency anonymity in anti-money laundering plan, Naomi O’Leary, 2021</a>

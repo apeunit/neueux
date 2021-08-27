@@ -13,15 +13,11 @@ const IndexPage = ({ apps, filter }) => {
   // console.log(cms);
   return (
     <Layout title="Screen Gallery" editable>
-      <main className="w-11/12 mx-auto max-w-8xl xl:relative">
-        <Header title="Screen gallery" />
-        <Filter
-          tags={filter.tags}
-          userflows={filter.userflows}
-          routeParams={null}
-          routePathname={"/filter"}
-          fallbackRoutePathname={"/"}
-        />
+      <main className="w-11/12 mx-auto max-w-8xl">
+        <div className="my-16 flex justify-between">
+          <Header title="Screen gallery" />
+          <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={"/filter"} fallbackRoutePathname={"/"} showResult={false}/>
+        </div>
         {apps.map((app) => {
           return <AppCard key={`app-list-${app.slug}`} app={app} />;
         })}
