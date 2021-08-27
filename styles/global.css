@@ -126,7 +126,7 @@ ul.nav {
 }
 
 .article-jargon-image-grid {
-  @apply lg:w-3/2 lg:-ml-1/4;
+  @apply lg:w-3/2 lg:-ml-3/10;
 }
 
 .article-grid-span-3 {
