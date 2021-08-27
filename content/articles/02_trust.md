@@ -48,7 +48,7 @@ Again, the time a transaction takes to go through depends on the amount of trans
 
 ### Transactions are public
 
-Many newspapers report on cryptocurrencies as if they are completely anonymous and untraceable, so it might be surprising to users unfamiliar with Blockchain that this is not the case. In fact, most Blockchains are only pseudonymous and transactions are public for anyone to see. [3](#3)
+Many newspapers report on cryptocurrencies as if they are completely anonymous and untraceable, so it might be surprising to users unfamiliar with Blockchain that this is not the case. [3](#3) In fact, most Blockchains are only pseudonymous and transactions are public for anyone to see. 
 If someone knows your cryptocurrency address, they can see how much "money" is in your account, as well as every transaction your account has ever been involved in. This might lead to uncomfortable situations if a user thinks that their transactions are private (as they are in traditional payment services) because anyone who knows their address could see all of their potentially compromising transactions.
 
 ### Transactions are final
@@ -91,7 +91,7 @@ The following four examples explain situations where inexperienced users could b
 
 If Blockchain is to hold a significant part of many people's wealth in the future, then all its users will have to learn to trust this technology. This trust can be achieved through well crafted explanations. Users trust products and services which they believe to understand (to some degree). Since wallets will be one of the first touch points for many new users, they should contain adequate explanation. These explanations need to focus primarily on the idiosyncrasies of Blockchain, i.e. the interactions that are different from what most people are used to. The interactions that are perceived as different from the norm will be distinct causes of skepticism, and it is precisely this skepticism that must be overcome in order to foster trust.
 In this article, I have given examples of the types of interactions that should be explained and how some flagship wallets are currently trying to integrate explanations into their platforms.
-However, the question might arise: How can we raise the overall level of explanations (and their quality) industrywide?
+**However, the question might arise: How can we raise the overall level of explanations (and their quality) industrywide?**
 
 In my opinion, a collection of open source explanations and illustrations focusing on the peculiarities of Blockchain is the answer. It would empower the designers and developers of wallets and other Blockchain applications to take these explanations and integrate them into their apps. Also, it would remove their need to invest personal resources into creating high quality explanations and illustrations.
 

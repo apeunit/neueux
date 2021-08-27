@@ -119,4 +119,4 @@ UX designers and developers will have to continue working together to either imp
 
 3: <a name="3" href="https://www.pymnts.com/study/paycheck-to-paycheck-consumer-finances-american-households/">Reality Check: Paycheck-to-Paycheck, PYMNTS, 2021</a>
 
-<a href="https://vitalik.ca/general/2021/01/11/recovery.html">Why we need wide adoption of social recovery wallets, Vitalik Buterin, 2021</a>
+4: <a name="4" href="https://vitalik.ca/general/2021/01/11/recovery.html">Why we need wide adoption of social recovery wallets, Vitalik Buterin, 2021</a>

@@ -40,8 +40,8 @@ Considering how vital wallets and their addresses are to the Blockchain ecosyste
 
 ## Solutions
 
-One of the first major Blockchain projects after Bitcoin was Namecoin. The idea behind Namecoin was that the Blockchain could also be used to store mappings of data to names. Theoretically, Namecoin could have been used to map a cryptocurrency address to a .bit domain (example.bit for example), but unfortunately, it never gained widespread adoption due to various technical issues.
-Vitalik Buterin even referenced Namecoin in his whitepaper for Ethereum and suggested a similar service could be built on Ethereum:
+One of the first major Blockchain projects after Bitcoin was Namecoin. [3](#3) The idea behind Namecoin was that the Blockchain could also be used to store mappings of data to names. Theoretically, Namecoin could have been used to map a cryptocurrency address to a .bit domain (example.bit for example), but unfortunately, it never gained widespread adoption due to various technical issues.
+Vitalik Buterin even referenced Namecoin in his whitepaper for Ethereum and suggested a similar service could be built on Ethereum: [4](#4)
 
 > _The earliest alternative cryptocurrency of all, Namecoin, attempted to use a Bitcoin-like Blockchain to provide a name registration system, where users can register their names in a public database alongside other data. The major cited use case is for a DNS system, mapping domain names like "bitcoin.org" (or, in Namecoin's case, "bitcoin.bit") to an IP address. Other use cases include email authentication and potentially more advanced reputation systems. Here is the basic contract to provide a Namecoin-like name registration system on Ethereum_ \[...\]
 
@@ -59,7 +59,7 @@ It started with a rather minimal feature set (you could register **.eth** domain
   * This opens up the possibility to have your website on example.xyz, but also receive all cryptocurrencies using the same address!
 * Domain owners can create subdomains like subexample.example.eth. This allows wallet providers to issue all of their users an ENS domain in the form of a subdomain of their own ENS name, for example user1.wallet.eth
 
-According to their website, ENS is (by far) the most integrated Blockchain naming standard with over 250+ integrations with different Blockchain-based applications.
+According to their website, ENS is (by far) the most integrated Blockchain naming standard with over 250+ integrations with different Blockchain-based applications. [6](#6)
 
 ### Unstoppable Domains
 
@@ -98,3 +98,13 @@ Luckily ENS seems to be on top of that. They are planning to move subdomain regi
 1:  <a name="1" href="https://datatracker.ietf.org/doc/html/rfc226">Standartization of host mnemonics, Peggy Karp, 1971</a>
 
 2:  <a name="2" href="https://datatracker.ietf.org/doc/html/RFC247">Proferred Set of Standard Host Names, Peggy Karp, 1971</a>
+
+3:  <a name="3" href="https://www.namecoin.org/">Namecoin</a>
+
+4:  <a name="4" href="https://ethereum.org/en/whitepaper/">Ethereum Whitepaper, Vitalik Buterin, 2013</a>
+
+5:  <a name="5" href="https://eips.ethereum.org/EIPS/eip-137">Ethereum Improvement Proposal 137, Nick Johnson, 2016</a>
+
+6:  <a name="6" href="https://ens.domains/">ENS Domains</a>
+
+7:  <a name="7" href="https://unstoppabledomains.com/">Unstoppable Domains</a>
