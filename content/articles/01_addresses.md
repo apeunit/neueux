@@ -75,7 +75,7 @@ The final step to completely solving this UX issue is adoption by both Blockchai
 
 ### Adoption
 
-<a href="/apps/app-1617284064442-argent-mr9vab4xa/screen/t9naexans"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234016/neueux/media/articles/Frame%20315.jpg" alt=""></a>
+<a href="/apps/app-1617284064442-argent-mr9vab4xa/screen/sh7adnu5k"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1630054645/neueux/media/articles/03_example_ens_address.jpg" alt=""></a>
 
 Blockchain application developers have to embrace these services, which means integrating them with their dApps and prioritising them in their interfaces. It isn't enough that your app can resolve ENS or unstoppable domain names in the address field. If a cryptocurrency address has an ENS linked to it, you should display it instead of the cryptocurrency address!
 
