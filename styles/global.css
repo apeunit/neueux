@@ -108,13 +108,13 @@ ul.nav {
 .article-image-left {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  @apply mx-auto lg:float-left lg:p-5 lg:-ml-1/2 w-2/3;
+  @apply mx-auto lg:float-left lg:p-5 lg:-ml-7/20 w-2/3;
 }
 
 .article-image-right {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  @apply mx-auto lg:float-right lg:p-5 lg:-mr-1/2 w-2/3;
+  @apply mx-auto lg:float-right lg:p-5 lg:-mr-7/20 w-2/3;
 }
 
 .trust-article-image-block {
