@@ -59,7 +59,7 @@ Other backup methods have been devised to improve the backup process’s user ex
 
 ### Mnemonic Phrase
 
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238156/neueux/media/articles/Frame%20316.jpg" alt="">
+<a href="/apps/app-1617810727431-mew-wallet-p5eypx7wi/screen/agy2sot3a"><img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238156/neueux/media/articles/Frame%20316.jpg" alt=""></a>
 
 Currently, the most common way of generating and, consequently, backing up a wallet is a so-called "seed phrase" or "mnemonic phrase". The "seed phrase" is usually a group of 12 to 24 words. A mnemonic phrase usually looks something like this:
 
@@ -75,7 +75,7 @@ There are methods to partially circumvent this problem. However, there are still
 
 ### Social Recovery
 
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238154/neueux/media/articles/Frame%20315.jpg" alt="">
+<a href="/apps/app-1617284064442-argent-mr9vab4xa/screen/t9naexans"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629238154/neueux/media/articles/Frame%20315.jpg" alt=""></a>
 
 In an effort to provide a better user experience during the backup process and higher security overall, some wallets have adopted a "social recovery" process. With social recovery, users won't have to write down a seed phrase. Instead, users appoint guardians to their wallets.
 

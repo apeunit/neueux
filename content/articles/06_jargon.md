@@ -37,14 +37,14 @@ Finally, jargon makes an app less accessible because it disadvantages people wit
 The following screenshots are not meant to criticize the design of the apps. On the contrary, most of the applications shown are very well designed! Some of these apps may have deliberately chosen to use particular jargon, because their app’s target audience is more experienced users. Thus, these screenshots are only meant to be examples of the prevalence of jargon in blockchain applications in general.
 
 <div class="article-grid">
-  <div class="article-grid-span-3"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991540/neueux/media/articles/image10.jpg" alt=""></div>
-  <div class="article-grid-span-1"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991537/neueux/media/articles/image5.jpg" alt=""></div>
-  <div class="article-grid-span-1"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991536/neueux/media/articles/image4.jpg" alt=""></div>
-  <div class="article-grid-span-1"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991535/neueux/media/articles/image1.jpg" alt=""></div>
-  <div class="article-grid-span-3"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991539/neueux/media/articles/image9.jpg" alt=""></div>
-  <div class="article-grid-span-3"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991538/neueux/media/articles/image8.jpg" alt=""></div>
-  <div class="article-grid-span-1"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991534/neueux/media/articles/image.jpg" alt=""></div>
-  <div class="article-grid-span-1"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991581/neueux/media/articles/image3.png" alt=""></div>
+  <div class="article-grid-span-3"><a href="/apps/app-1622214203974-gnosis-safe-elq6rg1tr/screen/qb1o7t1g5"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991540/neueux/media/articles/image10.jpg" alt=""></a></div>
+  <div class="article-grid-span-1"><a href="/apps/app-1617876781719-lumi-wallet-azynqag3b/screen/od6hqu4e9"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991537/neueux/media/articles/image5.jpg" alt=""></a></div>
+  <div class="article-grid-span-1"><a href="/apps/app-1617869675070-brd-khnlkeubl/screen/oxfdghcfx"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991536/neueux/media/articles/image4.jpg" alt=""></a></div>
+  <div class="article-grid-span-1"><a href="/apps/app-1617289773983-atomic-wallet-x3l28b4fg/screen/jfy7wlet0"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991535/neueux/media/articles/image1.jpg" alt=""></a></div>
+  <div class="article-grid-span-3"><a href="/apps/app-1621349700624-tornado-cash-eyynmsu1t/screen/ulz6yhdau"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991539/neueux/media/articles/image9.jpg" alt=""></a></div>
+  <div class="article-grid-span-3"><a href="/apps/app-1621347512156-opensea-phg2vice5/screen/2o6zmot5z"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991538/neueux/media/articles/image8.jpg" alt=""></a></div>
+  <div class="article-grid-span-1"><a href="/apps/app-1618389262827-trust-wallet-v6z58hamj/screen/nfzmo6g7g"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991534/neueux/media/articles/image.jpg" alt=""></a></div>
+  <div class="article-grid-span-1"><a href="/apps/app-1617810727431-mew-wallet-p5eypx7wi/screen/bj9p9yx33"><img class="article-grid-image" src="https://res.cloudinary.com/ape-unit/image/upload/v1629991581/neueux/media/articles/image3.png" alt=""></a></div>
 </div>
 
 ## Conclusion

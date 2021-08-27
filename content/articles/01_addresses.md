@@ -23,7 +23,8 @@ Mapping names to IP addresses for the sake of usability is by no means a new ide
 
 ## Addresses in Blockchain
 
-<img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234014/neueux/media/articles/Frame%20314.jpg" alt="">
+
+<a href="/apps/app-1617789909158-coinbase-wallet-f24t9fewj/screen/7gqf12qgb"><img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234014/neueux/media/articles/Frame%20314.jpg" alt=""></a>
 
 Wallets on the Blockchain serve a similar purpose to E-Mail Addresses on the Internet. They are the gateway to most Blockchain based products and services. You want to buy an NFT? You will have to "log in" to the NFT-marketplace and later pay with your wallet. Wallets are, similarly to E-Mail on the Internet, the first and primary way of interacting with this new technology (Blockchain) and therefore play an extremely vital role in the usability and adoption of the Blockchain ecosystem.
 
@@ -74,7 +75,7 @@ The final step to completely solving this UX issue is adoption by both Blockchai
 
 ### Adoption
 
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234016/neueux/media/articles/Frame%20315.jpg" alt="">
+<a href="/apps/app-1617284064442-argent-mr9vab4xa/screen/t9naexans"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234016/neueux/media/articles/Frame%20315.jpg" alt=""></a>
 
 Blockchain application developers have to embrace these services, which means integrating them with their dApps and prioritising them in their interfaces. It isn't enough that your app can resolve ENS or unstoppable domain names in the address field. If a cryptocurrency address has an ENS linked to it, you should display it instead of the cryptocurrency address!
 

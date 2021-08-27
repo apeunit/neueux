@@ -74,7 +74,7 @@ Finally, I would like to focus on the accessibility issues of the blockchain eco
 
 ### Long strings of numbers and letters
 
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234014/neueux/media/articles/Frame%20314.jpg" alt="">
+<a href="/apps/app-1617789909158-coinbase-wallet-f24t9fewj/screen/7gqf12qgb"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629234014/neueux/media/articles/Frame%20314.jpg" alt=""></a>
 
 The first challenge that could arise is the long letter and number combinations prevalent in blockchain — frequently found in things like transaction hashes and wallet addresses. These could become a problem, especially for people with visual impairments who rely on screen readers. At the moment, the complex addresses still play a significant role in the daily use of cryptocurrencies and other blockchain applications. Using a screen reader turns to verify a transaction recipient’s already complex wallet address into a near-impossible task. As an example, here is Google's Wavenet, one of the most advanced text-to-speech programs, trying to read out a cryptocurrency address.
 

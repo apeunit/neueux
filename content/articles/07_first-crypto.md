@@ -48,7 +48,7 @@ For example, popular ramp services include:
 - wyre
 - mercuryo
 
-<img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629993583/neueux/media/articles/onramp_1.jpg" alt="">
+<a href="/apps/app-1618389262827-trust-wallet-v6z58hamj/screen/6xz6er750"><img class="article-image-left" src="https://res.cloudinary.com/ape-unit/image/upload/v1629993583/neueux/media/articles/onramp_1.jpg" alt=""></a>
 
 Many wallets have provided on-ramp services in their platforms so that users do not have to go out of their way to buy crypto. However, most wallets only redirect to an on-ramp service, which then opens in a new browser window (as for example the Trust Wallet does in the screenshot shown). 
 
@@ -63,7 +63,7 @@ For blockchain protocols that are looking to develop use-cases beyond investing,
 ## Conclusion
 
 <div class="trust-article-image-block">
-  <img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629993584/neueux/media/articles/onramp_2.jpg" alt="">
+  <a href="/apps/app-1618409563523-zengo-wallet-hejeoxdps/screen/a8rsh0mvb"><img class="article-image-right" src="https://res.cloudinary.com/ape-unit/image/upload/v1629993584/neueux/media/articles/onramp_2.jpg" alt=""></a>
 
   It is still very common for people to buy their first cryptocurrencies on an exchange. However, one should not expect that all users will be willing to do so in the future, especially as t use-cases outside of investing become more prevalent. Therefore, all blockchain protocols should seek out ramp services to support their cryptocurrency.
 
