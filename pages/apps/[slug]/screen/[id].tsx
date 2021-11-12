@@ -28,6 +28,7 @@ const App = ({
                 screen={screen}
                 app={appData}
                 navigation={screenNavigation}
+                preview={preview}
             />
         </Layout>
     );

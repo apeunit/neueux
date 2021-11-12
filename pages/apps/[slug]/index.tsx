@@ -16,8 +16,7 @@ const App = ({
   screens,
   tags,
   userflows,
-  preview,
-  slug
+  preview
 }) => {
 
   const app = () => {
