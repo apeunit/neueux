@@ -8,9 +8,10 @@ import { filteredTagsAll } from "lib/tags";
 import { filteredUserflowsAll } from "lib/userflows";
 import Filter from "components/filter";
 
-const IndexPage = ({ apps, filter }) => {
+const IndexPage = ({ apps, filter, preview }) => {
   // const cms = useCMS();
   // console.log(cms);
+  console.log(preview);
   return (
     <Layout title="Screen Gallery" editable>
       <main className="w-11/12 mx-auto max-w-8xl">
@@ -19,7 +20,7 @@ const IndexPage = ({ apps, filter }) => {
           <Filter tags={filter.tags} userflows={filter.userflows} routeParams={null} routePathname={"/filter"} fallbackRoutePathname={"/"} showResult={false}/>
         </div>
         {apps.map((app) => {
-          return <AppCard key={`app-list-${app.slug}`} app={app} />;
+          return <AppCard key={`app-list-${app.slug}`} preview={preview} app={app} />;
         })}
       </main>
     </Layout>

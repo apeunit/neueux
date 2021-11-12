@@ -31,6 +31,18 @@ const ScreenList = ({
 
   if (!screens || !screens.length) return null;
 
+  const url = (screen) => {
+    if (showAll) {
+      return `/apps/${app.slug}/screen/${screen.id}`
+    }
+
+    if (preview) {
+     return `/editor/apps/${app.slug}`
+    }
+
+    return `/apps/${app.slug}`
+  }
+
   return (
     <div
       className={[
@@ -43,8 +55,6 @@ const ScreenList = ({
       {screens?.map((screen, i) => {
         if (!screen?.image) return null;
 
-        if (preview) return <Screen url={screen.image} style={app?.device} />;
-
         return (
           <div
             key={`screen-card-view-${screen.id}`}
@@ -52,9 +62,7 @@ const ScreenList = ({
           >
             <Link
               href={
-                showAll
-                  ? `/apps/${app.slug}/screen/${screen.id}`
-                  : `/apps/${app.slug}`
+                url(screen)
               }
             >
               <a>
