@@ -4,11 +4,24 @@ import CloseIcon from "assets/icons/close.svg";
 import ScreenNavigation from "./Navigation";
 import { useRouter } from "next/router";
 import Image from "next/image";
-const ScreenView = ({ screen, app, navigation }) => {
+const ScreenView = ({ screen, app, navigation, preview }) => {
   const router = useRouter();
-  const backUrl = router.query.referer
-    ? router.query.referer
-    : `/apps/${app.slug}`;
+
+
+  const appUrl = () => {
+    if (preview) {
+      return `/editor/apps/${app.slug}`
+    }
+
+    return `/apps/${app.slug}`;
+  }
+
+  const backUrl = () => {
+    return router.query.referer
+      ? router.query.referer
+      : appUrl();
+  }
+
   let backQuery: any = {};
   let navigationQuery: any = {};
   if (router.query.referer) {
@@ -40,7 +53,7 @@ const ScreenView = ({ screen, app, navigation }) => {
     }
     if (key === "Escape") {
       router.push({
-        pathname: String(backUrl),
+        pathname: String(backUrl()),
         query: backQuery,
       });
     }
@@ -59,7 +72,7 @@ const ScreenView = ({ screen, app, navigation }) => {
           <div className="p-3.5">
             <div className="flex">
               <div className="flex-none mr-3">
-                <Link href={`/apps/${app.slug}`}>
+                <Link href={appUrl()}>
                   <a className="block">
                     <div className="flex justify-center w-10 h-10">
                       <div className="h-10 w-10 inline-block filter-drop-shadow-view rounded-lg bg-white overflow-hidden">
@@ -80,7 +93,7 @@ const ScreenView = ({ screen, app, navigation }) => {
               <div>
                 <Link
                   href={{
-                    pathname: String(backUrl),
+                    pathname: String(backUrl()),
                     query: backQuery,
                   }}
                 >
@@ -104,7 +117,7 @@ const ScreenView = ({ screen, app, navigation }) => {
           <div className="absolute right-4 top-4">
             <Link
               href={{
-                pathname: String(backUrl),
+                pathname: String(backUrl()),
                 query: backQuery,
               }}
             >
@@ -114,7 +127,7 @@ const ScreenView = ({ screen, app, navigation }) => {
             </Link>
           </div>
           <div className="text-center h-1/2 w-10/12 px-6 mx-auto flex flex-col justify-end pb-5">
-            <Link href={`/apps/${app.slug}`}>
+            <Link href={appUrl()}>
               <a className="block">
                 <div className="flex justify-center">
                   <div className="h-16 w-16 inline-block filter-drop-shadow-view rounded-lg bg-white overflow-hidden">
