@@ -10,7 +10,7 @@ import { listAllAppContent } from "lib/app";
 import AppFormExtended, { FormProps } from "forms/appExtended";
 import ScreenList from "components/app/screen/List";
 
-export default function Home({ file, attributes, slug }) {
+export default function AppView({ file, attributes, slug }) {
   const formOptions = AppFormExtended(slug, attributes);
 
   // Registers a JSON Tina Form
